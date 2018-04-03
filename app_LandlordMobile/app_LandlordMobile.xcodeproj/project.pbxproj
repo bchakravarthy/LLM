@@ -1,0 +1,674 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9733F3B0E912D617F8328FD1 /* Pods_app_LandlordMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93FF748376BCFE0AE299D8AE /* Pods_app_LandlordMobile.framework */; };
+		DB6C84BC20740C4900A555B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6C84BB20740C4900A555B2 /* AppDelegate.m */; };
+		DB6C84BF20740C4900A555B2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6C84BE20740C4900A555B2 /* ViewController.m */; };
+		DB6C84C220740C4900A555B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6C84C020740C4900A555B2 /* Main.storyboard */; };
+		DB6C84C420740C4900A555B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB6C84C320740C4900A555B2 /* Assets.xcassets */; };
+		DB6C84C720740C4900A555B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6C84C520740C4900A555B2 /* LaunchScreen.storyboard */; };
+		DB6C84CA20740C4900A555B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6C84C920740C4900A555B2 /* main.m */; };
+		DB6C84D120740CA100A555B2 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = DB6C84D020740CA100A555B2 /* Podfile */; };
+		DB6C852820740D0100A555B2 /* PROPERTYPropertyMangementClient.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6C84D520740CFB00A555B2 /* PROPERTYPropertyMangementClient.m */; };
+		DB6C852920740D0100A555B2 /* PROPERTYPropertyOutput_properties_item.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6C84D720740CFC00A555B2 /* PROPERTYPropertyOutput_properties_item.m */; };
+		DB6C852A20740D0100A555B2 /* PROPERTYTenantBackgroundOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6C84D820740CFC00A555B2 /* PROPERTYTenantBackgroundOutput.m */; };
+		DB6C852B20740D0100A555B2 /* PROPERTYPropertyOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6C84D920740CFC00A555B2 /* PROPERTYPropertyOutput.m */; };
+		DB6C852C20740D0100A555B2 /* PROPERTYPurchaseDetailsOutput_purchase_details_item.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6C84DA20740CFC00A555B2 /* PROPERTYPurchaseDetailsOutput_purchase_details_item.m */; };
+		DB6C852D20740D0100A555B2 /* PROPERTYTenantRefInput.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6C84DE20740CFC00A555B2 /* PROPERTYTenantRefInput.m */; };
+		DB6C852E20740D0100A555B2 /* PROPERTYPropertyMaintExpOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6C84E220740CFC00A555B2 /* PROPERTYPropertyMaintExpOutput.m */; };
+		DB6C852F20740D0100A555B2 /* PROPERTYTenantBackgroundInput.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6C84E420740CFD00A555B2 /* PROPERTYTenantBackgroundInput.m */; };
+		DB6C853020740D0100A555B2 /* PROPERTYPropertyTaxOutput_property_tax_item.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6C84E520740CFD00A555B2 /* PROPERTYPropertyTaxOutput_property_tax_item.m */; };
+		DB6C853120740D0100A555B2 /* PROPERTYPropertyTaxInput.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6C84E720740CFD00A555B2 /* PROPERTYPropertyTaxInput.m */; };
+		DB6C853220740D0100A555B2 /* PROPERTYPropertyOwnerInput.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6C84EA20740CFD00A555B2 /* PROPERTYPropertyOwnerInput.m */; };
+		DB6C853320740D0100A555B2 /* PROPERTYEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6C84ED20740CFD00A555B2 /* PROPERTYEmpty.m */; };
+		DB6C853420740D0100A555B2 /* PROPERTYPropertyMortgageLoanOutput_property_mortgage_loan_item.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6C84EE20740CFD00A555B2 /* PROPERTYPropertyMortgageLoanOutput_property_mortgage_loan_item.m */; };
+		DB6C853520740D0100A555B2 /* PROPERTYMaintenanceExpTypeOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6C84F020740CFD00A555B2 /* PROPERTYMaintenanceExpTypeOutput.m */; };
+		DB6C853620740D0100A555B2 /* PROPERTYPropertyOwnerOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6C84F120740CFD00A555B2 /* PROPERTYPropertyOwnerOutput.m */; };
+		DB6C853720740D0100A555B2 /* PROPERTYPropertyGeneralExpOutput_property_general_expenses_item.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6C84F220740CFE00A555B2 /* PROPERTYPropertyGeneralExpOutput_property_general_expenses_item.m */; };
+		DB6C853820740D0100A555B2 /* PROPERTYRentalAgreementInput.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6C84F520740CFE00A555B2 /* PROPERTYRentalAgreementInput.m */; };
+		DB6C853920740D0100A555B2 /* PROPERTYPropertyInput.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6C84F620740CFE00A555B2 /* PROPERTYPropertyInput.m */; };
+		DB6C853A20740D0100A555B2 /* PROPERTYPropertyMortgageLoanInput.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6C84F720740CFE00A555B2 /* PROPERTYPropertyMortgageLoanInput.m */; };
+		DB6C853B20740D0100A555B2 /* PROPERTYPropertyGeneralExpInput.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6C84FB20740CFE00A555B2 /* PROPERTYPropertyGeneralExpInput.m */; };
+		DB6C853C20740D0100A555B2 /* PROPERTYTenantRefOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6C84FC20740CFE00A555B2 /* PROPERTYTenantRefOutput.m */; };
+		DB6C853D20740D0100A555B2 /* PROPERTYPropertyGeneralExpOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6C84FD20740CFE00A555B2 /* PROPERTYPropertyGeneralExpOutput.m */; };
+		DB6C853E20740D0100A555B2 /* PROPERTYRentalAgreementOutput_rental_agreement_item.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6C84FE20740CFE00A555B2 /* PROPERTYRentalAgreementOutput_rental_agreement_item.m */; };
+		DB6C853F20740D0100A555B2 /* PROPERTYTenantOutput_tenants_item.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6C84FF20740CFE00A555B2 /* PROPERTYTenantOutput_tenants_item.m */; };
+		DB6C854020740D0100A555B2 /* PROPERTYTenantIncomeOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6C850020740CFE00A555B2 /* PROPERTYTenantIncomeOutput.m */; };
+		DB6C854120740D0100A555B2 /* PROPERTYTenantBackgroundOutput_tenant_background_check_item.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6C850520740CFF00A555B2 /* PROPERTYTenantBackgroundOutput_tenant_background_check_item.m */; };
+		DB6C854220740D0100A555B2 /* PROPERTYRentalAgreementOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6C850820740CFF00A555B2 /* PROPERTYRentalAgreementOutput.m */; };
+		DB6C854320740D0100A555B2 /* PROPERTYPropertyMaintExpOutput_property_maintenance_expenses_item.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6C850A20740CFF00A555B2 /* PROPERTYPropertyMaintExpOutput_property_maintenance_expenses_item.m */; };
+		DB6C854420740D0100A555B2 /* PROPERTYTenantInput.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6C850B20740CFF00A555B2 /* PROPERTYTenantInput.m */; };
+		DB6C854520740D0100A555B2 /* PROPERTYPropertyOwnerOutput_property_owner_item.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6C850C20740CFF00A555B2 /* PROPERTYPropertyOwnerOutput_property_owner_item.m */; };
+		DB6C854620740D0100A555B2 /* PROPERTYTenantOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6C850D20740CFF00A555B2 /* PROPERTYTenantOutput.m */; };
+		DB6C854720740D0100A555B2 /* PROPERTYTenantOccupationOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6C850E20740CFF00A555B2 /* PROPERTYTenantOccupationOutput.m */; };
+		DB6C854820740D0100A555B2 /* PROPERTYMaintenanceExpTypeInput.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6C851020740D0000A555B2 /* PROPERTYMaintenanceExpTypeInput.m */; };
+		DB6C854920740D0100A555B2 /* PROPERTYMaintenanceExpTypeOutput_maintenance_expense_types_item.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6C851120740D0000A555B2 /* PROPERTYMaintenanceExpTypeOutput_maintenance_expense_types_item.m */; };
+		DB6C854A20740D0100A555B2 /* PROPERTYPropertyTaxOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6C851220740D0000A555B2 /* PROPERTYPropertyTaxOutput.m */; };
+		DB6C854B20740D0100A555B2 /* PROPERTYTenantOccupationOutput_tenant_occupation_item.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6C851420740D0000A555B2 /* PROPERTYTenantOccupationOutput_tenant_occupation_item.m */; };
+		DB6C854C20740D0100A555B2 /* PROPERTYTenantIncomeOutput_tenant_income_expense_item.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6C851920740D0000A555B2 /* PROPERTYTenantIncomeOutput_tenant_income_expense_item.m */; };
+		DB6C854D20740D0100A555B2 /* PROPERTYPurchaseDetailsInput.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6C851A20740D0000A555B2 /* PROPERTYPurchaseDetailsInput.m */; };
+		DB6C854E20740D0100A555B2 /* PROPERTYPropertyMaintExpInput.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6C851D20740D0100A555B2 /* PROPERTYPropertyMaintExpInput.m */; };
+		DB6C854F20740D0100A555B2 /* PROPERTYPurchaseDetailsOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6C852120740D0100A555B2 /* PROPERTYPurchaseDetailsOutput.m */; };
+		DB6C855020740D0100A555B2 /* PROPERTYPropertyMortgageLoanOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6C852320740D0100A555B2 /* PROPERTYPropertyMortgageLoanOutput.m */; };
+		DB6C855120740D0100A555B2 /* PROPERTYTenantIncomeInput.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6C852420740D0100A555B2 /* PROPERTYTenantIncomeInput.m */; };
+		DB6C855220740D0100A555B2 /* PROPERTYTenantOccupationInput.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6C852520740D0100A555B2 /* PROPERTYTenantOccupationInput.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3B38D5D0F4F36D894E37F68A /* Pods-app_LandlordMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app_LandlordMobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-app_LandlordMobile/Pods-app_LandlordMobile.release.xcconfig"; sourceTree = "<group>"; };
+		93FF748376BCFE0AE299D8AE /* Pods_app_LandlordMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_app_LandlordMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD48BF333CE33F3C36B4C0E1 /* Pods-app_LandlordMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app_LandlordMobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-app_LandlordMobile/Pods-app_LandlordMobile.debug.xcconfig"; sourceTree = "<group>"; };
+		DB6C84B720740C4900A555B2 /* app_LandlordMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = app_LandlordMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB6C84BA20740C4900A555B2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DB6C84BB20740C4900A555B2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DB6C84BD20740C4900A555B2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DB6C84BE20740C4900A555B2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DB6C84C120740C4900A555B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DB6C84C320740C4900A555B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB6C84C620740C4900A555B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DB6C84C820740C4900A555B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB6C84C920740C4900A555B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DB6C84D020740CA100A555B2 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		DB6C84D220740CFB00A555B2 /* PROPERTYTenantBackgroundInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROPERTYTenantBackgroundInput.h; sourceTree = "<group>"; };
+		DB6C84D320740CFB00A555B2 /* PROPERTYPropertyMaintExpOutput_property_maintenance_expenses_item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROPERTYPropertyMaintExpOutput_property_maintenance_expenses_item.h; sourceTree = "<group>"; };
+		DB6C84D420740CFB00A555B2 /* PROPERTYPropertyGeneralExpInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROPERTYPropertyGeneralExpInput.h; sourceTree = "<group>"; };
+		DB6C84D520740CFB00A555B2 /* PROPERTYPropertyMangementClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROPERTYPropertyMangementClient.m; sourceTree = "<group>"; };
+		DB6C84D620740CFC00A555B2 /* PROPERTYPropertyInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROPERTYPropertyInput.h; sourceTree = "<group>"; };
+		DB6C84D720740CFC00A555B2 /* PROPERTYPropertyOutput_properties_item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROPERTYPropertyOutput_properties_item.m; sourceTree = "<group>"; };
+		DB6C84D820740CFC00A555B2 /* PROPERTYTenantBackgroundOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROPERTYTenantBackgroundOutput.m; sourceTree = "<group>"; };
+		DB6C84D920740CFC00A555B2 /* PROPERTYPropertyOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROPERTYPropertyOutput.m; sourceTree = "<group>"; };
+		DB6C84DA20740CFC00A555B2 /* PROPERTYPurchaseDetailsOutput_purchase_details_item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROPERTYPurchaseDetailsOutput_purchase_details_item.m; sourceTree = "<group>"; };
+		DB6C84DB20740CFC00A555B2 /* PROPERTYPropertyOwnerInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROPERTYPropertyOwnerInput.h; sourceTree = "<group>"; };
+		DB6C84DC20740CFC00A555B2 /* PROPERTYTenantIncomeInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROPERTYTenantIncomeInput.h; sourceTree = "<group>"; };
+		DB6C84DD20740CFC00A555B2 /* PROPERTYTenantRefInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROPERTYTenantRefInput.h; sourceTree = "<group>"; };
+		DB6C84DE20740CFC00A555B2 /* PROPERTYTenantRefInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROPERTYTenantRefInput.m; sourceTree = "<group>"; };
+		DB6C84DF20740CFC00A555B2 /* PROPERTYPropertyTaxInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROPERTYPropertyTaxInput.h; sourceTree = "<group>"; };
+		DB6C84E020740CFC00A555B2 /* PROPERTYTenantRefOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROPERTYTenantRefOutput.h; sourceTree = "<group>"; };
+		DB6C84E120740CFC00A555B2 /* PROPERTYPropertyMortgageLoanOutput_property_mortgage_loan_item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROPERTYPropertyMortgageLoanOutput_property_mortgage_loan_item.h; sourceTree = "<group>"; };
+		DB6C84E220740CFC00A555B2 /* PROPERTYPropertyMaintExpOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROPERTYPropertyMaintExpOutput.m; sourceTree = "<group>"; };
+		DB6C84E320740CFC00A555B2 /* PROPERTYMaintenanceExpTypeOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROPERTYMaintenanceExpTypeOutput.h; sourceTree = "<group>"; };
+		DB6C84E420740CFD00A555B2 /* PROPERTYTenantBackgroundInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROPERTYTenantBackgroundInput.m; sourceTree = "<group>"; };
+		DB6C84E520740CFD00A555B2 /* PROPERTYPropertyTaxOutput_property_tax_item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROPERTYPropertyTaxOutput_property_tax_item.m; sourceTree = "<group>"; };
+		DB6C84E620740CFD00A555B2 /* PROPERTYRentalAgreementOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROPERTYRentalAgreementOutput.h; sourceTree = "<group>"; };
+		DB6C84E720740CFD00A555B2 /* PROPERTYPropertyTaxInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROPERTYPropertyTaxInput.m; sourceTree = "<group>"; };
+		DB6C84E820740CFD00A555B2 /* PROPERTYPropertyMortgageLoanOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROPERTYPropertyMortgageLoanOutput.h; sourceTree = "<group>"; };
+		DB6C84E920740CFD00A555B2 /* PROPERTYTenantIncomeOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROPERTYTenantIncomeOutput.h; sourceTree = "<group>"; };
+		DB6C84EA20740CFD00A555B2 /* PROPERTYPropertyOwnerInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROPERTYPropertyOwnerInput.m; sourceTree = "<group>"; };
+		DB6C84EB20740CFD00A555B2 /* PROPERTYTenantOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROPERTYTenantOutput.h; sourceTree = "<group>"; };
+		DB6C84EC20740CFD00A555B2 /* PROPERTYMaintenanceExpTypeInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROPERTYMaintenanceExpTypeInput.h; sourceTree = "<group>"; };
+		DB6C84ED20740CFD00A555B2 /* PROPERTYEmpty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROPERTYEmpty.m; sourceTree = "<group>"; };
+		DB6C84EE20740CFD00A555B2 /* PROPERTYPropertyMortgageLoanOutput_property_mortgage_loan_item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROPERTYPropertyMortgageLoanOutput_property_mortgage_loan_item.m; sourceTree = "<group>"; };
+		DB6C84EF20740CFD00A555B2 /* PROPERTYPropertyOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROPERTYPropertyOutput.h; sourceTree = "<group>"; };
+		DB6C84F020740CFD00A555B2 /* PROPERTYMaintenanceExpTypeOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROPERTYMaintenanceExpTypeOutput.m; sourceTree = "<group>"; };
+		DB6C84F120740CFD00A555B2 /* PROPERTYPropertyOwnerOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROPERTYPropertyOwnerOutput.m; sourceTree = "<group>"; };
+		DB6C84F220740CFE00A555B2 /* PROPERTYPropertyGeneralExpOutput_property_general_expenses_item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROPERTYPropertyGeneralExpOutput_property_general_expenses_item.m; sourceTree = "<group>"; };
+		DB6C84F320740CFE00A555B2 /* PROPERTYPurchaseDetailsOutput_purchase_details_item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROPERTYPurchaseDetailsOutput_purchase_details_item.h; sourceTree = "<group>"; };
+		DB6C84F420740CFE00A555B2 /* PROPERTYPropertyMaintExpInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROPERTYPropertyMaintExpInput.h; sourceTree = "<group>"; };
+		DB6C84F520740CFE00A555B2 /* PROPERTYRentalAgreementInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROPERTYRentalAgreementInput.m; sourceTree = "<group>"; };
+		DB6C84F620740CFE00A555B2 /* PROPERTYPropertyInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROPERTYPropertyInput.m; sourceTree = "<group>"; };
+		DB6C84F720740CFE00A555B2 /* PROPERTYPropertyMortgageLoanInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROPERTYPropertyMortgageLoanInput.m; sourceTree = "<group>"; };
+		DB6C84F820740CFE00A555B2 /* PROPERTYPropertyTaxOutput_property_tax_item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROPERTYPropertyTaxOutput_property_tax_item.h; sourceTree = "<group>"; };
+		DB6C84F920740CFE00A555B2 /* PROPERTYTenantBackgroundOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROPERTYTenantBackgroundOutput.h; sourceTree = "<group>"; };
+		DB6C84FA20740CFE00A555B2 /* PROPERTYTenantBackgroundOutput_tenant_background_check_item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROPERTYTenantBackgroundOutput_tenant_background_check_item.h; sourceTree = "<group>"; };
+		DB6C84FB20740CFE00A555B2 /* PROPERTYPropertyGeneralExpInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROPERTYPropertyGeneralExpInput.m; sourceTree = "<group>"; };
+		DB6C84FC20740CFE00A555B2 /* PROPERTYTenantRefOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROPERTYTenantRefOutput.m; sourceTree = "<group>"; };
+		DB6C84FD20740CFE00A555B2 /* PROPERTYPropertyGeneralExpOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROPERTYPropertyGeneralExpOutput.m; sourceTree = "<group>"; };
+		DB6C84FE20740CFE00A555B2 /* PROPERTYRentalAgreementOutput_rental_agreement_item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROPERTYRentalAgreementOutput_rental_agreement_item.m; sourceTree = "<group>"; };
+		DB6C84FF20740CFE00A555B2 /* PROPERTYTenantOutput_tenants_item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROPERTYTenantOutput_tenants_item.m; sourceTree = "<group>"; };
+		DB6C850020740CFE00A555B2 /* PROPERTYTenantIncomeOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROPERTYTenantIncomeOutput.m; sourceTree = "<group>"; };
+		DB6C850120740CFF00A555B2 /* PROPERTYMaintenanceExpTypeOutput_maintenance_expense_types_item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROPERTYMaintenanceExpTypeOutput_maintenance_expense_types_item.h; sourceTree = "<group>"; };
+		DB6C850220740CFF00A555B2 /* PROPERTYPropertyGeneralExpOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROPERTYPropertyGeneralExpOutput.h; sourceTree = "<group>"; };
+		DB6C850320740CFF00A555B2 /* PROPERTYTenantIncomeOutput_tenant_income_expense_item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROPERTYTenantIncomeOutput_tenant_income_expense_item.h; sourceTree = "<group>"; };
+		DB6C850420740CFF00A555B2 /* PROPERTYRentalAgreementInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROPERTYRentalAgreementInput.h; sourceTree = "<group>"; };
+		DB6C850520740CFF00A555B2 /* PROPERTYTenantBackgroundOutput_tenant_background_check_item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROPERTYTenantBackgroundOutput_tenant_background_check_item.m; sourceTree = "<group>"; };
+		DB6C850620740CFF00A555B2 /* PROPERTYPropertyMortgageLoanInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROPERTYPropertyMortgageLoanInput.h; sourceTree = "<group>"; };
+		DB6C850720740CFF00A555B2 /* PROPERTYPropertyOwnerOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROPERTYPropertyOwnerOutput.h; sourceTree = "<group>"; };
+		DB6C850820740CFF00A555B2 /* PROPERTYRentalAgreementOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROPERTYRentalAgreementOutput.m; sourceTree = "<group>"; };
+		DB6C850920740CFF00A555B2 /* PROPERTYPropertyGeneralExpOutput_property_general_expenses_item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROPERTYPropertyGeneralExpOutput_property_general_expenses_item.h; sourceTree = "<group>"; };
+		DB6C850A20740CFF00A555B2 /* PROPERTYPropertyMaintExpOutput_property_maintenance_expenses_item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROPERTYPropertyMaintExpOutput_property_maintenance_expenses_item.m; sourceTree = "<group>"; };
+		DB6C850B20740CFF00A555B2 /* PROPERTYTenantInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROPERTYTenantInput.m; sourceTree = "<group>"; };
+		DB6C850C20740CFF00A555B2 /* PROPERTYPropertyOwnerOutput_property_owner_item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROPERTYPropertyOwnerOutput_property_owner_item.m; sourceTree = "<group>"; };
+		DB6C850D20740CFF00A555B2 /* PROPERTYTenantOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROPERTYTenantOutput.m; sourceTree = "<group>"; };
+		DB6C850E20740CFF00A555B2 /* PROPERTYTenantOccupationOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROPERTYTenantOccupationOutput.m; sourceTree = "<group>"; };
+		DB6C850F20740D0000A555B2 /* PROPERTYPropertyTaxOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROPERTYPropertyTaxOutput.h; sourceTree = "<group>"; };
+		DB6C851020740D0000A555B2 /* PROPERTYMaintenanceExpTypeInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROPERTYMaintenanceExpTypeInput.m; sourceTree = "<group>"; };
+		DB6C851120740D0000A555B2 /* PROPERTYMaintenanceExpTypeOutput_maintenance_expense_types_item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROPERTYMaintenanceExpTypeOutput_maintenance_expense_types_item.m; sourceTree = "<group>"; };
+		DB6C851220740D0000A555B2 /* PROPERTYPropertyTaxOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROPERTYPropertyTaxOutput.m; sourceTree = "<group>"; };
+		DB6C851320740D0000A555B2 /* PROPERTYTenantOccupationOutput_tenant_occupation_item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROPERTYTenantOccupationOutput_tenant_occupation_item.h; sourceTree = "<group>"; };
+		DB6C851420740D0000A555B2 /* PROPERTYTenantOccupationOutput_tenant_occupation_item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROPERTYTenantOccupationOutput_tenant_occupation_item.m; sourceTree = "<group>"; };
+		DB6C851520740D0000A555B2 /* PROPERTYRentalAgreementOutput_rental_agreement_item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROPERTYRentalAgreementOutput_rental_agreement_item.h; sourceTree = "<group>"; };
+		DB6C851620740D0000A555B2 /* PROPERTYTenantOutput_tenants_item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROPERTYTenantOutput_tenants_item.h; sourceTree = "<group>"; };
+		DB6C851720740D0000A555B2 /* PROPERTYTenantInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROPERTYTenantInput.h; sourceTree = "<group>"; };
+		DB6C851820740D0000A555B2 /* PROPERTYEmpty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROPERTYEmpty.h; sourceTree = "<group>"; };
+		DB6C851920740D0000A555B2 /* PROPERTYTenantIncomeOutput_tenant_income_expense_item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROPERTYTenantIncomeOutput_tenant_income_expense_item.m; sourceTree = "<group>"; };
+		DB6C851A20740D0000A555B2 /* PROPERTYPurchaseDetailsInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROPERTYPurchaseDetailsInput.m; sourceTree = "<group>"; };
+		DB6C851B20740D0000A555B2 /* PROPERTYPropertyMaintExpOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROPERTYPropertyMaintExpOutput.h; sourceTree = "<group>"; };
+		DB6C851C20740D0000A555B2 /* PROPERTYPropertyOutput_properties_item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROPERTYPropertyOutput_properties_item.h; sourceTree = "<group>"; };
+		DB6C851D20740D0100A555B2 /* PROPERTYPropertyMaintExpInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROPERTYPropertyMaintExpInput.m; sourceTree = "<group>"; };
+		DB6C851E20740D0100A555B2 /* PROPERTYPurchaseDetailsOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROPERTYPurchaseDetailsOutput.h; sourceTree = "<group>"; };
+		DB6C851F20740D0100A555B2 /* PROPERTYPropertyMangementClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROPERTYPropertyMangementClient.h; sourceTree = "<group>"; };
+		DB6C852020740D0100A555B2 /* PROPERTYPropertyOwnerOutput_property_owner_item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROPERTYPropertyOwnerOutput_property_owner_item.h; sourceTree = "<group>"; };
+		DB6C852120740D0100A555B2 /* PROPERTYPurchaseDetailsOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROPERTYPurchaseDetailsOutput.m; sourceTree = "<group>"; };
+		DB6C852220740D0100A555B2 /* PROPERTYTenantOccupationInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROPERTYTenantOccupationInput.h; sourceTree = "<group>"; };
+		DB6C852320740D0100A555B2 /* PROPERTYPropertyMortgageLoanOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROPERTYPropertyMortgageLoanOutput.m; sourceTree = "<group>"; };
+		DB6C852420740D0100A555B2 /* PROPERTYTenantIncomeInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROPERTYTenantIncomeInput.m; sourceTree = "<group>"; };
+		DB6C852520740D0100A555B2 /* PROPERTYTenantOccupationInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROPERTYTenantOccupationInput.m; sourceTree = "<group>"; };
+		DB6C852620740D0100A555B2 /* PROPERTYTenantOccupationOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROPERTYTenantOccupationOutput.h; sourceTree = "<group>"; };
+		DB6C852720740D0100A555B2 /* PROPERTYPurchaseDetailsInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROPERTYPurchaseDetailsInput.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB6C84B420740C4900A555B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9733F3B0E912D617F8328FD1 /* Pods_app_LandlordMobile.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F2CAFDECAA70987D5157F05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93FF748376BCFE0AE299D8AE /* Pods_app_LandlordMobile.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A91CA88862FD45BFE938C576 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD48BF333CE33F3C36B4C0E1 /* Pods-app_LandlordMobile.debug.xcconfig */,
+				3B38D5D0F4F36D894E37F68A /* Pods-app_LandlordMobile.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DB6C84AE20740C4800A555B2 = {
+			isa = PBXGroup;
+			children = (
+				DB6C84D020740CA100A555B2 /* Podfile */,
+				DB6C84B920740C4900A555B2 /* app_LandlordMobile */,
+				DB6C84B820740C4900A555B2 /* Products */,
+				A91CA88862FD45BFE938C576 /* Pods */,
+				5F2CAFDECAA70987D5157F05 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DB6C84B820740C4900A555B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB6C84B720740C4900A555B2 /* app_LandlordMobile.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB6C84B920740C4900A555B2 /* app_LandlordMobile */ = {
+			isa = PBXGroup;
+			children = (
+				DB6C851820740D0000A555B2 /* PROPERTYEmpty.h */,
+				DB6C84ED20740CFD00A555B2 /* PROPERTYEmpty.m */,
+				DB6C84EC20740CFD00A555B2 /* PROPERTYMaintenanceExpTypeInput.h */,
+				DB6C851020740D0000A555B2 /* PROPERTYMaintenanceExpTypeInput.m */,
+				DB6C850120740CFF00A555B2 /* PROPERTYMaintenanceExpTypeOutput_maintenance_expense_types_item.h */,
+				DB6C851120740D0000A555B2 /* PROPERTYMaintenanceExpTypeOutput_maintenance_expense_types_item.m */,
+				DB6C84E320740CFC00A555B2 /* PROPERTYMaintenanceExpTypeOutput.h */,
+				DB6C84F020740CFD00A555B2 /* PROPERTYMaintenanceExpTypeOutput.m */,
+				DB6C84D420740CFB00A555B2 /* PROPERTYPropertyGeneralExpInput.h */,
+				DB6C84FB20740CFE00A555B2 /* PROPERTYPropertyGeneralExpInput.m */,
+				DB6C850920740CFF00A555B2 /* PROPERTYPropertyGeneralExpOutput_property_general_expenses_item.h */,
+				DB6C84F220740CFE00A555B2 /* PROPERTYPropertyGeneralExpOutput_property_general_expenses_item.m */,
+				DB6C850220740CFF00A555B2 /* PROPERTYPropertyGeneralExpOutput.h */,
+				DB6C84FD20740CFE00A555B2 /* PROPERTYPropertyGeneralExpOutput.m */,
+				DB6C84D620740CFC00A555B2 /* PROPERTYPropertyInput.h */,
+				DB6C84F620740CFE00A555B2 /* PROPERTYPropertyInput.m */,
+				DB6C84F420740CFE00A555B2 /* PROPERTYPropertyMaintExpInput.h */,
+				DB6C851D20740D0100A555B2 /* PROPERTYPropertyMaintExpInput.m */,
+				DB6C84D320740CFB00A555B2 /* PROPERTYPropertyMaintExpOutput_property_maintenance_expenses_item.h */,
+				DB6C850A20740CFF00A555B2 /* PROPERTYPropertyMaintExpOutput_property_maintenance_expenses_item.m */,
+				DB6C851B20740D0000A555B2 /* PROPERTYPropertyMaintExpOutput.h */,
+				DB6C84E220740CFC00A555B2 /* PROPERTYPropertyMaintExpOutput.m */,
+				DB6C851F20740D0100A555B2 /* PROPERTYPropertyMangementClient.h */,
+				DB6C84D520740CFB00A555B2 /* PROPERTYPropertyMangementClient.m */,
+				DB6C850620740CFF00A555B2 /* PROPERTYPropertyMortgageLoanInput.h */,
+				DB6C84F720740CFE00A555B2 /* PROPERTYPropertyMortgageLoanInput.m */,
+				DB6C84E120740CFC00A555B2 /* PROPERTYPropertyMortgageLoanOutput_property_mortgage_loan_item.h */,
+				DB6C84EE20740CFD00A555B2 /* PROPERTYPropertyMortgageLoanOutput_property_mortgage_loan_item.m */,
+				DB6C84E820740CFD00A555B2 /* PROPERTYPropertyMortgageLoanOutput.h */,
+				DB6C852320740D0100A555B2 /* PROPERTYPropertyMortgageLoanOutput.m */,
+				DB6C851C20740D0000A555B2 /* PROPERTYPropertyOutput_properties_item.h */,
+				DB6C84D720740CFC00A555B2 /* PROPERTYPropertyOutput_properties_item.m */,
+				DB6C84EF20740CFD00A555B2 /* PROPERTYPropertyOutput.h */,
+				DB6C84D920740CFC00A555B2 /* PROPERTYPropertyOutput.m */,
+				DB6C84DB20740CFC00A555B2 /* PROPERTYPropertyOwnerInput.h */,
+				DB6C84EA20740CFD00A555B2 /* PROPERTYPropertyOwnerInput.m */,
+				DB6C852020740D0100A555B2 /* PROPERTYPropertyOwnerOutput_property_owner_item.h */,
+				DB6C850C20740CFF00A555B2 /* PROPERTYPropertyOwnerOutput_property_owner_item.m */,
+				DB6C850720740CFF00A555B2 /* PROPERTYPropertyOwnerOutput.h */,
+				DB6C84F120740CFD00A555B2 /* PROPERTYPropertyOwnerOutput.m */,
+				DB6C84DF20740CFC00A555B2 /* PROPERTYPropertyTaxInput.h */,
+				DB6C84E720740CFD00A555B2 /* PROPERTYPropertyTaxInput.m */,
+				DB6C84F820740CFE00A555B2 /* PROPERTYPropertyTaxOutput_property_tax_item.h */,
+				DB6C84E520740CFD00A555B2 /* PROPERTYPropertyTaxOutput_property_tax_item.m */,
+				DB6C850F20740D0000A555B2 /* PROPERTYPropertyTaxOutput.h */,
+				DB6C851220740D0000A555B2 /* PROPERTYPropertyTaxOutput.m */,
+				DB6C852720740D0100A555B2 /* PROPERTYPurchaseDetailsInput.h */,
+				DB6C851A20740D0000A555B2 /* PROPERTYPurchaseDetailsInput.m */,
+				DB6C84F320740CFE00A555B2 /* PROPERTYPurchaseDetailsOutput_purchase_details_item.h */,
+				DB6C84DA20740CFC00A555B2 /* PROPERTYPurchaseDetailsOutput_purchase_details_item.m */,
+				DB6C851E20740D0100A555B2 /* PROPERTYPurchaseDetailsOutput.h */,
+				DB6C852120740D0100A555B2 /* PROPERTYPurchaseDetailsOutput.m */,
+				DB6C850420740CFF00A555B2 /* PROPERTYRentalAgreementInput.h */,
+				DB6C84F520740CFE00A555B2 /* PROPERTYRentalAgreementInput.m */,
+				DB6C851520740D0000A555B2 /* PROPERTYRentalAgreementOutput_rental_agreement_item.h */,
+				DB6C84FE20740CFE00A555B2 /* PROPERTYRentalAgreementOutput_rental_agreement_item.m */,
+				DB6C84E620740CFD00A555B2 /* PROPERTYRentalAgreementOutput.h */,
+				DB6C850820740CFF00A555B2 /* PROPERTYRentalAgreementOutput.m */,
+				DB6C84D220740CFB00A555B2 /* PROPERTYTenantBackgroundInput.h */,
+				DB6C84E420740CFD00A555B2 /* PROPERTYTenantBackgroundInput.m */,
+				DB6C84FA20740CFE00A555B2 /* PROPERTYTenantBackgroundOutput_tenant_background_check_item.h */,
+				DB6C850520740CFF00A555B2 /* PROPERTYTenantBackgroundOutput_tenant_background_check_item.m */,
+				DB6C84F920740CFE00A555B2 /* PROPERTYTenantBackgroundOutput.h */,
+				DB6C84D820740CFC00A555B2 /* PROPERTYTenantBackgroundOutput.m */,
+				DB6C84DC20740CFC00A555B2 /* PROPERTYTenantIncomeInput.h */,
+				DB6C852420740D0100A555B2 /* PROPERTYTenantIncomeInput.m */,
+				DB6C850320740CFF00A555B2 /* PROPERTYTenantIncomeOutput_tenant_income_expense_item.h */,
+				DB6C851920740D0000A555B2 /* PROPERTYTenantIncomeOutput_tenant_income_expense_item.m */,
+				DB6C84E920740CFD00A555B2 /* PROPERTYTenantIncomeOutput.h */,
+				DB6C850020740CFE00A555B2 /* PROPERTYTenantIncomeOutput.m */,
+				DB6C851720740D0000A555B2 /* PROPERTYTenantInput.h */,
+				DB6C850B20740CFF00A555B2 /* PROPERTYTenantInput.m */,
+				DB6C852220740D0100A555B2 /* PROPERTYTenantOccupationInput.h */,
+				DB6C852520740D0100A555B2 /* PROPERTYTenantOccupationInput.m */,
+				DB6C851320740D0000A555B2 /* PROPERTYTenantOccupationOutput_tenant_occupation_item.h */,
+				DB6C851420740D0000A555B2 /* PROPERTYTenantOccupationOutput_tenant_occupation_item.m */,
+				DB6C852620740D0100A555B2 /* PROPERTYTenantOccupationOutput.h */,
+				DB6C850E20740CFF00A555B2 /* PROPERTYTenantOccupationOutput.m */,
+				DB6C851620740D0000A555B2 /* PROPERTYTenantOutput_tenants_item.h */,
+				DB6C84FF20740CFE00A555B2 /* PROPERTYTenantOutput_tenants_item.m */,
+				DB6C84EB20740CFD00A555B2 /* PROPERTYTenantOutput.h */,
+				DB6C850D20740CFF00A555B2 /* PROPERTYTenantOutput.m */,
+				DB6C84DD20740CFC00A555B2 /* PROPERTYTenantRefInput.h */,
+				DB6C84DE20740CFC00A555B2 /* PROPERTYTenantRefInput.m */,
+				DB6C84E020740CFC00A555B2 /* PROPERTYTenantRefOutput.h */,
+				DB6C84FC20740CFE00A555B2 /* PROPERTYTenantRefOutput.m */,
+				DB6C84BA20740C4900A555B2 /* AppDelegate.h */,
+				DB6C84BB20740C4900A555B2 /* AppDelegate.m */,
+				DB6C84BD20740C4900A555B2 /* ViewController.h */,
+				DB6C84BE20740C4900A555B2 /* ViewController.m */,
+				DB6C84C020740C4900A555B2 /* Main.storyboard */,
+				DB6C84C320740C4900A555B2 /* Assets.xcassets */,
+				DB6C84C520740C4900A555B2 /* LaunchScreen.storyboard */,
+				DB6C84C820740C4900A555B2 /* Info.plist */,
+				DB6C84C920740C4900A555B2 /* main.m */,
+			);
+			path = app_LandlordMobile;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB6C84B620740C4900A555B2 /* app_LandlordMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB6C84CD20740C4900A555B2 /* Build configuration list for PBXNativeTarget "app_LandlordMobile" */;
+			buildPhases = (
+				A993F5064A61EDB3FBBD9D03 /* [CP] Check Pods Manifest.lock */,
+				DB6C84B320740C4900A555B2 /* Sources */,
+				DB6C84B420740C4900A555B2 /* Frameworks */,
+				DB6C84B520740C4900A555B2 /* Resources */,
+				02A4DBB998DCA9F21BFCA9F5 /* [CP] Embed Pods Frameworks */,
+				BEF11A6E88180F13E4149DE9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = app_LandlordMobile;
+			productName = app_LandlordMobile;
+			productReference = DB6C84B720740C4900A555B2 /* app_LandlordMobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB6C84AF20740C4800A555B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Nafisa Hasan";
+				TargetAttributes = {
+					DB6C84B620740C4900A555B2 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = DB6C84B220740C4800A555B2 /* Build configuration list for PBXProject "app_LandlordMobile" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB6C84AE20740C4800A555B2;
+			productRefGroup = DB6C84B820740C4900A555B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB6C84B620740C4900A555B2 /* app_LandlordMobile */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB6C84B520740C4900A555B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB6C84C720740C4900A555B2 /* LaunchScreen.storyboard in Resources */,
+				DB6C84C420740C4900A555B2 /* Assets.xcassets in Resources */,
+				DB6C84D120740CA100A555B2 /* Podfile in Resources */,
+				DB6C84C220740C4900A555B2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02A4DBB998DCA9F21BFCA9F5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-app_LandlordMobile/Pods-app_LandlordMobile-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSAPIGateway/AWSAPIGateway.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAPIGateway.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-app_LandlordMobile/Pods-app_LandlordMobile-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A993F5064A61EDB3FBBD9D03 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-app_LandlordMobile-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEF11A6E88180F13E4149DE9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-app_LandlordMobile/Pods-app_LandlordMobile-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB6C84B320740C4900A555B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB6C852E20740D0100A555B2 /* PROPERTYPropertyMaintExpOutput.m in Sources */,
+				DB6C853520740D0100A555B2 /* PROPERTYMaintenanceExpTypeOutput.m in Sources */,
+				DB6C854F20740D0100A555B2 /* PROPERTYPurchaseDetailsOutput.m in Sources */,
+				DB6C852A20740D0100A555B2 /* PROPERTYTenantBackgroundOutput.m in Sources */,
+				DB6C855220740D0100A555B2 /* PROPERTYTenantOccupationInput.m in Sources */,
+				DB6C853220740D0100A555B2 /* PROPERTYPropertyOwnerInput.m in Sources */,
+				DB6C853620740D0100A555B2 /* PROPERTYPropertyOwnerOutput.m in Sources */,
+				DB6C854C20740D0100A555B2 /* PROPERTYTenantIncomeOutput_tenant_income_expense_item.m in Sources */,
+				DB6C853320740D0100A555B2 /* PROPERTYEmpty.m in Sources */,
+				DB6C853F20740D0100A555B2 /* PROPERTYTenantOutput_tenants_item.m in Sources */,
+				DB6C84BF20740C4900A555B2 /* ViewController.m in Sources */,
+				DB6C84CA20740C4900A555B2 /* main.m in Sources */,
+				DB6C853820740D0100A555B2 /* PROPERTYRentalAgreementInput.m in Sources */,
+				DB6C854520740D0100A555B2 /* PROPERTYPropertyOwnerOutput_property_owner_item.m in Sources */,
+				DB6C853C20740D0100A555B2 /* PROPERTYTenantRefOutput.m in Sources */,
+				DB6C84BC20740C4900A555B2 /* AppDelegate.m in Sources */,
+				DB6C854D20740D0100A555B2 /* PROPERTYPurchaseDetailsInput.m in Sources */,
+				DB6C854B20740D0100A555B2 /* PROPERTYTenantOccupationOutput_tenant_occupation_item.m in Sources */,
+				DB6C854820740D0100A555B2 /* PROPERTYMaintenanceExpTypeInput.m in Sources */,
+				DB6C853A20740D0100A555B2 /* PROPERTYPropertyMortgageLoanInput.m in Sources */,
+				DB6C854E20740D0100A555B2 /* PROPERTYPropertyMaintExpInput.m in Sources */,
+				DB6C853B20740D0100A555B2 /* PROPERTYPropertyGeneralExpInput.m in Sources */,
+				DB6C854320740D0100A555B2 /* PROPERTYPropertyMaintExpOutput_property_maintenance_expenses_item.m in Sources */,
+				DB6C854420740D0100A555B2 /* PROPERTYTenantInput.m in Sources */,
+				DB6C853920740D0100A555B2 /* PROPERTYPropertyInput.m in Sources */,
+				DB6C852C20740D0100A555B2 /* PROPERTYPurchaseDetailsOutput_purchase_details_item.m in Sources */,
+				DB6C852B20740D0100A555B2 /* PROPERTYPropertyOutput.m in Sources */,
+				DB6C853E20740D0100A555B2 /* PROPERTYRentalAgreementOutput_rental_agreement_item.m in Sources */,
+				DB6C854220740D0100A555B2 /* PROPERTYRentalAgreementOutput.m in Sources */,
+				DB6C852820740D0100A555B2 /* PROPERTYPropertyMangementClient.m in Sources */,
+				DB6C854920740D0100A555B2 /* PROPERTYMaintenanceExpTypeOutput_maintenance_expense_types_item.m in Sources */,
+				DB6C852920740D0100A555B2 /* PROPERTYPropertyOutput_properties_item.m in Sources */,
+				DB6C853120740D0100A555B2 /* PROPERTYPropertyTaxInput.m in Sources */,
+				DB6C853420740D0100A555B2 /* PROPERTYPropertyMortgageLoanOutput_property_mortgage_loan_item.m in Sources */,
+				DB6C852D20740D0100A555B2 /* PROPERTYTenantRefInput.m in Sources */,
+				DB6C855020740D0100A555B2 /* PROPERTYPropertyMortgageLoanOutput.m in Sources */,
+				DB6C853720740D0100A555B2 /* PROPERTYPropertyGeneralExpOutput_property_general_expenses_item.m in Sources */,
+				DB6C853020740D0100A555B2 /* PROPERTYPropertyTaxOutput_property_tax_item.m in Sources */,
+				DB6C854620740D0100A555B2 /* PROPERTYTenantOutput.m in Sources */,
+				DB6C855120740D0100A555B2 /* PROPERTYTenantIncomeInput.m in Sources */,
+				DB6C854A20740D0100A555B2 /* PROPERTYPropertyTaxOutput.m in Sources */,
+				DB6C852F20740D0100A555B2 /* PROPERTYTenantBackgroundInput.m in Sources */,
+				DB6C854020740D0100A555B2 /* PROPERTYTenantIncomeOutput.m in Sources */,
+				DB6C854120740D0100A555B2 /* PROPERTYTenantBackgroundOutput_tenant_background_check_item.m in Sources */,
+				DB6C853D20740D0100A555B2 /* PROPERTYPropertyGeneralExpOutput.m in Sources */,
+				DB6C854720740D0100A555B2 /* PROPERTYTenantOccupationOutput.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DB6C84C020740C4900A555B2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB6C84C120740C4900A555B2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DB6C84C520740C4900A555B2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB6C84C620740C4900A555B2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DB6C84CB20740C4900A555B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DB6C84CC20740C4900A555B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB6C84CE20740C4900A555B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD48BF333CE33F3C36B4C0E1 /* Pods-app_LandlordMobile.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = app_LandlordMobile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.app-LandlordMobile";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB6C84CF20740C4900A555B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B38D5D0F4F36D894E37F68A /* Pods-app_LandlordMobile.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = app_LandlordMobile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.app-LandlordMobile";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB6C84B220740C4800A555B2 /* Build configuration list for PBXProject "app_LandlordMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB6C84CB20740C4900A555B2 /* Debug */,
+				DB6C84CC20740C4900A555B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB6C84CD20740C4900A555B2 /* Build configuration list for PBXNativeTarget "app_LandlordMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB6C84CE20740C4900A555B2 /* Debug */,
+				DB6C84CF20740C4900A555B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB6C84AF20740C4800A555B2 /* Project object */;
+}
