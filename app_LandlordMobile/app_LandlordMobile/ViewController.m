@@ -26,7 +26,7 @@
     [AWSServiceManager defaultServiceManager].defaultServiceConfiguration = configuration;
     
     //[self insertExpenseType];
-    //[self insertProperty];
+    [self insertProperty];
     //[self insertPropertyMaintExp];
     //[self insertPropertyGeneralExp];
     //[self insertPropertyMortgageLoan];
@@ -37,8 +37,9 @@
     //[self insertTenantBackgroundCheck];
     //[self insertTenantIncomeExpenses];
     //[self insertTenantOccupation];
-    [self insertTenantReferences];
+    //[self insertTenantReferences];
     //[self insertTenant];
+    //[self getExpenseType];
 }
 
 //post for maint exp
@@ -73,6 +74,44 @@
     }];
 }
 
+
+//get for maint exp
+- (void) getExpenseType {
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Invoke GET on API
+    [[client maintenanceExpenseGet] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+        
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        if (task.result) {
+            //You are here, so method invocation is a success
+            printf("Success....\n");
+            //Convert result object to maint result
+            
+            PROPERTYMaintenanceExpTypeOutput *result_var;
+            result_var=task.result;
+            //Obtain array of maint exp
+            
+            NSArray *arrData = result_var.maintenanceExpenseTypes;
+            long cnt;
+            cnt = arrData.count;
+            //Print out count of maint exp
+            
+            NSLog(@"Number of maintenance expenses %lu\n",cnt);
+            
+            //Print out each employee details to the console
+            for (id element in arrData){
+                NSLog(@"%@",element );
+            }
+        }
+        return nil;
+    }];
+}
+
 //post for properties
 - (void) insertProperty {
     //Instantiate client object
@@ -83,11 +122,11 @@
     
     propertyInput.ownerId=[NSNumber numberWithInt:1];
     propertyInput.addressLine1 = @"123 Lane Ave";
-    propertyInput.addressLine2 = @"";
+    propertyInput.addressLine2 = @"Test";
     propertyInput.city = @"Columbus";
     propertyInput.state = @"Ohio";
     propertyInput.zip = @"43201";
-    propertyInput.countyOrDistrict = @"43201";
+    propertyInput.countyOrDistrict = @"Franklin";
     propertyInput._description = @"Test";
     propertyInput.pictures = @"Test from Nafisa";
     
@@ -497,7 +536,7 @@
     tenantRefInput.firstName = @"Nafisa";
     tenantRefInput.lastName = @"Hasan";
     tenantRefInput.addressLine1 = @"123 Lane Ave";
-    tenantRefInput.addressLine2 = @"";
+    tenantRefInput.addressLine2 = @"Test";
     tenantRefInput.city = @"Columbus";
     tenantRefInput.state = @"Ohio";
     tenantRefInput.zip = @"43201";
