@@ -20,25 +20,25 @@
  
 @interface PROPERTYPropertyGeneralExpInput : AWSModel
 
-@property (nonatomic, strong, nullable) NSNumber *propertyGeneralExpenseId;
+@property (nonatomic, strong, nonnull) NSNumber *propertyId;
 
 
-@property (nonatomic, strong, nullable) NSNumber *propertyId;
+@property (nonatomic, strong, nonnull) NSNumber *ownerId;
 
 
-@property (nonatomic, strong, nullable) NSNumber *ownerId;
+@property (nonatomic, strong, nonnull) NSNumber *monthlyCondoFee;
 
 
-@property (nonatomic, strong, nullable) NSNumber *monthlyCondoFee;
+@property (nonatomic, strong, nonnull) NSNumber *monthlyHomeFee;
 
 
-@property (nonatomic, strong, nullable) NSNumber *monthlyHomeFee;
+@property (nonatomic, strong, nonnull) NSNumber *yearlyPropertyInsurance;
 
 
-@property (nonatomic, strong, nullable) NSNumber *yearlyPropertyInsurance;
+@property (nonatomic, strong, nonnull) NSNumber *monthlyHomeWarranty;
 
 
-@property (nonatomic, strong, nullable) NSString *receiptCopy;
+@property (nonatomic, strong, nonnull) NSString *receiptCopy;
 
 
 @end

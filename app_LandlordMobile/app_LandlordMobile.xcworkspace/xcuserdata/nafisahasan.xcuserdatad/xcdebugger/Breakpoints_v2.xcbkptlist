@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "app_LandlordMobile/PROPERTYPropertyInput.h"
+            timestampString = "544590640.49516"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "zip"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[PROPERTYPropertyInput zip]"
+                  moduleName = "app_LandlordMobile"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nafisahasan/Documents/LLM/app_LandlordMobile/app_LandlordMobile/PROPERTYPropertyInput.h"
+                  timestampString = "544591377.863685"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[PROPERTYPropertyInput setZip:]"
+                  moduleName = "app_LandlordMobile"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nafisahasan/Documents/LLM/app_LandlordMobile/app_LandlordMobile/PROPERTYPropertyInput.h"
+                  timestampString = "544591377.8707"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "49">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -20,22 +20,19 @@
  
 @interface PROPERTYPropertyMortgageLoanInput : AWSModel
 
-@property (nonatomic, strong, nullable) NSNumber *propertyMortgageLoanId;
+@property (nonatomic, strong, nonnull) NSNumber *propertyId;
 
 
-@property (nonatomic, strong, nullable) NSNumber *propertyId;
+@property (nonatomic, strong, nonnull) NSNumber *ownerId;
 
 
-@property (nonatomic, strong, nullable) NSNumber *ownerId;
+@property (nonatomic, strong, nonnull) NSNumber *mortgageLender;
 
 
-@property (nonatomic, strong, nullable) NSNumber *mortgageLender;
+@property (nonatomic, strong, nonnull) NSNumber *monthlyMortgageAmount;
 
 
-@property (nonatomic, strong, nullable) NSNumber *monthlyMortgageAmount;
-
-
-@property (nonatomic, strong, nullable) NSNumber *outstandingBalance;
+@property (nonatomic, strong, nonnull) NSNumber *outstandingBalance;
 
 
 @end

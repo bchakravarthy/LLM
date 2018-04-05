@@ -20,22 +20,19 @@
  
 @interface PROPERTYPropertyTaxInput : AWSModel
 
-@property (nonatomic, strong, nullable) NSNumber *propertyTaxId;
+@property (nonatomic, strong, nonnull) NSNumber *propertyId;
 
 
-@property (nonatomic, strong, nullable) NSNumber *propertyId;
+@property (nonatomic, strong, nonnull) NSNumber *ownerId;
 
 
-@property (nonatomic, strong, nullable) NSNumber *ownerId;
+@property (nonatomic, strong, nonnull) NSNumber *annualTax;
 
 
-@property (nonatomic, strong, nullable) NSNumber *annualTax;
+@property (nonatomic, strong, nonnull) NSNumber *year;
 
 
-@property (nonatomic, strong, nullable) NSNumber *year;
-
-
-@property (nonatomic, strong, nullable) NSNumber *yearPaid;
+@property (nonatomic, strong, nonnull) NSNumber *yearPaid;
 
 
 @end

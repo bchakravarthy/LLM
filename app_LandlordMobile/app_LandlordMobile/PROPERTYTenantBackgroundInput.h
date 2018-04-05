@@ -20,25 +20,22 @@
  
 @interface PROPERTYTenantBackgroundInput : AWSModel
 
-@property (nonatomic, strong, nullable) NSNumber *tenantId;
+@property (nonatomic, strong, nonnull) NSNumber *tenantId;
 
 
-@property (nonatomic, strong, nullable) NSNumber *tenantBackgroundCheckId;
+@property (nonatomic, strong, nonnull) NSNumber *ownerId;
 
 
-@property (nonatomic, strong, nullable) NSNumber *ownerId;
+@property (nonatomic, strong, nonnull) NSString *creditPassedYN;
 
 
-@property (nonatomic, strong, nullable) NSString *creditPassedYN;
+@property (nonatomic, strong, nonnull) NSString *criminalPassed;
 
 
-@property (nonatomic, strong, nullable) NSNumber *criminalPassed;
+@property (nonatomic, strong, nonnull) NSNumber *evictionPassedYN;
 
 
-@property (nonatomic, strong, nullable) NSNumber *evictionPassedYN;
-
-
-@property (nonatomic, strong, nullable) NSString *recommendation;
+@property (nonatomic, strong, nonnull) NSString *recommendation;
 
 
 @end

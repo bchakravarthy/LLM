@@ -20,37 +20,34 @@
  
 @interface PROPERTYRentalAgreementInput : AWSModel
 
-@property (nonatomic, strong, nullable) NSNumber *rentalAgreementId;
+@property (nonatomic, strong, nonnull) NSNumber *ownerId;
 
 
-@property (nonatomic, strong, nullable) NSNumber *ownerId;
+@property (nonatomic, strong, nonnull) NSNumber *tenantId;
 
 
-@property (nonatomic, strong, nullable) NSNumber *tenantId;
+@property (nonatomic, strong, nonnull) NSNumber *numberOfOccupants;
 
 
-@property (nonatomic, strong, nullable) NSNumber *numberOfOccupants;
+@property (nonatomic, strong, nullable) NSNumber *monthlyRent;
 
 
-@property (nonatomic, strong, nullable) NSNumber *montlyRent;
+@property (nonatomic, strong, nullable) NSString *monthlyRentDue;
 
 
-@property (nonatomic, strong, nullable) NSNumber *montlyRentDue;
+@property (nonatomic, strong, nonnull) NSString *startDate;
 
 
-@property (nonatomic, strong, nullable) NSString *startDate;
+@property (nonatomic, strong, nonnull) NSString *endDate;
 
 
-@property (nonatomic, strong, nullable) NSString *endDate;
+@property (nonatomic, strong, nonnull) NSString *renewalOfFirstTerm;
 
 
-@property (nonatomic, strong, nullable) NSString *renewalOfFirstTerm;
+@property (nonatomic, strong, nonnull) NSString *rentalAgreementCopy;
 
 
-@property (nonatomic, strong, nullable) NSString *rentalAgreementCopy;
-
-
-@property (nonatomic, strong, nullable) NSNumber *advance;
+@property (nonatomic, strong, nonnull) NSNumber *advance;
 
 
 @end

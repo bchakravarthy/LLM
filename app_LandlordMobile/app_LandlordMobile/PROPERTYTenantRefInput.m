@@ -20,7 +20,6 @@
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{
-             @"tenantReferenceId": @"tenant_reference_id",
              @"tenantId": @"tenant_id",
              @"ownerId": @"owner_id",
              @"firstName": @"first_name",
@@ -31,7 +30,7 @@
              @"state": @"state",
              @"zip": @"zip",
              @"contactEmail": @"contact_email",
-             @"countyOrDistrct": @"county_or_distrct"
+             @"countyOrDistrict": @"county_or_district"
              };
 }
 

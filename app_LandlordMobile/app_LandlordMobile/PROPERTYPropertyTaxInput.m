@@ -20,7 +20,6 @@
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{
-             @"propertyTaxId": @"property_tax_id",
              @"propertyId": @"property_id",
              @"ownerId": @"owner_id",
              @"annualTax": @"annual_tax",

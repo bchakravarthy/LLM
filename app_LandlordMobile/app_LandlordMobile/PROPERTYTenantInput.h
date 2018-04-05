@@ -20,25 +20,22 @@
  
 @interface PROPERTYTenantInput : AWSModel
 
-@property (nonatomic, strong, nullable) NSNumber *tenantId;
+@property (nonatomic, strong, nonnull) NSNumber *ownerId;
 
 
-@property (nonatomic, strong, nullable) NSNumber *ownerId;
+@property (nonatomic, strong, nonnull) NSNumber *propertyId;
 
 
-@property (nonatomic, strong, nullable) NSNumber *propertyId;
+@property (nonatomic, strong, nonnull) NSString *firstName;
 
 
-@property (nonatomic, strong, nullable) NSString *firstName;
+@property (nonatomic, strong, nonnull) NSString *lastName;
 
 
-@property (nonatomic, strong, nullable) NSString *lastName;
+@property (nonatomic, strong, nonnull) NSString *age;
 
 
-@property (nonatomic, strong, nullable) NSString *age;
-
-
-@property (nonatomic, strong, nullable) NSNumber *contactEmail;
+@property (nonatomic, strong, nonnull) NSString *contactEmail;
 
 
 @end
