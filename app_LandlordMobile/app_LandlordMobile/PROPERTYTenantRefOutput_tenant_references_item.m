@@ -14,22 +14,26 @@
  */
  
 
-#import "PROPERTYPropertyOutput_properties_item.h"
+#import "PROPERTYTenantRefOutput_tenant_references_item.h"
 
-@implementation PROPERTYPropertyOutput_properties_item
+@implementation PROPERTYTenantRefOutput_tenant_references_item
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{
-             @"propertyId": @"property_id",
+             @"tenantReferenceId": @"tenant_reference_id",
+             @"tenantId": @"tenant_id",
              @"ownerId": @"owner_id",
+             @"firstName": @"first_name",
+             @"lastName": @"last_name",
              @"addressLine1": @"address_line_1",
              @"addressLine2": @"address_line_2",
              @"city": @"city",
              @"state": @"state",
-             @"zip": @"zip",
              @"countyOrDistrict": @"county_or_district",
-             @"_description": @"description",
-             @"pictures": @"pictures"
+             @"zip": @"zip",
+             @"contactEmail": @"contact_email",
+             @"contactPhone": @"contact_phone",
+             @"primaryContact": @"primary_contact"
              };
 }
 
