@@ -20,25 +20,22 @@
  
 @interface PROPERTYPropertyMaintExpInput : AWSModel
 
-@property (nonatomic, strong, nullable) NSNumber *propertyMaintanenceExpenseId;
+@property (nonatomic, strong, nonnull) NSNumber *propertyId;
 
 
-@property (nonatomic, strong, nullable) NSNumber *propertyId;
+@property (nonatomic, strong, nonnull) NSNumber *ownerId;
 
 
-@property (nonatomic, strong, nullable) NSNumber *ownerId;
+@property (nonatomic, strong, nonnull) NSNumber *maintanenceExpenseId;
 
 
-@property (nonatomic, strong, nullable) NSNumber *maintanenceExpenseId;
+@property (nonatomic, strong, nonnull) NSNumber *expenseAmount;
 
 
-@property (nonatomic, strong, nullable) NSNumber *expenseAmount;
+@property (nonatomic, strong, nonnull) NSString *receiptDate;
 
 
-@property (nonatomic, strong, nullable) NSString *receiptDate;
-
-
-@property (nonatomic, strong, nullable) NSString *receiptCopy;
+@property (nonatomic, strong, nonnull) NSString *receiptCopy;
 
 
 @end

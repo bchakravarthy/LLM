@@ -20,19 +20,12 @@
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{
-             @"tenantReferenceId": @"tenant_reference_id",
-             @"tenantId": @"tenant_id",
-             @"ownerId": @"owner_id",
-             @"firstName": @"first_name",
-             @"lastName": @"last_name",
-             @"addressLine1": @"address_line_1",
-             @"addressLine2": @"address_line_2",
-             @"city": @"city",
-             @"state": @"state",
-             @"zip": @"zip",
-             @"contactEmail": @"contact_email",
-             @"countyOrDistrct": @"county_or_distrct"
+             @"tenantReferences": @"tenant_references"
              };
+}
+
++ (NSValueTransformer *)tenantReferencesJSONTransformer {
+	return [NSValueTransformer awsmtl_JSONArrayTransformerWithModelClass:[PROPERTYTenantRefOutput_tenant_references_item class]];
 }
 
 @end

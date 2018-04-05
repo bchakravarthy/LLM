@@ -20,22 +20,19 @@
  
 @interface PROPERTYTenantIncomeInput : AWSModel
 
-@property (nonatomic, strong, nullable) NSNumber *tenantIncomeExpenseId;
+@property (nonatomic, strong, nonnull) NSNumber *tenantId;
 
 
-@property (nonatomic, strong, nullable) NSNumber *tenantId;
+@property (nonatomic, strong, nonnull) NSNumber *ownerId;
 
 
-@property (nonatomic, strong, nullable) NSNumber *propertyOwnerId;
+@property (nonatomic, strong, nonnull) NSNumber *propertyOwnerId;
 
 
-@property (nonatomic, strong, nullable) NSNumber *ownerId;
+@property (nonatomic, strong, nonnull) NSNumber *monthlyIncome;
 
 
-@property (nonatomic, strong, nullable) NSNumber *monthlyIncome;
-
-
-@property (nonatomic, strong, nullable) NSNumber *monthlyExpenses;
+@property (nonatomic, strong, nonnull) NSNumber *monthlyExpenses;
 
 
 @end

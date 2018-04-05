@@ -16,44 +16,12 @@
 
 #import <Foundation/Foundation.h>
 #import <AWSCore/AWSCore.h>
+#import "PROPERTYTenantRefOutput_tenant_references_item.h"
 
  
 @interface PROPERTYTenantRefOutput : AWSModel
 
-@property (nonatomic, strong, nullable) NSNumber *tenantReferenceId;
-
-
-@property (nonatomic, strong, nullable) NSNumber *tenantId;
-
-
-@property (nonatomic, strong, nullable) NSNumber *ownerId;
-
-
-@property (nonatomic, strong, nullable) NSString *firstName;
-
-
-@property (nonatomic, strong, nullable) NSString *lastName;
-
-
-@property (nonatomic, strong, nullable) NSString *addressLine1;
-
-
-@property (nonatomic, strong, nullable) NSString *addressLine2;
-
-
-@property (nonatomic, strong, nullable) NSString *city;
-
-
-@property (nonatomic, strong, nullable) NSString *state;
-
-
-@property (nonatomic, strong, nullable) NSString *zip;
-
-
-@property (nonatomic, strong, nullable) NSNumber *contactEmail;
-
-
-@property (nonatomic, strong, nullable) NSString *countyOrDistrct;
+@property (nonatomic, strong, nullable) NSArray *tenantReferences;
 
 
 @end

@@ -20,25 +20,22 @@
  
 @interface PROPERTYPropertyOwnerInput : AWSModel
 
-@property (nonatomic, strong, nullable) NSNumber *ownerId;
+@property (nonatomic, strong, nonnull) NSString *ownerName;
 
 
-@property (nonatomic, strong, nullable) NSString *ownerName;
+@property (nonatomic, strong, nonnull) NSString *email;
 
 
-@property (nonatomic, strong, nullable) NSString *email;
+@property (nonatomic, strong, nonnull) NSString *password;
 
 
-@property (nonatomic, strong, nullable) NSString *password;
+@property (nonatomic, strong, nonnull) NSString *createdDate;
 
 
-@property (nonatomic, strong, nullable) NSString *createdDate;
+@property (nonatomic, strong, nonnull) NSString *activatedYN;
 
 
-@property (nonatomic, strong, nullable) NSString *activatedYN;
-
-
-@property (nonatomic, strong, nullable) NSString *profileMemo;
+@property (nonatomic, strong, nonnull) NSString *profileMemo;
 
 
 @end

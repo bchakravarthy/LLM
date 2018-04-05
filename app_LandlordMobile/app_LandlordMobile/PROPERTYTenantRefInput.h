@@ -20,40 +20,43 @@
  
 @interface PROPERTYTenantRefInput : AWSModel
 
-@property (nonatomic, strong, nullable) NSNumber *tenantReferenceId;
+@property (nonatomic, strong, nonnull) NSNumber *tenantId;
 
 
-@property (nonatomic, strong, nullable) NSNumber *tenantId;
+@property (nonatomic, strong, nonnull) NSNumber *ownerId;
 
 
-@property (nonatomic, strong, nullable) NSNumber *ownerId;
+@property (nonatomic, strong, nonnull) NSString *firstName;
 
 
-@property (nonatomic, strong, nullable) NSString *firstName;
+@property (nonatomic, strong, nonnull) NSString *lastName;
 
 
-@property (nonatomic, strong, nullable) NSString *lastName;
+@property (nonatomic, strong, nonnull) NSString *addressLine1;
 
 
-@property (nonatomic, strong, nullable) NSString *addressLine1;
+@property (nonatomic, strong, nonnull) NSString *addressLine2;
 
 
-@property (nonatomic, strong, nullable) NSString *addressLine2;
+@property (nonatomic, strong, nonnull) NSString *city;
 
 
-@property (nonatomic, strong, nullable) NSString *city;
+@property (nonatomic, strong, nonnull) NSString *state;
 
 
-@property (nonatomic, strong, nullable) NSString *state;
+@property (nonatomic, strong, nonnull) NSString *zip;
 
 
-@property (nonatomic, strong, nullable) NSString *zip;
+@property (nonatomic, strong, nonnull) NSString *contactEmail;
 
 
-@property (nonatomic, strong, nullable) NSNumber *contactEmail;
+@property (nonatomic, strong, nonnull) NSString *contactPhone;
 
 
-@property (nonatomic, strong, nullable) NSString *countyOrDistrct;
+@property (nonatomic, strong, nonnull) NSString *primaryContact;
+
+
+@property (nonatomic, strong, nonnull) NSString *countyOrDistrict;
 
 
 @end

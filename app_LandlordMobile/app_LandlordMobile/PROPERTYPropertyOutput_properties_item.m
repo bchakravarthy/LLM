@@ -25,7 +25,7 @@
              @"addressLine1": @"address_line_1",
              @"addressLine2": @"address_line_2",
              @"city": @"city",
-             @"st": @"st",
+             @"state": @"state",
              @"zip": @"zip",
              @"countyOrDistrict": @"county_or_district",
              @"_description": @"description",

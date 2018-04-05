@@ -20,12 +20,11 @@
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{
-             @"rentalAgreementId": @"rental_agreement_id",
              @"ownerId": @"owner_id",
              @"tenantId": @"tenant_id",
              @"numberOfOccupants": @"number_of_occupants",
-             @"montlyRent": @"montly_rent",
-             @"montlyRentDue": @"montly_rent_due",
+             @"monthlyRent": @"monthly_rent",
+             @"monthlyRentDue": @"monthly_rent_due",
              @"startDate": @"start_date",
              @"endDate": @"end_date",
              @"renewalOfFirstTerm": @"renewal_of_first_term",

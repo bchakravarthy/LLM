@@ -20,34 +20,31 @@
  
 @interface PROPERTYPropertyInput : AWSModel
 
-@property (nonatomic, strong, nullable) NSNumber *propertyId;
+@property (nonatomic, strong, nonnull) NSNumber *ownerId;
 
 
-@property (nonatomic, strong, nullable) NSNumber *ownerId;
+@property (nonatomic, strong, nonnull) NSString *addressLine1;
 
 
-@property (nonatomic, strong, nullable) NSString *addressLine1;
+@property (nonatomic, strong, nonnull) NSString *addressLine2;
 
 
-@property (nonatomic, strong, nullable) NSString *addressLine2;
+@property (nonatomic, strong, nonnull) NSString *city;
 
 
-@property (nonatomic, strong, nullable) NSString *city;
+@property (nonatomic, strong, nonnull) NSString *state;
 
 
-@property (nonatomic, strong, nullable) NSString *st;
+@property (nonatomic, strong, nonnull) NSString *zip;
 
 
-@property (nonatomic, strong, nullable) NSString *zip;
+@property (nonatomic, strong, nonnull) NSString *countyOrDistrict;
 
 
-@property (nonatomic, strong, nullable) NSString *countyOrDistrict;
+@property (nonatomic, strong, nonnull) NSString *_description;
 
 
-@property (nonatomic, strong, nullable) NSString *_description;
-
-
-@property (nonatomic, strong, nullable) NSString *pictures;
+@property (nonatomic, strong, nonnull) NSString *pictures;
 
 
 @end

@@ -18,12 +18,21 @@
 #import <AWSCore/AWSCore.h>
 
  
-@interface PROPERTYPropertyOutput_properties_item : AWSModel
+@interface PROPERTYTenantRefOutput_tenant_references_item : AWSModel
 
-@property (nonatomic, strong, nullable) NSNumber *propertyId;
+@property (nonatomic, strong, nullable) NSNumber *tenantReferenceId;
+
+
+@property (nonatomic, strong, nullable) NSNumber *tenantId;
 
 
 @property (nonatomic, strong, nullable) NSNumber *ownerId;
+
+
+@property (nonatomic, strong, nullable) NSString *firstName;
+
+
+@property (nonatomic, strong, nullable) NSString *lastName;
 
 
 @property (nonatomic, strong, nullable) NSString *addressLine1;
@@ -38,16 +47,19 @@
 @property (nonatomic, strong, nullable) NSString *state;
 
 
-@property (nonatomic, strong, nullable) NSString *zip;
-
-
 @property (nonatomic, strong, nullable) NSString *countyOrDistrict;
 
 
-@property (nonatomic, strong, nullable) NSString *_description;
+@property (nonatomic, strong, nullable) NSString *zip;
 
 
-@property (nonatomic, strong, nullable) NSString *pictures;
+@property (nonatomic, strong, nullable) NSNumber *contactEmail;
+
+
+@property (nonatomic, strong, nullable) NSString *contactPhone;
+
+
+@property (nonatomic, strong, nullable) NSString *primaryContact;
 
 
 @end

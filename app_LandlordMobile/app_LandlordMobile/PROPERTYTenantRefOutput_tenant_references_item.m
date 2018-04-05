@@ -14,16 +14,26 @@
  */
  
 
-#import "PROPERTYTenantOccupationInput.h"
+#import "PROPERTYTenantRefOutput_tenant_references_item.h"
 
-@implementation PROPERTYTenantOccupationInput
+@implementation PROPERTYTenantRefOutput_tenant_references_item
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{
+             @"tenantReferenceId": @"tenant_reference_id",
              @"tenantId": @"tenant_id",
              @"ownerId": @"owner_id",
-             @"employer": @"employer",
-             @"title": @"title"
+             @"firstName": @"first_name",
+             @"lastName": @"last_name",
+             @"addressLine1": @"address_line_1",
+             @"addressLine2": @"address_line_2",
+             @"city": @"city",
+             @"state": @"state",
+             @"countyOrDistrict": @"county_or_district",
+             @"zip": @"zip",
+             @"contactEmail": @"contact_email",
+             @"contactPhone": @"contact_phone",
+             @"primaryContact": @"primary_contact"
              };
 }
 
