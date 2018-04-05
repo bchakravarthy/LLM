@@ -32,7 +32,7 @@
 @property (nonatomic, strong, nonnull) NSString *lastName;
 
 
-@property (nonatomic, strong, nonnull) NSString *age;
+@property (nonatomic, strong, nonnull) NSNumber *age;
 
 
 @property (nonatomic, strong, nonnull) NSString *contactEmail;

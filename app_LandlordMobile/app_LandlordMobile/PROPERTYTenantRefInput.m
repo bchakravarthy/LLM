@@ -30,6 +30,8 @@
              @"state": @"state",
              @"zip": @"zip",
              @"contactEmail": @"contact_email",
+             @"contactPhone": @"contact_phone",
+             @"primaryContact": @"primary_contact",
              @"countyOrDistrict": @"county_or_district"
              };
 }

@@ -50,7 +50,13 @@
 @property (nonatomic, strong, nonnull) NSString *contactEmail;
 
 
-@property (nonatomic, strong, nullable) NSString *countyOrDistrict;
+@property (nonatomic, strong, nonnull) NSString *contactPhone;
+
+
+@property (nonatomic, strong, nonnull) NSString *primaryContact;
+
+
+@property (nonatomic, strong, nonnull) NSString *countyOrDistrict;
 
 
 @end
