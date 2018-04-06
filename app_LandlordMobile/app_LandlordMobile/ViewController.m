@@ -618,5 +618,45 @@
     // Dispose of any resources that can be recreated.
 }
 
+// MARK: Actions
+- (IBAction)addMaintExpTypeBtnPress:(id)sender {
+    
+    NSNumber *OwnerId = self.addMaintExpTypeOwnerId.text;
+    NSString *Descrp = self.addMaintExpTypeDescp.text;
+    
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Assign input values to be sent to Dynamo DB via API call
+    PROPERTYMaintenanceExpTypeInput *input = [[PROPERTYMaintenanceExpTypeInput alloc] init];
+    input.ownerId=OwnerId;
+    input._description=Descrp;
+    
+    //Invoke POST on employee API
+    [[client maintenanceExpensePost:input] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+        
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        
+        if (task.result) {
+            
+            //You are here, so method invocation is a success
+            
+            printf("Success....\n");
+            
+            NSLog(@"Return from API call ... Your maintenance expense type has been saved... Please check in the database...\n");
+            
+        }
+        
+        return nil;
+    }];
+    
+    [self.addMaintExpTypeDescp resignFirstResponder];
+    
+}
+
+
 
 @end

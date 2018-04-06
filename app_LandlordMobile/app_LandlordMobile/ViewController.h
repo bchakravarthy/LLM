@@ -17,6 +17,12 @@
 // MARK: Register
 
 
+// MARK: Add property
+
+
+// MARK: Maintenance Expense Types
+@property (weak, nonatomic) IBOutlet UITextField *addMaintExpTypeOwnerId;
+@property (weak, nonatomic) IBOutlet UITextField *addMaintExpTypeDescp;
 
 
 @end
