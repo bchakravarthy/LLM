@@ -15,6 +15,7 @@
 
 @implementation ViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -26,7 +27,7 @@
     [AWSServiceManager defaultServiceManager].defaultServiceConfiguration = configuration;
     
     //[self insertExpenseType];
-    [self insertProperty];
+    //[self insertProperty];
     //[self insertPropertyMaintExp];
     //[self insertPropertyGeneralExp];
     //[self insertPropertyMortgageLoan];
@@ -41,6 +42,8 @@
     //[self insertTenant];
     //[self getExpenseType];
 }
+
+// MARK: Test cases for POST with hard code input value
 
 //post for maint exp
 - (void) insertExpenseType {

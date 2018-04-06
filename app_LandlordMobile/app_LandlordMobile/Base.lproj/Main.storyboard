@@ -59,6 +59,10 @@
                         <viewLayoutGuide key="safeArea" id="NSJ-5x-leW"/>
                     </view>
                     <navigationItem key="navigationItem" id="ur3-Dk-JMj"/>
+                    <connections>
+                        <outlet property="login_password" destination="L2M-ke-YIp" id="IVC-pJ-95G"/>
+                        <outlet property="login_username" destination="Qni-FK-rjB" id="8RV-S9-qhV"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="37.600000000000001" y="33.733133433283363"/>
@@ -122,8 +126,106 @@
             </objects>
             <point key="canvasLocation" x="842" y="34"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="8VH-zC-L8s">
+            <objects>
+                <viewController id="szG-7o-OEP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vuD-fa-7mO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="j6e-48-Lmg">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="add prop" translatesAutoresizingMaskIntoConstraints="NO" id="XcO-K6-E84">
+                                <rect key="frame" x="118" y="205" width="139" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sJC-9R-g5Y" userLabel="Register">
+                                <rect key="frame" x="0.0" y="625" width="375" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="cancel_login"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iy9-9F-dpZ" userLabel="Login">
+                                <rect key="frame" x="68" y="575" width="238" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Add btn"/>
+                                <connections>
+                                    <action selector="addPropBtnPressed:" destination="GdA-Uh-nhe" eventType="touchUpInside" id="Prn-st-M35"/>
+                                    <action selector="addPropertyBtnPressed:" destination="GdA-Uh-nhe" eventType="touchUpInside" id="vir-XL-Pcq"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Address Line 1" textAlignment="center" minimumFontSize="17" disabledBackground="Username" translatesAutoresizingMaskIntoConstraints="NO" id="h5x-sV-9bz" userLabel="addr line 1">
+                                <rect key="frame" x="68" y="256" width="238" height="42"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.84118181467056274" green="0.90102249383926392" blue="0.96766489744186401" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Address Line 2" textAlignment="center" minimumFontSize="17" disabledBackground="Username" translatesAutoresizingMaskIntoConstraints="NO" id="rrH-9X-Vew" userLabel="addr line 2">
+                                <rect key="frame" x="68" y="306" width="238" height="42"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="City" textAlignment="center" minimumFontSize="17" disabledBackground="Username" translatesAutoresizingMaskIntoConstraints="NO" id="Avw-pf-DiB" userLabel="city">
+                                <rect key="frame" x="68" y="356" width="114" height="42"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Zip" textAlignment="center" minimumFontSize="17" disabledBackground="Username" translatesAutoresizingMaskIntoConstraints="NO" id="H6n-ZN-0t2" userLabel="zip">
+                                <rect key="frame" x="68" y="406" width="114" height="42"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="County" textAlignment="center" minimumFontSize="17" disabledBackground="Username" translatesAutoresizingMaskIntoConstraints="NO" id="nce-nD-YqE" userLabel="county">
+                                <rect key="frame" x="192" y="406" width="114" height="42"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="State" textAlignment="center" minimumFontSize="17" disabledBackground="Username" translatesAutoresizingMaskIntoConstraints="NO" id="mD3-mI-jxq" userLabel="state">
+                                <rect key="frame" x="190" y="356" width="116" height="42"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="Vjp-F5-dYa">
+                                <rect key="frame" x="47" y="113" width="281" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X35-cT-F9h">
+                                <rect key="frame" x="107" y="463" width="161" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="image btn"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="9Jy-qu-xaa"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RvZ-f8-qXL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="GdA-Uh-nhe" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1660" y="33.733133433283363"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Add btn" width="238" height="42"/>
         <image name="Login btn" width="238" height="42"/>
         <image name="Logo" width="281" height="28"/>
         <image name="Password" width="238" height="42"/>
@@ -131,7 +233,10 @@
         <image name="Register btn" width="238" height="42"/>
         <image name="User name" width="238" height="42"/>
         <image name="Username" width="16" height="16"/>
+        <image name="add prop" width="184" height="31"/>
         <image name="back_login" width="375" height="44"/>
         <image name="bg" width="375" height="667"/>
+        <image name="cancel_login" width="375" height="44"/>
+        <image name="image btn" width="161" height="51"/>
     </resources>
 </document>

@@ -1,4 +1,4 @@
-//
+ //
 //  ViewController.h
 //  app_LandlordMobile
 //
@@ -9,6 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+
+// MARK: Login
+@property (weak, nonatomic) IBOutlet UITextField *login_username;
+@property (weak, nonatomic) IBOutlet UITextField *login_password;
+
+// MARK: Register
+
+
 
 
 @end
