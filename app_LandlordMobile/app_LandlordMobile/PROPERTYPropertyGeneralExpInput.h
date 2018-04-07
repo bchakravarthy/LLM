@@ -29,9 +29,6 @@
 @property (nonatomic, strong, nonnull) NSNumber *monthlyCondoFee;
 
 
-@property (nonatomic, strong, nonnull) NSNumber *monthlyHomeFee;
-
-
 @property (nonatomic, strong, nonnull) NSNumber *yearlyPropertyInsurance;
 
 

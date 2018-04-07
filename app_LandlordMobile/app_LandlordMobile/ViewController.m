@@ -29,7 +29,7 @@
     //[self insertExpenseType];
     //[self insertProperty];
     //[self insertPropertyMaintExp];
-    //[self insertPropertyGeneralExp];
+    [self insertPropertyGeneralExp];
     //[self insertPropertyMortgageLoan];
     //[self insertPropertyOwner];
     //[self insertPropertyTax];
@@ -40,7 +40,7 @@
     //[self insertTenantOccupation];
     //[self insertTenantReferences];
     //[self insertTenant];
-    [self getExpenseType];
+    //[self getExpenseType];
 }
 
 // MARK: Test cases for POST with hard code input value
@@ -201,9 +201,8 @@
     
     propertyGeneralInput.propertyId = [NSNumber numberWithInt:1];
     propertyGeneralInput.ownerId = [NSNumber numberWithInt:1];
-    propertyGeneralInput.monthlyHomeFee = [NSNumber numberWithInt:1];
     propertyGeneralInput.monthlyCondoFee = [NSNumber numberWithInt:1];
-    propertyGeneralInput.monthlyHomeWarranty = [NSNumber numberWithInt:1];
+    propertyGeneralInput.monthlyHomeWarranty = [NSNumber numberWithInt:2];
     propertyGeneralInput.yearlyPropertyInsurance = [NSNumber numberWithInt:1];
     propertyGeneralInput.receiptCopy = @"Test from Nafisa";
 
