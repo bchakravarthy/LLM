@@ -39,7 +39,7 @@
     //[self insertTenantIncomeExpenses];
     //[self insertTenantOccupation];
     //[self insertTenantReferences];
-    //[self insertTenant];
+    [self insertTenant];
     //[self getExpenseType];
 }
 
@@ -84,8 +84,7 @@
     PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
     
     //Invoke GET on API
-    [[client maintenanceExpenseGet] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
-        
+    [[client maintenanceExpenseGet] continueWithBlock:^id(AWSTask *task){
         if (task.error) {
             NSLog(@"Error: %@", task.error);
             return nil;
@@ -95,20 +94,18 @@
             printf("Success....\n");
             //Convert result object to maint result
             
-            PROPERTYMaintenanceExpTypeOutput *result_var;
+            PROPERTYMaintenanceExpTypeResult *result_var;
             result_var=task.result;
             //Obtain array of maint exp
-            
-            NSArray *arrData = result_var.maintenanceExpenseTypes;
+            NSArray *arrData = result_var.output.maintenanceExpenseTypes;
             long cnt;
             cnt = arrData.count;
             //Print out count of maint exp
+           NSLog(@"Number of maintenance expenses %lu\n",cnt);
             
-            NSLog(@"Number of maintenance expenses %lu\n",cnt);
-            
-            //Print out each employee details to the console
+            //Print out each maint exp details to the console
             for (id element in arrData){
-                NSLog(@"%@",element );
+                NSLog(@"%@", element);
             }
         }
         return nil;
@@ -582,9 +579,12 @@
     tenantInput.ownerId=[NSNumber numberWithInt:1];
     tenantInput.firstName = @"Nafisa";
     tenantInput.lastName = @"Hasan";
+    tenantInput.middleName = @"Hasan2";
+    tenantInput.age = [NSNumber numberWithInt:100];
     tenantInput.propertyId = [NSNumber numberWithInt:1];
     tenantInput.contactEmail = @"nafisa@gmail.com";
-    tenantInput.age=[NSNumber numberWithInt:22];
+    tenantInput.contactPhone = @"6145661234";
+    tenantInput.primaryContact = @"dad";
     
     
     //Invoke POST on employee API

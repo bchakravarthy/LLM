@@ -14,23 +14,18 @@
  */
  
 
-#import "PROPERTYTenantOutput_tenants_item.h"
+#import "PROPERTYMaintenanceExpTypeResult.h"
 
-@implementation PROPERTYTenantOutput_tenants_item
+@implementation PROPERTYMaintenanceExpTypeResult
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{
-             @"tenantId": @"tenant_id",
-             @"ownerId": @"owner_id",
-             @"propertyId": @"property_id",
-             @"firstName": @"first_name",
-             @"lastName": @"last_name",
-             @"middleName": @"middle_name",
-             @"age": @"age",
-             @"contactEmail": @"contact_email",
-             @"contactPhone": @"contact_phone",
-             @"primaryContact": @"primary_contact"
+             @"output": @"Output"
              };
+}
+
++ (NSValueTransformer *)outputJSONTransformer {
+    return [NSValueTransformer awsmtl_JSONDictionaryTransformerWithModelClass:[PROPERTYMaintenanceExpTypeOutput class]];
 }
 
 @end

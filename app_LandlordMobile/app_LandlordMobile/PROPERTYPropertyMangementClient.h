@@ -22,7 +22,7 @@
 #import "PROPERTYEmpty.h"
 #import "PROPERTYPropertyGeneralExpOutput.h"
 #import "PROPERTYPropertyGeneralExpInput.h"
-#import "PROPERTYMaintenanceExpTypeOutput.h"
+#import "PROPERTYMaintenanceExpTypeResult.h"
 #import "PROPERTYMaintenanceExpTypeInput.h"
 #import "PROPERTYPropertyMaintExpOutput.h"
 #import "PROPERTYPropertyMaintExpInput.h"
@@ -252,7 +252,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  
  
- return type: PROPERTYMaintenanceExpTypeOutput *
+ return type: PROPERTYMaintenanceExpTypeResult *
  */
 - (AWSTask *)maintenanceExpenseGet;
 

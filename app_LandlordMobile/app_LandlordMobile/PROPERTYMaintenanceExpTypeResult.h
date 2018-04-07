@@ -14,22 +14,14 @@
  */
  
 
-#import "PROPERTYTenantInput.h"
+#import <Foundation/Foundation.h>
+#import <AWSCore/AWSCore.h>
+#import "PROPERTYMaintenanceExpTypeOutput.h"
 
-@implementation PROPERTYTenantInput
+ 
+@interface PROPERTYMaintenanceExpTypeResult : AWSModel
 
-+ (NSDictionary *)JSONKeyPathsByPropertyKey {
-    return @{
-             @"ownerId": @"owner_id",
-             @"propertyId": @"property_id",
-             @"firstName": @"first_name",
-             @"middleName": @"middle_name",
-             @"lastName": @"last_name",
-             @"age": @"age",
-             @"contactEmail": @"contact_email",
-             @"contactPhone": @"contact_phone",
-             @"primaryContact": @"primary_contact"
-             };
-}
+@property (nonatomic, strong, nullable) PROPERTYMaintenanceExpTypeOutput *output;
+
 
 @end
