@@ -204,7 +204,6 @@
     
     propertyGeneralInput.propertyId = [NSNumber numberWithInt:1];
     propertyGeneralInput.ownerId = [NSNumber numberWithInt:1];
-    propertyGeneralInput.monthlyHomeFee = [NSNumber numberWithInt:1];
     propertyGeneralInput.monthlyCondoFee = [NSNumber numberWithInt:1];
     propertyGeneralInput.monthlyHomeWarranty = [NSNumber numberWithInt:1];
     propertyGeneralInput.yearlyPropertyInsurance = [NSNumber numberWithInt:1];
@@ -893,6 +892,141 @@
     
 }
 
+- (IBAction)addPropTaxBtnPress:(id)sender {
+    
+    NSNumber *PropertyId = self.addPropTaxPropId.text;
+    NSNumber *OwnerId = self.addPropTaxOwnerId.text;
+    NSNumber *Year  = self.addPropTaxYear.text;
+    NSNumber *YearPaid = self.addPropTaxYearPaid.text;
+    NSNumber *AnnualTax = self.addPropTaxAnnualTax.text;
+    
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Assign input values to be sent to Dynamo DB via API call
+    PROPERTYPropertyTaxInput *propertyTaxInput = [[PROPERTYPropertyTaxInput alloc] init];
+    propertyTaxInput.propertyId = PropertyId;
+    propertyTaxInput.ownerId = OwnerId;
+    propertyTaxInput.year = Year;
+    propertyTaxInput.yearPaid = YearPaid;
+    propertyTaxInput.annualTax = AnnualTax;
+    
+    //Invoke POST on employee API
+    [[client propTaxPost:propertyTaxInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+        
+        
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        
+        if (task.result) {
+            
+            //You are here, so method invocation is a success
+            
+            printf("Success....\n");
+            
+            NSLog(@"Return from API call. Your property tax has been saved. Please check in the database.\n");
+            
+        }
+        
+        return nil;
+    }];
+    
+    [self.addPropTaxYearPaid resignFirstResponder];
+    
+}
+
+
+- (IBAction)addPropGenExpBtnPress:(id)sender {
+    
+    NSNumber *PropertyId = self.addPropGenExpPropId.text;
+    NSNumber *OwnerId = self.addPropGenExpOwnerId.text;
+    NSNumber *MonthlyFee = self.addPropGenExpMonthlyFee.text;
+    NSNumber *MonthlyWarranty = self.addPropGenExpWarranty.text;
+    NSNumber *YearlyInsurance = self.addPropGenExpYearlyIns.text;
+    NSString *ReceiptCopy = self.addPropGenExpDescrip.text;
+    
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Assign input values to be sent to Dynamo DB via API call
+    PROPERTYPropertyGeneralExpInput *propertyGeneralInput = [[PROPERTYPropertyGeneralExpInput alloc] init];
+    
+    propertyGeneralInput.propertyId = PropertyId;
+    propertyGeneralInput.ownerId = OwnerId;
+    propertyGeneralInput.monthlyCondoFee = MonthlyFee;
+    propertyGeneralInput.monthlyHomeWarranty = MonthlyWarranty;
+    propertyGeneralInput.yearlyPropertyInsurance = YearlyInsurance;
+    propertyGeneralInput.receiptCopy = ReceiptCopy;
+    
+    
+    
+    //Invoke POST on employee API
+    [[client generalExpensesPost:propertyGeneralInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+        
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        
+        if (task.result) {
+            
+            //You are here, so method invocation is a success
+            
+            printf("Success....\n");
+            
+            NSLog(@"Return from API call. Your property general expense has been saved. Please check in the database.\n");
+            
+        }
+        
+        return nil;
+    }];
+    
+    [self.addPropGenExpDescrip resignFirstResponder];
+    
+}
+
+
+- (IBAction)addTenantBgCheckBtnPress:(id)sender {
+    
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Assign input values to be sent to Dynamo DB via API call
+    PROPERTYTenantBackgroundInput *backgroundCheckInput = [[PROPERTYTenantBackgroundInput alloc] init];
+    
+    backgroundCheckInput.tenantId=[NSNumber numberWithInt:1];
+    backgroundCheckInput.ownerId=[NSNumber numberWithInt:1];
+    backgroundCheckInput.creditPassedYN=@"Y";
+    backgroundCheckInput.criminalPassed=@"Yes";
+    backgroundCheckInput.evictionPassedYN=[NSNumber numberWithInt:1];
+    backgroundCheckInput.recommendation=@"Tenant has clean credit";
+    
+    //Invoke POST on employee API
+    [[client backgroundCheckPost:backgroundCheckInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+        
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        
+        if (task.result) {
+            
+            //You are here, so method invocation is a success
+            
+            printf("Success....\n");
+            
+            NSLog(@"Return from API call.Tenant background check information has been saved. Please check in the database...\n");
+            
+        }
+        
+        return nil;
+    }];
+    
+    
+    
+}
 
 
 @end
