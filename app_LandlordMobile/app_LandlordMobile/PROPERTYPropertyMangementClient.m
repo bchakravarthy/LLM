@@ -25,7 +25,7 @@
 #import "PROPERTYEmpty.h"
 #import "PROPERTYPropertyGeneralExpOutput.h"
 #import "PROPERTYPropertyGeneralExpInput.h"
-#import "PROPERTYMaintenanceExpTypeOutput.h"
+#import "PROPERTYMaintenanceExpTypeResult.h"
 #import "PROPERTYMaintenanceExpTypeInput.h"
 #import "PROPERTYPropertyMaintExpOutput.h"
 #import "PROPERTYPropertyMaintExpInput.h"
@@ -327,7 +327,7 @@ static AWSSynchronizedMutableDictionary *_serviceClients = nil;
                    queryParameters:queryParameters
                   headerParameters:headerParameters
                               body:nil
-                     responseClass:[PROPERTYMaintenanceExpTypeOutput class]];
+                     responseClass:[PROPERTYMaintenanceExpTypeResult class]];
 }
 
 - (AWSTask *)maintenanceExpensePut:(PROPERTYMaintenanceExpTypeInput *)body {

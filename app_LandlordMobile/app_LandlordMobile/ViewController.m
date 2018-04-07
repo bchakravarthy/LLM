@@ -26,7 +26,7 @@
     [AWSServiceManager defaultServiceManager].defaultServiceConfiguration = configuration;
     
     //[self insertExpenseType];
-    [self insertProperty];
+    //[self insertProperty];
     //[self insertPropertyMaintExp];
     //[self insertPropertyGeneralExp];
     //[self insertPropertyMortgageLoan];
@@ -39,7 +39,7 @@
     //[self insertTenantOccupation];
     //[self insertTenantReferences];
     //[self insertTenant];
-    //[self getExpenseType];
+    [self getExpenseType];
 }
 
 //post for maint exp
@@ -82,7 +82,6 @@
     
     //Invoke GET on API
     [[client maintenanceExpenseGet] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
-        
         if (task.error) {
             NSLog(@"Error: %@", task.error);
             return nil;
@@ -92,20 +91,18 @@
             printf("Success....\n");
             //Convert result object to maint result
             
-            PROPERTYMaintenanceExpTypeOutput *result_var;
+            PROPERTYMaintenanceExpTypeResult *result_var;
             result_var=task.result;
             //Obtain array of maint exp
-            
-            NSArray *arrData = result_var.maintenanceExpenseTypes;
+            NSArray *arrData = result_var.output.maintenanceExpenseTypes;
             long cnt;
             cnt = arrData.count;
             //Print out count of maint exp
+           NSLog(@"Number of maintenance expenses %lu\n",cnt);
             
-            NSLog(@"Number of maintenance expenses %lu\n",cnt);
-            
-            //Print out each employee details to the console
+            //Print out each maint exp details to the console
             for (id element in arrData){
-                NSLog(@"%@",element );
+                NSLog(@"%@", element);
             }
         }
         return nil;
