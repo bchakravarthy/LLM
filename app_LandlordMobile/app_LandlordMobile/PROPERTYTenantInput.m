@@ -23,9 +23,12 @@
              @"ownerId": @"owner_id",
              @"propertyId": @"property_id",
              @"firstName": @"first_name",
+             @"middleName": @"middle_name",
              @"lastName": @"last_name",
              @"age": @"age",
-             @"contactEmail": @"contact_email"
+             @"contactEmail": @"contact_email",
+             @"contactPhone": @"contact_phone",
+             @"primaryContact": @"primary_contact"
              };
 }
 
