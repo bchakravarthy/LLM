@@ -1,4 +1,4 @@
-//
+ //
 //  ViewController.h
 //  app_LandlordMobile
 //
@@ -9,6 +9,20 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+
+// MARK: Login
+@property (weak, nonatomic) IBOutlet UITextField *login_username;
+@property (weak, nonatomic) IBOutlet UITextField *login_password;
+
+// MARK: Register
+
+
+// MARK: Add property
+
+
+// MARK: Maintenance Expense Types
+@property (weak, nonatomic) IBOutlet UITextField *addMaintExpTypeOwnerId;
+@property (weak, nonatomic) IBOutlet UITextField *addMaintExpTypeDescp;
 
 
 @end
