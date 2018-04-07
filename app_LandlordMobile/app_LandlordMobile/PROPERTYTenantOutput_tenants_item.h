@@ -35,10 +35,19 @@
 @property (nonatomic, strong, nullable) NSString *lastName;
 
 
+@property (nonatomic, strong, nullable) NSString *middleName;
+
+
 @property (nonatomic, strong, nullable) NSString *age;
 
 
 @property (nonatomic, strong, nullable) NSNumber *contactEmail;
+
+
+@property (nonatomic, strong, nullable) NSString *contactPhone;
+
+
+@property (nonatomic, strong, nullable) NSString *primaryContact;
 
 
 @end

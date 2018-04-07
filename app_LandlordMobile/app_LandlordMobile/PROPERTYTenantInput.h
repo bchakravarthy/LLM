@@ -29,6 +29,9 @@
 @property (nonatomic, strong, nonnull) NSString *firstName;
 
 
+@property (nonatomic, strong, nonnull) NSString *middleName;
+
+
 @property (nonatomic, strong, nonnull) NSString *lastName;
 
 
@@ -36,6 +39,12 @@
 
 
 @property (nonatomic, strong, nonnull) NSString *contactEmail;
+
+
+@property (nonatomic, strong, nonnull) NSString *contactPhone;
+
+
+@property (nonatomic, strong, nonnull) NSString *primaryContact;
 
 
 @end
