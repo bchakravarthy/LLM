@@ -39,8 +39,8 @@
     //[self insertTenantIncomeExpenses];
     //[self insertTenantOccupation];
     //[self insertTenantReferences];
-    [self insertTenant];
-    //[self getExpenseType];
+    //[self insertTenant];
+    [self getExpenseType];
 }
 
 // MARK: Test cases for POST with hard code input value
