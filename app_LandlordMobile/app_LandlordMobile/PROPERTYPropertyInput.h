@@ -20,6 +20,9 @@
  
 @interface PROPERTYPropertyInput : AWSModel
 
+@property (nonatomic, strong, nonnull) NSNumber *propertyId;
+
+
 @property (nonatomic, strong, nonnull) NSNumber *ownerId;
 
 

@@ -20,34 +20,34 @@
 #import <AWSCore/AWSSignature.h>
 #import <AWSCore/AWSSynchronizedMutableDictionary.h>
 
-#import "PROPERTYTenantBackgroundOutput.h"
+#import "PROPERTYTenantBackgroundResult.h"
 #import "PROPERTYTenantBackgroundInput.h"
 #import "PROPERTYEmpty.h"
-#import "PROPERTYPropertyGeneralExpOutput.h"
+#import "PROPERTYPropertyGeneralExpResult.h"
 #import "PROPERTYPropertyGeneralExpInput.h"
 #import "PROPERTYMaintenanceExpTypeResult.h"
 #import "PROPERTYMaintenanceExpTypeInput.h"
-#import "PROPERTYPropertyMaintExpOutput.h"
+#import "PROPERTYPropertyMaintExpResult.h"
 #import "PROPERTYPropertyMaintExpInput.h"
-#import "PROPERTYPropertyMortgageLoanOutput.h"
+#import "PROPERTYPropertyMortgageLoanResult.h"
 #import "PROPERTYPropertyMortgageLoanInput.h"
-#import "PROPERTYPropertyOwnerOutput.h"
+#import "PROPERTYPropertyOwnerResult.h"
 #import "PROPERTYPropertyOwnerInput.h"
-#import "PROPERTYPropertyTaxOutput.h"
+#import "PROPERTYPropertyTaxResult.h"
 #import "PROPERTYPropertyTaxInput.h"
-#import "PROPERTYPropertyOutput.h"
+#import "PROPERTYPropertyResult.h"
 #import "PROPERTYPropertyInput.h"
-#import "PROPERTYPurchaseDetailsOutput.h"
+#import "PROPERTYPurchaseDetailsResult.h"
 #import "PROPERTYPurchaseDetailsInput.h"
-#import "PROPERTYRentalAgreementOutput.h"
+#import "PROPERTYRentalAgreementResult.h"
 #import "PROPERTYRentalAgreementInput.h"
-#import "PROPERTYTenantOutput.h"
+#import "PROPERTYTenantResult.h"
 #import "PROPERTYTenantInput.h"
-#import "PROPERTYTenantIncomeOutput.h"
+#import "PROPERTYTenantIncomeResult.h"
 #import "PROPERTYTenantIncomeInput.h"
-#import "PROPERTYTenantOccupationOutput.h"
+#import "PROPERTYTenantOccupationResult.h"
 #import "PROPERTYTenantOccupationInput.h"
-#import "PROPERTYTenantRefOutput.h"
+#import "PROPERTYTenantRefResult.h"
 #import "PROPERTYTenantRefInput.h"
 
 @interface AWSAPIGatewayClient()
@@ -195,7 +195,7 @@ static AWSSynchronizedMutableDictionary *_serviceClients = nil;
                    queryParameters:queryParameters
                   headerParameters:headerParameters
                               body:nil
-                     responseClass:[PROPERTYTenantBackgroundOutput class]];
+                     responseClass:[PROPERTYTenantBackgroundResult class]];
 }
 
 - (AWSTask *)backgroundCheckPut:(PROPERTYTenantBackgroundInput *)body {
@@ -261,7 +261,7 @@ static AWSSynchronizedMutableDictionary *_serviceClients = nil;
                    queryParameters:queryParameters
                   headerParameters:headerParameters
                               body:nil
-                     responseClass:[PROPERTYPropertyGeneralExpOutput class]];
+                     responseClass:[PROPERTYPropertyGeneralExpResult class]];
 }
 
 - (AWSTask *)generalExpensesPut:(PROPERTYPropertyGeneralExpInput *)body {
@@ -393,7 +393,7 @@ static AWSSynchronizedMutableDictionary *_serviceClients = nil;
                    queryParameters:queryParameters
                   headerParameters:headerParameters
                               body:nil
-                     responseClass:[PROPERTYPropertyMaintExpOutput class]];
+                     responseClass:[PROPERTYPropertyMaintExpResult class]];
 }
 
 - (AWSTask *)propMaintExpensePut:(PROPERTYPropertyMaintExpInput *)body {
@@ -459,7 +459,7 @@ static AWSSynchronizedMutableDictionary *_serviceClients = nil;
                    queryParameters:queryParameters
                   headerParameters:headerParameters
                               body:nil
-                     responseClass:[PROPERTYPropertyMortgageLoanOutput class]];
+                     responseClass:[PROPERTYPropertyMortgageLoanResult class]];
 }
 
 - (AWSTask *)propMortgageLoanPut:(PROPERTYPropertyMortgageLoanInput *)body {
@@ -525,7 +525,7 @@ static AWSSynchronizedMutableDictionary *_serviceClients = nil;
                    queryParameters:queryParameters
                   headerParameters:headerParameters
                               body:nil
-                     responseClass:[PROPERTYPropertyOwnerOutput class]];
+                     responseClass:[PROPERTYPropertyOwnerResult class]];
 }
 
 - (AWSTask *)propOwnerPut:(PROPERTYPropertyOwnerInput *)body {
@@ -591,7 +591,7 @@ static AWSSynchronizedMutableDictionary *_serviceClients = nil;
                    queryParameters:queryParameters
                   headerParameters:headerParameters
                               body:nil
-                     responseClass:[PROPERTYPropertyTaxOutput class]];
+                     responseClass:[PROPERTYPropertyTaxResult class]];
 }
 
 - (AWSTask *)propTaxPut:(PROPERTYPropertyTaxInput *)body {
@@ -657,7 +657,7 @@ static AWSSynchronizedMutableDictionary *_serviceClients = nil;
                    queryParameters:queryParameters
                   headerParameters:headerParameters
                               body:nil
-                     responseClass:[PROPERTYPropertyOutput class]];
+                     responseClass:[PROPERTYPropertyResult class]];
 }
 
 - (AWSTask *)propertiesPut:(PROPERTYPropertyInput *)body {
@@ -723,7 +723,7 @@ static AWSSynchronizedMutableDictionary *_serviceClients = nil;
                    queryParameters:queryParameters
                   headerParameters:headerParameters
                               body:nil
-                     responseClass:[PROPERTYPurchaseDetailsOutput class]];
+                     responseClass:[PROPERTYPurchaseDetailsResult class]];
 }
 
 - (AWSTask *)purchaseDetailsPut:(PROPERTYPurchaseDetailsInput *)body {
@@ -789,7 +789,7 @@ static AWSSynchronizedMutableDictionary *_serviceClients = nil;
                    queryParameters:queryParameters
                   headerParameters:headerParameters
                               body:nil
-                     responseClass:[PROPERTYRentalAgreementOutput class]];
+                     responseClass:[PROPERTYRentalAgreementResult class]];
 }
 
 - (AWSTask *)rentalAgreementPut:(PROPERTYRentalAgreementInput *)body {
@@ -855,7 +855,7 @@ static AWSSynchronizedMutableDictionary *_serviceClients = nil;
                    queryParameters:queryParameters
                   headerParameters:headerParameters
                               body:nil
-                     responseClass:[PROPERTYTenantOutput class]];
+                     responseClass:[PROPERTYTenantResult class]];
 }
 
 - (AWSTask *)tenantsPut:(PROPERTYTenantInput *)body {
@@ -921,7 +921,7 @@ static AWSSynchronizedMutableDictionary *_serviceClients = nil;
                    queryParameters:queryParameters
                   headerParameters:headerParameters
                               body:nil
-                     responseClass:[PROPERTYTenantIncomeOutput class]];
+                     responseClass:[PROPERTYTenantIncomeResult class]];
 }
 
 - (AWSTask *)tenantsIncomeExpensePut:(PROPERTYTenantIncomeInput *)body {
@@ -987,7 +987,7 @@ static AWSSynchronizedMutableDictionary *_serviceClients = nil;
                    queryParameters:queryParameters
                   headerParameters:headerParameters
                               body:nil
-                     responseClass:[PROPERTYTenantOccupationOutput class]];
+                     responseClass:[PROPERTYTenantOccupationResult class]];
 }
 
 - (AWSTask *)tenantsOccupationPut:(PROPERTYTenantOccupationInput *)body {
@@ -1053,7 +1053,7 @@ static AWSSynchronizedMutableDictionary *_serviceClients = nil;
                    queryParameters:queryParameters
                   headerParameters:headerParameters
                               body:nil
-                     responseClass:[PROPERTYTenantRefOutput class]];
+                     responseClass:[PROPERTYTenantRefResult class]];
 }
 
 - (AWSTask *)tenantsReferencePut:(PROPERTYTenantRefInput *)body {
