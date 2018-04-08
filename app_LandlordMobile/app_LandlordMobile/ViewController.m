@@ -41,7 +41,7 @@
     //[self insertTenantReferences];
 //    [self insertTenant];
     //[self getExpenseType];
-    [self getProperty]; //not working
+    //[self getProperty]; //not working
     //[self getPropertyMaintExp];
     //[self getPropertyGeneralExp];
     //[self getPropertyMortgageLoan];
