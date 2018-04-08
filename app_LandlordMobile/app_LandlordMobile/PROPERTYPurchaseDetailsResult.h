@@ -16,26 +16,12 @@
 
 #import <Foundation/Foundation.h>
 #import <AWSCore/AWSCore.h>
+#import "PROPERTYPurchaseDetailsOutput.h"
 
  
-@interface PROPERTYTenantBackgroundInput : AWSModel
+@interface PROPERTYPurchaseDetailsResult : AWSModel
 
-@property (nonatomic, strong, nonnull) NSNumber *tenantId;
-
-
-@property (nonatomic, strong, nonnull) NSNumber *ownerId;
-
-
-@property (nonatomic, strong, nonnull) NSString *creditPassedYN;
-
-
-@property (nonatomic, strong, nonnull) NSString *criminalPassed;
-
-
-@property (nonatomic, strong, nonnull) NSString *evictionPassedYN;
-
-
-@property (nonatomic, strong, nonnull) NSString *recommendation;
+@property (nonatomic, strong, nullable) PROPERTYPurchaseDetailsOutput *output;
 
 
 @end

@@ -14,28 +14,18 @@
  */
  
 
-#import <Foundation/Foundation.h>
-#import <AWSCore/AWSCore.h>
+#import "PROPERTYTenantOccupationResult.h"
 
- 
-@interface PROPERTYTenantBackgroundInput : AWSModel
+@implementation PROPERTYTenantOccupationResult
 
-@property (nonatomic, strong, nonnull) NSNumber *tenantId;
++ (NSDictionary *)JSONKeyPathsByPropertyKey {
+    return @{
+             @"output": @"Output"
+             };
+}
 
-
-@property (nonatomic, strong, nonnull) NSNumber *ownerId;
-
-
-@property (nonatomic, strong, nonnull) NSString *creditPassedYN;
-
-
-@property (nonatomic, strong, nonnull) NSString *criminalPassed;
-
-
-@property (nonatomic, strong, nonnull) NSString *evictionPassedYN;
-
-
-@property (nonatomic, strong, nonnull) NSString *recommendation;
-
++ (NSValueTransformer *)outputJSONTransformer {
+    return [NSValueTransformer awsmtl_JSONDictionaryTransformerWithModelClass:[PROPERTYTenantOccupationOutput class]];
+}
 
 @end

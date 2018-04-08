@@ -16,26 +16,12 @@
 
 #import <Foundation/Foundation.h>
 #import <AWSCore/AWSCore.h>
+#import "PROPERTYTenantIncomeOutput.h"
 
  
-@interface PROPERTYTenantBackgroundInput : AWSModel
+@interface PROPERTYTenantIncomeResult : AWSModel
 
-@property (nonatomic, strong, nonnull) NSNumber *tenantId;
-
-
-@property (nonatomic, strong, nonnull) NSNumber *ownerId;
-
-
-@property (nonatomic, strong, nonnull) NSString *creditPassedYN;
-
-
-@property (nonatomic, strong, nonnull) NSString *criminalPassed;
-
-
-@property (nonatomic, strong, nonnull) NSString *evictionPassedYN;
-
-
-@property (nonatomic, strong, nonnull) NSString *recommendation;
+@property (nonatomic, strong, nullable) PROPERTYTenantIncomeOutput *output;
 
 
 @end
