@@ -17,34 +17,34 @@
 #import <Foundation/Foundation.h>
 #import <AWSAPIGateway/AWSAPIGateway.h>
 
-#import "PROPERTYTenantBackgroundResult.h"
+#import "PROPERTYTenantBackgroundOutput.h"
 #import "PROPERTYTenantBackgroundInput.h"
 #import "PROPERTYEmpty.h"
-#import "PROPERTYPropertyGeneralExpResult.h"
+#import "PROPERTYPropertyGeneralExpOutput.h"
 #import "PROPERTYPropertyGeneralExpInput.h"
 #import "PROPERTYMaintenanceExpTypeResult.h"
 #import "PROPERTYMaintenanceExpTypeInput.h"
-#import "PROPERTYPropertyMaintExpResult.h"
+#import "PROPERTYPropertyMaintExpOutput.h"
 #import "PROPERTYPropertyMaintExpInput.h"
-#import "PROPERTYPropertyMortgageLoanResult.h"
+#import "PROPERTYPropertyMortgageLoanOutput.h"
 #import "PROPERTYPropertyMortgageLoanInput.h"
-#import "PROPERTYPropertyOwnerResult.h"
+#import "PROPERTYPropertyOwnerOutput.h"
 #import "PROPERTYPropertyOwnerInput.h"
-#import "PROPERTYPropertyTaxResult.h"
+#import "PROPERTYPropertyTaxOutput.h"
 #import "PROPERTYPropertyTaxInput.h"
-#import "PROPERTYPropertyResult.h"
+#import "PROPERTYPropertyOutput.h"
 #import "PROPERTYPropertyInput.h"
-#import "PROPERTYPurchaseDetailsResult.h"
+#import "PROPERTYPurchaseDetailsOutput.h"
 #import "PROPERTYPurchaseDetailsInput.h"
-#import "PROPERTYRentalAgreementResult.h"
+#import "PROPERTYRentalAgreementOutput.h"
 #import "PROPERTYRentalAgreementInput.h"
-#import "PROPERTYTenantResult.h"
+#import "PROPERTYTenantOutput.h"
 #import "PROPERTYTenantInput.h"
-#import "PROPERTYTenantIncomeResult.h"
+#import "PROPERTYTenantIncomeOutput.h"
 #import "PROPERTYTenantIncomeInput.h"
-#import "PROPERTYTenantOccupationResult.h"
+#import "PROPERTYTenantOccupationOutput.h"
 #import "PROPERTYTenantOccupationInput.h"
-#import "PROPERTYTenantRefResult.h"
+#import "PROPERTYTenantRefOutput.h"
 #import "PROPERTYTenantRefInput.h"
 
 
@@ -200,7 +200,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  
  
- return type: PROPERTYTenantBackgroundResult *
+ return type: PROPERTYTenantBackgroundOutput *
  */
 - (AWSTask *)backgroundCheckGet;
 
@@ -226,7 +226,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  
  
- return type: PROPERTYPropertyGeneralExpResult *
+ return type: PROPERTYPropertyGeneralExpOutput *
  */
 - (AWSTask *)generalExpensesGet;
 
@@ -278,7 +278,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  
  
- return type: PROPERTYPropertyMaintExpResult *
+ return type: PROPERTYPropertyMaintExpOutput *
  */
 - (AWSTask *)propMaintExpenseGet;
 
@@ -304,7 +304,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  
  
- return type: PROPERTYPropertyMortgageLoanResult *
+ return type: PROPERTYPropertyMortgageLoanOutput *
  */
 - (AWSTask *)propMortgageLoanGet;
 
@@ -330,7 +330,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  
  
- return type: PROPERTYPropertyOwnerResult *
+ return type: PROPERTYPropertyOwnerOutput *
  */
 - (AWSTask *)propOwnerGet;
 
@@ -356,7 +356,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  
  
- return type: PROPERTYPropertyTaxResult *
+ return type: PROPERTYPropertyTaxOutput *
  */
 - (AWSTask *)propTaxGet;
 
@@ -382,7 +382,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  
  
- return type: PROPERTYPropertyResult *
+ return type: PROPERTYPropertyOutput *
  */
 - (AWSTask *)propertiesGet;
 
@@ -408,7 +408,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  
  
- return type: PROPERTYPurchaseDetailsResult *
+ return type: PROPERTYPurchaseDetailsOutput *
  */
 - (AWSTask *)purchaseDetailsGet;
 
@@ -434,7 +434,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  
  
- return type: PROPERTYRentalAgreementResult *
+ return type: PROPERTYRentalAgreementOutput *
  */
 - (AWSTask *)rentalAgreementGet;
 
@@ -460,7 +460,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  
  
- return type: PROPERTYTenantResult *
+ return type: PROPERTYTenantOutput *
  */
 - (AWSTask *)tenantsGet;
 
@@ -486,7 +486,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  
  
- return type: PROPERTYTenantIncomeResult *
+ return type: PROPERTYTenantIncomeOutput *
  */
 - (AWSTask *)tenantsIncomeExpenseGet;
 
@@ -512,7 +512,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  
  
- return type: PROPERTYTenantOccupationResult *
+ return type: PROPERTYTenantOccupationOutput *
  */
 - (AWSTask *)tenantsOccupationGet;
 
@@ -538,7 +538,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  
  
- return type: PROPERTYTenantRefResult *
+ return type: PROPERTYTenantRefOutput *
  */
 - (AWSTask *)tenantsReferenceGet;
 

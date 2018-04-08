@@ -20,7 +20,7 @@
  
 @interface PROPERTYPropertyOutput_properties_item : AWSModel
 
-@property (nonatomic, strong, nullable) NSNumber *properties;
+@property (nonatomic, strong, nullable) NSNumber *propertyId;
 
 
 @property (nonatomic, strong, nullable) NSNumber *ownerId;
