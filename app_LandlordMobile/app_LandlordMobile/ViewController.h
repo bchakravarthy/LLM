@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *login_username;
 @property (weak, nonatomic) IBOutlet UITextField *login_password;
 
+
 // MARK: Register
 @property (weak, nonatomic) IBOutlet UITextField *addPropOwnerName;
 @property (weak, nonatomic) IBOutlet UITextField *addPropOwnerPassword;
@@ -24,7 +25,6 @@
 @property (weak, nonatomic) IBOutlet UITextField *addPropOwnerProfile;
 
 
-
 // MARK: Add property
 @property (weak, nonatomic) IBOutlet UITextField *addPropAddrLine1;
 @property (weak, nonatomic) IBOutlet UITextField *addPropAddrLine2;
@@ -33,6 +33,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *addPropZip;
 @property (weak, nonatomic) IBOutlet UITextField *addPropCounty;
 @property (weak, nonatomic) IBOutlet UITextField *addPropDescrp;
+
 
 // MARK: Property general expense
 @property (weak, nonatomic) IBOutlet UITextField *addPropGenExpPropId;

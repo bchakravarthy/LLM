@@ -32,7 +32,7 @@
 @property (nonatomic, strong, nonnull) NSString *criminalPassed;
 
 
-@property (nonatomic, strong, nonnull) NSNumber *evictionPassedYN;
+@property (nonatomic, strong, nonnull) NSString *evictionPassedYN;
 
 
 @property (nonatomic, strong, nonnull) NSString *recommendation;

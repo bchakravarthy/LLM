@@ -32,10 +32,10 @@
 @property (nonatomic, strong, nullable) NSString *creditPassedYN;
 
 
-@property (nonatomic, strong, nullable) NSNumber *criminalPassed;
+@property (nonatomic, strong, nullable) NSString *criminalPassed;
 
 
-@property (nonatomic, strong, nullable) NSNumber *evictionPassedYN;
+@property (nonatomic, strong, nullable) NSString *evictionPassedYN;
 
 
 @property (nonatomic, strong, nullable) NSString *recommendation;

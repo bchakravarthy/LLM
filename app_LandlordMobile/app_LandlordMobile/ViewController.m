@@ -39,7 +39,7 @@
     //[self insertTenantIncomeExpenses];
     //[self insertTenantOccupation];
     //[self insertTenantReferences];
-    [self insertTenant];
+//    [self insertTenant];
     //[self getExpenseType];
 }
 
@@ -426,7 +426,7 @@
     backgroundCheckInput.ownerId=[NSNumber numberWithInt:1];
     backgroundCheckInput.creditPassedYN=@"Y";
     backgroundCheckInput.criminalPassed=@"Yes";
-    backgroundCheckInput.evictionPassedYN=[NSNumber numberWithInt:1];
+    backgroundCheckInput.evictionPassedYN=@"No";
     backgroundCheckInput.recommendation=@"Tenant has clean credit";
     
     //Invoke POST on employee API
@@ -990,18 +990,25 @@
 
 - (IBAction)addTenantBgCheckBtnPress:(id)sender {
     
+    NSNumber *TenantId = self.addTenantBgCheckTenantId.text;
+    NSNumber *OwnerId = self.addTenantBgCheckOwnerId.text;
+    NSString *Credit = self.addTenantBgCheckCreditPass.text;
+    NSString *Criminal = self.addTenantBgCheckCriminalPass.text;
+    NSString *Eviction = self.addTenantBgCheckEviction.text;
+    NSString *Recommendation = self.addTenantBgCheckRec.text;
+    
     //Instantiate client object
     PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
     
     //Assign input values to be sent to Dynamo DB via API call
     PROPERTYTenantBackgroundInput *backgroundCheckInput = [[PROPERTYTenantBackgroundInput alloc] init];
     
-    backgroundCheckInput.tenantId=[NSNumber numberWithInt:1];
-    backgroundCheckInput.ownerId=[NSNumber numberWithInt:1];
-    backgroundCheckInput.creditPassedYN=@"Y";
-    backgroundCheckInput.criminalPassed=@"Yes";
-    backgroundCheckInput.evictionPassedYN=[NSNumber numberWithInt:1];
-    backgroundCheckInput.recommendation=@"Tenant has clean credit";
+    backgroundCheckInput.tenantId=TenantId;
+    backgroundCheckInput.ownerId=OwnerId;
+    backgroundCheckInput.creditPassedYN=Credit;
+    backgroundCheckInput.criminalPassed=Criminal;
+    backgroundCheckInput.evictionPassedYN=Eviction;
+    backgroundCheckInput.recommendation=Recommendation;
     
     //Invoke POST on employee API
     [[client backgroundCheckPost:backgroundCheckInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
@@ -1024,7 +1031,7 @@
         return nil;
     }];
     
-    
+    [self.addTenantBgCheckRec resignFirstResponder];
     
 }
 
