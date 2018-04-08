@@ -72,6 +72,14 @@
 @property (weak, nonatomic) IBOutlet UITextField *addTenantOccupTitle;
 
 
+// MARK: Tenant Income Expense
+@property (weak, nonatomic) IBOutlet UITextField *addTenantIncomeExpTenantId;
+@property (weak, nonatomic) IBOutlet UITextField *addTenantIncomeExpOwnerId;
+@property (weak, nonatomic) IBOutlet UITextField *addTenantIncomeExpMonthlyIncome;
+@property (weak, nonatomic) IBOutlet UITextField *addTenantIncomeExpMonthlyExp;
+@property (weak, nonatomic) IBOutlet UITextField *addTenantIncomeExpPropOwnerId;
+
+
 // MARK: Tenant Background Check
 @property (weak, nonatomic) IBOutlet UITextField *addTenantBgCheckTenantId;
 @property (weak, nonatomic) IBOutlet UITextField *addTenantBgCheckOwnerId;
@@ -80,6 +88,13 @@
 @property (weak, nonatomic) IBOutlet UITextField *addTenantBgCheckEviction;
 @property (weak, nonatomic) IBOutlet UITextField *addTenantBgCheckRec;
 
+
+// MARK: Property mortgage loan
+@property (weak, nonatomic) IBOutlet UITextField *addPropMortLoanPropId;
+@property (weak, nonatomic) IBOutlet UITextField *addPropMortLoanOwnerId;
+@property (weak, nonatomic) IBOutlet UITextField *addPropMortLoanLender;
+@property (weak, nonatomic) IBOutlet UITextField *addPropMortLoanMonthAmt;
+@property (weak, nonatomic) IBOutlet UITextField *addPropMortLoanBalance;
 
 
 // MARK: PropertyTax

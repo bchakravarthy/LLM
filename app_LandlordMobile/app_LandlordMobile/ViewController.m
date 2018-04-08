@@ -30,7 +30,7 @@
     //[self insertProperty];
     //[self insertPropertyMaintExp];
     //[self insertPropertyGeneralExp];
-    //[self insertPropertyMortgageLoan];
+//    [self insertPropertyMortgageLoan];
     //[self insertPropertyOwner];
     //[self insertPropertyTax];
     //[self insertPurchaseDetails];
@@ -241,7 +241,7 @@
         propertyMortgageInput.ownerId = [NSNumber numberWithInt:1];
         propertyMortgageInput.mortgageLender = [NSNumber numberWithInt:1];
         propertyMortgageInput.monthlyMortgageAmount = [NSNumber numberWithInt:1];
-        propertyMortgageInput.outstandingBalance = [NSNumber numberWithInt:1];
+        propertyMortgageInput.outstandingBalance = [NSNumber numberWithInt:10];
     
     
     
@@ -617,10 +617,12 @@
     // Dispose of any resources that can be recreated.
 }
 
-// MARK: Actions
+// MARK: Actions for creating new records
 - (IBAction)addMaintExpTypeBtnPress:(id)sender {
     
-    NSNumber *OwnerId = self.addMaintExpTypeOwnerId.text;
+    NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
+    
+    NSString *OwnerId = self.addMaintExpTypeOwnerId.text;
     NSString *Descrp = self.addMaintExpTypeDescp.text;
     
     //Instantiate client object
@@ -628,8 +630,8 @@
     
     //Assign input values to be sent to Dynamo DB via API call
     PROPERTYMaintenanceExpTypeInput *input = [[PROPERTYMaintenanceExpTypeInput alloc] init];
-    input.ownerId=OwnerId;
-    input._description=Descrp;
+    input.ownerId = [f numberFromString:OwnerId];
+    input._description = Descrp;
     
     //Invoke POST on employee API
     [[client maintenanceExpensePost:input] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
@@ -709,20 +711,22 @@
 
 - (IBAction)addPurchaseDetailBtnPress:(id)sender {
     
-    NSNumber *OwnerId = self.addPurchaseDetailOwnerId.text;
-    NSNumber *PropertyId = self.addPurchaseDetailPropId.text;
-    NSNumber *Year = self.addPurchaseDetailYear.text;
-    NSNumber *Price = self.addPurchaseDetailPrice.text;
+    NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
+    
+    NSString *OwnerId = self.addPurchaseDetailOwnerId.text;
+    NSString *PropertyId = self.addPurchaseDetailPropId.text;
+    NSString *Year = self.addPurchaseDetailYear.text;
+    NSString *Price = self.addPurchaseDetailPrice.text;
     
     //Instantiate client object
     PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
     
     //Assign input values to be sent to Dynamo DB via API call
     PROPERTYPurchaseDetailsInput *purchaseInput = [[PROPERTYPurchaseDetailsInput alloc] init];
-    purchaseInput.ownerId=OwnerId;
-    purchaseInput.propertyId=PropertyId;
-    purchaseInput.year=Year;
-    purchaseInput.price=Price;
+    purchaseInput.ownerId = [f numberFromString:OwnerId];
+    purchaseInput.propertyId = [f numberFromString:PropertyId];
+    purchaseInput.year = [f numberFromString:Year];
+    purchaseInput.price = [f numberFromString:Price];
     
     //Invoke GET on employee API
     [[client purchaseDetailsPost:purchaseInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
@@ -751,10 +755,12 @@
 
 - (IBAction)addPropMaintExpBtnPress:(id)sender {
     
-    NSNumber *PropertyId = self.addPropMaintExpPropId.text;
-    NSNumber *OwnerId = self.addPropMaintExpOwnerId.text;
-    NSNumber *ExpenseId = self.addPropMaintExpExpId.text;
-    NSNumber *ExpenseAmt = self.addPropMaintExpExpAmt.text;
+    NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
+    
+    NSString *PropertyId = self.addPropMaintExpPropId.text;
+    NSString *OwnerId = self.addPropMaintExpOwnerId.text;
+    NSString *ExpenseId = self.addPropMaintExpExpId.text;
+    NSString *ExpenseAmt = self.addPropMaintExpExpAmt.text;
     NSString *ReceiptDate = self.addPropMaintExpReceiptDate.text;
     NSString *ReceiptCopy = self.addPropMaintExpReceiptCopy.text;
     
@@ -764,10 +770,10 @@
     //Assign input values to be sent to Dynamo DB via API call
     PROPERTYPropertyMaintExpInput *propertyMaintInput = [[PROPERTYPropertyMaintExpInput alloc] init];
     
-    propertyMaintInput.propertyId = PropertyId;
-    propertyMaintInput.ownerId = OwnerId;
-    propertyMaintInput.maintanenceExpenseId = ExpenseId;
-    propertyMaintInput.expenseAmount = ExpenseAmt;
+    propertyMaintInput.propertyId = [f numberFromString:PropertyId];
+    propertyMaintInput.ownerId = [f numberFromString:OwnerId];
+    propertyMaintInput.maintanenceExpenseId = [f numberFromString:ExpenseId];
+    propertyMaintInput.expenseAmount = [f numberFromString:ExpenseAmt];
     propertyMaintInput.receiptCopy = ReceiptCopy;
     propertyMaintInput.receiptDate = ReceiptDate;
     
@@ -851,8 +857,10 @@
 
 - (IBAction)addTenantOccupBtnPress:(id)sender {
     
-    NSNumber *TenantId = self.addTenantOccupTenantId.text;
-    NSNumber *OwnerId = self.addTenantOccupOwnerId.text;
+    NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
+    
+    NSString *TenantId = self.addTenantOccupTenantId.text;
+    NSString *OwnerId = self.addTenantOccupOwnerId.text;
     NSString *Employer = self.addTenantEmployer.text;
     NSString *Title = self.addTenantOccupTitle.text;
     
@@ -862,8 +870,8 @@
     //Assign input values to be sent to Dynamo DB via API call
     PROPERTYTenantOccupationInput *tenantOccupationInput = [[PROPERTYTenantOccupationInput alloc] init];
     
-    tenantOccupationInput.tenantId = TenantId;
-    tenantOccupationInput.ownerId = OwnerId;
+    tenantOccupationInput.tenantId = [f numberFromString:TenantId];
+    tenantOccupationInput.ownerId = [f numberFromString:OwnerId];
     tenantOccupationInput.employer = Employer;
     tenantOccupationInput.title = Title;
     
@@ -894,22 +902,24 @@
 
 - (IBAction)addPropTaxBtnPress:(id)sender {
     
-    NSNumber *PropertyId = self.addPropTaxPropId.text;
-    NSNumber *OwnerId = self.addPropTaxOwnerId.text;
-    NSNumber *Year  = self.addPropTaxYear.text;
-    NSNumber *YearPaid = self.addPropTaxYearPaid.text;
-    NSNumber *AnnualTax = self.addPropTaxAnnualTax.text;
+    NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
+    
+    NSString *PropertyId = self.addPropTaxPropId.text;
+    NSString *OwnerId = self.addPropTaxOwnerId.text;
+    NSString *Year  = self.addPropTaxYear.text;
+    NSString *YearPaid = self.addPropTaxYearPaid.text;
+    NSString *AnnualTax = self.addPropTaxAnnualTax.text;
     
     //Instantiate client object
     PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
     
     //Assign input values to be sent to Dynamo DB via API call
     PROPERTYPropertyTaxInput *propertyTaxInput = [[PROPERTYPropertyTaxInput alloc] init];
-    propertyTaxInput.propertyId = PropertyId;
-    propertyTaxInput.ownerId = OwnerId;
-    propertyTaxInput.year = Year;
-    propertyTaxInput.yearPaid = YearPaid;
-    propertyTaxInput.annualTax = AnnualTax;
+    propertyTaxInput.propertyId = [f numberFromString:PropertyId];
+    propertyTaxInput.ownerId = [f numberFromString:OwnerId];
+    propertyTaxInput.year = [f numberFromString:Year];
+    propertyTaxInput.yearPaid = [f numberFromString:YearPaid];
+    propertyTaxInput.annualTax = [f numberFromString:AnnualTax];
     
     //Invoke POST on employee API
     [[client propTaxPost:propertyTaxInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
@@ -940,11 +950,13 @@
 
 - (IBAction)addPropGenExpBtnPress:(id)sender {
     
-    NSNumber *PropertyId = self.addPropGenExpPropId.text;
-    NSNumber *OwnerId = self.addPropGenExpOwnerId.text;
-    NSNumber *MonthlyFee = self.addPropGenExpMonthlyFee.text;
-    NSNumber *MonthlyWarranty = self.addPropGenExpWarranty.text;
-    NSNumber *YearlyInsurance = self.addPropGenExpYearlyIns.text;
+    NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
+    
+    NSString *PropertyId = self.addPropGenExpPropId.text;
+    NSString *OwnerId = self.addPropGenExpOwnerId.text;
+    NSString *MonthlyFee = self.addPropGenExpMonthlyFee.text;
+    NSString *MonthlyWarranty = self.addPropGenExpWarranty.text;
+    NSString *YearlyInsurance = self.addPropGenExpYearlyIns.text;
     NSString *ReceiptCopy = self.addPropGenExpDescrip.text;
     
     //Instantiate client object
@@ -953,11 +965,11 @@
     //Assign input values to be sent to Dynamo DB via API call
     PROPERTYPropertyGeneralExpInput *propertyGeneralInput = [[PROPERTYPropertyGeneralExpInput alloc] init];
     
-    propertyGeneralInput.propertyId = PropertyId;
-    propertyGeneralInput.ownerId = OwnerId;
-    propertyGeneralInput.monthlyCondoFee = MonthlyFee;
-    propertyGeneralInput.monthlyHomeWarranty = MonthlyWarranty;
-    propertyGeneralInput.yearlyPropertyInsurance = YearlyInsurance;
+    propertyGeneralInput.propertyId = [f numberFromString:PropertyId];
+    propertyGeneralInput.ownerId = [f numberFromString:OwnerId];
+    propertyGeneralInput.monthlyCondoFee = [f numberFromString:MonthlyFee];
+    propertyGeneralInput.monthlyHomeWarranty = [f numberFromString:MonthlyWarranty];
+    propertyGeneralInput.yearlyPropertyInsurance = [f numberFromString:YearlyInsurance];
     propertyGeneralInput.receiptCopy = ReceiptCopy;
     
     
@@ -990,8 +1002,10 @@
 
 - (IBAction)addTenantBgCheckBtnPress:(id)sender {
     
-    NSNumber *TenantId = self.addTenantBgCheckTenantId.text;
-    NSNumber *OwnerId = self.addTenantBgCheckOwnerId.text;
+    NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
+    
+    NSString *TenantId = self.addTenantBgCheckTenantId.text;
+    NSString *OwnerId = self.addTenantBgCheckOwnerId.text;
     NSString *Credit = self.addTenantBgCheckCreditPass.text;
     NSString *Criminal = self.addTenantBgCheckCriminalPass.text;
     NSString *Eviction = self.addTenantBgCheckEviction.text;
@@ -1003,8 +1017,8 @@
     //Assign input values to be sent to Dynamo DB via API call
     PROPERTYTenantBackgroundInput *backgroundCheckInput = [[PROPERTYTenantBackgroundInput alloc] init];
     
-    backgroundCheckInput.tenantId=TenantId;
-    backgroundCheckInput.ownerId=OwnerId;
+    backgroundCheckInput.tenantId=[f numberFromString:TenantId];
+    backgroundCheckInput.ownerId=[f numberFromString:OwnerId];
     backgroundCheckInput.creditPassedYN=Credit;
     backgroundCheckInput.criminalPassed=Criminal;
     backgroundCheckInput.evictionPassedYN=Eviction;
@@ -1034,6 +1048,111 @@
     [self.addTenantBgCheckRec resignFirstResponder];
     
 }
+
+
+- (IBAction)addPropMortLoanBtnPress:(id)sender {
+    
+    NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
+    
+    NSString *PropertyId = self.addPropMortLoanPropId.text;
+    NSString *OwnerId = self.addPropMortLoanOwnerId.text;
+    NSString *Lender = self.addPropMortLoanLender.text;
+    NSString *Amount = self.addPropMortLoanMonthAmt.text;
+    NSString *Balance = self.addPropMortLoanBalance.text;
+    
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Assign input values to be sent to Dynamo DB via API call
+    PROPERTYPropertyMortgageLoanInput *propertyMortgageInput = [[PROPERTYPropertyMortgageLoanInput alloc] init];
+    propertyMortgageInput.propertyId = [f numberFromString:PropertyId];
+    propertyMortgageInput.ownerId = [f numberFromString:OwnerId];
+    propertyMortgageInput.mortgageLender = [f numberFromString:Lender];
+    propertyMortgageInput.monthlyMortgageAmount = [f numberFromString:Amount];
+    propertyMortgageInput.outstandingBalance = [f numberFromString:Balance];
+    
+    
+    //Invoke POST on employee API
+    [[client propMortgageLoanPost:propertyMortgageInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+        
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        
+        if (task.result) {
+            
+            //You are here, so method invocation is a success
+            
+            printf("Success....\n");
+            
+            NSLog(@"Return from API call. Your mortgage loan has been saved. Please check in the database.\n");
+            
+        }
+        
+        return nil;
+    }];
+    
+    [self.addPropMortLoanBalance resignFirstResponder];
+    
+}
+
+
+- (IBAction)addTenantIncomeExpBtnPress:(id)sender {
+    
+    NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
+    
+    NSString *TenantId = self.addTenantIncomeExpTenantId.text;
+    NSString *OwnerId = self.addTenantIncomeExpOwnerId.text;
+    NSString *MonthlyIncome = self.addTenantIncomeExpMonthlyIncome.text;
+    NSString *MonthlyExp = self.addTenantIncomeExpMonthlyExp.text;
+    NSString *PropOwnerId = self.addTenantIncomeExpPropOwnerId.text;
+    
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Assign input values to be sent to Dynamo DB via API call
+    PROPERTYTenantIncomeInput *tenantIncomeInput = [[PROPERTYTenantIncomeInput alloc] init];
+    
+    tenantIncomeInput.tenantId = [f numberFromString:TenantId];
+    tenantIncomeInput.ownerId = [f numberFromString:OwnerId];
+    tenantIncomeInput.propertyOwnerId = [f numberFromString:PropOwnerId];
+    tenantIncomeInput.monthlyIncome = [f numberFromString:MonthlyIncome];
+    tenantIncomeInput.monthlyExpenses = [f numberFromString:MonthlyExp];
+    
+    //Invoke POST on employee API
+    [[client tenantsIncomeExpensePost:tenantIncomeInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+        
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        
+        if (task.result) {
+            
+            //You are here, so method invocation is a success
+            
+            printf("Success....\n");
+            
+            NSLog(@"Return from API call.Tenant income expenses information has been saved. Please check in the database...\n");
+            
+        }
+        
+        return nil;
+    }];
+    
+    [self.addTenantIncomeExpMonthlyExp resignFirstResponder];
+    
+}
+
+
+// MARK: Actions for getting list of records
+
+
+
+// MARK: Actions for updating existing records
+
+
 
 
 @end
