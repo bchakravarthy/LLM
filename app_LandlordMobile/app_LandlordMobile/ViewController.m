@@ -15,7 +15,6 @@
 
 @implementation ViewController
 
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -30,7 +29,7 @@
     //[self insertProperty];
     //[self insertPropertyMaintExp];
     //[self insertPropertyGeneralExp];
-//    [self insertPropertyMortgageLoan];
+    //    [self insertPropertyMortgageLoan];
     //[self insertPropertyOwner];
     //[self insertPropertyTax];
     //[self insertPurchaseDetails];
@@ -39,7 +38,7 @@
     //[self insertTenantIncomeExpenses];
     //[self insertTenantOccupation];
     //[self insertTenantReferences];
-//    [self insertTenant];
+    //[self insertTenant];
     //[self getExpenseType];
     //[self getProperty]; //not working
     //[self getPropertyMaintExp];
@@ -114,7 +113,7 @@
             long cnt;
             cnt = arrData.count;
             //Print out count of maint exp
-           NSLog(@"Number of maintenance expenses %lu\n",cnt);
+            NSLog(@"Number of maintenance expenses %lu\n",cnt);
             
             //Print out each maint exp details to the console
             for (id element in arrData){
@@ -214,7 +213,7 @@
     propertyMaintInput.expenseAmount = [NSNumber numberWithInt:1];
     propertyMaintInput.receiptCopy = @"Test from Nafisa";
     propertyMaintInput.receiptDate = @"Test from Nafisa";
-   
+    
     
     //Invoke POST on employee API
     [[client propMaintExpensePost:propertyMaintInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
@@ -290,7 +289,7 @@
     propertyGeneralInput.monthlyHomeWarranty = [NSNumber numberWithInt:1];
     propertyGeneralInput.yearlyPropertyInsurance = [NSNumber numberWithInt:1];
     propertyGeneralInput.receiptCopy = @"Test from Nafisa";
-
+    
     
     
     //Invoke POST on employee API
@@ -359,11 +358,11 @@
     
     //Assign input values to be sent to Dynamo DB via API call
     PROPERTYPropertyMortgageLoanInput *propertyMortgageInput = [[PROPERTYPropertyMortgageLoanInput alloc] init];
-        propertyMortgageInput.propertyId = [NSNumber numberWithInt:1];
-        propertyMortgageInput.ownerId = [NSNumber numberWithInt:1];
-        propertyMortgageInput.mortgageLender = [NSNumber numberWithInt:1];
-        propertyMortgageInput.monthlyMortgageAmount = [NSNumber numberWithInt:1];
-        propertyMortgageInput.outstandingBalance = [NSNumber numberWithInt:10];
+    propertyMortgageInput.propertyId = [NSNumber numberWithInt:1];
+    propertyMortgageInput.ownerId = [NSNumber numberWithInt:1];
+    propertyMortgageInput.mortgageLender = [NSNumber numberWithInt:1];
+    propertyMortgageInput.monthlyMortgageAmount = [NSNumber numberWithInt:1];
+    propertyMortgageInput.outstandingBalance = [NSNumber numberWithInt:10];
     
     
     
@@ -545,7 +544,7 @@
     
     //Invoke POST on employee API
     [[client propTaxPost:propertyTaxInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
-       
+        
         
         if (task.error) {
             NSLog(@"Error: %@", task.error);
@@ -1087,7 +1086,6 @@
         return nil;
     }];
 }
-
 
 
 
