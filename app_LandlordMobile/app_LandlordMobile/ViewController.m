@@ -41,7 +41,7 @@
     //[self insertTenantReferences];
     //[self insertTenant];
     //[self getExpenseType];
-    //[self getProperty]; //not working
+    [self getProperty]; //not working
     //[self getPropertyMaintExp];
     //[self getPropertyGeneralExp];
     //[self getPropertyMortgageLoan];
@@ -53,7 +53,7 @@
     //[self getTenantIncomeExpenses];
     //[self getTenantOccupation];
     //[self getTenantReferences];
-    [self getTenant];
+    //[self getTenant];
 }
 
 // MARK: Test cases for POST with hard code input value
