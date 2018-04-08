@@ -20,9 +20,6 @@
  
 @interface PROPERTYTenantOccupationInput : AWSModel
 
-@property (nonatomic, strong, nullable) NSNumber *tenantOccupationId;
-
-
 @property (nonatomic, strong, nonnull) NSNumber *tenantId;
 
 
