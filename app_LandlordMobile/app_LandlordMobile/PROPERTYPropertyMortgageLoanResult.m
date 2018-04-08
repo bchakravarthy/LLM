@@ -14,23 +14,18 @@
  */
  
 
-#import "PROPERTYPropertyInput.h"
+#import "PROPERTYPropertyMortgageLoanResult.h"
 
-@implementation PROPERTYPropertyInput
+@implementation PROPERTYPropertyMortgageLoanResult
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{
-             @"propertyId": @"property_id",
-             @"ownerId": @"owner_id",
-             @"addressLine1": @"address_line_1",
-             @"addressLine2": @"address_line_2",
-             @"city": @"city",
-             @"state": @"state",
-             @"zip": @"zip",
-             @"countyOrDistrict": @"county_or_district",
-             @"_description": @"description",
-             @"pictures": @"pictures"
+             @"output": @"Output"
              };
+}
+
++ (NSValueTransformer *)outputJSONTransformer {
+    return [NSValueTransformer awsmtl_JSONDictionaryTransformerWithModelClass:[PROPERTYPropertyMortgageLoanOutput class]];
 }
 
 @end
