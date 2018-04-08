@@ -20,6 +20,9 @@
  
 @interface PROPERTYTenantIncomeInput : AWSModel
 
+@property (nonatomic, strong, nullable) NSNumber *tenantIncomeExpenseId;
+
+
 @property (nonatomic, strong, nonnull) NSNumber *tenantId;
 
 

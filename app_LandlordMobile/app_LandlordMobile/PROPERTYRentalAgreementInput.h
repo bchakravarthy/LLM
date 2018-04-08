@@ -20,6 +20,9 @@
  
 @interface PROPERTYRentalAgreementInput : AWSModel
 
+@property (nonatomic, strong, nullable) NSNumber *rentalAgreementId;
+
+
 @property (nonatomic, strong, nonnull) NSNumber *ownerId;
 
 
