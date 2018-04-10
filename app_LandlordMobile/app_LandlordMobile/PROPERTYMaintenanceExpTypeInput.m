@@ -20,6 +20,7 @@
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{
+             @"maintenanceExpenseId": @"maintenance_expense_id",
              @"_description": @"description",
              @"ownerId": @"owner_id"
              };

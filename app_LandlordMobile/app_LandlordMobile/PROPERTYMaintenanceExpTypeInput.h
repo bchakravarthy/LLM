@@ -20,6 +20,9 @@
  
 @interface PROPERTYMaintenanceExpTypeInput : AWSModel
 
+@property (nonatomic, strong, nonnull) NSNumber *maintenanceExpenseId;
+
+
 @property (nonatomic, strong, nonnull) NSString *_description;
 
 

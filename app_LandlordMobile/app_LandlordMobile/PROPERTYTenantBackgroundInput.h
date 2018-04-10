@@ -20,6 +20,9 @@
  
 @interface PROPERTYTenantBackgroundInput : AWSModel
 
+@property (nonatomic, strong, nonnull) NSNumber *tenantBackgroundCheckId;
+
+
 @property (nonatomic, strong, nonnull) NSNumber *tenantId;
 
 

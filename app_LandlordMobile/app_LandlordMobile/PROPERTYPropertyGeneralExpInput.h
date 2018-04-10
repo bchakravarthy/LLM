@@ -20,6 +20,9 @@
  
 @interface PROPERTYPropertyGeneralExpInput : AWSModel
 
+@property (nonatomic, strong, nonnull) NSNumber *propertyGeneralExpenseId;
+
+
 @property (nonatomic, strong, nonnull) NSNumber *propertyId;
 
 

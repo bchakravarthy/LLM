@@ -18,7 +18,7 @@
 #import <AWSCore/AWSCore.h>
 
  
-@interface PROPERTYPropertyOutput_properties_item : AWSModel
+@interface PROPERTYPropertyOutput_owner_properties_item : AWSModel
 
 @property (nonatomic, strong, nullable) NSNumber *propertyId;
 
@@ -35,7 +35,7 @@
 @property (nonatomic, strong, nullable) NSString *city;
 
 
-@property (nonatomic, strong, nullable) NSString *state;
+@property (nonatomic, strong, nullable) NSString *propState;
 
 
 @property (nonatomic, strong, nullable) NSString *zip;

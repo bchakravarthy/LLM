@@ -20,13 +20,16 @@
  
 @interface PROPERTYPurchaseDetailsInput : AWSModel
 
+@property (nonatomic, strong, nonnull) NSNumber *purchaseId;
+
+
 @property (nonatomic, strong, nonnull) NSNumber *ownerId;
 
 
 @property (nonatomic, strong, nonnull) NSNumber *propertyId;
 
 
-@property (nonatomic, strong, nonnull) NSNumber *year;
+@property (nonatomic, strong, nonnull) NSNumber *yearOfPurchase;
 
 
 @property (nonatomic, strong, nonnull) NSNumber *price;

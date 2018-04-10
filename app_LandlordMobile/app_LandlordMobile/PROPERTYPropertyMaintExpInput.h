@@ -20,13 +20,16 @@
  
 @interface PROPERTYPropertyMaintExpInput : AWSModel
 
+@property (nonatomic, strong, nonnull) NSNumber *propertyMaintanenceExpenseId;
+
+
 @property (nonatomic, strong, nonnull) NSNumber *propertyId;
 
 
 @property (nonatomic, strong, nonnull) NSNumber *ownerId;
 
 
-@property (nonatomic, strong, nonnull) NSNumber *maintanenceExpenseId;
+@property (nonatomic, strong, nonnull) NSNumber *maintenanceExpenseId;
 
 
 @property (nonatomic, strong, nonnull) NSNumber *expenseAmount;
