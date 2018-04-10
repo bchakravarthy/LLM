@@ -20,6 +20,9 @@
  
 @interface PROPERTYPropertyMortgageLoanInput : AWSModel
 
+@property (nonatomic, strong, nonnull) NSNumber *propertyMortgageLoanId;
+
+
 @property (nonatomic, strong, nonnull) NSNumber *propertyId;
 
 

@@ -14,9 +14,9 @@
  */
  
 
-#import "PROPERTYPropertyOutput_properties_item.h"
+#import "PROPERTYPropertyOutput_owner_properties_item.h"
 
-@implementation PROPERTYPropertyOutput_properties_item
+@implementation PROPERTYPropertyOutput_owner_properties_item
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{
@@ -25,7 +25,7 @@
              @"addressLine1": @"address_line_1",
              @"addressLine2": @"address_line_2",
              @"city": @"city",
-             @"state": @"state",
+             @"propState": @"prop_state",
              @"zip": @"zip",
              @"countyOrDistrict": @"county_or_district",
              @"_description": @"description",

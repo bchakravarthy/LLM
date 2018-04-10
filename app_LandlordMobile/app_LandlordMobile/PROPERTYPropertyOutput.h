@@ -16,12 +16,12 @@
 
 #import <Foundation/Foundation.h>
 #import <AWSCore/AWSCore.h>
-#import "PROPERTYPropertyOutput_properties_item.h"
+#import "PROPERTYPropertyOutput_owner_properties_item.h"
 
  
 @interface PROPERTYPropertyOutput : AWSModel
 
-@property (nonatomic, strong, nullable) NSArray *properties;
+@property (nonatomic, strong, nullable) NSArray *ownerProperties;
 
 
 @end

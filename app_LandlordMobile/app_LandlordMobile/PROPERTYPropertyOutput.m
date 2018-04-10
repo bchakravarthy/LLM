@@ -20,12 +20,12 @@
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{
-             @"properties": @"properties"
+             @"ownerProperties": @"owner_properties"
              };
 }
 
-+ (NSValueTransformer *)propertiesJSONTransformer {
-	return [NSValueTransformer awsmtl_JSONArrayTransformerWithModelClass:[PROPERTYPropertyOutput_properties_item class]];
++ (NSValueTransformer *)ownerPropertiesJSONTransformer {
+	return [NSValueTransformer awsmtl_JSONArrayTransformerWithModelClass:[PROPERTYPropertyOutput_owner_properties_item class]];
 }
 
 @end

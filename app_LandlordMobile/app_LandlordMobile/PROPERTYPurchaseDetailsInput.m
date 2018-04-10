@@ -20,9 +20,10 @@
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{
+             @"purchaseId": @"purchase_id",
              @"ownerId": @"owner_id",
              @"propertyId": @"property_id",
-             @"year": @"year",
+             @"yearOfPurchase": @"year_of_purchase",
              @"price": @"price"
              };
 }

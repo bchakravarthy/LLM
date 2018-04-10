@@ -20,6 +20,9 @@
  
 @interface PROPERTYPropertyInput : AWSModel
 
+@property (nonatomic, strong, nonnull) NSNumber *propertyId;
+
+
 @property (nonatomic, strong, nonnull) NSNumber *ownerId;
 
 
@@ -32,7 +35,7 @@
 @property (nonatomic, strong, nonnull) NSString *city;
 
 
-@property (nonatomic, strong, nonnull) NSString *state;
+@property (nonatomic, strong, nonnull) NSString *propState;
 
 
 @property (nonatomic, strong, nonnull) NSString *zip;
