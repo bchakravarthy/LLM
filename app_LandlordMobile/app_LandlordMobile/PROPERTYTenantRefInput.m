@@ -28,7 +28,7 @@
              @"addressLine1": @"address_line_1",
              @"addressLine2": @"address_line_2",
              @"city": @"city",
-             @"state": @"state",
+             @"tenantState": @"tenant_state",
              @"zip": @"zip",
              @"contactEmail": @"contact_email",
              @"contactPhone": @"contact_phone",

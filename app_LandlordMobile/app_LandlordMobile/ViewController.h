@@ -25,7 +25,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *addPropOwnerProfile;
 
 
-// MARK: Add property
+// MARK: Property
 @property (weak, nonatomic) IBOutlet UITextField *addPropAddrLine1;
 @property (weak, nonatomic) IBOutlet UITextField *addPropAddrLine2;
 @property (weak, nonatomic) IBOutlet UITextField *addPropCity;
@@ -33,6 +33,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *addPropZip;
 @property (weak, nonatomic) IBOutlet UITextField *addPropCounty;
 @property (weak, nonatomic) IBOutlet UITextField *addPropDescrp;
+// Get property
+@property (weak, nonatomic) IBOutlet UITextView *getPropList;
 
 
 // MARK: Property general expense
@@ -56,6 +58,8 @@
 // MARK: Maintenance Expense Types
 @property (weak, nonatomic) IBOutlet UITextField *addMaintExpTypeOwnerId;
 @property (weak, nonatomic) IBOutlet UITextField *addMaintExpTypeDescp;
+// For GET
+@property (weak, nonatomic) IBOutlet UITextView *getMaintExpTypeList;
 
 
 // MARK: Purchase details

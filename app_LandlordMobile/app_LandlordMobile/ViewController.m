@@ -42,8 +42,10 @@
 //    [self insertTenant];
 //    [self getExpenseType];
     
-//    [self getTenant];
+//    [self getExpenseType];
 //    [self getProperty];
+//    [self getPropertyMaintExp];
+//    [self getPropertyGeneralExp];
 }
 
 // MARK: Test cases for POST with hard code input value
@@ -94,7 +96,7 @@
     propertyInput.addressLine1 = @"123 Lane Ave";
     propertyInput.addressLine2 = @"Test";
     propertyInput.city = @"Columbus";
-    propertyInput.state = @"Ohio";
+    propertyInput.propState = @"Ohio";
     propertyInput.zip = @"43201";
     propertyInput.countyOrDistrict = @"Franklin";
     propertyInput._description = @"Test";
@@ -133,7 +135,7 @@
     
     propertyMaintInput.propertyId = [NSNumber numberWithInt:1];
     propertyMaintInput.ownerId = [NSNumber numberWithInt:1];
-    propertyMaintInput.maintanenceExpenseId =[NSNumber numberWithInt:1];
+    propertyMaintInput.maintenanceExpenseId =[NSNumber numberWithInt:1];
     propertyMaintInput.expenseAmount = [NSNumber numberWithInt:1];
     propertyMaintInput.receiptCopy = @"Test from Nafisa";
     propertyMaintInput.receiptDate = @"Test from Nafisa";
@@ -282,7 +284,7 @@
     PROPERTYPropertyTaxInput *propertyTaxInput = [[PROPERTYPropertyTaxInput alloc] init];
     propertyTaxInput.propertyId = [NSNumber numberWithInt:1];
     propertyTaxInput.ownerId = [NSNumber numberWithInt:1];
-    propertyTaxInput.year = [NSNumber numberWithInt:1];
+    propertyTaxInput.yearOwed = [NSNumber numberWithInt:1];
     propertyTaxInput.yearPaid = [NSNumber numberWithInt:1];
     propertyTaxInput.annualTax = [NSNumber numberWithInt:1];
     
@@ -318,7 +320,7 @@
     PROPERTYPurchaseDetailsInput *purchaseInput = [[PROPERTYPurchaseDetailsInput alloc] init];
     purchaseInput.ownerId=[NSNumber numberWithInt:1];
     purchaseInput.propertyId=[NSNumber numberWithInt:1];
-    purchaseInput.year=[NSNumber numberWithInt:2008];
+    purchaseInput.yearOfPurchase=[NSNumber numberWithInt:2008];
     purchaseInput.price=[NSNumber numberWithInt:78500];
     
     //Invoke GET on employee API
@@ -507,7 +509,7 @@
     tenantRefInput.addressLine1 = @"123 Lane Ave";
     tenantRefInput.addressLine2 = @"Test";
     tenantRefInput.city = @"Columbus";
-    tenantRefInput.state = @"Ohio";
+    tenantRefInput.tenantState = @"Ohio";
     tenantRefInput.zip = @"43201";
     tenantRefInput.countyOrDistrict = @"Franklin";
     tenantRefInput.contactEmail = @"nafisa@gmail.com";
@@ -588,7 +590,7 @@
 }
 
 
-// MARK: Test case for GET
+// MARK: Test cases for GET
 - (void) getExpenseType {
     //Instantiate client object
     PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
@@ -641,7 +643,7 @@
             PROPERTYPropertyResult *result_var;
             result_var=task.result;
             //Obtain array of properties
-            NSArray *arrData = result_var.output.properties;
+            NSArray *arrData = result_var.output.ownerProperties;
             long cnt;
             cnt = arrData.count;
             //Print out count of properties
@@ -1066,6 +1068,582 @@
 }
 
 
+// MARK: Test cases for PUT
+
+- (void) updateTenantOccupation{
+    
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Assign input values to be sent to Dynamo DB via API call
+    PROPERTYTenantOccupationInput *tenantOccupationInput = [[PROPERTYTenantOccupationInput alloc] init];
+    
+    tenantOccupationInput.tenantOccupationId=[NSNumber numberWithInt:4];
+    tenantOccupationInput.tenantId=[NSNumber numberWithInt:6];
+    tenantOccupationInput.ownerId=[NSNumber numberWithInt:8];
+    tenantOccupationInput.employer = @"Nafisa";
+    tenantOccupationInput.title = @"Employee";
+    
+    //Invoke PUT on employee API
+    [[client tenantsOccupationPut:tenantOccupationInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+        
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        
+        if (task.result) {
+            
+            //You are here, so method invocation is a success
+            
+            printf("Success....\n");
+            
+            NSLog(@"Return from API call.Tenant income occupation information has been updated. Please check in the database...\n");
+            
+        }
+        
+        return nil;
+    }];
+    
+}
+
+- (void) updateProperty {
+    
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Assign input values to be sent to Dynamo DB via API call
+    PROPERTYPropertyInput *propertyInput = [[PROPERTYPropertyInput alloc] init];
+    
+    propertyInput.propertyId =[NSNumber numberWithInt:1];
+    propertyInput.ownerId=[NSNumber numberWithInt:3];
+    propertyInput.addressLine1 = @"87 Summit ST";
+    propertyInput.addressLine2 = @"Apartment C";
+    propertyInput.city = @"Columbus";
+    propertyInput.propState = @"OH";
+    propertyInput.zip = @"43201";
+    propertyInput.countyOrDistrict = @"Franklin";
+    propertyInput._description = @"Test2";
+    propertyInput.pictures = @"Test from Xcode";
+    
+    //Invoke PUT on employee API
+    [[client propertiesPut:propertyInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+        
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        
+        if (task.result) {
+            
+            //You are here, so method invocation is a success
+            
+            printf("Success....\n");
+            
+            NSLog(@"Return from API call. Your property has been updated... Please check in the database...\n");
+            
+        }
+        
+        return nil;
+    }];
+    
+}
+
+// Update tenant reference
+- (void) updateTenantReference {
+    
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Assign input values to be sent to Dynamo DB via API call
+    PROPERTYTenantRefInput *tenantRefInput = [[PROPERTYTenantRefInput alloc] init];
+    
+    tenantRefInput.tenantReferenceId = [NSNumber numberWithInt:1];
+    tenantRefInput.tenantId=[NSNumber numberWithInt:1];
+    tenantRefInput.ownerId=[NSNumber numberWithInt:1];
+    tenantRefInput.firstName = @"Yaman";
+    tenantRefInput.lastName = @"Smith";
+    tenantRefInput.addressLine1 = @"123 Lane Ave";
+    tenantRefInput.addressLine2 = @"Test";
+    tenantRefInput.city = @"Columbus";
+    tenantRefInput.tenantState = @"indiana";
+    tenantRefInput.zip = @"43201";
+    tenantRefInput.countyOrDistrict = @"Franklin";
+    tenantRefInput.contactEmail = @"nafisa@gmail.com";
+    tenantRefInput.contactPhone = @"6145551234";
+    tenantRefInput.primaryContact = @"mom";
+    
+    
+    //Invoke Put on employee API
+    [[client tenantsReferencePut:tenantRefInput ] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+        
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        
+        if (task.result) {
+            
+            //You are here, so method invocation is a success
+            
+            printf("Success....\n");
+            
+            NSLog(@"Return from API call.Tenant reference information has been updated. Please check in the database...\n");
+            
+        }
+        
+        return nil;
+    }];
+}
+
+// Update tenant
+- (void) updateTenant {
+    
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Assign input values to be sent to Dynamo DB via API call
+    PROPERTYTenantInput *tenantInput = [[PROPERTYTenantInput alloc] init];
+    
+    tenantInput.tenantId = [NSNumber numberWithInt:1];
+    tenantInput.ownerId=[NSNumber numberWithInt:20];
+    tenantInput.firstName = @"Kiki";
+    tenantInput.lastName = @"Jin";
+    tenantInput.middleName = @"None";
+    tenantInput.age = [NSNumber numberWithInt:21];
+    tenantInput.propertyId = [NSNumber numberWithInt:1];
+    tenantInput.contactEmail = @"Kiki@gmail.com";
+    tenantInput.contactPhone = @"6145661234";
+    tenantInput.primaryContact = @"dad";
+    
+    
+    //Invoke PUT on employee API
+    [[client tenantsPut:tenantInput ] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+        
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        
+        if (task.result) {
+            
+            //You are here, so method invocation is a success
+            
+            printf("Success....\n");
+            
+            NSLog(@"Return from API call.Tenant information has been updated. Please check in the database...\n");
+            
+        }
+        
+        return nil;
+    }];
+    
+    
+}
+
+- (void) updateTenantIncomeExpenses {
+    
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Assign input values to be sent to Dynamo DB via API call
+    PROPERTYTenantIncomeInput *tenantIncomeInput = [[PROPERTYTenantIncomeInput alloc] init];
+    
+    tenantIncomeInput.tenantIncomeExpenseId = [NSNumber numberWithInt:2];
+    tenantIncomeInput.tenantId=[NSNumber numberWithInt:1];
+    tenantIncomeInput.ownerId=[NSNumber numberWithInt:1];
+    tenantIncomeInput.propertyOwnerId = [NSNumber numberWithInt:1];
+    tenantIncomeInput.monthlyIncome=[NSNumber numberWithInt:1];
+    tenantIncomeInput.monthlyExpenses=[NSNumber numberWithInt:1];
+    
+    //Invoke PUT on employee API
+    [[client tenantsIncomeExpensePut:tenantIncomeInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+        
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        
+        if (task.result) {
+            
+            //You are here, so method invocation is a success
+            
+            printf("Success....\n");
+            
+            NSLog(@"Return from API call.Tenant income expenses information has been update. Please check in the database...\n");
+            
+        }
+        
+        return nil;
+    }];
+    
+}
+
+// update tenant background check
+- (void) updateTenantBackgroundCheck {
+    
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Assign input values to be sent to Dynamo DB via API call
+    PROPERTYTenantBackgroundInput *backgroundCheckInput = [[PROPERTYTenantBackgroundInput alloc] init];
+    
+    backgroundCheckInput.tenantBackgroundCheckId=[NSNumber numberWithInt:1];
+    backgroundCheckInput.tenantId=[NSNumber numberWithInt:1];
+    backgroundCheckInput.ownerId=[NSNumber numberWithInt:1];
+    backgroundCheckInput.creditPassedYN=@"N";
+    backgroundCheckInput.criminalPassed=@"No";
+    backgroundCheckInput.evictionPassedYN=@"N";
+    backgroundCheckInput.recommendation=@"Tenant has Bad credit";
+    
+    //Invoke PUT on employee API
+    [[client backgroundCheckPut:backgroundCheckInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+        
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        
+        if (task.result) {
+            
+            //You are here, so method invocation is a success
+            
+            printf("Success....\n");
+            
+            NSLog(@"Return from API call.Tenant background check information has been updated. Please check in the database...\n");
+            
+        }
+        
+        return nil;
+    }];
+    
+}
+
+// update rental agreement
+- (void) updateRentalAgreement {
+    
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Assign input values to be sent to Dynamo DB via API call
+    PROPERTYRentalAgreementInput *rentalAgreementInput = [[PROPERTYRentalAgreementInput alloc] init];
+    
+    rentalAgreementInput.rentalAgreementId = [NSNumber numberWithInt:1];
+    rentalAgreementInput.ownerId=[NSNumber numberWithInt:1];
+    rentalAgreementInput.tenantId=[NSNumber numberWithInt:1];
+    rentalAgreementInput.numberOfOccupants=[NSNumber numberWithInt:6];
+    rentalAgreementInput.monthlyRent=[NSNumber numberWithInt:1];
+    rentalAgreementInput.monthlyRentDue = @"Today";
+    rentalAgreementInput.startDate = @"Today";
+    rentalAgreementInput.endDate = @"tomorrow";
+    rentalAgreementInput.renewalOfFirstTerm = @"renewed";
+    rentalAgreementInput.rentalAgreementCopy = @"copy";
+    rentalAgreementInput.advance=[NSNumber numberWithInt:500];
+    
+    
+    //Invoke PUT on employee API
+    [[client rentalAgreementPut:rentalAgreementInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+        
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        
+        if (task.result) {
+            
+            //You are here, so method invocation is a success
+            
+            printf("Success....\n");
+            
+            NSLog(@"Return from API call. Your rental agreement has been updated... Please check in the database...\n");
+            
+        }
+        
+        return nil;
+    }];
+    
+}
+
+// update purchase details
+- (void) updatePurchaseDetails {
+    
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Assign input values to be sent to Dynamo DB via API call
+    PROPERTYPurchaseDetailsInput *purchaseInput = [[PROPERTYPurchaseDetailsInput alloc] init];
+    
+    purchaseInput.purchaseId=[NSNumber numberWithInt:1];
+    purchaseInput.ownerId=[NSNumber numberWithInt:1];
+    purchaseInput.propertyId=[NSNumber numberWithInt:1];
+    purchaseInput.yearOfPurchase=[NSNumber numberWithInt:2000];
+    purchaseInput.price=[NSNumber numberWithInt:78500];
+    
+    //Invoke PUT on employee API
+    [[client purchaseDetailsPut:purchaseInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+        
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        
+        if (task.result) {
+            
+            //You are here, so method invocation is a success
+            
+            printf("Success....\n");
+            
+            NSLog(@"Return from API call. Your purchase details have been updated... Please check in the database...\n");
+            
+        }
+        
+        return nil;
+    }];
+    
+    
+}
+
+// update property tax
+- (void) updatePropertyTax {
+    
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Assign input values to be sent to Dynamo DB via API call
+    PROPERTYPropertyTaxInput *propertyTaxInput = [[PROPERTYPropertyTaxInput alloc] init];
+    
+    propertyTaxInput.propertyTaxId = [NSNumber numberWithInt:1];
+    propertyTaxInput.propertyId = [NSNumber numberWithInt:1];
+    propertyTaxInput.ownerId = [NSNumber numberWithInt:1];
+    propertyTaxInput.yearOwed = [NSNumber numberWithInt:1];
+    propertyTaxInput.yearPaid = [NSNumber numberWithInt:1];
+    propertyTaxInput.annualTax = [NSNumber numberWithInt:1];
+    
+    //Invoke PUT on employee API
+    [[client propTaxPut:propertyTaxInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+        
+        
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        
+        if (task.result) {
+            
+            //You are here, so method invocation is a success
+            
+            printf("Success....\n");
+            
+            NSLog(@"Return from API call. Your property tax has been updated. Please check in the database.\n");
+            
+        }
+        
+        return nil;
+    }];
+    
+}
+
+// update property owner
+- (void) updatePropertyOwner {
+    
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Assign input values to be sent to Dynamo DB via API call
+    PROPERTYPropertyOwnerInput *propertyOwnerInput = [[PROPERTYPropertyOwnerInput alloc] init];
+    
+    propertyOwnerInput.ownerId = [NSNumber numberWithInt:1];
+    propertyOwnerInput.ownerName = @"Yaman";
+    propertyOwnerInput.email = @"Yaman@gmail.com";
+    propertyOwnerInput.password = @"123secret";
+    propertyOwnerInput.createdDate = @"040318";
+    propertyOwnerInput.activatedYN = @"Today";
+    propertyOwnerInput.profileMemo = @"memo";
+    
+    //Invoke PUT on employee API
+    [[client propOwnerPut:propertyOwnerInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+        
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        
+        if (task.result) {
+            
+            //You are here, so method invocation is a success
+            
+            printf("Success....\n");
+            
+            NSLog(@"Return from API call. Your property owner has been updated. Please check in the database.\n");
+            
+        }
+        
+        return nil;
+    }];
+    
+}
+
+// update property mortgage loan
+- (void) updatePropertyMortgageLoan {
+    
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Assign input values to be sent to Dynamo DB via API call
+    PROPERTYPropertyMortgageLoanInput *propertyMortgageInput = [[PROPERTYPropertyMortgageLoanInput alloc] init];
+    
+    propertyMortgageInput.propertyMortgageLoanId = [NSNumber numberWithInt:1];
+    propertyMortgageInput.propertyId = [NSNumber numberWithInt:1];
+    propertyMortgageInput.ownerId = [NSNumber numberWithInt:1];
+    propertyMortgageInput.mortgageLender = [NSNumber numberWithInt:1];
+    propertyMortgageInput.monthlyMortgageAmount = [NSNumber numberWithInt:1];
+    propertyMortgageInput.outstandingBalance = [NSNumber numberWithInt:1];
+    
+    
+    
+    //Invoke POST on employee API
+    [[client propMortgageLoanPut:propertyMortgageInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+        
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        
+        if (task.result) {
+            
+            //You are here, so method invocation is a success
+            
+            printf("Success....\n");
+            
+            NSLog(@"Return from API call. Your mortgage loan has been updated. Please check in the database.\n");
+            
+        }
+        
+        return nil;
+    }];
+    
+}
+
+// update Property Maintenance Expense
+- (void) updatePropertyMaintenanceExpense {
+    
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Assign input values to be sent to Dynamo DB via API call
+    PROPERTYPropertyMaintExpInput *propertyMaintInput = [[PROPERTYPropertyMaintExpInput alloc] init];
+    
+    propertyMaintInput.propertyMaintanenceExpenseId = [NSNumber numberWithInt:1];
+    propertyMaintInput.propertyId = [NSNumber numberWithInt:1];
+    propertyMaintInput.ownerId = [NSNumber numberWithInt:1];
+    propertyMaintInput.maintenanceExpenseId =[NSNumber numberWithInt:1];
+    propertyMaintInput.expenseAmount = [NSNumber numberWithInt:1];
+    propertyMaintInput.receiptCopy = @"Test from Yaman";
+    propertyMaintInput.receiptDate = @"Test from Yaman";
+    
+    
+    //Invoke PUT on employee API
+    [[client propMaintExpensePut:propertyMaintInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+        
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        
+        if (task.result) {
+            
+            //You are here, so method invocation is a success
+            
+            printf("Success....\n");
+            
+            NSLog(@"Return from API call ... Your property maintenance has been updated. Please check in the database.\n");
+            
+        }
+        
+        return nil;
+    }];
+    
+}
+
+// update property general expense
+- (void) updatePropertyGeneralExpense {
+    
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Assign input values to be sent to Dynamo DB via API call
+    PROPERTYPropertyGeneralExpInput *propertyGeneralInput = [[PROPERTYPropertyGeneralExpInput alloc] init];
+    
+    
+    propertyGeneralInput.propertyGeneralExpenseId = [NSNumber numberWithInt:1];
+    propertyGeneralInput.propertyId = [NSNumber numberWithInt:1];
+    propertyGeneralInput.ownerId = [NSNumber numberWithInt:1];
+    propertyGeneralInput.monthlyCondoFee = [NSNumber numberWithInt:1];
+    propertyGeneralInput.monthlyHomeWarranty = [NSNumber numberWithInt:1];
+    propertyGeneralInput.yearlyPropertyInsurance = [NSNumber numberWithInt:1];
+    propertyGeneralInput.receiptCopy = @"Test from Yaman";
+    
+    
+    
+    //Invoke PUT on employee API
+    [[client generalExpensesPut:propertyGeneralInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+        
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        
+        if (task.result) {
+            
+            //You are here, so method invocation is a success
+            
+            printf("Success....\n");
+            
+            NSLog(@"Return from API call. Your property general expense has been updated. Please check in the database.\n");
+            
+        }
+        
+        return nil;
+    }];
+    
+}
+
+// update maintenance expense type
+- (void) updateMaintenanceExpenseType {
+    
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Assign input values to be sent to Dynamo DB via API call
+    PROPERTYMaintenanceExpTypeInput *MaintenanceExpenseTypeInput = [[PROPERTYMaintenanceExpTypeInput alloc] init];
+    
+    MaintenanceExpenseTypeInput.maintenanceExpenseId = [NSNumber numberWithInteger:1];
+    MaintenanceExpenseTypeInput.ownerId=[NSNumber numberWithInt:1];
+    MaintenanceExpenseTypeInput._description = @"New Coaches";
+    
+    //Invoke Put on employee API
+    [[client maintenanceExpensePut:MaintenanceExpenseTypeInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+        
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        
+        if (task.result) {
+            
+            //You are here, so method invocation is a success
+            
+            printf("Success....\n");
+            
+            NSLog(@"Return from API call ... Your maintenance expense type has been updated... Please check in the database...\n");
+            
+        }
+        
+        return nil;
+    }];
+    
+}
+
+
 // MARK: Actions for creating new records
 - (IBAction)addMaintExpTypeBtnPress:(id)sender {
     
@@ -1127,7 +1705,7 @@
     propertyInput.addressLine1 = addrLine1;
     propertyInput.addressLine2 = addrLine2;
     propertyInput.city = city;
-    propertyInput.state = state;
+    propertyInput.propState = state;
     propertyInput.zip = zip;
     propertyInput.countyOrDistrict = county;
     propertyInput._description = descrip;
@@ -1174,7 +1752,7 @@
     PROPERTYPurchaseDetailsInput *purchaseInput = [[PROPERTYPurchaseDetailsInput alloc] init];
     purchaseInput.ownerId = [f numberFromString:OwnerId];
     purchaseInput.propertyId = [f numberFromString:PropertyId];
-    purchaseInput.year = [f numberFromString:Year];
+    purchaseInput.yearOfPurchase = [f numberFromString:Year];
     purchaseInput.price = [f numberFromString:Price];
     
     //Invoke GET on employee API
@@ -1221,7 +1799,7 @@
     
     propertyMaintInput.propertyId = [f numberFromString:PropertyId];
     propertyMaintInput.ownerId = [f numberFromString:OwnerId];
-    propertyMaintInput.maintanenceExpenseId = [f numberFromString:ExpenseId];
+    propertyMaintInput.maintenanceExpenseId = [f numberFromString:ExpenseId];
     propertyMaintInput.expenseAmount = [f numberFromString:ExpenseAmt];
     propertyMaintInput.receiptCopy = ReceiptCopy;
     propertyMaintInput.receiptDate = ReceiptDate;
@@ -1366,7 +1944,7 @@
     PROPERTYPropertyTaxInput *propertyTaxInput = [[PROPERTYPropertyTaxInput alloc] init];
     propertyTaxInput.propertyId = [f numberFromString:PropertyId];
     propertyTaxInput.ownerId = [f numberFromString:OwnerId];
-    propertyTaxInput.year = [f numberFromString:Year];
+    propertyTaxInput.yearOwed = [f numberFromString:Year];
     propertyTaxInput.yearPaid = [f numberFromString:YearPaid];
     propertyTaxInput.annualTax = [f numberFromString:AnnualTax];
     
@@ -1717,6 +2295,82 @@
 
 
 // MARK: Actions for getting list of records
+- (IBAction)getMaintExpTypeBtnPress:(id)sender {
+    
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+
+    //Invoke GET on API
+    [[client maintenanceExpenseGet] continueWithBlock:^id(AWSTask *task){
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        if (task.result) {
+            //You are here, so method invocation is a success
+            self.getMaintExpTypeList.text = @"Success...";
+            
+            //Convert result object to maint result
+            PROPERTYMaintenanceExpTypeResult *result_var;
+            result_var=task.result;
+            //Obtain array of maint exp
+            NSArray *arrData = result_var.output.maintenanceExpenseTypes;
+            long cnt;
+            cnt = arrData.count;
+            //Print out count of maint exp
+            NSLog(@"Number of maintenance expenses %lu\n",cnt);
+
+            //Print out each maint exp details to the console
+            for (id element in arrData){
+                NSLog(@"%@", element);
+            }
+        }
+        return nil;
+    }];
+
+}
+
+
+- (IBAction)getPropBtnPress:(id)sender {
+    
+    NSString *Display = @"";
+    
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Invoke GET on API
+    [[client propertiesGet] continueWithBlock:^id(AWSTask *task){
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        if (task.result) {
+            //You are here, so method invocation is a success
+            printf("Success....\n");
+            //Convert result object to maint result
+            
+            PROPERTYPropertyResult *result_var;
+            result_var=task.result;
+            //Obtain array of properties
+            NSArray *arrData = result_var.output.ownerProperties;
+            long cnt;
+            cnt = arrData.count;
+            //Print out count of properties
+            NSLog(@"Number of properties %lu\n",cnt);
+
+            NSString *Records = @"";
+            //Print out each prop details to the console
+            for (id element in arrData){
+                NSLog(@"%@", element);
+                Records = [Records stringByAppendingString:element];
+            }
+            
+            [self.getPropList setText:[NSString stringWithFormat:@"%@",Records]];
+        }
+        return nil;
+    }];
+    
+}
 
 
 

@@ -44,7 +44,7 @@
 @property (nonatomic, strong, nullable) NSString *city;
 
 
-@property (nonatomic, strong, nullable) NSString *state;
+@property (nonatomic, strong, nullable) NSString *tenantState;
 
 
 @property (nonatomic, strong, nullable) NSString *countyOrDistrict;

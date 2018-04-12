@@ -44,7 +44,7 @@
 @property (nonatomic, strong, nonnull) NSString *city;
 
 
-@property (nonatomic, strong, nonnull) NSString *state;
+@property (nonatomic, strong, nonnull) NSString *tenantState;
 
 
 @property (nonatomic, strong, nonnull) NSString *zip;
