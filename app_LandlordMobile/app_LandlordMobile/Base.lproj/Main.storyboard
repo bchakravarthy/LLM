@@ -955,10 +955,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yQr-Mt-brl" userLabel="get btn">
-                                <rect key="frame" x="68" y="94" width="238" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="view btn"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yQr-Mt-brl" userLabel="get record">
+                                <rect key="frame" x="16" y="595" width="154" height="52"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <state key="normal" image="view record btn"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ACl-zu-ejU" userLabel="update record">
+                                <rect key="frame" x="205" y="595" width="154" height="52"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <state key="normal" image="update record btn"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -973,7 +978,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bSk-WF-Ena" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="24" y="-1575"/>
+            <point key="canvasLocation" x="23.5" y="-1575.5"/>
         </scene>
         <!--list tenant bg check-->
         <scene sceneID="zKb-JT-gWS">
@@ -983,10 +988,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="c98-M7-TgW">
-                                <rect key="frame" x="68" y="89" width="238" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="c98-M7-TgW" userLabel="get record">
+                                <rect key="frame" x="16" y="595" width="154" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="view btn"/>
+                                <state key="normal" image="view record btn"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Lzq-Yd-AML" userLabel="update record">
+                                <rect key="frame" x="205" y="595" width="154" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="update record btn"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1011,10 +1021,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jdm-lh-wU8">
-                                <rect key="frame" x="68" y="88" width="238" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jdm-lh-wU8" userLabel="ger record">
+                                <rect key="frame" x="16" y="595" width="152" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="view btn"/>
+                                <state key="normal" image="view record btn"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zzG-h9-aR1" userLabel="update record">
+                                <rect key="frame" x="207" y="595" width="152" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="update record btn"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1039,10 +1054,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ON0-bp-FR2">
-                                <rect key="frame" x="68" y="92" width="238" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ON0-bp-FR2" userLabel="get record">
+                                <rect key="frame" x="16" y="595" width="152" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="view btn"/>
+                                <state key="normal" image="view record btn"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hI9-RE-djr" userLabel="update record">
+                                <rect key="frame" x="207" y="595" width="152" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="view record btn"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1067,10 +1087,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JkS-EQ-PZU">
-                                <rect key="frame" x="68" y="90" width="238" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JkS-EQ-PZU" userLabel="get record">
+                                <rect key="frame" x="16" y="595" width="152" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="view btn"/>
+                                <state key="normal" image="view record btn"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bLb-X7-Hnl" userLabel="update record">
+                                <rect key="frame" x="207" y="595" width="152" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="update record btn"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1095,10 +1120,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="mDK-ll-hqN">
-                                <rect key="frame" x="68" y="83" width="238" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="mDK-ll-hqN" userLabel="get record">
+                                <rect key="frame" x="16" y="595" width="152" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="view btn"/>
+                                <state key="normal" image="view record btn"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wac-F6-1oJ" userLabel="update record">
+                                <rect key="frame" x="207" y="595" width="152" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="update record btn"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1123,10 +1153,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Rk8-W0-lNS">
-                                <rect key="frame" x="68" y="86" width="238" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Rk8-W0-lNS" userLabel="get record">
+                                <rect key="frame" x="16" y="595" width="152" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="view btn"/>
+                                <state key="normal" image="view record btn"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="NcZ-7B-a6a" userLabel="update record">
+                                <rect key="frame" x="207" y="595" width="152" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="update record btn"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1147,15 +1182,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="f4C-GC-uye">
-                                <rect key="frame" x="68" y="80" width="238" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="f4C-GC-uye" userLabel="get record">
+                                <rect key="frame" x="16" y="595" width="152" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="view btn"/>
+                                <state key="normal" image="view record btn"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="H5b-Ri-apB" userLabel="update record">
+                                <rect key="frame" x="207" y="595" width="152" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="update record btn"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Sat-CY-Fsv">
+                    <navigationItem key="navigationItem" title="Rental Agreement" id="Sat-CY-Fsv">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Mb6-Hr-l4l">
                             <connections>
                                 <segue destination="cak-Wy-VTb" kind="push" id="JMx-rT-MCr"/>
@@ -1189,15 +1229,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8FY-HM-cUQ">
-                                <rect key="frame" x="68" y="95" width="238" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8FY-HM-cUQ" userLabel="get record">
+                                <rect key="frame" x="16" y="595" width="152" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="view btn"/>
+                                <state key="normal" image="view record btn"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="C4O-x9-lxX" userLabel="update record">
+                                <rect key="frame" x="207" y="595" width="152" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="update record btn"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="aWQ-gE-KVk">
+                    <navigationItem key="navigationItem" title="Tenant" id="aWQ-gE-KVk">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="csv-oX-Zkh">
                             <connections>
                                 <segue destination="nMA-ao-uym" kind="push" id="I6e-Sn-qET"/>
@@ -1217,15 +1262,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0bo-zn-dQm">
-                                <rect key="frame" x="68" y="86" width="238" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0bo-zn-dQm" userLabel="ger record">
+                                <rect key="frame" x="16" y="595" width="152" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="view btn"/>
+                                <state key="normal" image="view record btn"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="QDA-Mp-vnI" userLabel="update record">
+                                <rect key="frame" x="207" y="595" width="152" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="update record btn"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="GTH-2B-byI">
+                    <navigationItem key="navigationItem" title="Purchase Detail" id="GTH-2B-byI">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="0rL-cV-vTH">
                             <connections>
                                 <segue destination="aA3-Y6-SO7" kind="push" id="Mty-dL-JTT"/>
@@ -1367,25 +1417,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Test text for maintenance expense types." textAlignment="natural" id="CP2-qY-PI2">
-                                <rect key="frame" x="16" y="183" width="343" height="464"/>
+                                <rect key="frame" x="16" y="78" width="343" height="497"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yGU-OH-PUJ">
-                                <rect key="frame" x="68" y="108" width="238" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yGU-OH-PUJ" userLabel="ger record">
+                                <rect key="frame" x="16" y="595" width="152" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="view btn"/>
+                                <state key="normal" image="view record btn"/>
                                 <connections>
                                     <action selector="getMaintExpTypeBtnPress:" destination="GWx-zf-2Pm" eventType="touchUpInside" id="0BZ-W1-eED"/>
                                     <action selector="getMaintExpTypeBtnPress:" destination="zvU-GI-9Yh" eventType="touchUpInside" id="zYW-H9-Rd1"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ia9-Rh-IiC" userLabel="update record">
+                                <rect key="frame" x="207" y="595" width="152" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="update record btn"/>
+                                <connections>
+                                    <action selector="getMaintExpTypeBtnPress:" destination="zvU-GI-9Yh" eventType="touchUpInside" id="BRX-WR-sI1"/>
+                                    <action selector="getMaintExpTypeBtnPress:" destination="GWx-zf-2Pm" eventType="touchUpInside" id="mSD-NO-5eN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="EWO-WG-Lja">
+                    <navigationItem key="navigationItem" title="Maintenance Expense Type" id="EWO-WG-Lja">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="bHi-ms-9Hy">
                             <connections>
                                 <segue destination="n98-UA-L72" kind="push" id="iOE-ov-YjH"/>
@@ -1399,7 +1458,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vJr-Rb-nOm" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="GWx-zf-2Pm" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2031" y="-761"/>
+            <point key="canvasLocation" x="2030.5" y="-761.5"/>
         </scene>
         <!--list property-->
         <scene sceneID="Zxc-6P-5V9">
@@ -1409,21 +1468,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9yq-lh-WHL">
-                                <rect key="frame" x="68" y="93" width="238" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9yq-lh-WHL" userLabel="ger record">
+                                <rect key="frame" x="16" y="595" width="152" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="view btn"/>
+                                <state key="normal" image="view record btn"/>
                                 <connections>
                                     <action selector="getPropBtnPress:" destination="LID-L3-P9e" eventType="touchUpInside" id="GMp-IL-KAK"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="All the records in the property table." textAlignment="natural" id="Bb8-7e-eVs">
-                                <rect key="frame" x="16" y="165" width="343" height="482"/>
+                                <rect key="frame" x="16" y="77" width="343" height="498"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zWE-3J-dRs" userLabel="update record">
+                                <rect key="frame" x="207" y="595" width="152" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="update record btn"/>
+                                <connections>
+                                    <action selector="getPropBtnPress:" destination="LID-L3-P9e" eventType="touchUpInside" id="HkV-79-QAj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -1793,7 +1860,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="gcC-Aj-WW6">
+                    <navigationItem key="navigationItem" title="Property Maintenance Expense" id="gcC-Aj-WW6">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="n3a-hg-C2G">
                             <connections>
                                 <segue destination="hBw-M5-Vwt" kind="push" id="PLz-fY-ciP"/>
@@ -1864,7 +1931,9 @@
         <image name="tenant label" width="238" height="42"/>
         <image name="tenant occ label" width="238" height="42"/>
         <image name="tenant ref label" width="238" height="42"/>
+        <image name="update record btn" width="154" height="52"/>
         <image name="view btn" width="238" height="42"/>
+        <image name="view record btn" width="154" height="52"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Gn7-NS-BHe"/>
