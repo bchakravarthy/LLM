@@ -407,10 +407,10 @@
             </objects>
             <point key="canvasLocation" x="1037.5" y="37.5"/>
         </scene>
-        <!--add purchase detail-->
+        <!--Add purchase detail-->
         <scene sceneID="xz5-AF-ljo">
             <objects>
-                <viewController id="aA3-Y6-SO7" userLabel="add purchase detail" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="aA3-Y6-SO7" userLabel="Add purchase detail" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4SU-Vt-0bJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -569,10 +569,10 @@
             </objects>
             <point key="canvasLocation" x="1532.5" y="804.5"/>
         </scene>
-        <!--add prop tax-->
+        <!--Add prop tax-->
         <scene sceneID="34n-Pa-VB9">
             <objects>
-                <viewController id="6Vp-3m-jho" userLabel="add prop tax" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="6Vp-3m-jho" userLabel="Add prop tax" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oZj-Zb-YxG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -650,10 +650,10 @@
             </objects>
             <point key="canvasLocation" x="2030.5" y="804.5"/>
         </scene>
-        <!--add tenant bg check-->
+        <!--Add tenant bg check-->
         <scene sceneID="BOm-36-s2B">
             <objects>
-                <viewController id="ooK-Fq-nik" userLabel="add tenant bg check" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="ooK-Fq-nik" userLabel="Add tenant bg check" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PMc-Mo-BXD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -740,10 +740,10 @@
             </objects>
             <point key="canvasLocation" x="2533.5" y="804.5"/>
         </scene>
-        <!--add tenant income exp-->
+        <!--Add tenant income exp-->
         <scene sceneID="1i4-Di-P9K">
             <objects>
-                <viewController id="npH-j2-rlq" userLabel="add tenant income exp" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="npH-j2-rlq" userLabel="Add tenant income exp" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Td-dB-Ume">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -965,6 +965,13 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <state key="normal" image="update record btn"/>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="List of records from property tax table." textAlignment="natural" id="8BB-5j-ba2" userLabel="record list">
+                                <rect key="frame" x="16" y="77" width="343" height="497"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -980,10 +987,10 @@
             </objects>
             <point key="canvasLocation" x="23.5" y="-1575.5"/>
         </scene>
-        <!--list tenant bg check-->
+        <!--List tenant bg check-->
         <scene sceneID="zKb-JT-gWS">
             <objects>
-                <viewController id="Ne1-lq-F7k" userLabel="list tenant bg check" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="Ne1-lq-F7k" userLabel="List tenant bg check" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qPM-za-jfM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -998,6 +1005,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="update record btn"/>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="List of records from tenant background check table." textAlignment="natural" id="9L3-iw-EqI" userLabel="record list">
+                                <rect key="frame" x="16" y="85" width="343" height="497"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -1013,10 +1027,10 @@
             </objects>
             <point key="canvasLocation" x="526" y="-1576"/>
         </scene>
-        <!--list tenant income exp-->
+        <!--List tenant income exp-->
         <scene sceneID="Anh-P3-pa1">
             <objects>
-                <viewController id="8De-De-CLe" userLabel="list tenant income exp" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="8De-De-CLe" userLabel="List tenant income exp" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="31k-cf-YjR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1031,6 +1045,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="update record btn"/>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="List of records from tenant income expense table." textAlignment="natural" id="gEY-4M-TvV" userLabel="record list">
+                                <rect key="frame" x="16" y="85" width="343" height="497"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -1046,10 +1067,10 @@
             </objects>
             <point key="canvasLocation" x="1038" y="-1577"/>
         </scene>
-        <!--list tenant occupation-->
+        <!--List tenant occupation-->
         <scene sceneID="afp-ph-FiS">
             <objects>
-                <viewController id="8hT-ID-TrX" userLabel="list tenant occupation" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="8hT-ID-TrX" userLabel="List tenant occupation" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k4b-xY-VcJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1064,6 +1085,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="view record btn"/>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="List of records from tenant occupation table." textAlignment="natural" id="xPo-U0-hb6" userLabel="record list">
+                                <rect key="frame" x="15" y="79" width="343" height="497"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -1079,10 +1107,10 @@
             </objects>
             <point key="canvasLocation" x="1533" y="-1576"/>
         </scene>
-        <!--list prop general exp-->
+        <!--List prop general exp-->
         <scene sceneID="6pf-RJ-HzL">
             <objects>
-                <viewController id="kfr-OD-Cyu" userLabel="list prop general exp" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="kfr-OD-Cyu" userLabel="List prop general exp" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vgK-Zk-FeV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1097,6 +1125,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="update record btn"/>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="List of records from property general expense table." textAlignment="natural" id="lOz-Ow-Gt1" userLabel="record list">
+                                <rect key="frame" x="16" y="85" width="343" height="497"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -1130,6 +1165,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="update record btn"/>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="List of records from property mortgage loan table." textAlignment="natural" id="MUG-4G-C5c" userLabel="record list">
+                                <rect key="frame" x="15" y="73" width="343" height="497"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -1145,10 +1187,10 @@
             </objects>
             <point key="canvasLocation" x="2534" y="-1578"/>
         </scene>
-        <!--list tenant reference-->
+        <!--List tenant reference-->
         <scene sceneID="jw1-JM-cW2">
             <objects>
-                <viewController id="Rcb-Na-TJT" userLabel="list tenant reference" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="Rcb-Na-TJT" userLabel="List tenant reference" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ANq-I2-ZJB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1163,6 +1205,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="update record btn"/>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="List of records from tenant reference table." textAlignment="natural" id="loC-V3-kVx" userLabel="record list">
+                                <rect key="frame" x="16" y="85" width="343" height="497"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -1174,10 +1223,10 @@
             </objects>
             <point key="canvasLocation" x="3019" y="-1576"/>
         </scene>
-        <!--list rental agreement-->
+        <!--List rental agreement-->
         <scene sceneID="VZX-32-MTA">
             <objects>
-                <viewController id="WVL-5U-gc8" userLabel="list rental agreement" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="WVL-5U-gc8" userLabel="List rental agreement" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dhv-Vi-Zzz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1192,6 +1241,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="update record btn"/>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="List of records from rental agreement table." textAlignment="natural" id="Z7S-SU-s9o" userLabel="record list">
+                                <rect key="frame" x="16" y="77" width="343" height="497"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -1221,10 +1277,10 @@
             </objects>
             <point key="canvasLocation" x="24" y="-760"/>
         </scene>
-        <!--list tenant-->
+        <!--List tenant-->
         <scene sceneID="amL-LT-nWt">
             <objects>
-                <viewController id="mUE-ff-vjF" userLabel="list tenant" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="mUE-ff-vjF" userLabel="List tenant" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wWX-Qh-Ef1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1239,6 +1295,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="update record btn"/>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="List of records from tenant table." textAlignment="natural" id="IZc-zl-KW7" userLabel="record list">
+                                <rect key="frame" x="16" y="77" width="343" height="497"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -1254,10 +1317,10 @@
             </objects>
             <point key="canvasLocation" x="3551" y="-762"/>
         </scene>
-        <!--list purchase detail-->
+        <!--List purchase detail-->
         <scene sceneID="s0M-mz-aSN">
             <objects>
-                <viewController id="IZO-Ii-7vK" userLabel="list purchase detail" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="IZO-Ii-7vK" userLabel="List purchase detail" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sRT-BA-xGO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1272,6 +1335,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="update record btn"/>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="List of records from purchase detail table." textAlignment="natural" id="q4k-83-63n" userLabel="record list">
+                                <rect key="frame" x="16" y="85" width="343" height="497"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -1408,10 +1478,10 @@
             </objects>
             <point key="canvasLocation" x="1536" y="-761"/>
         </scene>
-        <!--list maint exp type-->
+        <!--List maint exp type-->
         <scene sceneID="37f-8q-eyH">
             <objects>
-                <viewController id="zvU-GI-9Yh" userLabel="list maint exp type" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="zvU-GI-9Yh" userLabel="List maint exp type" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3X8-rP-heR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1460,10 +1530,10 @@
             </objects>
             <point key="canvasLocation" x="2030.5" y="-761.5"/>
         </scene>
-        <!--list property-->
+        <!--List property-->
         <scene sceneID="Zxc-6P-5V9">
             <objects>
-                <viewController id="LID-L3-P9e" userLabel="list property" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="LID-L3-P9e" userLabel="List property" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4G0-DV-epQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1563,10 +1633,10 @@
             </objects>
             <point key="canvasLocation" x="1535.5" y="37.5"/>
         </scene>
-        <!--add Tenant Occupation-->
+        <!--Add Tenant Occupation-->
         <scene sceneID="XvK-OK-vFL">
             <objects>
-                <viewController id="Xgs-y1-JrN" userLabel="add Tenant Occupation" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="Xgs-y1-JrN" userLabel="Add Tenant Occupation" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3eN-rN-b43">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1635,10 +1705,10 @@
             </objects>
             <point key="canvasLocation" x="2030.5" y="37.5"/>
         </scene>
-        <!--add prop general exp-->
+        <!--Add prop general exp-->
         <scene sceneID="Edh-WB-91Q">
             <objects>
-                <viewController id="PIE-Eq-79H" userLabel="add prop general exp" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="PIE-Eq-79H" userLabel="Add prop general exp" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gIC-sk-vsr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1725,10 +1795,10 @@
             </objects>
             <point key="canvasLocation" x="2533.5" y="37.5"/>
         </scene>
-        <!--add prop mort loan-->
+        <!--Add prop mort loan-->
         <scene sceneID="68L-3x-lpu">
             <objects>
-                <viewController id="KQb-oC-V6p" userLabel="add prop mort loan" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="KQb-oC-V6p" userLabel="Add prop mort loan" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I9d-8u-ucm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1806,10 +1876,10 @@
             </objects>
             <point key="canvasLocation" x="3018.5" y="37.5"/>
         </scene>
-        <!--add tenant reference-->
+        <!--Add tenant reference-->
         <scene sceneID="NHF-GE-0cG">
             <objects>
-                <viewController id="zRE-GT-hMp" userLabel="add tenant reference" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="zRE-GT-hMp" userLabel="Add tenant reference" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qHc-WA-PG4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1844,19 +1914,31 @@
             </objects>
             <point key="canvasLocation" x="3550.5" y="37.5"/>
         </scene>
-        <!--list prop maint exp-->
+        <!--List prop maint exp-->
         <scene sceneID="N2E-aP-Mb0">
             <objects>
-                <viewController id="IuG-FZ-5Fz" userLabel="list prop maint exp" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="IuG-FZ-5Fz" userLabel="List prop maint exp" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WHX-uN-Ek2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="d2w-G6-NmA">
-                                <rect key="frame" x="68" y="91" width="238" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="d2w-G6-NmA" userLabel="get record">
+                                <rect key="frame" x="16" y="595" width="152" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="view btn"/>
+                                <state key="normal" image="view record btn"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="o8M-fw-gCE" userLabel="update record">
+                                <rect key="frame" x="207" y="595" width="152" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="update record btn"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="List of records from property maintenance table." textAlignment="natural" id="drR-VD-izu" userLabel="record list">
+                                <rect key="frame" x="16" y="85" width="343" height="497"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -1932,7 +2014,6 @@
         <image name="tenant occ label" width="238" height="42"/>
         <image name="tenant ref label" width="238" height="42"/>
         <image name="update record btn" width="154" height="52"/>
-        <image name="view btn" width="238" height="42"/>
         <image name="view record btn" width="154" height="52"/>
     </resources>
     <inferredMetricsTieBreakers>
