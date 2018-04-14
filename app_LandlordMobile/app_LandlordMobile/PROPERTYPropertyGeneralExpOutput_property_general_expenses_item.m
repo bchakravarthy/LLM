@@ -24,6 +24,7 @@
              @"propertyId": @"property_id",
              @"ownerId": @"owner_id",
              @"monthlyCondoFee": @"monthly_condo_fee",
+             @"monthlyHomeWarranty": @"monthly_home_warranty",
              @"yearlyPropertyInsurance": @"yearly_property_insurance",
              @"receiptCopy": @"receipt_copy"
              };

@@ -42,7 +42,7 @@
 //    [self insertTenant];
 //    [self getExpenseType];
     
-//    [self getExpenseType];
+    [self getExpenseType];
 //    [self getProperty];
 //    [self getPropertyMaintExp];
 //    [self getPropertyGeneralExp];
@@ -1687,6 +1687,9 @@
 
 - (IBAction)addPropBtnPress:(id)sender {
     
+    NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
+    
+    NSString *OwnerId = self.addPropOwnerId.text;
     NSString *addrLine1 = self.addPropAddrLine1.text;
     NSString *addrLine2 = self.addPropAddrLine2.text;
     NSString *city = self.addPropCity.text;
@@ -1701,7 +1704,7 @@
     //Assign input values to be sent to Dynamo DB via API call
     PROPERTYPropertyInput *propertyInput = [[PROPERTYPropertyInput alloc] init];
     
-    propertyInput.ownerId=[NSNumber numberWithInt:2018];
+    propertyInput.ownerId=[f numberFromString:OwnerId];
     propertyInput.addressLine1 = addrLine1;
     propertyInput.addressLine2 = addrLine2;
     propertyInput.city = city;
@@ -2297,6 +2300,8 @@
 // MARK: Actions for getting list of records
 - (IBAction)getMaintExpTypeBtnPress:(id)sender {
     
+    NSString *Display = @"";
+    
     //Instantiate client object
     PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
 
@@ -2308,22 +2313,29 @@
         }
         if (task.result) {
             //You are here, so method invocation is a success
-            self.getMaintExpTypeList.text = @"Success...";
+            NSString *Info = [Display stringByAppendingString:@"Succecc...\n"];
             
             //Convert result object to maint result
             PROPERTYMaintenanceExpTypeResult *result_var;
             result_var=task.result;
+            
             //Obtain array of maint exp
             NSArray *arrData = result_var.output.maintenanceExpenseTypes;
             long cnt;
             cnt = arrData.count;
             //Print out count of maint exp
-            NSLog(@"Number of maintenance expenses %lu\n",cnt);
+            NSString *Count = [NSString stringWithFormat:@"Number of maintenance expenses %lu\n",cnt];
+            NSString *InfoWithCount = [Info stringByAppendingString:Count];
 
             //Print out each maint exp details to the console
             for (id element in arrData){
-                NSLog(@"%@", element);
+                NSString *record = [NSString stringWithFormat:@"%@",element];
+                InfoWithCount = [InfoWithCount stringByAppendingString:record];
             }
+            
+            NSLog(Display);
+            [self.getMaintExpTypeList setText:InfoWithCount];
+            
         }
         return nil;
     }];
@@ -2375,6 +2387,101 @@
 
 
 // MARK: Actions for updating existing records
+- (IBAction)updateMaintExpTypeBtnPress:(id)sender {
+    
+    NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
+    
+    NSString *MaintExpTypeId = self.updateMaintExpTypeId.text;
+    NSString *OwnerId = self.updateMaintExpTypeOwnerId.text;
+    NSString *Desrip = self.updateMaintExpTypeDescription.text;
+    
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Assign input values to be sent to Dynamo DB via API call
+    PROPERTYMaintenanceExpTypeInput *MaintenanceExpenseTypeInput = [[PROPERTYMaintenanceExpTypeInput alloc] init];
+    
+    MaintenanceExpenseTypeInput.maintenanceExpenseId = [f numberFromString:MaintExpTypeId];
+    MaintenanceExpenseTypeInput.ownerId=[f numberFromString:OwnerId];
+    MaintenanceExpenseTypeInput._description = Desrip;
+    
+    //Invoke Put on employee API
+    [[client maintenanceExpensePut:MaintenanceExpenseTypeInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+        
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        
+        if (task.result) {
+            
+            //You are here, so method invocation is a success
+            
+            printf("Success....\n");
+            
+            NSLog(@"Return from API call ... Your maintenance expense type has been updated... Please check in the database...\n");
+            
+        }
+        
+        return nil;
+    }];
+    
+}
+
+
+- (IBAction)updatePropertyBtnPress:(id)sender {
+    
+    NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
+    
+    NSString *PropertyId = self.updatePropertyId.text;
+    NSString *OwnerId = self.updatePropertyOwnerId.text;
+    NSString *AddrLine1 = self.updatePropertyAddrLine1.text;
+    NSString *AddrLine2 = self.updatePropertyAddrLine2.text;
+    NSString *City = self.updatePropertyCity.text;
+    NSString *State = self.updatePropertyState.text;
+    NSString *Zip = self.updatePropertyZip.text;
+    NSString *County = self.updatePropertyCounty.text;
+    NSString *Descrip = self.updatePropertyDescription.text;
+    
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Assign input values to be sent to Dynamo DB via API call
+    PROPERTYPropertyInput *propertyInput = [[PROPERTYPropertyInput alloc] init];
+    
+    propertyInput.propertyId =[f numberFromString:PropertyId];
+    propertyInput.ownerId=[f numberFromString:OwnerId];
+    propertyInput.addressLine1 = AddrLine1;
+    propertyInput.addressLine2 = AddrLine2;
+    propertyInput.city = City;
+    propertyInput.propState = State;
+    propertyInput.zip = Zip;
+    propertyInput.countyOrDistrict = County;
+    propertyInput._description = Descrip;
+    propertyInput.pictures = @"Test from Xcode";
+    
+    //Invoke PUT on employee API
+    [[client propertiesPut:propertyInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+        
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        
+        if (task.result) {
+            
+            //You are here, so method invocation is a success
+            
+            printf("Success....\n");
+            
+            NSLog(@"Return from API call. Your property has been updated... Please check in the database...\n");
+            
+        }
+        
+        return nil;
+    }];
+    
+}
 
 
 

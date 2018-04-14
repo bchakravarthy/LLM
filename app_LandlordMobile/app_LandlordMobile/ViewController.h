@@ -26,6 +26,7 @@
 
 
 // MARK: Property
+@property (weak, nonatomic) IBOutlet UITextField *addPropOwnerId;
 @property (weak, nonatomic) IBOutlet UITextField *addPropAddrLine1;
 @property (weak, nonatomic) IBOutlet UITextField *addPropAddrLine2;
 @property (weak, nonatomic) IBOutlet UITextField *addPropCity;
@@ -35,6 +36,16 @@
 @property (weak, nonatomic) IBOutlet UITextField *addPropDescrp;
 // Get property
 @property (weak, nonatomic) IBOutlet UITextView *getPropList;
+// For update
+@property (weak, nonatomic) IBOutlet UITextField *updatePropertyId;
+@property (weak, nonatomic) IBOutlet UITextField *updatePropertyOwnerId;
+@property (weak, nonatomic) IBOutlet UITextField *updatePropertyDescription;
+@property (weak, nonatomic) IBOutlet UITextField *updatePropertyAddrLine1;
+@property (weak, nonatomic) IBOutlet UITextField *updatePropertyAddrLine2;
+@property (weak, nonatomic) IBOutlet UITextField *updatePropertyCity;
+@property (weak, nonatomic) IBOutlet UITextField *updatePropertyState;
+@property (weak, nonatomic) IBOutlet UITextField *updatePropertyZip;
+@property (weak, nonatomic) IBOutlet UITextField *updatePropertyCounty;
 
 
 // MARK: Property general expense
@@ -60,6 +71,10 @@
 @property (weak, nonatomic) IBOutlet UITextField *addMaintExpTypeDescp;
 // For GET
 @property (weak, nonatomic) IBOutlet UITextView *getMaintExpTypeList;
+// For UPDATE
+@property (weak, nonatomic) IBOutlet UITextField *updateMaintExpTypeOwnerId;
+@property (weak, nonatomic) IBOutlet UITextField *updateMaintExpTypeDescription;
+@property (weak, nonatomic) IBOutlet UITextField *updateMaintExpTypeId;
 
 
 // MARK: Purchase details

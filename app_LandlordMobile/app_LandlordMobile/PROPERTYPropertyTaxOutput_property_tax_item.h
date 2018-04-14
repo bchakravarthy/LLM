@@ -32,7 +32,7 @@
 @property (nonatomic, strong, nullable) NSString *annualTax;
 
 
-@property (nonatomic, strong, nullable) NSNumber *year;
+@property (nonatomic, strong, nullable) NSNumber *yearOwed;
 
 
 @property (nonatomic, strong, nullable) NSNumber *yearPaid;
