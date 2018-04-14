@@ -963,7 +963,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="eos-om-Zed">
+                    <navigationItem key="navigationItem" title="Property Tax" id="eos-om-Zed">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="KJI-2D-hJx">
                             <connections>
                                 <segue destination="6Vp-3m-jho" kind="push" id="Ljl-hl-05o"/>
@@ -991,7 +991,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="J3Y-se-X4S">
+                    <navigationItem key="navigationItem" title="Background Check" id="J3Y-se-X4S">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="370-9t-AWh">
                             <connections>
                                 <segue destination="ooK-Fq-nik" kind="push" id="H6R-lm-NwN"/>
@@ -1019,7 +1019,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="tPg-UQ-ZoT">
+                    <navigationItem key="navigationItem" title="Tenant Income Expense" id="tPg-UQ-ZoT">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="LJc-jn-LAr">
                             <connections>
                                 <segue destination="npH-j2-rlq" kind="push" id="Nt7-3R-Gs3"/>
@@ -1047,7 +1047,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="BpL-pP-T94">
+                    <navigationItem key="navigationItem" title="Tenant Occupation" id="BpL-pP-T94">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="zpa-zO-GBO">
                             <connections>
                                 <segue destination="Xgs-y1-JrN" kind="push" id="wUW-bw-Lzi"/>
@@ -1075,7 +1075,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="k35-j6-IK8">
+                    <navigationItem key="navigationItem" title="Property General Expense" id="k35-j6-IK8">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Bx2-0T-5oz">
                             <connections>
                                 <segue destination="PIE-Eq-79H" kind="push" id="lcY-pr-7FQ"/>
@@ -1103,7 +1103,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="4y3-ab-rhF">
+                    <navigationItem key="navigationItem" title="Property Mortgage Loan" id="4y3-ab-rhF">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="snf-7a-egn">
                             <connections>
                                 <segue destination="KQb-oC-V6p" kind="push" id="i0N-AV-99A"/>
@@ -1131,7 +1131,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="WUR-bR-gY9">
+                    <navigationItem key="navigationItem" title="Tenant Reference" id="WUR-bR-gY9">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="d2k-ux-FBz"/>
                     </navigationItem>
                 </viewController>

@@ -43,7 +43,7 @@
 //    [self getExpenseType];
     
 //    [self getExpenseType];
-//    [self getProperty];
+    [self getProperty];
 //    [self getPropertyMaintExp];
 //    [self getPropertyGeneralExp];
 }
