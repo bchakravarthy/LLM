@@ -29,7 +29,7 @@
 @property (nonatomic, strong, nullable) NSNumber *propertyId;
 
 
-@property (nonatomic, strong, nullable) NSNumber *year;
+@property (nonatomic, strong, nullable) NSNumber *yearOfPurchase;
 
 
 @property (nonatomic, strong, nullable) NSNumber *price;

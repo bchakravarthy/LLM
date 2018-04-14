@@ -32,10 +32,10 @@
 @property (nonatomic, strong, nullable) NSNumber *numberOfOccupants;
 
 
-@property (nonatomic, strong, nullable) NSNumber *montlyRent;
+@property (nonatomic, strong, nullable) NSNumber *monthlyRent;
 
 
-@property (nonatomic, strong, nullable) NSNumber *montlyRentDue;
+@property (nonatomic, strong, nullable) NSNumber *monthlyRentDue;
 
 
 @property (nonatomic, strong, nullable) NSString *startDate;

@@ -24,7 +24,7 @@
              @"propertyId": @"property_id",
              @"ownerId": @"owner_id",
              @"annualTax": @"annual_tax",
-             @"year": @"year",
+             @"yearOwed": @"year_owed",
              @"yearPaid": @"year_paid"
              };
 }
