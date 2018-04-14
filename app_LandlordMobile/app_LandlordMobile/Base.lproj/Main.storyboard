@@ -63,7 +63,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="23.5" y="37.5"/>
+            <point key="canvasLocation" x="52" y="-2450"/>
         </scene>
         <!--Test view-->
         <scene sceneID="sro-Un-0TY">
@@ -77,7 +77,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UB7-Sw-Jwv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-511" y="38"/>
+            <point key="canvasLocation" x="-1114" y="216"/>
         </scene>
         <!--Add tenant-->
         <scene sceneID="YFM-zP-ljK">
@@ -87,7 +87,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Property id" textAlignment="center" minimumFontSize="17" id="NZC-oX-fct">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Property id" textAlignment="center" minimumFontSize="17" id="NZC-oX-fct" userLabel="prop id">
                                 <rect key="frame" x="47" y="193" width="134" height="40"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -95,7 +95,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Owner id" textAlignment="center" minimumFontSize="17" id="Uny-OS-cc2">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Owner id" textAlignment="center" minimumFontSize="17" id="Uny-OS-cc2" userLabel="owner id">
                                 <rect key="frame" x="189" y="193" width="139" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -103,7 +103,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First name" textAlignment="center" minimumFontSize="17" id="Ppc-Tn-WSg">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First name" textAlignment="center" minimumFontSize="17" id="Ppc-Tn-WSg" userLabel="first name">
                                 <rect key="frame" x="47" y="241" width="134" height="40"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -111,7 +111,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Middle name" textAlignment="center" minimumFontSize="17" id="HcN-0j-fyC">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Middle name" textAlignment="center" minimumFontSize="17" id="HcN-0j-fyC" userLabel="middle name">
                                 <rect key="frame" x="189" y="241" width="139" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -119,7 +119,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last name" textAlignment="center" minimumFontSize="17" id="6Ob-mm-mfa">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last name" textAlignment="center" minimumFontSize="17" id="6Ob-mm-mfa" userLabel="last name">
                                 <rect key="frame" x="47" y="289" width="134" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -127,7 +127,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Age" textAlignment="center" minimumFontSize="17" id="bai-J2-a1Y">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Age" textAlignment="center" minimumFontSize="17" id="bai-J2-a1Y" userLabel="age">
                                 <rect key="frame" x="189" y="289" width="139" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -135,7 +135,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Contact email" textAlignment="center" minimumFontSize="17" id="vgY-tV-oDw">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Contact email" textAlignment="center" minimumFontSize="17" id="vgY-tV-oDw" userLabel="contact email">
                                 <rect key="frame" x="47" y="337" width="281" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -143,7 +143,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Contact phone" textAlignment="center" minimumFontSize="17" id="CsH-Ac-nNc">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Contact phone" textAlignment="center" minimumFontSize="17" id="CsH-Ac-nNc" userLabel="xontact phone">
                                 <rect key="frame" x="47" y="385" width="281" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -151,7 +151,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Primary contact" textAlignment="center" minimumFontSize="17" id="uMG-hr-fP3">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Primary contact" textAlignment="center" minimumFontSize="17" id="uMG-hr-fP3" userLabel="primary contact">
                                 <rect key="frame" x="47" y="433" width="281" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -159,7 +159,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NIX-RW-yrU" userLabel="Login">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NIX-RW-yrU" userLabel="add btn">
                                 <rect key="frame" x="68" y="514" width="238" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="Add btn"/>
@@ -167,11 +167,6 @@
                                     <action selector="addPurchaseDetailBtnPress:" destination="aA3-Y6-SO7" eventType="touchUpInside" id="G0z-Wo-U5x"/>
                                     <action selector="addTenantBtnPress:" destination="nMA-ao-uym" eventType="touchUpInside" id="YA7-ir-9Wx"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xiy-eN-VNI" userLabel="Register">
-                                <rect key="frame" x="0.0" y="625" width="375" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="cancel_login"/>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="add tenant" id="oZS-hI-bCa">
                                 <rect key="frame" x="127" y="114" width="121" height="30"/>
@@ -297,7 +292,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="snA-sL-jSH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="526.25" y="37.796666666666667"/>
+            <point key="canvasLocation" x="526" y="-2450"/>
         </scene>
         <!--Add property-->
         <scene sceneID="8VH-zC-L8s">
@@ -311,11 +306,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="sJC-9R-g5Y" userLabel="Register">
-                                <rect key="frame" x="0.0" y="625" width="375" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="cancel_login"/>
-                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Address Line 1" textAlignment="center" minimumFontSize="17" id="Qyr-TN-mg0">
                                 <rect key="frame" x="68" y="233" width="238" height="42"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -407,10 +397,10 @@
             </objects>
             <point key="canvasLocation" x="1037.5" y="37.5"/>
         </scene>
-        <!--add purchase detail-->
+        <!--Add purchase detail-->
         <scene sceneID="xz5-AF-ljo">
             <objects>
-                <viewController id="aA3-Y6-SO7" userLabel="add purchase detail" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="aA3-Y6-SO7" userLabel="Add purchase detail" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4SU-Vt-0bJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -454,11 +444,6 @@
                                 <connections>
                                     <action selector="addPurchaseDetailBtnPress:" destination="aA3-Y6-SO7" eventType="touchUpInside" id="XmE-XV-8Fa"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zFE-oe-1qr" userLabel="Register">
-                                <rect key="frame" x="0.0" y="625" width="375" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="cancel_login"/>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="purchase detail" id="r54-Xh-6eC">
                                 <rect key="frame" x="42" y="118" width="290" height="34"/>
@@ -569,10 +554,10 @@
             </objects>
             <point key="canvasLocation" x="1532.5" y="804.5"/>
         </scene>
-        <!--add prop tax-->
+        <!--Add prop tax-->
         <scene sceneID="34n-Pa-VB9">
             <objects>
-                <viewController id="6Vp-3m-jho" userLabel="add prop tax" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="6Vp-3m-jho" userLabel="Add prop tax" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oZj-Zb-YxG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -581,18 +566,13 @@
                                 <rect key="frame" x="88" y="115" width="199" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TdI-hp-nUt" userLabel="Login">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TdI-hp-nUt" userLabel="add btn">
                                 <rect key="frame" x="67" y="492" width="238" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="Add btn"/>
                                 <connections>
                                     <action selector="addPropTaxBtnPress:" destination="6Vp-3m-jho" eventType="touchUpInside" id="YyR-Gv-ntT"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5Dk-Tu-AoQ" userLabel="Register">
-                                <rect key="frame" x="-1" y="625" width="375" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="cancel_login"/>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Property id" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="Nfl-Lp-z7h" userLabel="prop id">
                                 <rect key="frame" x="64" y="229" width="114" height="42"/>
@@ -650,10 +630,10 @@
             </objects>
             <point key="canvasLocation" x="2030.5" y="804.5"/>
         </scene>
-        <!--add tenant bg check-->
+        <!--Add tenant bg check-->
         <scene sceneID="BOm-36-s2B">
             <objects>
-                <viewController id="ooK-Fq-nik" userLabel="add tenant bg check" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="ooK-Fq-nik" userLabel="Add tenant bg check" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PMc-Mo-BXD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -662,7 +642,7 @@
                                 <rect key="frame" x="49" y="102" width="277" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Xrf-8g-WC0" userLabel="Login">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Xrf-8g-WC0" userLabel="add btn">
                                 <rect key="frame" x="68" y="555" width="238" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="Add btn"/>
@@ -670,12 +650,7 @@
                                     <action selector="addTenantBgCheckBtnPress:" destination="ooK-Fq-nik" eventType="touchUpInside" id="BQd-La-jsL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0yH-Gq-smr" userLabel="Register">
-                                <rect key="frame" x="0.0" y="625" width="375" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="cancel_login"/>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tenant id" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="yTW-dY-H9B" userLabel="zip">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tenant id" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="yTW-dY-H9B" userLabel="tenant id">
                                 <rect key="frame" x="59" y="157" width="125" height="42"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -683,7 +658,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Owner id" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="gp6-Vn-zV0" userLabel="zip">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Owner id" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="gp6-Vn-zV0" userLabel="owner id">
                                 <rect key="frame" x="191" y="157" width="123" height="42"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -691,7 +666,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Criminal passed" textAlignment="center" minimumFontSize="17" id="8kl-v5-jYW">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Criminal passed" textAlignment="center" minimumFontSize="17" id="8kl-v5-jYW" userLabel="criminal passed">
                                 <rect key="frame" x="59" y="220" width="256" height="42"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -699,7 +674,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Credit passed? Y/N" textAlignment="center" minimumFontSize="17" id="gNq-0X-mmF">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Credit passed? Y/N" textAlignment="center" minimumFontSize="17" id="gNq-0X-mmF" userLabel="credit check">
                                 <rect key="frame" x="59" y="285" width="256" height="42"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -707,7 +682,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Eviction passed? Y/N" textAlignment="center" minimumFontSize="17" id="Xjj-Ab-MvF">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Eviction passed? Y/N" textAlignment="center" minimumFontSize="17" id="Xjj-Ab-MvF" userLabel="eviction passed">
                                 <rect key="frame" x="59" y="348" width="256" height="42"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -715,7 +690,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Recommendation" textAlignment="center" minimumFontSize="17" id="Xsu-cZ-aDv">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Recommendation" textAlignment="center" minimumFontSize="17" id="Xsu-cZ-aDv" userLabel="recommendation">
                                 <rect key="frame" x="59" y="416" width="256" height="93"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -740,10 +715,10 @@
             </objects>
             <point key="canvasLocation" x="2533.5" y="804.5"/>
         </scene>
-        <!--add tenant income exp-->
+        <!--Add tenant income exp-->
         <scene sceneID="1i4-Di-P9K">
             <objects>
-                <viewController id="npH-j2-rlq" userLabel="add tenant income exp" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="npH-j2-rlq" userLabel="Add tenant income exp" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Td-dB-Ume">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -795,11 +770,6 @@
                                 <connections>
                                     <action selector="addTenantIncomeExpBtnPress:" destination="npH-j2-rlq" eventType="touchUpInside" id="14u-S1-D21"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="POO-cj-Bdo" userLabel="Register">
-                                <rect key="frame" x="0.0" y="625" width="375" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="cancel_login"/>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="add tenant income exp" id="drr-Sk-fxY">
                                 <rect key="frame" x="41" y="126" width="293" height="30"/>
@@ -913,11 +883,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ffo-6n-fWI" userLabel="cancel">
-                                <rect key="frame" x="0.0" y="625" width="375" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="cancel_login"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Kuc-D3-HDZ" userLabel="add">
                                 <rect key="frame" x="68" y="565" width="238" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -955,15 +920,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yQr-Mt-brl" userLabel="get btn">
-                                <rect key="frame" x="68" y="94" width="238" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="view btn"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yQr-Mt-brl" userLabel="get record">
+                                <rect key="frame" x="16" y="595" width="154" height="52"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <state key="normal" image="view record btn"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ACl-zu-ejU" userLabel="update record">
+                                <rect key="frame" x="205" y="595" width="154" height="52"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <state key="normal" image="update record btn"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="List of records from property tax table." textAlignment="natural" id="8BB-5j-ba2" userLabel="record list">
+                                <rect key="frame" x="16" y="77" width="343" height="497"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="eos-om-Zed">
+                    <navigationItem key="navigationItem" title="Property Tax" id="eos-om-Zed">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="KJI-2D-hJx">
                             <connections>
                                 <segue destination="6Vp-3m-jho" kind="push" id="Ljl-hl-05o"/>
@@ -973,25 +950,37 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bSk-WF-Ena" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="24" y="-1575"/>
+            <point key="canvasLocation" x="23.5" y="-1575.5"/>
         </scene>
-        <!--list tenant bg check-->
+        <!--List tenant bg check-->
         <scene sceneID="zKb-JT-gWS">
             <objects>
-                <viewController id="Ne1-lq-F7k" userLabel="list tenant bg check" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="Ne1-lq-F7k" userLabel="List tenant bg check" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qPM-za-jfM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="c98-M7-TgW">
-                                <rect key="frame" x="68" y="89" width="238" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="c98-M7-TgW" userLabel="get record">
+                                <rect key="frame" x="16" y="595" width="154" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="view btn"/>
+                                <state key="normal" image="view record btn"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Lzq-Yd-AML" userLabel="update record">
+                                <rect key="frame" x="205" y="595" width="154" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="update record btn"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="List of records from tenant background check table." textAlignment="natural" id="9L3-iw-EqI" userLabel="record list">
+                                <rect key="frame" x="16" y="85" width="343" height="497"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="J3Y-se-X4S">
+                    <navigationItem key="navigationItem" title="Background Check" id="J3Y-se-X4S">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="370-9t-AWh">
                             <connections>
                                 <segue destination="ooK-Fq-nik" kind="push" id="H6R-lm-NwN"/>
@@ -1003,23 +992,35 @@
             </objects>
             <point key="canvasLocation" x="526" y="-1576"/>
         </scene>
-        <!--list tenant income exp-->
+        <!--List tenant income exp-->
         <scene sceneID="Anh-P3-pa1">
             <objects>
-                <viewController id="8De-De-CLe" userLabel="list tenant income exp" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="8De-De-CLe" userLabel="List tenant income exp" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="31k-cf-YjR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jdm-lh-wU8">
-                                <rect key="frame" x="68" y="88" width="238" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jdm-lh-wU8" userLabel="ger record">
+                                <rect key="frame" x="16" y="595" width="152" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="view btn"/>
+                                <state key="normal" image="view record btn"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zzG-h9-aR1" userLabel="update record">
+                                <rect key="frame" x="207" y="595" width="152" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="update record btn"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="List of records from tenant income expense table." textAlignment="natural" id="gEY-4M-TvV" userLabel="record list">
+                                <rect key="frame" x="16" y="85" width="343" height="497"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="tPg-UQ-ZoT">
+                    <navigationItem key="navigationItem" title="Tenant Income Expense" id="tPg-UQ-ZoT">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="LJc-jn-LAr">
                             <connections>
                                 <segue destination="npH-j2-rlq" kind="push" id="Nt7-3R-Gs3"/>
@@ -1031,23 +1032,35 @@
             </objects>
             <point key="canvasLocation" x="1038" y="-1577"/>
         </scene>
-        <!--list tenant occupation-->
+        <!--List tenant occupation-->
         <scene sceneID="afp-ph-FiS">
             <objects>
-                <viewController id="8hT-ID-TrX" userLabel="list tenant occupation" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="8hT-ID-TrX" userLabel="List tenant occupation" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k4b-xY-VcJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ON0-bp-FR2">
-                                <rect key="frame" x="68" y="92" width="238" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ON0-bp-FR2" userLabel="get record">
+                                <rect key="frame" x="16" y="595" width="152" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="view btn"/>
+                                <state key="normal" image="view record btn"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hI9-RE-djr" userLabel="update record">
+                                <rect key="frame" x="207" y="595" width="152" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="view record btn"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="List of records from tenant occupation table." textAlignment="natural" id="xPo-U0-hb6" userLabel="record list">
+                                <rect key="frame" x="15" y="79" width="343" height="497"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="BpL-pP-T94">
+                    <navigationItem key="navigationItem" title="Tenant Occupation" id="BpL-pP-T94">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="zpa-zO-GBO">
                             <connections>
                                 <segue destination="Xgs-y1-JrN" kind="push" id="wUW-bw-Lzi"/>
@@ -1059,23 +1072,35 @@
             </objects>
             <point key="canvasLocation" x="1533" y="-1576"/>
         </scene>
-        <!--list prop general exp-->
+        <!--List prop general exp-->
         <scene sceneID="6pf-RJ-HzL">
             <objects>
-                <viewController id="kfr-OD-Cyu" userLabel="list prop general exp" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="kfr-OD-Cyu" userLabel="List prop general exp" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vgK-Zk-FeV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JkS-EQ-PZU">
-                                <rect key="frame" x="68" y="90" width="238" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JkS-EQ-PZU" userLabel="get record">
+                                <rect key="frame" x="16" y="595" width="152" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="view btn"/>
+                                <state key="normal" image="view record btn"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bLb-X7-Hnl" userLabel="update record">
+                                <rect key="frame" x="207" y="595" width="152" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="update record btn"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="List of records from property general expense table." textAlignment="natural" id="lOz-Ow-Gt1" userLabel="record list">
+                                <rect key="frame" x="16" y="85" width="343" height="497"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="k35-j6-IK8">
+                    <navigationItem key="navigationItem" title="Property General Expense" id="k35-j6-IK8">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Bx2-0T-5oz">
                             <connections>
                                 <segue destination="PIE-Eq-79H" kind="push" id="lcY-pr-7FQ"/>
@@ -1095,15 +1120,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="mDK-ll-hqN">
-                                <rect key="frame" x="68" y="83" width="238" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="mDK-ll-hqN" userLabel="get record">
+                                <rect key="frame" x="16" y="595" width="152" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="view btn"/>
+                                <state key="normal" image="view record btn"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wac-F6-1oJ" userLabel="update record">
+                                <rect key="frame" x="207" y="595" width="152" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="update record btn"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="List of records from property mortgage loan table." textAlignment="natural" id="MUG-4G-C5c" userLabel="record list">
+                                <rect key="frame" x="15" y="73" width="343" height="497"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="4y3-ab-rhF">
+                    <navigationItem key="navigationItem" title="Property Mortgage Loan" id="4y3-ab-rhF">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="snf-7a-egn">
                             <connections>
                                 <segue destination="KQb-oC-V6p" kind="push" id="i0N-AV-99A"/>
@@ -1115,23 +1152,35 @@
             </objects>
             <point key="canvasLocation" x="2534" y="-1578"/>
         </scene>
-        <!--list tenant reference-->
+        <!--List tenant reference-->
         <scene sceneID="jw1-JM-cW2">
             <objects>
-                <viewController id="Rcb-Na-TJT" userLabel="list tenant reference" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="Rcb-Na-TJT" userLabel="List tenant reference" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ANq-I2-ZJB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Rk8-W0-lNS">
-                                <rect key="frame" x="68" y="86" width="238" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Rk8-W0-lNS" userLabel="get record">
+                                <rect key="frame" x="16" y="595" width="152" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="view btn"/>
+                                <state key="normal" image="view record btn"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="NcZ-7B-a6a" userLabel="update record">
+                                <rect key="frame" x="207" y="595" width="152" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="update record btn"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="List of records from tenant reference table." textAlignment="natural" id="loC-V3-kVx" userLabel="record list">
+                                <rect key="frame" x="16" y="85" width="343" height="497"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="WUR-bR-gY9">
+                    <navigationItem key="navigationItem" title="Tenant Reference" id="WUR-bR-gY9">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="d2k-ux-FBz"/>
                     </navigationItem>
                 </viewController>
@@ -1139,23 +1188,35 @@
             </objects>
             <point key="canvasLocation" x="3019" y="-1576"/>
         </scene>
-        <!--list rental agreement-->
+        <!--List rental agreement-->
         <scene sceneID="VZX-32-MTA">
             <objects>
-                <viewController id="WVL-5U-gc8" userLabel="list rental agreement" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="WVL-5U-gc8" userLabel="List rental agreement" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dhv-Vi-Zzz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="f4C-GC-uye">
-                                <rect key="frame" x="68" y="80" width="238" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="f4C-GC-uye" userLabel="get record">
+                                <rect key="frame" x="16" y="595" width="152" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="view btn"/>
+                                <state key="normal" image="view record btn"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="H5b-Ri-apB" userLabel="update record">
+                                <rect key="frame" x="207" y="595" width="152" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="update record btn"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="List of records from rental agreement table." textAlignment="natural" id="Z7S-SU-s9o" userLabel="record list">
+                                <rect key="frame" x="16" y="77" width="343" height="497"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Sat-CY-Fsv">
+                    <navigationItem key="navigationItem" title="Rental Agreement" id="Sat-CY-Fsv">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Mb6-Hr-l4l">
                             <connections>
                                 <segue destination="cak-Wy-VTb" kind="push" id="JMx-rT-MCr"/>
@@ -1179,25 +1240,37 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JVe-EV-SvE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="24" y="-760"/>
+            <point key="canvasLocation" x="-1114" y="-632"/>
         </scene>
-        <!--list tenant-->
+        <!--List tenant-->
         <scene sceneID="amL-LT-nWt">
             <objects>
-                <viewController id="mUE-ff-vjF" userLabel="list tenant" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="mUE-ff-vjF" userLabel="List tenant" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wWX-Qh-Ef1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8FY-HM-cUQ">
-                                <rect key="frame" x="68" y="95" width="238" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8FY-HM-cUQ" userLabel="get record">
+                                <rect key="frame" x="16" y="595" width="152" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="view btn"/>
+                                <state key="normal" image="view record btn"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="C4O-x9-lxX" userLabel="update record">
+                                <rect key="frame" x="207" y="595" width="152" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="update record btn"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="List of records from tenant table." textAlignment="natural" id="IZc-zl-KW7" userLabel="record list">
+                                <rect key="frame" x="16" y="77" width="343" height="497"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="aWQ-gE-KVk">
+                    <navigationItem key="navigationItem" title="Tenant" id="aWQ-gE-KVk">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="csv-oX-Zkh">
                             <connections>
                                 <segue destination="nMA-ao-uym" kind="push" id="I6e-Sn-qET"/>
@@ -1209,23 +1282,35 @@
             </objects>
             <point key="canvasLocation" x="3551" y="-762"/>
         </scene>
-        <!--list purchase detail-->
+        <!--List purchase detail-->
         <scene sceneID="s0M-mz-aSN">
             <objects>
-                <viewController id="IZO-Ii-7vK" userLabel="list purchase detail" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="IZO-Ii-7vK" userLabel="List purchase detail" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sRT-BA-xGO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0bo-zn-dQm">
-                                <rect key="frame" x="68" y="86" width="238" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0bo-zn-dQm" userLabel="ger record">
+                                <rect key="frame" x="16" y="595" width="152" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="view btn"/>
+                                <state key="normal" image="view record btn"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="QDA-Mp-vnI" userLabel="update record">
+                                <rect key="frame" x="207" y="595" width="152" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="update record btn"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="List of records from purchase detail table." textAlignment="natural" id="q4k-83-63n" userLabel="record list">
+                                <rect key="frame" x="16" y="85" width="343" height="497"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="GTH-2B-byI">
+                    <navigationItem key="navigationItem" title="Purchase Detail" id="GTH-2B-byI">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="0rL-cV-vTH">
                             <connections>
                                 <segue destination="aA3-Y6-SO7" kind="push" id="Mty-dL-JTT"/>
@@ -1356,36 +1441,84 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XkA-nE-zz3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1536" y="-761"/>
+            <point key="canvasLocation" x="1533" y="-2449"/>
         </scene>
-        <!--list maint exp type-->
+        <!--Update maint exp type-->
+        <scene sceneID="MKe-Hk-ykE">
+            <objects>
+                <viewController id="atZ-x9-NfB" userLabel="Update maint exp type" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TjA-OM-afb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Description" textAlignment="center" minimumFontSize="17" id="Bqg-nX-bp6" userLabel="description">
+                                <rect key="frame" x="32" y="230" width="313" height="212"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Efe-Uy-PC6" userLabel="update btn">
+                                <rect key="frame" x="68" y="531" width="238" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="update btn" backgroundImage="Add btn"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Owner Id" textAlignment="center" minimumFontSize="17" id="vOt-b3-OTH" userLabel="owner id">
+                                <rect key="frame" x="32" y="149" width="313" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="DFa-CG-DBt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ch4-hf-jhD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2030.5" y="-2450.5"/>
+        </scene>
+        <!--List maint exp type-->
         <scene sceneID="37f-8q-eyH">
             <objects>
-                <viewController id="zvU-GI-9Yh" userLabel="list maint exp type" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="zvU-GI-9Yh" userLabel="List maint exp type" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3X8-rP-heR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Test text for maintenance expense types." textAlignment="natural" id="CP2-qY-PI2">
-                                <rect key="frame" x="16" y="183" width="343" height="464"/>
+                                <rect key="frame" x="16" y="78" width="343" height="497"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yGU-OH-PUJ">
-                                <rect key="frame" x="68" y="108" width="238" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yGU-OH-PUJ" userLabel="ger record">
+                                <rect key="frame" x="16" y="595" width="152" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="view btn"/>
+                                <state key="normal" image="view record btn"/>
                                 <connections>
                                     <action selector="getMaintExpTypeBtnPress:" destination="GWx-zf-2Pm" eventType="touchUpInside" id="0BZ-W1-eED"/>
                                     <action selector="getMaintExpTypeBtnPress:" destination="zvU-GI-9Yh" eventType="touchUpInside" id="zYW-H9-Rd1"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ia9-Rh-IiC" userLabel="update record">
+                                <rect key="frame" x="207" y="595" width="152" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="update record btn"/>
+                                <connections>
+                                    <action selector="getMaintExpTypeBtnPress:" destination="zvU-GI-9Yh" eventType="touchUpInside" id="BRX-WR-sI1"/>
+                                    <action selector="getMaintExpTypeBtnPress:" destination="GWx-zf-2Pm" eventType="touchUpInside" id="mSD-NO-5eN"/>
+                                    <segue destination="atZ-x9-NfB" kind="push" id="v52-kD-r4S"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="EWO-WG-Lja">
+                    <navigationItem key="navigationItem" title="Maintenance Expense Type" id="EWO-WG-Lja">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="bHi-ms-9Hy">
                             <connections>
                                 <segue destination="n98-UA-L72" kind="push" id="iOE-ov-YjH"/>
@@ -1399,31 +1532,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vJr-Rb-nOm" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="GWx-zf-2Pm" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2031" y="-761"/>
+            <point key="canvasLocation" x="2030.5" y="-761.5"/>
         </scene>
-        <!--list property-->
+        <!--List property-->
         <scene sceneID="Zxc-6P-5V9">
             <objects>
-                <viewController id="LID-L3-P9e" userLabel="list property" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="LID-L3-P9e" userLabel="List property" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4G0-DV-epQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9yq-lh-WHL">
-                                <rect key="frame" x="68" y="93" width="238" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9yq-lh-WHL" userLabel="ger record">
+                                <rect key="frame" x="16" y="595" width="152" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="view btn"/>
+                                <state key="normal" image="view record btn"/>
                                 <connections>
                                     <action selector="getPropBtnPress:" destination="LID-L3-P9e" eventType="touchUpInside" id="GMp-IL-KAK"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="All the records in the property table." textAlignment="natural" id="Bb8-7e-eVs">
-                                <rect key="frame" x="16" y="165" width="343" height="482"/>
+                                <rect key="frame" x="16" y="77" width="343" height="498"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zWE-3J-dRs" userLabel="update record">
+                                <rect key="frame" x="207" y="595" width="152" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="update record btn"/>
+                                <connections>
+                                    <action selector="getPropBtnPress:" destination="LID-L3-P9e" eventType="touchUpInside" id="HkV-79-QAj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -1462,18 +1603,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HJi-Sl-FtI" userLabel="add">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HJi-Sl-FtI" userLabel="add btn">
                                 <rect key="frame" x="68" y="531" width="238" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="Add btn"/>
                                 <connections>
                                     <action selector="addMaintExpTypeBtnPress:" destination="n98-UA-L72" eventType="touchUpInside" id="HWW-Yd-pqD"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wwk-f4-5Ld" userLabel="Register">
-                                <rect key="frame" x="0.0" y="625" width="375" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="cancel_login"/>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Owner Id" textAlignment="center" minimumFontSize="17" id="SN8-l9-kts" userLabel="owner id">
                                 <rect key="frame" x="68" y="180" width="238" height="42"/>
@@ -1496,10 +1632,10 @@
             </objects>
             <point key="canvasLocation" x="1535.5" y="37.5"/>
         </scene>
-        <!--add Tenant Occupation-->
+        <!--Add Tenant Occupation-->
         <scene sceneID="XvK-OK-vFL">
             <objects>
-                <viewController id="Xgs-y1-JrN" userLabel="add Tenant Occupation" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="Xgs-y1-JrN" userLabel="Add Tenant Occupation" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3eN-rN-b43">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1544,11 +1680,6 @@
                                     <action selector="addTenantOccupBtnPress:" destination="Xgs-y1-JrN" eventType="touchUpInside" id="o4X-Ev-LGh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SRd-BE-den" userLabel="Register">
-                                <rect key="frame" x="0.0" y="625" width="375" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="cancel_login"/>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="add tenant occupation" id="0fB-bP-Oam">
                                 <rect key="frame" x="54" y="113" width="266" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1568,10 +1699,10 @@
             </objects>
             <point key="canvasLocation" x="2030.5" y="37.5"/>
         </scene>
-        <!--add prop general exp-->
+        <!--Add prop general exp-->
         <scene sceneID="Edh-WB-91Q">
             <objects>
-                <viewController id="PIE-Eq-79H" userLabel="add prop general exp" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="PIE-Eq-79H" userLabel="Add prop general exp" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gIC-sk-vsr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1583,11 +1714,6 @@
                                 <connections>
                                     <action selector="addPropGenExpBtnPress:" destination="PIE-Eq-79H" eventType="touchUpInside" id="xLu-BM-DZP"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="v67-cM-UEG" userLabel="Register">
-                                <rect key="frame" x="0.0" y="625" width="375" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="cancel_login"/>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Property id" textAlignment="center" minimumFontSize="17" id="tRy-jB-rLU" userLabel="prop id">
                                 <rect key="frame" x="53" y="188" width="266" height="42"/>
@@ -1658,10 +1784,10 @@
             </objects>
             <point key="canvasLocation" x="2533.5" y="37.5"/>
         </scene>
-        <!--add prop mort loan-->
+        <!--Add prop mort loan-->
         <scene sceneID="68L-3x-lpu">
             <objects>
-                <viewController id="KQb-oC-V6p" userLabel="add prop mort loan" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="KQb-oC-V6p" userLabel="Add prop mort loan" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I9d-8u-ucm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1706,11 +1832,6 @@
                                     <action selector="addPropMortLoanBtnPress:" destination="KQb-oC-V6p" eventType="touchUpInside" id="0aG-xY-oGK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vhx-QD-33e" userLabel="cancel">
-                                <rect key="frame" x="0.0" y="625" width="375" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="cancel_login"/>
-                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Outstanding balance" textAlignment="center" minimumFontSize="17" id="3Zb-71-a0k" userLabel="outstanding balance">
                                 <rect key="frame" x="55" y="356" width="264" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1739,10 +1860,10 @@
             </objects>
             <point key="canvasLocation" x="3018.5" y="37.5"/>
         </scene>
-        <!--add tenant reference-->
+        <!--Add tenant reference-->
         <scene sceneID="NHF-GE-0cG">
             <objects>
-                <viewController id="zRE-GT-hMp" userLabel="add tenant reference" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="zRE-GT-hMp" userLabel="Add tenant reference" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qHc-WA-PG4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1755,11 +1876,6 @@
                                 <rect key="frame" x="68" y="560" width="238" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Add btn"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xkr-al-IdR" userLabel="Cancel">
-                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="cancel_login"/>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Property id" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="G71-O6-tIB" userLabel="property id">
                                 <rect key="frame" x="38" y="70" width="125" height="40"/>
@@ -1777,23 +1893,35 @@
             </objects>
             <point key="canvasLocation" x="3550.5" y="37.5"/>
         </scene>
-        <!--list prop maint exp-->
+        <!--List prop maint exp-->
         <scene sceneID="N2E-aP-Mb0">
             <objects>
-                <viewController id="IuG-FZ-5Fz" userLabel="list prop maint exp" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="IuG-FZ-5Fz" userLabel="List prop maint exp" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WHX-uN-Ek2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="d2w-G6-NmA">
-                                <rect key="frame" x="68" y="91" width="238" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="d2w-G6-NmA" userLabel="get record">
+                                <rect key="frame" x="16" y="595" width="152" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="view btn"/>
+                                <state key="normal" image="view record btn"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="o8M-fw-gCE" userLabel="update record">
+                                <rect key="frame" x="207" y="595" width="152" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="update record btn"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="List of records from property maintenance table." textAlignment="natural" id="drR-VD-izu" userLabel="record list">
+                                <rect key="frame" x="16" y="85" width="343" height="497"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="gcC-Aj-WW6">
+                    <navigationItem key="navigationItem" title="Property Maintenance Expense" id="gcC-Aj-WW6">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="n3a-hg-C2G">
                             <connections>
                                 <segue destination="hBw-M5-Vwt" kind="push" id="PLz-fY-ciP"/>
@@ -1822,7 +1950,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ap1-0C-QQD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1038" y="-760"/>
+            <point key="canvasLocation" x="1038" y="-2449"/>
         </scene>
     </scenes>
     <resources>
@@ -1864,9 +1992,11 @@
         <image name="tenant label" width="238" height="42"/>
         <image name="tenant occ label" width="238" height="42"/>
         <image name="tenant ref label" width="238" height="42"/>
-        <image name="view btn" width="238" height="42"/>
+        <image name="update btn" width="238" height="42"/>
+        <image name="update record btn" width="154" height="52"/>
+        <image name="view record btn" width="154" height="52"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Gn7-NS-BHe"/>
+        <segue reference="AGx-UF-iyD"/>
     </inferredMetricsTieBreakers>
 </document>
