@@ -118,7 +118,7 @@
     }
     
     //Invoke POST on employee API
-   [[client propMaintExpensePost:propertyMaintInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+    [[client propMaintExpensePost:propertyMaintInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
         XCTAssertEqual(propertyMaintInput.ownerId, numberOne);
         XCTAssertEqual(propertyMaintInput.propertyId, numberOne);
     }];
@@ -195,9 +195,9 @@
     //Instantiate client object
     PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
     //Invoke GET on API
-
+    
     [[client maintenanceExpenseGet] continueWithBlock:^id(AWSTask *task){
-
+        
         if (task.result) {
             //You are here, so method invocation is a success
             printf("Success....\n");
@@ -280,7 +280,7 @@
     else {
         NSLog(@"Item has been updated to New Coaches");
     }
-
+    
     //Invoke Put on employee API
     [[client maintenanceExpensePut:MaintenanceExpenseTypeInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task) {
         XCTAssertEqual(MaintenanceExpenseTypeInput.ownerId, numberOne);
@@ -311,9 +311,9 @@
     else {
         NSLog(@"Item has been updated to 87 Summit ST");
     }
-
+    
     //Invoke Put on employee API
-     [[client propertiesPut:propertyInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task) {
+    [[client propertiesPut:propertyInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task) {
         XCTAssertEqual(propertyInput.ownerId, numberOne);
         XCTAssertEqual(propertyInput._description, @"87 Summit ST");
     }];
@@ -388,3 +388,4 @@
 
 
 @end
+
