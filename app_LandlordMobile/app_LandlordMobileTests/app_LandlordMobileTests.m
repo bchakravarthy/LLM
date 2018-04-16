@@ -197,7 +197,7 @@
     propertyOwnerInput.ownerName = @"Nafisa";
     propertyOwnerInput.email = @"Nafisa@gmail.com";
     
-
+    
     if ([propertyOwnerInput.ownerName isEqualToString:@"Nafisa"])
     {
         NSLog(@"Equal!");
@@ -300,7 +300,7 @@
     rentalAgreementInput.monthlyRentDue = @"Today";
     
     NSNumber *numberFiveHundred = [NSNumber numberWithInt:500];
-   
+    
     if([numberFiveHundred compare:rentalAgreementInput.monthlyRent] == NSOrderedSame)
     {
         NSLog(@"Equal!");
@@ -384,7 +384,7 @@
     }
     
     //Invoke POST
-   [[client tenantsIncomeExpensePost:tenantIncomeInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+    [[client tenantsIncomeExpensePost:tenantIncomeInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
         XCTAssertEqual(tenantIncomeInput.monthlyExpenses, numberHundred);
         XCTAssertEqual(tenantIncomeInput.monthlyIncome, numberThousand);
     }];
@@ -415,7 +415,7 @@
     }
     
     //Invoke POST
-     [[client tenantsOccupationPost:tenantOccupationInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+    [[client tenantsOccupationPost:tenantOccupationInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
         XCTAssertEqual(tenantOccupationInput.tenantId, numberOne);
         XCTAssertEqual(tenantOccupationInput.ownerId, numberOne);
     }];
@@ -479,7 +479,7 @@
     }
     
     //Invoke POST
-     [[client tenantsPost:tenantInput ] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+    [[client tenantsPost:tenantInput ] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
         XCTAssertEqual(tenantInput.firstName, @"Nafisa");
         XCTAssertEqual(tenantInput.lastName, @"Hasan");
     }];
@@ -887,7 +887,7 @@
     PROPERTYPropertyTaxInput *propertyTaxInput = [[PROPERTYPropertyTaxInput alloc] init];
     propertyTaxInput.propertyId = [NSNumber numberWithInt:1];
     propertyTaxInput.ownerId = [NSNumber numberWithInt:1];
-
+    
     NSNumber *numberOne = [NSNumber numberWithInt:1];
     if([numberOne compare:propertyTaxInput.propertyId] == NSOrderedSame)
     {
@@ -904,7 +904,7 @@
         NSLog(@"Not equal!");
     }
     //Invoke Put
-   [[client propTaxPut:propertyTaxInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+    [[client propTaxPut:propertyTaxInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
         XCTAssertEqual(propertyTaxInput.propertyId, numberOne);
         XCTAssertEqual(propertyTaxInput.ownerId, numberOne);
     }];
@@ -914,4 +914,5 @@
 
 
 @end
+
 
