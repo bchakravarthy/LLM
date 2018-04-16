@@ -553,6 +553,39 @@
     }];
 }
 
+- (void) testGetPropertyMaintExp {
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Invoke GET on API
+    [[client propMaintExpenseGet] continueWithBlock:^id(AWSTask *task){
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        if (task.result) {
+            //You are here, so method invocation is a success
+            printf("Success....\n");
+            //Convert result object to maint result
+            
+            PROPERTYPropertyMaintExpResult *result_var;
+            result_var=task.result;
+            //Obtain array of maint exp
+            NSArray *arrData = result_var.output.propertyMaintenanceExpenses;
+            long cnt;
+            cnt = arrData.count;
+            //Print out count of maint exp
+            NSLog(@"Number of property maintenance expenses %lu\n",cnt);
+            
+            //Print out each maint exp details to the console
+            for (id element in arrData){
+                NSLog(@"%@", element);
+            }
+        }
+        return nil;
+    }];
+}
+
 
 //PUT tests
 - (void) testUpdateExpenseType {
@@ -775,7 +808,7 @@
     }
     //Invoke Put
     [[client backgroundCheckPut:backgroundCheckInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
-        XCTAssertEqual(backgroundCheckInput.evictionPassedYN, @"No");
+        XCTAssertEqual(backgroundCheckInput.evictionPassedYN, @"N");
         XCTAssertEqual(backgroundCheckInput.recommendation, @"Tenant has Bad credit");
     }];
 }
@@ -810,6 +843,70 @@
     [[client rentalAgreementPut:rentalAgreementInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
         XCTAssertEqual(rentalAgreementInput.monthlyRent, numberOne);
         XCTAssertEqual(rentalAgreementInput.monthlyRentDue, @"Today");
+    }];
+}
+
+- (void) testUpdatePurchaseDetails {
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Assign input values to be sent to Dynamo DB via API call
+    PROPERTYPurchaseDetailsInput *purchaseInput = [[PROPERTYPurchaseDetailsInput alloc] init];
+    purchaseInput.yearOfPurchase=[NSNumber numberWithInt:2000];
+    purchaseInput.price=[NSNumber numberWithInt:78500];
+    
+    NSNumber *numberTwoThousandEight = [NSNumber numberWithInt:2008];
+    NSNumber *numberTwoThousand = [NSNumber numberWithInt:2000];
+    NSNumber *numberOther = [NSNumber numberWithInt:78500];
+    if([numberTwoThousandEight compare:purchaseInput.yearOfPurchase] == NSOrderedSame)
+    {
+        NSLog(@"Equal!");
+    }
+    else {
+        NSLog(@"Updated to 2000");
+    }
+    if([numberOther compare:purchaseInput.price] == NSOrderedSame)
+    {
+        NSLog(@"Equal!");
+    }
+    else {
+        NSLog(@"Not equal!");
+    }
+    //Invoke Put
+    [[client purchaseDetailsPut:purchaseInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+        XCTAssertEqual(purchaseInput.yearOfPurchase, numberTwoThousand);
+        XCTAssertEqual(purchaseInput.price, numberOther);
+    }];
+}
+
+- (void) testUpdatePropertyTax {
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Assign input values to be sent to Dynamo DB via API call
+    PROPERTYPropertyTaxInput *propertyTaxInput = [[PROPERTYPropertyTaxInput alloc] init];
+    propertyTaxInput.propertyId = [NSNumber numberWithInt:1];
+    propertyTaxInput.ownerId = [NSNumber numberWithInt:1];
+
+    NSNumber *numberOne = [NSNumber numberWithInt:1];
+    if([numberOne compare:propertyTaxInput.propertyId] == NSOrderedSame)
+    {
+        NSLog(@"Equal!");
+    }
+    else {
+        NSLog(@"Not equal");
+    }
+    if([numberOne compare:propertyTaxInput.ownerId] == NSOrderedSame)
+    {
+        NSLog(@"Equal!");
+    }
+    else {
+        NSLog(@"Not equal!");
+    }
+    //Invoke Put
+   [[client propTaxPut:propertyTaxInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+        XCTAssertEqual(propertyTaxInput.propertyId, numberOne);
+        XCTAssertEqual(propertyTaxInput.ownerId, numberOne);
     }];
 }
 
