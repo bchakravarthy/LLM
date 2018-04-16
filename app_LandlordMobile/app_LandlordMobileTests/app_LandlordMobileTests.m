@@ -8,7 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "PROPERTYPropertyMangementClient.h"
-#import "PROPERTYMaintenanceExpTypeOutput_maintenance_expense_types_item.h"
+
 
 
 @interface app_LandlordMobileTests : XCTestCase
@@ -186,6 +186,305 @@
         XCTAssertEqual(propertyMortgageInput.outstandingBalance, numberTen);
     }];
 }
+
+- (void) testInsertPropertyOwner {
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Assign input values to be sent to Dynamo DB via API call
+    PROPERTYPropertyOwnerInput *propertyOwnerInput = [[PROPERTYPropertyOwnerInput alloc] init];
+    
+    propertyOwnerInput.ownerName = @"Nafisa";
+    propertyOwnerInput.email = @"Nafisa@gmail.com";
+    
+
+    if ([propertyOwnerInput.ownerName isEqualToString:@"Nafisa"])
+    {
+        NSLog(@"Equal!");
+    }
+    else {
+        NSLog(@"Not equal");
+    }
+    if ([propertyOwnerInput.email isEqualToString:@"Nafisa@gmail.com"])
+    {
+        NSLog(@"Equal!");
+    }
+    else {
+        NSLog(@"Not equal");
+    }
+    
+    
+    //Invoke POST
+    [[client propOwnerPost:propertyOwnerInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+        XCTAssertEqual(propertyOwnerInput.ownerName, @"Nafisa");
+        XCTAssertEqual(propertyOwnerInput.email, @"Nafisa@gmail.com");
+    }];
+}
+
+
+- (void) testInsertPropertyTax {
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Assign input values to be sent to Dynamo DB via API call
+    PROPERTYPropertyTaxInput *propertyTaxInput = [[PROPERTYPropertyTaxInput alloc] init];
+    propertyTaxInput.propertyId = [NSNumber numberWithInt:1];
+    propertyTaxInput.ownerId = [NSNumber numberWithInt:1];
+    
+    NSNumber *numberOne = [NSNumber numberWithInt:1];
+    
+    if([numberOne compare:propertyTaxInput.propertyId] == NSOrderedSame)
+    {
+        NSLog(@"Equal!");
+    }
+    else {
+        NSLog(@"Not equal!");
+    }
+    if([numberOne compare:propertyTaxInput.ownerId] == NSOrderedSame)
+    {
+        NSLog(@"Equal!");
+    }
+    else {
+        NSLog(@"Not equal!");
+    }
+    
+    
+    //Invoke POST
+    [[client propTaxPost:propertyTaxInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+        XCTAssertEqual(propertyTaxInput.propertyId, numberOne);
+        XCTAssertEqual(propertyTaxInput.ownerId, numberOne);
+    }];
+}
+
+- (void) testInsertPurchaseDetails {
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Assign input values to be sent to Dynamo DB via API call
+    PROPERTYPurchaseDetailsInput *purchaseInput = [[PROPERTYPurchaseDetailsInput alloc] init];
+    purchaseInput.yearOfPurchase=[NSNumber numberWithInt:2008];
+    purchaseInput.price=[NSNumber numberWithInt:78500];
+    
+    NSNumber *numberTwoThousandEight = [NSNumber numberWithInt:2008];
+    NSNumber *numberOther = [NSNumber numberWithInt:78500];
+    if([numberTwoThousandEight compare:purchaseInput.yearOfPurchase] == NSOrderedSame)
+    {
+        NSLog(@"Equal!");
+    }
+    else {
+        NSLog(@"Not equal!");
+    }
+    if([numberOther compare:purchaseInput.price] == NSOrderedSame)
+    {
+        NSLog(@"Equal!");
+    }
+    else {
+        NSLog(@"Not equal!");
+    }
+    
+    
+    //Invoke POST
+    [[client purchaseDetailsPost:purchaseInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+        XCTAssertEqual(purchaseInput.yearOfPurchase, numberTwoThousandEight);
+        XCTAssertEqual(purchaseInput.price, numberOther);
+    }];
+}
+
+- (void) testInsertRentalAgreement {
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Assign input values to be sent to Dynamo DB via API call
+    PROPERTYRentalAgreementInput *rentalAgreementInput = [[PROPERTYRentalAgreementInput alloc] init];
+    rentalAgreementInput.monthlyRent=[NSNumber numberWithInt:500];
+    rentalAgreementInput.monthlyRentDue = @"Today";
+    
+    NSNumber *numberFiveHundred = [NSNumber numberWithInt:500];
+   
+    if([numberFiveHundred compare:rentalAgreementInput.monthlyRent] == NSOrderedSame)
+    {
+        NSLog(@"Equal!");
+    }
+    else {
+        NSLog(@"Not equal!");
+    }
+    if ([rentalAgreementInput.monthlyRentDue isEqualToString:@"Today"])
+    {
+        NSLog(@"Equal!");
+    }
+    else {
+        NSLog(@"Not equal");
+    }
+    
+    
+    //Invoke POST
+    [[client rentalAgreementPost:rentalAgreementInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+        XCTAssertEqual(rentalAgreementInput.monthlyRent, numberFiveHundred);
+        XCTAssertEqual(rentalAgreementInput.monthlyRentDue, @"Today");
+    }];
+}
+
+- (void) testInsertTenantBackgroundCheck {
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Assign input values to be sent to Dynamo DB via API call
+    PROPERTYTenantBackgroundInput *backgroundCheckInput = [[PROPERTYTenantBackgroundInput alloc] init];
+    backgroundCheckInput.evictionPassedYN=@"No";
+    backgroundCheckInput.recommendation=@"Tenant has clean credit";
+    
+    if ([backgroundCheckInput.evictionPassedYN isEqualToString:@"No"])
+    {
+        NSLog(@"Equal!");
+    }
+    else {
+        NSLog(@"Not equal");
+    }
+    if ([backgroundCheckInput.recommendation isEqualToString:@"Tenant has clean credit"])
+    {
+        NSLog(@"Equal!");
+    }
+    else {
+        NSLog(@"Not equal");
+    }
+    
+    
+    //Invoke POST
+    [[client backgroundCheckPost:backgroundCheckInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+        XCTAssertEqual(backgroundCheckInput.evictionPassedYN, @"No");
+        XCTAssertEqual(backgroundCheckInput.recommendation, @"Tenant has clean credit");
+    }];
+}
+
+
+- (void) testInsertTenantIncomeExpenses {
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Assign input values to be sent to Dynamo DB via API call
+    PROPERTYTenantIncomeInput *tenantIncomeInput = [[PROPERTYTenantIncomeInput alloc] init];
+    tenantIncomeInput.monthlyIncome=[NSNumber numberWithInt:1000];
+    tenantIncomeInput.monthlyExpenses=[NSNumber numberWithInt:100];
+    
+    NSNumber *numberHundred = [NSNumber numberWithInt:100];
+    NSNumber *numberThousand = [NSNumber numberWithInt:1000];
+    if([numberThousand compare:tenantIncomeInput.monthlyIncome] == NSOrderedSame)
+    {
+        NSLog(@"Equal!");
+    }
+    else {
+        NSLog(@"Not equal!");
+    }
+    if([numberHundred compare:tenantIncomeInput.monthlyExpenses] == NSOrderedSame)
+    {
+        NSLog(@"Equal!");
+    }
+    else {
+        NSLog(@"Not equal!");
+    }
+    
+    //Invoke POST
+   [[client tenantsIncomeExpensePost:tenantIncomeInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+        XCTAssertEqual(tenantIncomeInput.monthlyExpenses, numberHundred);
+        XCTAssertEqual(tenantIncomeInput.monthlyIncome, numberThousand);
+    }];
+}
+
+- (void) testInsertTenantOccupation {
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Assign input values to be sent to Dynamo DB via API call
+    PROPERTYTenantOccupationInput *tenantOccupationInput = [[PROPERTYTenantOccupationInput alloc] init];
+    tenantOccupationInput.tenantId=[NSNumber numberWithInt:1];
+    tenantOccupationInput.ownerId=[NSNumber numberWithInt:1];
+    
+    NSNumber *numberOne = [NSNumber numberWithInt:1];
+    if([numberOne compare:tenantOccupationInput.tenantId] == NSOrderedSame)
+    {
+        NSLog(@"Equal!");
+    }
+    else {
+        NSLog(@"Not equal!");
+    }
+    if([numberOne compare:tenantOccupationInput.ownerId] == NSOrderedSame)
+    {
+        NSLog(@"Equal!");
+    }
+    else {
+        NSLog(@"Not equal!");
+    }
+    
+    //Invoke POST
+     [[client tenantsOccupationPost:tenantOccupationInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+        XCTAssertEqual(tenantOccupationInput.tenantId, numberOne);
+        XCTAssertEqual(tenantOccupationInput.ownerId, numberOne);
+    }];
+}
+
+
+- (void) testInsertTenantReferences {
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Assign input values to be sent to Dynamo DB via API call
+    PROPERTYTenantRefInput *tenantRefInput = [[PROPERTYTenantRefInput alloc] init];
+    tenantRefInput.firstName = @"Nafisa";
+    tenantRefInput.lastName = @"Hasan";
+    
+    if ([tenantRefInput.firstName isEqualToString:@"Nafisa"])
+    {
+        NSLog(@"Equal!");
+    }
+    else {
+        NSLog(@"Not equal");
+    }
+    if ([tenantRefInput.lastName isEqualToString:@"Hasan"])
+    {
+        NSLog(@"Equal!");
+    }
+    else {
+        NSLog(@"Not equal");
+    }
+    
+    //Invoke POST
+    [[client tenantsReferencePost:tenantRefInput ] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+        XCTAssertEqual(tenantRefInput.firstName, @"Nafisa");
+        XCTAssertEqual(tenantRefInput.lastName, @"Hasan");
+    }];
+}
+
+
+- (void) testInsertTenant {
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Assign input values to be sent to Dynamo DB via API call
+    PROPERTYTenantInput *tenantInput = [[PROPERTYTenantInput alloc] init];
+    tenantInput.firstName = @"Nafisa";
+    tenantInput.lastName = @"Hasan";
+    
+    if ([tenantInput.firstName isEqualToString:@"Nafisa"])
+    {
+        NSLog(@"Equal!");
+    }
+    else {
+        NSLog(@"Not equal");
+    }
+    if ([tenantInput.lastName isEqualToString:@"Hasan"])
+    {
+        NSLog(@"Equal!");
+    }
+    else {
+        NSLog(@"Not equal");
+    }
+    
+    //Invoke POST
+     [[client tenantsPost:tenantInput ] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+        XCTAssertEqual(tenantInput.firstName, @"Nafisa");
+        XCTAssertEqual(tenantInput.lastName, @"Hasan");
+    }];
+}
+
 
 
 
@@ -383,6 +682,137 @@
         XCTAssertEqual(tenantInput.ownerId, numberTwenty);
     }];
 }
+
+- (void) testUpdateTenantOccupation {
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Assign input values to be sent to Dynamo DB via API call
+    PROPERTYTenantOccupationInput *tenantOccupationInput = [[PROPERTYTenantOccupationInput alloc] init];
+    
+    tenantOccupationInput.tenantOccupationId=[NSNumber numberWithInt:4];
+    tenantOccupationInput.tenantId=[NSNumber numberWithInt:6];
+    
+    
+    NSNumber *numberFour = [NSNumber numberWithInt:4];
+    NSNumber *numberSix = [NSNumber numberWithInt:6];
+    if([numberSix compare:tenantOccupationInput.tenantId] == NSOrderedSame)
+    {
+        NSLog(@"Equal!");
+    }
+    
+    if ([numberFour compare:tenantOccupationInput.tenantOccupationId] == NSOrderedSame)
+    {
+        NSLog(@"Equal!");
+    }
+    else {
+        NSLog(@"Not equal");
+    }
+    //Invoke Put
+    [[client tenantsOccupationPut:tenantOccupationInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+        XCTAssertEqual(tenantOccupationInput.tenantId, numberSix);
+        XCTAssertEqual(tenantOccupationInput.tenantOccupationId, numberFour);
+    }];
+}
+
+
+- (void) testUpdateTenantIncomeExpenses {
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Assign input values to be sent to Dynamo DB via API call
+    PROPERTYTenantIncomeInput *tenantIncomeInput = [[PROPERTYTenantIncomeInput alloc] init];
+    
+    tenantIncomeInput.monthlyIncome=[NSNumber numberWithInt:1];
+    tenantIncomeInput.monthlyExpenses=[NSNumber numberWithInt:1];
+    
+    NSNumber *numberHundred = [NSNumber numberWithInt:100];
+    NSNumber *numberThousand = [NSNumber numberWithInt:1000];
+    NSNumber *numberOne = [NSNumber numberWithInt:1];
+    if([numberThousand compare:tenantIncomeInput.monthlyIncome] == NSOrderedSame)
+    {
+        NSLog(@"Equal!");
+    }
+    else {
+        NSLog(@"Income updated to 1");
+    }
+    if ([numberHundred compare:tenantIncomeInput.monthlyExpenses] == NSOrderedSame)
+    {
+        NSLog(@"Equal!");
+    }
+    else {
+        NSLog(@"Expenses updated to 1");
+    }
+    //Invoke Put
+    [[client tenantsIncomeExpensePut:tenantIncomeInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+        XCTAssertEqual(tenantIncomeInput.monthlyExpenses, numberOne);
+        XCTAssertEqual(tenantIncomeInput.monthlyIncome, numberOne);
+    }];
+}
+
+- (void) testUpdateTenantBackgroundCheck {
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Assign input values to be sent to Dynamo DB via API call
+    PROPERTYTenantBackgroundInput *backgroundCheckInput = [[PROPERTYTenantBackgroundInput alloc] init];
+    backgroundCheckInput.evictionPassedYN=@"N";
+    backgroundCheckInput.recommendation=@"Tenant has Bad credit";
+    
+    if ([backgroundCheckInput.evictionPassedYN isEqualToString:@"No"])
+    {
+        NSLog(@"Equal!");
+    }
+    else {
+        NSLog(@"Updated to N");
+    }
+    if ([backgroundCheckInput.recommendation isEqualToString:@"Tenant has clean credit"])
+    {
+        NSLog(@"Equal!");
+    }
+    else {
+        NSLog(@"Updated to Tenant has Bad credit");
+    }
+    //Invoke Put
+    [[client backgroundCheckPut:backgroundCheckInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+        XCTAssertEqual(backgroundCheckInput.evictionPassedYN, @"No");
+        XCTAssertEqual(backgroundCheckInput.recommendation, @"Tenant has Bad credit");
+    }];
+}
+
+
+- (void) testUpdateRentalAgreement {
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Assign input values to be sent to Dynamo DB via API call
+    PROPERTYRentalAgreementInput *rentalAgreementInput = [[PROPERTYRentalAgreementInput alloc] init];
+    rentalAgreementInput.monthlyRent=[NSNumber numberWithInt:1];
+    rentalAgreementInput.monthlyRentDue = @"Today";
+    
+    NSNumber *numberOne = [NSNumber numberWithInt:1];
+    NSNumber *numberFiveHundred = [NSNumber numberWithInt:500];
+    if([numberFiveHundred compare:rentalAgreementInput.monthlyRent] == NSOrderedSame)
+    {
+        NSLog(@"Equal!");
+    }
+    else {
+        NSLog(@"Updated to 1");
+    }
+    if ([rentalAgreementInput.monthlyRentDue isEqualToString:@"Today"])
+    {
+        NSLog(@"Equal!");
+    }
+    else {
+        NSLog(@"Not equal");
+    }
+    //Invoke Put
+    [[client rentalAgreementPut:rentalAgreementInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+        XCTAssertEqual(rentalAgreementInput.monthlyRent, numberOne);
+        XCTAssertEqual(rentalAgreementInput.monthlyRentDue, @"Today");
+    }];
+}
+
 
 
 
