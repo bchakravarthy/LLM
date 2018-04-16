@@ -377,8 +377,7 @@
     else {
         NSLog(@"Not equal");
     }
-    //Invoke Put on employee API
-    //Invoke PUT on employee API
+    //Invoke Put
     [[client tenantsPut:tenantInput ] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
         XCTAssertEqual(tenantInput.tenantId, numberOne);
         XCTAssertEqual(tenantInput.ownerId, numberTwenty);
