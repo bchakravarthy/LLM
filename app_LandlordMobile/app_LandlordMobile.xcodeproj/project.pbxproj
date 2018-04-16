@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9733F3B0E912D617F8328FD1 /* Pods_app_LandlordMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93FF748376BCFE0AE299D8AE /* Pods_app_LandlordMobile.framework */; };
+		DB0828F5208507F10029B9BE /* app_LandlordMobileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB0828F4208507F10029B9BE /* app_LandlordMobileTests.m */; };
 		DB6C84BC20740C4900A555B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6C84BB20740C4900A555B2 /* AppDelegate.m */; };
 		DB6C84BF20740C4900A555B2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6C84BE20740C4900A555B2 /* ViewController.m */; };
 		DB6C84C220740C4900A555B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6C84C020740C4900A555B2 /* Main.storyboard */; };
@@ -78,12 +79,29 @@
 		E4F4DC23207D9CAB0021B969 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F4DC1B207D9CAA0021B969 /* MMDrawerVisualState.m */; };
 		E4F4DC24207D9CAB0021B969 /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F4DC1F207D9CAB0021B969 /* MMDrawerBarButtonItem.m */; };
 		E4F4DC25207D9CAB0021B969 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F4DC21207D9CAB0021B969 /* UIViewController+MMDrawerController.m */; };
+		E60ECB38AA7C0E9C4ACECA16 /* Pods_app_LandlordMobile_app_LandlordMobileTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4DE8FBDDF0198D4C9E3C091 /* Pods_app_LandlordMobile_app_LandlordMobileTests.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		DB0828F7208507F10029B9BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB6C84AF20740C4800A555B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB6C84B620740C4900A555B2;
+			remoteInfo = app_LandlordMobile;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		11525EF97BC02AEA8F8CB653 /* Pods-app_LandlordMobile-app_LandlordMobileTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app_LandlordMobile-app_LandlordMobileTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-app_LandlordMobile-app_LandlordMobileTests/Pods-app_LandlordMobile-app_LandlordMobileTests.release.xcconfig"; sourceTree = "<group>"; };
 		3B38D5D0F4F36D894E37F68A /* Pods-app_LandlordMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app_LandlordMobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-app_LandlordMobile/Pods-app_LandlordMobile.release.xcconfig"; sourceTree = "<group>"; };
+		51584FDA748E82FCD56F6594 /* Pods-app_LandlordMobile-app_LandlordMobileTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app_LandlordMobile-app_LandlordMobileTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-app_LandlordMobile-app_LandlordMobileTests/Pods-app_LandlordMobile-app_LandlordMobileTests.debug.xcconfig"; sourceTree = "<group>"; };
 		93FF748376BCFE0AE299D8AE /* Pods_app_LandlordMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_app_LandlordMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD48BF333CE33F3C36B4C0E1 /* Pods-app_LandlordMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app_LandlordMobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-app_LandlordMobile/Pods-app_LandlordMobile.debug.xcconfig"; sourceTree = "<group>"; };
+		D4DE8FBDDF0198D4C9E3C091 /* Pods_app_LandlordMobile_app_LandlordMobileTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_app_LandlordMobile_app_LandlordMobileTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB0828F2208507F10029B9BE /* app_LandlordMobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = app_LandlordMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB0828F4208507F10029B9BE /* app_LandlordMobileTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = app_LandlordMobileTests.m; sourceTree = "<group>"; };
+		DB0828F6208507F10029B9BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB6C84B720740C4900A555B2 /* app_LandlordMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = app_LandlordMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB6C84BA20740C4900A555B2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DB6C84BB20740C4900A555B2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -225,6 +243,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DB0828EF208507F10029B9BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E60ECB38AA7C0E9C4ACECA16 /* Pods_app_LandlordMobile_app_LandlordMobileTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DB6C84B420740C4900A555B2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -240,6 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				93FF748376BCFE0AE299D8AE /* Pods_app_LandlordMobile.framework */,
+				D4DE8FBDDF0198D4C9E3C091 /* Pods_app_LandlordMobile_app_LandlordMobileTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -249,8 +276,19 @@
 			children = (
 				BD48BF333CE33F3C36B4C0E1 /* Pods-app_LandlordMobile.debug.xcconfig */,
 				3B38D5D0F4F36D894E37F68A /* Pods-app_LandlordMobile.release.xcconfig */,
+				51584FDA748E82FCD56F6594 /* Pods-app_LandlordMobile-app_LandlordMobileTests.debug.xcconfig */,
+				11525EF97BC02AEA8F8CB653 /* Pods-app_LandlordMobile-app_LandlordMobileTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		DB0828F3208507F10029B9BE /* app_LandlordMobileTests */ = {
+			isa = PBXGroup;
+			children = (
+				DB0828F4208507F10029B9BE /* app_LandlordMobileTests.m */,
+				DB0828F6208507F10029B9BE /* Info.plist */,
+			);
+			path = app_LandlordMobileTests;
 			sourceTree = "<group>";
 		};
 		DB6C84AE20740C4800A555B2 = {
@@ -258,6 +296,7 @@
 			children = (
 				DB6C84D020740CA100A555B2 /* Podfile */,
 				DB6C84B920740C4900A555B2 /* app_LandlordMobile */,
+				DB0828F3208507F10029B9BE /* app_LandlordMobileTests */,
 				DB6C84B820740C4900A555B2 /* Products */,
 				A91CA88862FD45BFE938C576 /* Pods */,
 				5F2CAFDECAA70987D5157F05 /* Frameworks */,
@@ -268,6 +307,7 @@
 			isa = PBXGroup;
 			children = (
 				DB6C84B720740C4900A555B2 /* app_LandlordMobile.app */,
+				DB0828F2208507F10029B9BE /* app_LandlordMobileTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -426,6 +466,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		DB0828F1208507F10029B9BE /* app_LandlordMobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB0828FB208507F10029B9BE /* Build configuration list for PBXNativeTarget "app_LandlordMobileTests" */;
+			buildPhases = (
+				4A3130B4F6D3AB0B84FB5946 /* [CP] Check Pods Manifest.lock */,
+				DB0828EE208507F10029B9BE /* Sources */,
+				DB0828EF208507F10029B9BE /* Frameworks */,
+				DB0828F0208507F10029B9BE /* Resources */,
+				86544EAD6EB65D66DD53573C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB0828F8208507F10029B9BE /* PBXTargetDependency */,
+			);
+			name = app_LandlordMobileTests;
+			productName = app_LandlordMobileTests;
+			productReference = DB0828F2208507F10029B9BE /* app_LandlordMobileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		DB6C84B620740C4900A555B2 /* app_LandlordMobile */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB6C84CD20740C4900A555B2 /* Build configuration list for PBXNativeTarget "app_LandlordMobile" */;
@@ -435,7 +495,6 @@
 				DB6C84B420740C4900A555B2 /* Frameworks */,
 				DB6C84B520740C4900A555B2 /* Resources */,
 				02A4DBB998DCA9F21BFCA9F5 /* [CP] Embed Pods Frameworks */,
-				BEF11A6E88180F13E4149DE9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -455,6 +514,11 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Nafisa Hasan";
 				TargetAttributes = {
+					DB0828F1208507F10029B9BE = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DB6C84B620740C4900A555B2;
+					};
 					DB6C84B620740C4900A555B2 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -475,11 +539,19 @@
 			projectRoot = "";
 			targets = (
 				DB6C84B620740C4900A555B2 /* app_LandlordMobile */,
+				DB0828F1208507F10029B9BE /* app_LandlordMobileTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		DB0828F0208507F10029B9BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DB6C84B520740C4900A555B2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -514,6 +586,44 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-app_LandlordMobile/Pods-app_LandlordMobile-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		4A3130B4F6D3AB0B84FB5946 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-app_LandlordMobile-app_LandlordMobileTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86544EAD6EB65D66DD53573C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-app_LandlordMobile-app_LandlordMobileTests/Pods-app_LandlordMobile-app_LandlordMobileTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSAPIGateway/AWSAPIGateway.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAPIGateway.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-app_LandlordMobile-app_LandlordMobileTests/Pods-app_LandlordMobile-app_LandlordMobileTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A993F5064A61EDB3FBBD9D03 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -532,24 +642,17 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BEF11A6E88180F13E4149DE9 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-app_LandlordMobile/Pods-app_LandlordMobile-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		DB0828EE208507F10029B9BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB0828F5208507F10029B9BE /* app_LandlordMobileTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DB6C84B320740C4900A555B2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -625,6 +728,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		DB0828F8208507F10029B9BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB6C84B620740C4900A555B2 /* app_LandlordMobile */;
+			targetProxy = DB0828F7208507F10029B9BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		DB6C84C020740C4900A555B2 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -645,6 +756,36 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		DB0828F9208507F10029B9BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51584FDA748E82FCD56F6594 /* Pods-app_LandlordMobile-app_LandlordMobileTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = app_LandlordMobileTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.app-LandlordMobileTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/app_LandlordMobile.app/app_LandlordMobile";
+			};
+			name = Debug;
+		};
+		DB0828FA208507F10029B9BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11525EF97BC02AEA8F8CB653 /* Pods-app_LandlordMobile-app_LandlordMobileTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = app_LandlordMobileTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.app-LandlordMobileTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/app_LandlordMobile.app/app_LandlordMobile";
+			};
+			name = Release;
+		};
 		DB6C84CB20740C4900A555B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -780,6 +921,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DB0828FB208507F10029B9BE /* Build configuration list for PBXNativeTarget "app_LandlordMobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB0828F9208507F10029B9BE /* Debug */,
+				DB0828FA208507F10029B9BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DB6C84B220740C4800A555B2 /* Build configuration list for PBXProject "app_LandlordMobile" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
