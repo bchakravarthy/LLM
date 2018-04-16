@@ -1,0 +1,6 @@
+framework module Pods_app_LandlordMobile_app_LandlordMobileTests {
+  umbrella header "Pods-app_LandlordMobile-app_LandlordMobileTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

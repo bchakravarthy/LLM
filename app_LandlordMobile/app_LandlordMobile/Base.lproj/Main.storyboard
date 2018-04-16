@@ -928,6 +928,9 @@
                                 <rect key="frame" x="205" y="595" width="154" height="52"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <state key="normal" image="update record btn"/>
+                                <connections>
+                                    <segue destination="mDn-06-xao" kind="push" id="lFp-wB-ayS"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="List of records from property tax table." textAlignment="natural" id="8BB-5j-ba2" userLabel="record list">
                                 <rect key="frame" x="16" y="77" width="343" height="497"/>
@@ -946,6 +949,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="getPropTaxList" destination="8BB-5j-ba2" id="3D7-9u-huh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bSk-WF-Ena" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2279,7 +2285,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="update btn"/>
                                 <connections>
-                                    <action selector="addPropMaintExpBtnPress:" destination="hBw-M5-Vwt" eventType="touchUpInside" id="Hmz-Al-Faw"/>
                                     <action selector="updatePropMaintExpBtnPress:" destination="kU8-so-2mg" eventType="touchUpInside" id="4UQ-qv-TuE"/>
                                 </connections>
                             </button>
@@ -2355,6 +2360,87 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v2s-u2-5KA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="526" y="-761"/>
+        </scene>
+        <!--Update prop tax-->
+        <scene sceneID="f7A-Y7-mC0">
+            <objects>
+                <viewController id="mDn-06-xao" userLabel="Update prop tax" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CRb-LS-AkB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="uFN-uh-3MD" userLabel="update btn">
+                                <rect key="frame" x="67" y="538" width="238" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="update btn"/>
+                                <connections>
+                                    <action selector="updatePropTaxBtnPress:" destination="mDn-06-xao" eventType="touchUpInside" id="2kz-dH-HNr"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Property id" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="6aI-6T-jJt" userLabel="prop id">
+                                <rect key="frame" x="64" y="275" width="114" height="42"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Owner id" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="w2P-Dw-BZv" userLabel="owner id">
+                                <rect key="frame" x="196" y="275" width="114" height="42"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Year" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="D3s-UB-7NN" userLabel="year owned">
+                                <rect key="frame" x="64" y="336" width="114" height="42"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Year paid" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="lAD-3b-3d9" userLabel="year paid">
+                                <rect key="frame" x="196" y="336" width="114" height="42"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Annual tax" textAlignment="center" minimumFontSize="17" id="LTl-Qd-d8T" userLabel="annual tax">
+                                <rect key="frame" x="64" y="399" width="245" height="42"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Propperty tax id" textAlignment="center" minimumFontSize="17" id="qVW-IT-fCx" userLabel="prop tax id">
+                                <rect key="frame" x="64" y="209" width="245" height="42"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.65875750779999998" green="0.77434581520000001" blue="0.90752822160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="KuC-fL-u02"/>
+                    <connections>
+                        <outlet property="updatePropTaxAnnualTax" destination="LTl-Qd-d8T" id="fkz-64-FBT"/>
+                        <outlet property="updatePropTaxId" destination="qVW-IT-fCx" id="3Fg-bc-WqS"/>
+                        <outlet property="updatePropTaxOwnerId" destination="w2P-Dw-BZv" id="UEB-Ks-wQY"/>
+                        <outlet property="updatePropTaxPropId" destination="6aI-6T-jJt" id="qzV-ce-5oJ"/>
+                        <outlet property="updatePropTaxYear" destination="D3s-UB-7NN" id="WEI-QB-cQ9"/>
+                        <outlet property="updatePropTaxYearPaid" destination="lAD-3b-3d9" id="LJ9-x2-Dhc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="doR-WN-EOR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1038" y="-763"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pdN-SH-Ukb">

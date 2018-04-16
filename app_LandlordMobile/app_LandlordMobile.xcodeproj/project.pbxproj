@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9733F3B0E912D617F8328FD1 /* Pods_app_LandlordMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93FF748376BCFE0AE299D8AE /* Pods_app_LandlordMobile.framework */; };
+		A90A4E71866A5945D86564C9 /* Pods_app_LandlordMobile_app_LandlordMobileTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE84B44050531E950A320DC6 /* Pods_app_LandlordMobile_app_LandlordMobileTests.framework */; };
 		DB6C84BC20740C4900A555B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6C84BB20740C4900A555B2 /* AppDelegate.m */; };
 		DB6C84BF20740C4900A555B2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6C84BE20740C4900A555B2 /* ViewController.m */; };
 		DB6C84C220740C4900A555B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6C84C020740C4900A555B2 /* Main.storyboard */; };
@@ -78,12 +79,26 @@
 		E4F4DC23207D9CAB0021B969 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F4DC1B207D9CAA0021B969 /* MMDrawerVisualState.m */; };
 		E4F4DC24207D9CAB0021B969 /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F4DC1F207D9CAB0021B969 /* MMDrawerBarButtonItem.m */; };
 		E4F4DC25207D9CAB0021B969 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F4DC21207D9CAB0021B969 /* UIViewController+MMDrawerController.m */; };
+		E4F4DC3C208552BD0021B969 /* app_LandlordMobileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F4DC3B208552BD0021B969 /* app_LandlordMobileTests.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		E4F4DC3E208552BD0021B969 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB6C84AF20740C4800A555B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB6C84B620740C4900A555B2;
+			remoteInfo = app_LandlordMobile;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		3046236384AA21AE59FE052B /* Pods-app_LandlordMobile-app_LandlordMobileTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app_LandlordMobile-app_LandlordMobileTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-app_LandlordMobile-app_LandlordMobileTests/Pods-app_LandlordMobile-app_LandlordMobileTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3B38D5D0F4F36D894E37F68A /* Pods-app_LandlordMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app_LandlordMobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-app_LandlordMobile/Pods-app_LandlordMobile.release.xcconfig"; sourceTree = "<group>"; };
 		93FF748376BCFE0AE299D8AE /* Pods_app_LandlordMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_app_LandlordMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A96BE3B6E6383D0C4E9F0699 /* Pods-app_LandlordMobile-app_LandlordMobileTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app_LandlordMobile-app_LandlordMobileTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-app_LandlordMobile-app_LandlordMobileTests/Pods-app_LandlordMobile-app_LandlordMobileTests.release.xcconfig"; sourceTree = "<group>"; };
 		BD48BF333CE33F3C36B4C0E1 /* Pods-app_LandlordMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app_LandlordMobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-app_LandlordMobile/Pods-app_LandlordMobile.debug.xcconfig"; sourceTree = "<group>"; };
+		CE84B44050531E950A320DC6 /* Pods_app_LandlordMobile_app_LandlordMobileTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_app_LandlordMobile_app_LandlordMobileTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB6C84B720740C4900A555B2 /* app_LandlordMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = app_LandlordMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB6C84BA20740C4900A555B2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DB6C84BB20740C4900A555B2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -222,6 +237,9 @@
 		E4F4DC1F207D9CAB0021B969 /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
 		E4F4DC20207D9CAB0021B969 /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
 		E4F4DC21207D9CAB0021B969 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		E4F4DC39208552BC0021B969 /* app_LandlordMobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = app_LandlordMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4F4DC3B208552BD0021B969 /* app_LandlordMobileTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = app_LandlordMobileTests.m; sourceTree = "<group>"; };
+		E4F4DC3D208552BD0021B969 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +251,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E4F4DC36208552BC0021B969 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A90A4E71866A5945D86564C9 /* Pods_app_LandlordMobile_app_LandlordMobileTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -240,6 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				93FF748376BCFE0AE299D8AE /* Pods_app_LandlordMobile.framework */,
+				CE84B44050531E950A320DC6 /* Pods_app_LandlordMobile_app_LandlordMobileTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -249,6 +276,8 @@
 			children = (
 				BD48BF333CE33F3C36B4C0E1 /* Pods-app_LandlordMobile.debug.xcconfig */,
 				3B38D5D0F4F36D894E37F68A /* Pods-app_LandlordMobile.release.xcconfig */,
+				3046236384AA21AE59FE052B /* Pods-app_LandlordMobile-app_LandlordMobileTests.debug.xcconfig */,
+				A96BE3B6E6383D0C4E9F0699 /* Pods-app_LandlordMobile-app_LandlordMobileTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -258,6 +287,7 @@
 			children = (
 				DB6C84D020740CA100A555B2 /* Podfile */,
 				DB6C84B920740C4900A555B2 /* app_LandlordMobile */,
+				E4F4DC3A208552BD0021B969 /* app_LandlordMobileTests */,
 				DB6C84B820740C4900A555B2 /* Products */,
 				A91CA88862FD45BFE938C576 /* Pods */,
 				5F2CAFDECAA70987D5157F05 /* Frameworks */,
@@ -268,6 +298,7 @@
 			isa = PBXGroup;
 			children = (
 				DB6C84B720740C4900A555B2 /* app_LandlordMobile.app */,
+				E4F4DC39208552BC0021B969 /* app_LandlordMobileTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -423,6 +454,15 @@
 			path = MySideMenu;
 			sourceTree = "<group>";
 		};
+		E4F4DC3A208552BD0021B969 /* app_LandlordMobileTests */ = {
+			isa = PBXGroup;
+			children = (
+				E4F4DC3B208552BD0021B969 /* app_LandlordMobileTests.m */,
+				E4F4DC3D208552BD0021B969 /* Info.plist */,
+			);
+			path = app_LandlordMobileTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -435,7 +475,6 @@
 				DB6C84B420740C4900A555B2 /* Frameworks */,
 				DB6C84B520740C4900A555B2 /* Resources */,
 				02A4DBB998DCA9F21BFCA9F5 /* [CP] Embed Pods Frameworks */,
-				BEF11A6E88180F13E4149DE9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -445,6 +484,26 @@
 			productName = app_LandlordMobile;
 			productReference = DB6C84B720740C4900A555B2 /* app_LandlordMobile.app */;
 			productType = "com.apple.product-type.application";
+		};
+		E4F4DC38208552BC0021B969 /* app_LandlordMobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4F4DC40208552BD0021B969 /* Build configuration list for PBXNativeTarget "app_LandlordMobileTests" */;
+			buildPhases = (
+				679D8FA1DE4153DB5AA7EAD7 /* [CP] Check Pods Manifest.lock */,
+				E4F4DC35208552BC0021B969 /* Sources */,
+				E4F4DC36208552BC0021B969 /* Frameworks */,
+				E4F4DC37208552BC0021B969 /* Resources */,
+				C1FF588C334C598CCC015A79 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4F4DC3F208552BD0021B969 /* PBXTargetDependency */,
+			);
+			name = app_LandlordMobileTests;
+			productName = app_LandlordMobileTests;
+			productReference = E4F4DC39208552BC0021B969 /* app_LandlordMobileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -458,6 +517,11 @@
 					DB6C84B620740C4900A555B2 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+					};
+					E4F4DC38208552BC0021B969 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DB6C84B620740C4900A555B2;
 					};
 				};
 			};
@@ -475,6 +539,7 @@
 			projectRoot = "";
 			targets = (
 				DB6C84B620740C4900A555B2 /* app_LandlordMobile */,
+				E4F4DC38208552BC0021B969 /* app_LandlordMobileTests */,
 			);
 		};
 /* End PBXProject section */
@@ -488,6 +553,13 @@
 				DB6C84C420740C4900A555B2 /* Assets.xcassets in Resources */,
 				DB6C84D120740CA100A555B2 /* Podfile in Resources */,
 				DB6C84C220740C4900A555B2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4F4DC37208552BC0021B969 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +586,24 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-app_LandlordMobile/Pods-app_LandlordMobile-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		679D8FA1DE4153DB5AA7EAD7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-app_LandlordMobile-app_LandlordMobileTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A993F5064A61EDB3FBBD9D03 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -532,19 +622,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BEF11A6E88180F13E4149DE9 /* [CP] Copy Pods Resources */ = {
+		C1FF588C334C598CCC015A79 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-app_LandlordMobile-app_LandlordMobileTests/Pods-app_LandlordMobile-app_LandlordMobileTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSAPIGateway/AWSAPIGateway.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAPIGateway.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-app_LandlordMobile/Pods-app_LandlordMobile-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-app_LandlordMobile-app_LandlordMobileTests/Pods-app_LandlordMobile-app_LandlordMobileTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -623,7 +718,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E4F4DC35208552BC0021B969 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4F4DC3C208552BD0021B969 /* app_LandlordMobileTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E4F4DC3F208552BD0021B969 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB6C84B620740C4900A555B2 /* app_LandlordMobile */;
+			targetProxy = E4F4DC3E208552BD0021B969 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DB6C84C020740C4900A555B2 /* Main.storyboard */ = {
@@ -777,6 +888,36 @@
 			};
 			name = Release;
 		};
+		E4F4DC41208552BD0021B969 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3046236384AA21AE59FE052B /* Pods-app_LandlordMobile-app_LandlordMobileTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = app_LandlordMobileTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.app-LandlordMobileTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/app_LandlordMobile.app/app_LandlordMobile";
+			};
+			name = Debug;
+		};
+		E4F4DC42208552BD0021B969 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A96BE3B6E6383D0C4E9F0699 /* Pods-app_LandlordMobile-app_LandlordMobileTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = app_LandlordMobileTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.app-LandlordMobileTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/app_LandlordMobile.app/app_LandlordMobile";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -794,6 +935,15 @@
 			buildConfigurations = (
 				DB6C84CE20740C4900A555B2 /* Debug */,
 				DB6C84CF20740C4900A555B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4F4DC40208552BD0021B969 /* Build configuration list for PBXNativeTarget "app_LandlordMobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4F4DC41208552BD0021B969 /* Debug */,
+				E4F4DC42208552BD0021B969 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

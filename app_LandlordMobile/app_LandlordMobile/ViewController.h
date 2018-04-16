@@ -194,6 +194,15 @@
 @property (weak, nonatomic) IBOutlet UITextField *addPropTaxYear;
 @property (weak, nonatomic) IBOutlet UITextField *addPropTaxYearPaid;
 @property (weak, nonatomic) IBOutlet UITextField *addPropTaxAnnualTax;
+// For Get
+@property (weak, nonatomic) IBOutlet UITextView *getPropTaxList;
+// For update
+@property (weak, nonatomic) IBOutlet UITextField *updatePropTaxId;
+@property (weak, nonatomic) IBOutlet UITextField *updatePropTaxPropId;
+@property (weak, nonatomic) IBOutlet UITextField *updatePropTaxOwnerId;
+@property (weak, nonatomic) IBOutlet UITextField *updatePropTaxYear;
+@property (weak, nonatomic) IBOutlet UITextField *updatePropTaxYearPaid;
+@property (weak, nonatomic) IBOutlet UITextField *updatePropTaxAnnualTax;
 
 
 
