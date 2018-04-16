@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "380B6CFF158AEF639241FF76EAF9A694"
-               BuildableName = "Pods_app_LandlordMobile.framework"
-               BlueprintName = "Pods-app_LandlordMobile"
+               BlueprintIdentifier = "E452540FC0282DFD2CF6EFC16CDA1A6F"
+               BuildableName = "Pods_app_LandlordMobile_app_LandlordMobileTests.framework"
+               BlueprintName = "Pods-app_LandlordMobile-app_LandlordMobileTests"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,9 +47,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "380B6CFF158AEF639241FF76EAF9A694"
-            BuildableName = "Pods_app_LandlordMobile.framework"
-            BlueprintName = "Pods-app_LandlordMobile"
+            BlueprintIdentifier = "E452540FC0282DFD2CF6EFC16CDA1A6F"
+            BuildableName = "Pods_app_LandlordMobile_app_LandlordMobileTests.framework"
+            BlueprintName = "Pods-app_LandlordMobile-app_LandlordMobileTests"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

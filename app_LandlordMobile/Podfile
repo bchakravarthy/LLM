@@ -5,4 +5,7 @@ use_frameworks!
 
 target 'app_LandlordMobile' do
 	pod 'AWSAPIGateway', '~> 2.4.7'
+    target 'app_LandlordMobileTests' do
+        pod 'AWSAPIGateway', '~> 2.4.7'
+    end
 end
