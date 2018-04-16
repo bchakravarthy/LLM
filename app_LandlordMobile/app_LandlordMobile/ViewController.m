@@ -42,7 +42,7 @@
 //    [self insertTenant];
 //    [self getExpenseType];
     
-    [self getExpenseType];
+//    [self getExpenseType];
 //    [self getProperty];
 //    [self getPropertyMaintExp];
 //    [self getPropertyGeneralExp];
@@ -2345,8 +2345,6 @@
 
 - (IBAction)getPropBtnPress:(id)sender {
     
-    NSString *Display = @"";
-    
     //Instantiate client object
     PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
     
@@ -2369,8 +2367,8 @@
             cnt = arrData.count;
             //Print out count of properties
             NSLog(@"Number of properties %lu\n",cnt);
-
-            NSString *Records = @"";
+            NSString *Records = [NSString stringWithFormat:@"Number of properties %lu\n",cnt];
+            
             //Print out each prop details to the console
             for (id element in arrData){
                 NSLog(@"%@", element);
@@ -2484,6 +2482,65 @@
 }
 
 
+- (IBAction)updateTenantBtnPress:(id)sender {
+    
+    NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
+    
+    NSString *TenantId = self.updateTenantId.text;
+    NSString *OwnerId = self.updateTenantOwnerId.text;
+    NSString *FirstName = self.updateTenantFirstName.text;
+    NSString *MiddleName = self.updateTenantMiddleName.text;
+    NSString *LastName = self.updateTenantLastName.text;
+    NSString *Age = self.updateTenantAge.text;
+    NSString *PropId = self.updateTenantPropId.text;
+    NSString *Email = self.updateTenantEmail.text;
+    NSString *Phone = self.updateTenantPhone.text;
+    NSString *PrimaryCon = self.updateTenantPrimaryCon.text;
+    
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Assign input values to be sent to Dynamo DB via API call
+    PROPERTYTenantInput *tenantInput = [[PROPERTYTenantInput alloc] init];
+    
+    tenantInput.tenantId = [f numberFromString:TenantId];
+    tenantInput.ownerId=[f numberFromString:OwnerId];
+    tenantInput.firstName = FirstName;
+    tenantInput.lastName = LastName;
+    tenantInput.middleName = MiddleName;
+    tenantInput.age = [f numberFromString:Age];
+    tenantInput.propertyId = [f numberFromString:PropId];
+    tenantInput.contactEmail = Email;
+    tenantInput.contactPhone = Phone;
+    tenantInput.primaryContact = PrimaryCon;
+    
+    
+    //Invoke PUT on employee API
+    [[client tenantsPut:tenantInput ] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+        
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        
+        if (task.result) {
+            
+            //You are here, so method invocation is a success
+            
+            printf("Success....\n");
+            
+            NSLog(@"Return from API call.Tenant information has been updated. Please check in the database...\n");
+            
+        }
+        
+        return nil;
+    }];
+    
+}
+
+
+- (IBAction)updatePurchaseDetailBtnPress:(id)sender {
+}
 
 
 @end
