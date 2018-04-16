@@ -2540,6 +2540,99 @@
 
 
 - (IBAction)updatePurchaseDetailBtnPress:(id)sender {
+    
+    NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
+    
+    NSString *PurchaseId = self.updatePurchaseDetailId.text;
+    NSString *OwnerId = self.updatePurchaseDetailOwnerId.text;
+    NSString *PropId = self.updatePurchaseDetailPropId.text;
+    NSString *Year = self.updatePurchaseDetailYear.text;
+    NSString *Price = self.updatePurchaseDetailPrice.text;
+    
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Assign input values to be sent to Dynamo DB via API call
+    PROPERTYPurchaseDetailsInput *purchaseInput = [[PROPERTYPurchaseDetailsInput alloc] init];
+    
+    purchaseInput.purchaseId=[f numberFromString:PurchaseId];
+    purchaseInput.ownerId=[f numberFromString:OwnerId];
+    purchaseInput.propertyId=[f numberFromString:PropId];
+    purchaseInput.yearOfPurchase=[f numberFromString:Year];
+    purchaseInput.price=[f numberFromString:Price];
+    
+    //Invoke PUT on employee API
+    [[client purchaseDetailsPut:purchaseInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+        
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        
+        if (task.result) {
+            
+            //You are here, so method invocation is a success
+            
+            printf("Success....\n");
+            
+            NSLog(@"Return from API call. Your purchase details have been updated... Please check in the database...\n");
+            
+        }
+        
+        return nil;
+    }];
+    
+}
+
+
+- (IBAction)updatePropMaintExpBtnPress:(id)sender {
+    
+    NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
+
+    NSString *PropMaintExpId = self.updatePropMaintExpId.text;
+    NSString *PropId = self.updatePropMaintExpPropId.text;
+    NSString *OwnerId = self.updatePropMaintExpOwnerId.text;
+    NSString *MaintExpId = self.updatePropMaintExpExpId.text;
+    NSString *ExpAmt = self.updatePropMaintExpExpAmt.text;
+    NSString *Date = self.updatePropMaintExpReceiptDate.text;
+    NSString *Copy = self.updatePropMaintExpReceiptCopy.text;
+    
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Assign input values to be sent to Dynamo DB via API call
+    PROPERTYPropertyMaintExpInput *propertyMaintInput = [[PROPERTYPropertyMaintExpInput alloc] init];
+    
+    propertyMaintInput.propertyMaintanenceExpenseId = [f numberFromString:PropMaintExpId];
+    propertyMaintInput.propertyId = [f numberFromString:PropId];
+    propertyMaintInput.ownerId = [f numberFromString:OwnerId];
+    propertyMaintInput.maintenanceExpenseId =[f numberFromString:MaintExpId];
+    propertyMaintInput.expenseAmount = [f numberFromString:ExpAmt];
+    propertyMaintInput.receiptCopy = Copy;
+    propertyMaintInput.receiptDate = Date;
+    
+    
+    //Invoke PUT on employee API
+    [[client propMaintExpensePut:propertyMaintInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+        
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        
+        if (task.result) {
+            
+            //You are here, so method invocation is a success
+            
+            printf("Success....\n");
+            
+            NSLog(@"Return from API call ... Your property maintenance has been updated. Please check in the database.\n");
+            
+        }
+        
+        return nil;
+    }];
+    
 }
 
 

@@ -64,6 +64,16 @@
 @property (weak, nonatomic) IBOutlet UITextField *addPropMaintExpExpAmt;
 @property (weak, nonatomic) IBOutlet UITextField *addPropMaintExpReceiptDate;
 @property (weak, nonatomic) IBOutlet UITextField *addPropMaintExpReceiptCopy;
+// For GET
+@property (weak, nonatomic) IBOutlet UITextView *getPropMaintExpList;
+// For Update
+@property (weak, nonatomic) IBOutlet UITextField *updatePropMaintExpId;
+@property (weak, nonatomic) IBOutlet UITextField *updatePropMaintExpPropId;
+@property (weak, nonatomic) IBOutlet UITextField *updatePropMaintExpOwnerId;
+@property (weak, nonatomic) IBOutlet UITextField *updatePropMaintExpExpId;
+@property (weak, nonatomic) IBOutlet UITextField *updatePropMaintExpExpAmt;
+@property (weak, nonatomic) IBOutlet UITextField *updatePropMaintExpReceiptDate;
+@property (weak, nonatomic) IBOutlet UITextField *updatePropMaintExpReceiptCopy;
 
 
 // MARK: Maintenance Expense Types
