@@ -1,7 +1,12 @@
 # Landlord Mobile
 
-Landlord Mobile is an iOS app for property owners. The iPhone interface will provide a mechanism for accessing and updating data for property owners such as data models like expense types, mortgage loan details, and rental agreements.
-This app was originally implemented using PHP and the team has converted it into an iOS app so that more users will be able to use their phones to quickly browse through and make quick updates and gather important information. This will attract more users as speed and efficiency is highly sought after.
+Today, landlords are overwhelmed with the amount of information they have to deal with - information about properties, taxes, expenses, tenants & their backgrounds to name a few.  Worse, keeping track of receipts and association with properties can be time-consuming.  
+
+Come year end tax season, this can further aggravate the situation adding further to the frustration. We want to promote the concept of self-service property management by way of mobile-enabled application, allowing landlords to focus on investments rather than managing clutter of paper documents.
+
+Originating as a web app, Landlord Mobile was designed as a concept of self-service property management by way of mobile-enabled application, allowing landlords to focus on investments rather than managing clutter of paper documents. We have implemented an iPhone mobile application to solve the problem. Since more and more users are using cell phone intensively, our Landlord Mobile iOS app would assist them to manage properties via their mobile devices without requiring a computer. 
+
+
 
 #### App version
 - 0.0.1
