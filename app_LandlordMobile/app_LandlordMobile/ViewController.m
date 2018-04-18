@@ -2424,8 +2424,6 @@
         return nil;
     }];
     
-    [self.updateMaintExpTypeDescription resignFirstResponder];
-    
 }
 
 
@@ -2480,8 +2478,6 @@
         
         return nil;
     }];
-    
-    [self.updatePropertyDescription resignFirstResponder];
     
 }
 
@@ -2540,8 +2536,6 @@
         return nil;
     }];
     
-    [self.updateTenantPrimaryCon resignFirstResponder];
-    
 }
 
 
@@ -2587,8 +2581,6 @@
         
         return nil;
     }];
-    
-    [self.updatePurchaseDetailPrice resignFirstResponder];
     
 }
 
@@ -2641,319 +2633,10 @@
         return nil;
     }];
     
-    [self.updatePropMaintExpReceiptCopy resignFirstResponder];
-    
 }
 
 
 - (IBAction)updatePropTaxBtnPress:(id)sender {
-    
-    NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
-
-    NSString *PropTaxId = self.updatePropTaxId.text;
-    NSString *PropId = self.updatePropTaxPropId.text;
-    NSString *OwnerId = self.updatePropTaxOwnerId.text;
-    NSString *Year = self.updatePropTaxYear.text;
-    NSString *YearPaid = self.updatePropTaxYearPaid.text;
-    NSString *AnnualTax = self.updatePropTaxAnnualTax.text;
-    
-    //Instantiate client object
-    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
-    
-    //Assign input values to be sent to Dynamo DB via API call
-    PROPERTYPropertyTaxInput *propertyTaxInput = [[PROPERTYPropertyTaxInput alloc] init];
-    
-    propertyTaxInput.propertyTaxId = [f numberFromString:PropTaxId];
-    propertyTaxInput.propertyId = [f numberFromString:PropId];
-    propertyTaxInput.ownerId = [f numberFromString:OwnerId];
-    propertyTaxInput.yearOwed = [f numberFromString:Year];
-    propertyTaxInput.yearPaid = [f numberFromString:YearPaid];
-    propertyTaxInput.annualTax = [f numberFromString:AnnualTax];
-    
-    //Invoke PUT on employee API
-    [[client propTaxPut:propertyTaxInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
-        
-        
-        if (task.error) {
-            NSLog(@"Error: %@", task.error);
-            return nil;
-        }
-        
-        if (task.result) {
-            
-            //You are here, so method invocation is a success
-            
-            printf("Success....\n");
-            
-            NSLog(@"Return from API call. Your property tax has been updated. Please check in the database.\n");
-            
-        }
-        
-        return nil;
-    }];
-    
-    [self.updatePropTaxAnnualTax resignFirstResponder];
-    
-}
-
-
-- (IBAction)updateTenantBgCheckBtnPress:(id)sender {
-    
-    NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
-
-    NSString *TenantBgCheckId = self.updateTenantBgCheckId.text;
-    NSString *TenantId = self.updateTenantBgCheckTenantId.text;
-    NSString *OwnerId = self.updateTenantBgCheckOwnerId.text;
-    NSString *Credit = self.updateTenantBgCheckCredit.text;
-    NSString *Criminal = self.updateTenantBgCheckCriminalPass.text;
-    NSString *Eviction = self.updateTenantBgCheckEviction.text;
-    NSString *Recommendation = self.updateTenantBgCheckRecommendation.text;
-    
-    //Instantiate client object
-    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
-    
-    //Assign input values to be sent to Dynamo DB via API call
-    PROPERTYTenantBackgroundInput *backgroundCheckInput = [[PROPERTYTenantBackgroundInput alloc] init];
-    
-    backgroundCheckInput.tenantBackgroundCheckId=[f numberFromString:TenantBgCheckId];
-    backgroundCheckInput.tenantId=[f numberFromString:TenantId];
-    backgroundCheckInput.ownerId=[f numberFromString:OwnerId];
-    backgroundCheckInput.creditPassedYN=Credit;
-    backgroundCheckInput.criminalPassed=Criminal;
-    backgroundCheckInput.evictionPassedYN=Eviction;
-    backgroundCheckInput.recommendation=Recommendation;
-    
-    //Invoke PUT on employee API
-    [[client backgroundCheckPut:backgroundCheckInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
-        
-        if (task.error) {
-            NSLog(@"Error: %@", task.error);
-            return nil;
-        }
-        
-        if (task.result) {
-            
-            //You are here, so method invocation is a success
-            
-            printf("Success....\n");
-            
-            NSLog(@"Return from API call.Tenant background check information has been updated. Please check in the database...\n");
-            
-        }
-        
-        return nil;
-    }];
-    
-    [self.updateTenantBgCheckRecommendation resignFirstResponder];
-    
-}
-
-
-- (IBAction)updateTenantIncomeExpBtnPress:(id)sender {
-    
-    NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
-
-    NSString *TenantIncomeExpId = self.updateTenantIncomeExpId.text;
-    NSString *TenantId = self.updateTenantIncomeExpTenantId.text;
-    NSString *OwnerId = self.updateTenantIncomeExpOwnerId.text;
-    NSString *PropOwnId = self.updateTenantIncomeExpPropOwnId.text;
-    NSString *Income = self.updateTenantIncomeExpMonthlyInc.text;
-    NSString *Exp = self.updateTenantIncomeExpMonExp.text;
-    
-    //Instantiate client object
-    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
-    
-    //Assign input values to be sent to Dynamo DB via API call
-    PROPERTYTenantIncomeInput *tenantIncomeInput = [[PROPERTYTenantIncomeInput alloc] init];
-    
-    tenantIncomeInput.tenantIncomeExpenseId = [f numberFromString:TenantIncomeExpId];
-    tenantIncomeInput.tenantId=[f numberFromString:TenantId];
-    tenantIncomeInput.ownerId=[f numberFromString:OwnerId];
-    tenantIncomeInput.propertyOwnerId = [f numberFromString:PropOwnId];
-    tenantIncomeInput.monthlyIncome=[f numberFromString:Income];
-    tenantIncomeInput.monthlyExpenses=[f numberFromString:Exp];
-    
-    //Invoke PUT on employee API
-    [[client tenantsIncomeExpensePut:tenantIncomeInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
-        
-        if (task.error) {
-            NSLog(@"Error: %@", task.error);
-            return nil;
-        }
-        
-        if (task.result) {
-            
-            //You are here, so method invocation is a success
-            
-            printf("Success....\n");
-            
-            NSLog(@"Return from API call.Tenant income expenses information has been update. Please check in the database...\n");
-            
-        }
-        
-        return nil;
-    }];
-    
-    [self.updateTenantIncomeExpMonExp resignFirstResponder];
-    
-}
-
-
-- (IBAction)updateTenantOccBtnPress:(id)sender {
-    
-    NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
-
-    NSString *TenantOccId = self.updateTenantOccId.text;
-    NSString *TenantId = self.updateTenantOccTenantId.text;
-    NSString *OwnerId = self.updateTenantOccOwnerId.text;
-    NSString *Employer = self.updateTenantOccEmployer.text;
-    NSString *Title = self.updateTenantOccTitle.text;
-    
-    //Instantiate client object
-    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
-    
-    //Assign input values to be sent to Dynamo DB via API call
-    PROPERTYTenantOccupationInput *tenantOccupationInput = [[PROPERTYTenantOccupationInput alloc] init];
-    
-    tenantOccupationInput.tenantOccupationId=[f numberFromString:TenantOccId];
-    tenantOccupationInput.tenantId=[f numberFromString:TenantId];
-    tenantOccupationInput.ownerId=[f numberFromString:OwnerId];
-    tenantOccupationInput.employer = Employer;
-    tenantOccupationInput.title = Title;
-    
-    //Invoke PUT on employee API
-    [[client tenantsOccupationPut:tenantOccupationInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
-        
-        if (task.error) {
-            NSLog(@"Error: %@", task.error);
-            return nil;
-        }
-        
-        if (task.result) {
-            
-            //You are here, so method invocation is a success
-            
-            printf("Success....\n");
-            
-            NSLog(@"Return from API call.Tenant income occupation information has been updated. Please check in the database...\n");
-            
-        }
-        
-        return nil;
-    }];
-    
-    [self.updateTenantOccTitle resignFirstResponder];
-    
-}
-
-
-- (IBAction)updatePropGenExpBtnPress:(id)sender {
-    
-    NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
-
-    NSString *PropGenExpId = self.updatePropGenExpId.text;
-    NSString *PropId = self.updatePropGenExpPropId.text;
-    NSString *OwnerId = self.updatePropGenExpOwnerId.text;
-    NSString *MonFee = self.updatePropGenExpMonFee.text;
-    NSString *MonWarranty = self.updatePropGenExpMonWarranty.text;
-    NSString *YearIns = self.updatePropGenExpYearIns.text;
-    NSString *Cp = self.updatePropGenExpReceipyCp.text;
-    
-    //Instantiate client object
-    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
-    
-    //Assign input values to be sent to Dynamo DB via API call
-    PROPERTYPropertyGeneralExpInput *propertyGeneralInput = [[PROPERTYPropertyGeneralExpInput alloc] init];
-    
-    
-    propertyGeneralInput.propertyGeneralExpenseId = [f numberFromString:PropGenExpId];
-    propertyGeneralInput.propertyId = [f numberFromString:PropId];
-    propertyGeneralInput.ownerId = [f numberFromString:OwnerId];
-    propertyGeneralInput.monthlyCondoFee = [f numberFromString:MonFee];
-    propertyGeneralInput.monthlyHomeWarranty = [f numberFromString:MonWarranty];
-    propertyGeneralInput.yearlyPropertyInsurance = [f numberFromString:YearIns];
-    propertyGeneralInput.receiptCopy = Cp;
-    
-    
-    
-    //Invoke PUT on employee API
-    [[client generalExpensesPut:propertyGeneralInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
-        
-        if (task.error) {
-            NSLog(@"Error: %@", task.error);
-            return nil;
-        }
-        
-        if (task.result) {
-            
-            //You are here, so method invocation is a success
-            
-            printf("Success....\n");
-            
-            NSLog(@"Return from API call. Your property general expense has been updated. Please check in the database.\n");
-            
-        }
-        
-        return nil;
-    }];
-    
-    [self.updatePropGenExpReceipyCp resignFirstResponder];
-    
-}
-
-
-- (IBAction)updatePropMortLoanBtnPress:(id)sender {
-    
-    NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
-
-    NSString *PropMortLoanId = self.updatePropMortLoanId.text;
-    NSString *PropId = self.updatePropMortLoanPropId.text;
-    NSString *OwnerId = self.updatePropMortLoanOwnerId.text;
-    NSString *Lender = self.updatePropMortLoanLender.text;
-    NSString *Amt = self.updatePropMortLoanAmt.text;
-    NSString *Balance = self.updatePropMortLoanBalance.text;
-    
-    //Instantiate client object
-    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
-    
-    //Assign input values to be sent to Dynamo DB via API call
-    PROPERTYPropertyMortgageLoanInput *propertyMortgageInput = [[PROPERTYPropertyMortgageLoanInput alloc] init];
-    
-    propertyMortgageInput.propertyMortgageLoanId = [f numberFromString:PropMortLoanId];
-    propertyMortgageInput.propertyId = [f numberFromString:PropId];
-    propertyMortgageInput.ownerId = [f numberFromString:OwnerId];
-    propertyMortgageInput.mortgageLender = [f numberFromString:Lender];
-    propertyMortgageInput.monthlyMortgageAmount = [f numberFromString:Amt];
-    propertyMortgageInput.outstandingBalance = [f numberFromString:Balance];
-    
-    
-    //Invoke POST on employee API
-    [[client propMortgageLoanPut:propertyMortgageInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
-        
-        if (task.error) {
-            NSLog(@"Error: %@", task.error);
-            return nil;
-        }
-        
-        if (task.result) {
-            
-            //You are here, so method invocation is a success
-            
-            printf("Success....\n");
-            
-            NSLog(@"Return from API call. Your mortgage loan has been updated. Please check in the database.\n");
-            
-        }
-        
-        return nil;
-    }];
-    
-    [self.updatePropMortLoanBalance resignFirstResponder];
-    
-}
-
-
-- (IBAction)updateRentalAgreeBtnPress:(id)sender {
 }
 
 
