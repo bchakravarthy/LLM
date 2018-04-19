@@ -1527,6 +1527,9 @@
                                 <rect key="frame" x="16" y="595" width="154" height="52"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <state key="normal" image="view record btn"/>
+                                <connections>
+                                    <action selector="getPropTaxBtnPress:" destination="XuC-nh-50U" eventType="touchUpInside" id="F3n-hd-QfD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ACl-zu-ejU" userLabel="update record">
                                 <rect key="frame" x="205" y="595" width="154" height="52"/>
@@ -1573,6 +1576,9 @@
                                 <rect key="frame" x="16" y="595" width="154" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="view record btn"/>
+                                <connections>
+                                    <action selector="getTenantBgCheckBtnPress:" destination="Ne1-lq-F7k" eventType="touchUpInside" id="Ia3-1S-5j2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Lzq-Yd-AML" userLabel="update record">
                                 <rect key="frame" x="205" y="595" width="154" height="52"/>
@@ -1619,6 +1625,9 @@
                                 <rect key="frame" x="16" y="595" width="152" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="view record btn"/>
+                                <connections>
+                                    <action selector="getTenantIncExpBtnPress:" destination="8De-De-CLe" eventType="touchUpInside" id="UPY-ZP-L7Y"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zzG-h9-aR1" userLabel="update record">
                                 <rect key="frame" x="207" y="595" width="152" height="52"/>
@@ -1665,6 +1674,9 @@
                                 <rect key="frame" x="16" y="595" width="152" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="view record btn"/>
+                                <connections>
+                                    <action selector="getTenantOccBtnPress:" destination="8hT-ID-TrX" eventType="touchUpInside" id="y0i-or-mdd"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hI9-RE-djr" userLabel="update record">
                                 <rect key="frame" x="207" y="595" width="152" height="52"/>
@@ -1711,6 +1723,9 @@
                                 <rect key="frame" x="16" y="595" width="152" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="view record btn"/>
+                                <connections>
+                                    <action selector="getPropGenExpBtnPress:" destination="kfr-OD-Cyu" eventType="touchUpInside" id="caC-P9-mir"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bLb-X7-Hnl" userLabel="update record">
                                 <rect key="frame" x="207" y="595" width="152" height="52"/>
@@ -1757,6 +1772,9 @@
                                 <rect key="frame" x="16" y="595" width="152" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="view record btn"/>
+                                <connections>
+                                    <action selector="getPropMortLoanBtnPress:" destination="Kog-L3-IfO" eventType="touchUpInside" id="Yg7-A1-2d3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wac-F6-1oJ" userLabel="update record">
                                 <rect key="frame" x="207" y="595" width="152" height="52"/>
@@ -1803,6 +1821,9 @@
                                 <rect key="frame" x="16" y="595" width="152" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="view record btn"/>
+                                <connections>
+                                    <action selector="getTenantRefBtnPress:" destination="Rcb-Na-TJT" eventType="touchUpInside" id="VX8-v3-x1g"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="NcZ-7B-a6a" userLabel="update record">
                                 <rect key="frame" x="207" y="595" width="152" height="52"/>
@@ -1849,6 +1870,9 @@
                                 <rect key="frame" x="16" y="595" width="152" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="view record btn"/>
+                                <connections>
+                                    <action selector="getRentalAgreeBtnPress:" destination="WVL-5U-gc8" eventType="touchUpInside" id="h49-J3-4jC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="H5b-Ri-apB" userLabel="update record">
                                 <rect key="frame" x="207" y="595" width="152" height="52"/>
@@ -1909,6 +1933,9 @@
                                 <rect key="frame" x="16" y="595" width="152" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="view record btn"/>
+                                <connections>
+                                    <action selector="getTenantBtnPress:" destination="mUE-ff-vjF" eventType="touchUpInside" id="hyP-aG-cW0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="C4O-x9-lxX" userLabel="update record">
                                 <rect key="frame" x="207" y="595" width="152" height="52"/>
@@ -1955,6 +1982,9 @@
                                 <rect key="frame" x="16" y="595" width="152" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="view record btn"/>
+                                <connections>
+                                    <action selector="getPurchaseDetailBtnPress:" destination="IZO-Ii-7vK" eventType="touchUpInside" id="voJ-l8-4og"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="QDA-Mp-vnI" userLabel="update record">
                                 <rect key="frame" x="207" y="595" width="152" height="52"/>
@@ -3092,6 +3122,10 @@
                                 <rect key="frame" x="16" y="595" width="152" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="view record btn"/>
+                                <connections>
+                                    <action selector="getPropMaintExpBtnPres:" destination="IuG-FZ-5Fz" eventType="touchUpInside" id="Nwc-Bn-Fce"/>
+                                    <action selector="getPropMaintExpBtnPress:" destination="IuG-FZ-5Fz" eventType="touchUpInside" id="JeO-Jn-dkF"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="o8M-fw-gCE" userLabel="update record">
                                 <rect key="frame" x="207" y="595" width="152" height="52"/>
