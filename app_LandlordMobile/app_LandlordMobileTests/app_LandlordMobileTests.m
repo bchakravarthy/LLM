@@ -33,7 +33,7 @@
 }
 
 
-//POST tests
+// MARK: Test cases for POST
 - (void) testInsertExpenseType {
     //Instantiate client object
     PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
@@ -489,7 +489,7 @@
 
 
 
-//GET tests
+// MARK: Test cases for GET
 - (void) testGetExpenseType {
     //Instantiate client object
     PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
@@ -586,8 +586,375 @@
     }];
 }
 
+- (void) testGetPropertyGeneralExp {
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Invoke GET on API
+    [[client generalExpensesGet] continueWithBlock:^id(AWSTask *task){
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        if (task.result) {
+            //You are here, so method invocation is a success
+            printf("Success....\n");
+            //Convert result object to maint result
+            
+            PROPERTYPropertyGeneralExpResult *result_var;
+            result_var=task.result;
+            //Obtain array of maint exp
+            NSArray *arrData = result_var.output.propertyGeneralExpenses;
+            long cnt;
+            cnt = arrData.count;
+            //Print out count of maint exp
+            NSLog(@"Number of general expenses %lu\n",cnt);
+            
+            //Print out each maint exp details to the console
+            for (id element in arrData){
+                NSLog(@"%@", element);
+            }
+        }
+        return nil;
+    }];
+}
 
-//PUT tests
+- (void) testGetPropertyMortgageLoan {
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Invoke GET on API
+    [[client propMortgageLoanGet] continueWithBlock:^id(AWSTask *task){
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        if (task.result) {
+            //You are here, so method invocation is a success
+            printf("Success....\n");
+            //Convert result object to maint result
+            
+            PROPERTYPropertyMortgageLoanResult *result_var;
+            result_var=task.result;
+            //Obtain array of maint exp
+            NSArray *arrData = result_var.output.propertyMortgageLoan;
+            long cnt;
+            cnt = arrData.count;
+            //Print out count of maint exp
+            NSLog(@"Number of mortgage loans %lu\n",cnt);
+            
+            //Print out each maint exp details to the console
+            for (id element in arrData){
+                NSLog(@"%@", element);
+            }
+        }
+        return nil;
+    }];
+}
+
+- (void) testGetPropertyOwner {
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Invoke GET on API
+    [[client propOwnerGet] continueWithBlock:^id(AWSTask *task){
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        if (task.result) {
+            //You are here, so method invocation is a success
+            printf("Success....\n");
+            //Convert result object to maint result
+            
+            PROPERTYPropertyOwnerResult *result_var;
+            result_var=task.result;
+            //Obtain array of maint exp
+            NSArray *arrData = result_var.output.propertyOwner;
+            long cnt;
+            cnt = arrData.count;
+            //Print out count of maint exp
+            NSLog(@"Number of maintenance expenses %lu\n",cnt);
+            
+            //Print out each maint exp details to the console
+            for (id element in arrData){
+                NSLog(@"%@", element);
+            }
+        }
+        return nil;
+    }];
+}
+
+
+- (void) testGetPropertyTax {
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Invoke GET on API
+    [[client propTaxGet] continueWithBlock:^id(AWSTask *task){
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        if (task.result) {
+            //You are here, so method invocation is a success
+            printf("Success....\n");
+            //Convert result object to maint result
+            
+            PROPERTYPropertyTaxResult *result_var;
+            result_var=task.result;
+            //Obtain array of maint exp
+            NSArray *arrData = result_var.output.propertyTax;
+            long cnt;
+            cnt = arrData.count;
+            //Print out count of maint exp
+            NSLog(@"Number of prop tax items %lu\n",cnt);
+            
+            //Print out each maint exp details to the console
+            for (id element in arrData){
+                NSLog(@"%@", element);
+            }
+        }
+        return nil;
+    }];
+}
+
+
+- (void) testGetPurhcaseDetails {
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Invoke GET on API
+    [[client purchaseDetailsGet] continueWithBlock:^id(AWSTask *task){
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        if (task.result) {
+            //You are here, so method invocation is a success
+            printf("Success....\n");
+            //Convert result object to maint result
+            
+            PROPERTYPurchaseDetailsResult *result_var;
+            result_var=task.result;
+            //Obtain array of maint exp
+            NSArray *arrData = result_var.output.purchaseDetails;
+            long cnt;
+            cnt = arrData.count;
+            //Print out count of maint exp
+            NSLog(@"Number of purchase details %lu\n",cnt);
+            
+            //Print out each maint exp details to the console
+            for (id element in arrData){
+                NSLog(@"%@", element);
+            }
+        }
+        return nil;
+    }];
+}
+
+- (void) testGetRentalAgreement {
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Invoke GET on API
+    [[client rentalAgreementGet] continueWithBlock:^id(AWSTask *task){
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        if (task.result) {
+            //You are here, so method invocation is a success
+            printf("Success....\n");
+            //Convert result object to maint result
+            
+            PROPERTYRentalAgreementResult *result_var;
+            result_var=task.result;
+            //Obtain array of maint exp
+            NSArray *arrData = result_var.output.rentalAgreement;
+            long cnt;
+            cnt = arrData.count;
+            //Print out count of maint exp
+            NSLog(@"Number of rental agreement items %lu\n",cnt);
+            
+            //Print out each maint exp details to the console
+            for (id element in arrData){
+                NSLog(@"%@", element);
+            }
+        }
+        return nil;
+    }];
+}
+
+- (void) testGetTenantBackgroundCheck {
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Invoke GET on API
+    [[client backgroundCheckGet] continueWithBlock:^id(AWSTask *task){
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        if (task.result) {
+            //You are here, so method invocation is a success
+            printf("Success....\n");
+            //Convert result object to maint result
+            
+            PROPERTYTenantBackgroundResult *result_var;
+            result_var=task.result;
+            //Obtain array of maint exp
+            NSArray *arrData = result_var.output.tenantBackgroundCheck;
+            long cnt;
+            cnt = arrData.count;
+            //Print out count of maint exp
+            NSLog(@"Number of rental agreement items %lu\n",cnt);
+            
+            //Print out each maint exp details to the console
+            for (id element in arrData){
+                NSLog(@"%@", element);
+            }
+        }
+        return nil;
+    }];
+}
+
+- (void) testGetTenantIncomeExpenses {
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Invoke GET on API
+    [[client tenantsIncomeExpenseGet] continueWithBlock:^id(AWSTask *task){
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        if (task.result) {
+            //You are here, so method invocation is a success
+            printf("Success....\n");
+            //Convert result object to maint result
+            
+            PROPERTYTenantIncomeResult *result_var;
+            result_var=task.result;
+            //Obtain array of maint exp
+            NSArray *arrData = result_var.output.tenantIncomeExpense;
+            long cnt;
+            cnt = arrData.count;
+            //Print out count of maint exp
+            NSLog(@"Number of rental agreement items %lu\n",cnt);
+            
+            //Print out each maint exp details to the console
+            for (id element in arrData){
+                NSLog(@"%@", element);
+            }
+        }
+        return nil;
+    }];
+}
+
+
+- (void) testGetTenantOccupation {
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Invoke GET on API
+    [[client tenantsOccupationGet] continueWithBlock:^id(AWSTask *task){
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        if (task.result) {
+            //You are here, so method invocation is a success
+            printf("Success....\n");
+            //Convert result object to maint result
+            
+            PROPERTYTenantOccupationResult *result_var;
+            result_var=task.result;
+            //Obtain array of maint exp
+            NSArray *arrData = result_var.output.tenantOccupation;
+            long cnt;
+            cnt = arrData.count;
+            //Print out count of maint exp
+            NSLog(@"Number of occupation items %lu\n",cnt);
+            
+            //Print out each maint exp details to the console
+            for (id element in arrData){
+                NSLog(@"%@", element);
+            }
+        }
+        return nil;
+    }];
+}
+
+
+- (void) testGetTenantReferences {
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Invoke GET on API
+    [[client tenantsReferenceGet] continueWithBlock:^id(AWSTask *task){
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        if (task.result) {
+            //You are here, so method invocation is a success
+            printf("Success....\n");
+            //Convert result object to maint result
+            
+            PROPERTYTenantRefResult *result_var;
+            result_var=task.result;
+            //Obtain array of maint exp
+            NSArray *arrData = result_var.output.tenantReferences;
+            long cnt;
+            cnt = arrData.count;
+            //Print out count of maint exp
+            NSLog(@"Number of occupation items %lu\n",cnt);
+            
+            //Print out each maint exp details to the console
+            for (id element in arrData){
+                NSLog(@"%@", element);
+            }
+        }
+        return nil;
+    }];
+}
+
+- (void) testGetTenant {
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Invoke GET on API
+    [[client tenantsGet] continueWithBlock:^id(AWSTask *task){
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        if (task.result) {
+            //You are here, so method invocation is a success
+            printf("Success....\n");
+            //Convert result object to maint result
+            
+            PROPERTYTenantResult *result_var;
+            result_var=task.result;
+            //Obtain array of maint exp
+            NSArray *arrData = result_var.output.tenants;
+            long cnt;
+            cnt = arrData.count;
+            //Print out count of maint exp
+            NSLog(@"Number of occupation items %lu\n",cnt);
+            
+            //Print out each maint exp details to the console
+            for (id element in arrData){
+                NSLog(@"%@", element);
+            }
+        }
+        return nil;
+    }];
+}
+
+
+// MARK: Test cases for PUT
 - (void) testUpdateExpenseType {
     //Instantiate client object
     PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
@@ -907,6 +1274,144 @@
     [[client propTaxPut:propertyTaxInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
         XCTAssertEqual(propertyTaxInput.propertyId, numberOne);
         XCTAssertEqual(propertyTaxInput.ownerId, numberOne);
+    }];
+}
+
+
+- (void) testUpdatePropertyOwner {
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Assign input values to be sent to Dynamo DB via API call
+    PROPERTYPropertyOwnerInput *propertyOwnerInput = [[PROPERTYPropertyOwnerInput alloc] init];
+    propertyOwnerInput.ownerName = @"Yaman";
+    propertyOwnerInput.email = @"Yaman@gmail.com";
+    
+    
+    if ([propertyOwnerInput.ownerName isEqualToString:@"Nafisa"])
+    {
+        NSLog(@"Equal!");
+    }
+    else {
+        NSLog(@"Updated to Yaman");
+    }
+    
+    if ([propertyOwnerInput.email isEqualToString:@"Nafisa@gmail.com"])
+    {
+        NSLog(@"Equal!");
+    }
+    else {
+        NSLog(@"Updated to Yaman@gmail.com");
+    }
+    
+    
+    //Invoke Put
+    [[client propOwnerPut:propertyOwnerInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+        XCTAssertEqual(propertyOwnerInput.ownerName, @"Yaman");
+        XCTAssertEqual(propertyOwnerInput.email, @"Yaman@gmail.com");
+    }];
+}
+
+- (void) testUpdatePropertyMortgageLoan {
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Assign input values to be sent to Dynamo DB via API call
+    PROPERTYPropertyMortgageLoanInput *propertyMortgageInput = [[PROPERTYPropertyMortgageLoanInput alloc] init];
+    propertyMortgageInput.monthlyMortgageAmount = [NSNumber numberWithInt:1];
+    propertyMortgageInput.outstandingBalance = [NSNumber numberWithInt:1];
+    
+    
+    NSNumber *numberOne = [NSNumber numberWithInt:1];
+    NSNumber *numberTen = [NSNumber numberWithInt:1];
+    if([numberOne compare:propertyMortgageInput.monthlyMortgageAmount] == NSOrderedSame)
+    {
+        NSLog(@"Equal!");
+    }
+    else {
+        NSLog(@"Not equal");
+    }
+    if([numberTen compare:propertyMortgageInput.outstandingBalance] == NSOrderedSame)
+    {
+        NSLog(@"Equal!");
+    }
+    else {
+        NSLog(@"Updated balance to 1!");
+    }
+    
+    
+    //Invoke Put
+    [[client propMortgageLoanPut:propertyMortgageInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+        XCTAssertEqual(propertyMortgageInput.monthlyMortgageAmount, numberOne);
+        XCTAssertEqual(propertyMortgageInput.outstandingBalance, numberOne);
+    }];
+}
+
+- (void) testUpdatePropertyMaintenanceExpense {
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Assign input values to be sent to Dynamo DB via API call
+    PROPERTYPropertyMaintExpInput *propertyMaintInput = [[PROPERTYPropertyMaintExpInput alloc] init];
+    propertyMaintInput.propertyId = [NSNumber numberWithInt:1];
+    propertyMaintInput.ownerId = [NSNumber numberWithInt:1];
+    
+    
+    NSNumber *numberOne = [NSNumber numberWithInt:1];
+    if([numberOne compare:propertyMaintInput.propertyId] == NSOrderedSame)
+    {
+        NSLog(@"Equal!");
+    }
+    else {
+        NSLog(@"Not equal");
+    }
+    if([numberOne compare:propertyMaintInput.ownerId] == NSOrderedSame)
+    {
+        NSLog(@"Equal!");
+    }
+    else {
+        NSLog(@"Not equal!");
+    }
+    
+    
+    //Invoke Put
+    [[client propMaintExpensePut:propertyMaintInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task) {
+        XCTAssertEqual(propertyMaintInput.ownerId, numberOne);
+        XCTAssertEqual(propertyMaintInput.propertyId, numberOne);
+    }];
+}
+
+- (void) testUpdatePropertyGeneralExpense {
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Assign input values to be sent to Dynamo DB via API call
+    PROPERTYPropertyGeneralExpInput *propertyGeneralInput = [[PROPERTYPropertyGeneralExpInput alloc] init];
+    propertyGeneralInput.propertyId = [NSNumber numberWithInt:1];
+    propertyGeneralInput.ownerId = [NSNumber numberWithInt:1];
+    
+    
+    NSNumber *numberOne = [NSNumber numberWithInt:1];
+    if([numberOne compare:propertyGeneralInput.propertyId] == NSOrderedSame)
+    {
+        NSLog(@"Equal!");
+    }
+    else {
+        NSLog(@"Not equal");
+    }
+    if([numberOne compare:propertyGeneralInput.ownerId] == NSOrderedSame)
+    {
+        NSLog(@"Equal!");
+    }
+    else {
+        NSLog(@"Not equal!");
+    }
+    
+    
+    //Invoke Put
+    [[client generalExpensesPut:propertyGeneralInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task) {
+        XCTAssertEqual(propertyGeneralInput.ownerId, numberOne);
+        XCTAssertEqual(propertyGeneralInput.propertyId, numberOne);
     }];
 }
 
