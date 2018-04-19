@@ -161,6 +161,11 @@
 @property (weak, nonatomic) IBOutlet UITextField *addTenantRefAddr2;
 @property (weak, nonatomic) IBOutlet UITextField *addTenantRefCity;
 @property (weak, nonatomic) IBOutlet UITextField *addTenantRefState;
+@property (weak, nonatomic) IBOutlet UITextField *addTenantRefZip;
+@property (weak, nonatomic) IBOutlet UITextField *addTenantRefCounty;
+@property (weak, nonatomic) IBOutlet UITextField *addTenantRefPhone;
+@property (weak, nonatomic) IBOutlet UITextField *addTenantRefEmail;
+@property (weak, nonatomic) IBOutlet UITextField *addTenantRefPrimary;
 
 // For GET
 @property (weak, nonatomic) IBOutlet UITextView *getTenantRefList;

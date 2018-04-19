@@ -2178,6 +2178,64 @@
 
 // Not working, something is wrong with the test field AddrLine1
 - (IBAction)addTenantRefBrnPress:(id)sender {
+    
+    NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
+
+    NSString *TenantId = self.addTenantRefTenantId.text;
+    NSString *OwnerId = self.updateTenantRefOwnerId.text;
+    NSString *FirstN = self.updateTenantRefFirstN.text;
+    NSString *LastN = self.updateTenantRefLastN.text;
+    NSString *Addr1 = self.updateTenantRefAddr1.text;
+    NSString *Addr2 = self.updateTenantRefAddr2.text;
+    NSString *City = self.updateTenantRefCity.text;
+    NSString *State = self.updateTenantRefState.text;
+    NSString *Zip = self.updateTenantRefZip.text;
+    NSString *County = self.updateTenantRefZip.text;
+    NSString *Email = self.updateTenantRefEmail.text;
+    NSString *Phone = self.updateTenantRefPhone.text;
+    NSString *Primary = self.updateTenantRefPrimary.text;
+    
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Assign input values to be sent to Dynamo DB via API call
+    PROPERTYTenantRefInput *tenantRefInput = [[PROPERTYTenantRefInput alloc] init];
+    
+    tenantRefInput.tenantId=[f numberFromString:TenantId];
+    tenantRefInput.ownerId=[f numberFromString:OwnerId];
+    tenantRefInput.firstName = FirstN;
+    tenantRefInput.lastName = LastN;
+    tenantRefInput.addressLine1 = Addr1;
+    tenantRefInput.addressLine2 = Addr2;
+    tenantRefInput.city = City;
+    tenantRefInput.tenantState = State;
+    tenantRefInput.zip = Zip;
+    tenantRefInput.countyOrDistrict = County;
+    tenantRefInput.contactEmail = Email;
+    tenantRefInput.contactPhone = Phone;
+    tenantRefInput.primaryContact = Primary;
+    
+    
+    //Invoke POST on employee API
+    [[client tenantsReferencePost:tenantRefInput ] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+        
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        
+        if (task.result) {
+            
+            //You are here, so method invocation is a success
+            
+            printf("Success....\n");
+            
+            NSLog(@"Return from API call.Tenant reference information has been saved. Please check in the database...\n");
+            
+        }
+        
+        return nil;
+    }];
 
 }
 
@@ -2313,7 +2371,7 @@
         }
         if (task.result) {
             //You are here, so method invocation is a success
-            NSString *Info = [Display stringByAppendingString:@"Succecc...\n"];
+            NSString *Info = [Display stringByAppendingString:@"Success...\n"];
             
             //Convert result object to maint result
             PROPERTYMaintenanceExpTypeResult *result_var;
@@ -2323,6 +2381,7 @@
             NSArray *arrData = result_var.output.maintenanceExpenseTypes;
             long cnt;
             cnt = arrData.count;
+            
             //Print out count of maint exp
             NSString *Count = [NSString stringWithFormat:@"Number of maintenance expenses %lu\n",cnt];
             NSString *InfoWithCount = [Info stringByAppendingString:Count];
@@ -2333,7 +2392,6 @@
                 InfoWithCount = [InfoWithCount stringByAppendingString:record];
             }
             
-            NSLog(Display);
             [self.getMaintExpTypeList setText:InfoWithCount];
             
         }
@@ -2344,6 +2402,8 @@
 
 
 - (IBAction)getPropBtnPress:(id)sender {
+    
+    NSString *Display = @"";
     
     //Instantiate client object
     PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
@@ -2356,26 +2416,29 @@
         }
         if (task.result) {
             //You are here, so method invocation is a success
-            printf("Success....\n");
-            //Convert result object to maint result
+            NSString *Info = [Display stringByAppendingString:@"Success...\n"];
             
+            //Convert result object to maint result
             PROPERTYPropertyResult *result_var;
             result_var=task.result;
+            
             //Obtain array of properties
             NSArray *arrData = result_var.output.ownerProperties;
             long cnt;
             cnt = arrData.count;
+            
             //Print out count of properties
-            NSLog(@"Number of properties %lu\n",cnt);
-            NSString *Records = [NSString stringWithFormat:@"Number of properties %lu\n",cnt];
+            NSString *Count = [NSString stringWithFormat:@"Number of propperties %lu\n",cnt];
+            NSString *InfoWithCount = [Info stringByAppendingString:Count];
             
             //Print out each prop details to the console
             for (id element in arrData){
-                NSLog(@"%@", element);
-                Records = [Records stringByAppendingString:element];
+                NSString *record = [NSString stringWithFormat:@"%@",element];
+                InfoWithCount = [InfoWithCount stringByAppendingString:record];
             }
             
-            [self.getPropList setText:[NSString stringWithFormat:@"%@",Records]];
+            [self.getPropList setText:InfoWithCount];
+            
         }
         return nil;
     }];

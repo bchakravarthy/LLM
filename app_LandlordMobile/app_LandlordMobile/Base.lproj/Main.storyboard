@@ -87,7 +87,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tenant id" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="xId-si-vo9" userLabel="tenant id">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tenant id" textAlignment="center" minimumFontSize="17" id="xId-si-vo9" userLabel="tenant id">
                                 <rect key="frame" x="59" y="200" width="125" height="42"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -95,7 +95,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Owner id" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="cyQ-MM-0aO" userLabel="owner id">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Owner id" textAlignment="center" minimumFontSize="17" id="cyQ-MM-0aO" userLabel="owner id">
                                 <rect key="frame" x="192" y="200" width="123" height="42"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -168,7 +168,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tenant id" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="R8A-wP-S6H" userLabel="tenant id">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tenant id" textAlignment="center" minimumFontSize="17" id="R8A-wP-S6H" userLabel="tenant id">
                                 <rect key="frame" x="54" y="219" width="125" height="42"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -176,7 +176,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Owner id" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="8H6-Dy-7Xd" userLabel="owner id">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Owner id" textAlignment="center" minimumFontSize="17" id="8H6-Dy-7Xd" userLabel="owner id">
                                 <rect key="frame" x="198" y="218" width="122" height="42"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -256,7 +256,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Owner id" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="v1C-EU-B97" userLabel="owner id">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Owner id" textAlignment="center" minimumFontSize="17" id="v1C-EU-B97" userLabel="owner id">
                                 <rect key="frame" x="54" y="239" width="125" height="42"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -264,7 +264,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Monthly fee" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="bfe-ZM-fyW" userLabel="monthly fee">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Monthly fee" textAlignment="center" minimumFontSize="17" id="bfe-ZM-fyW" userLabel="monthly fee">
                                 <rect key="frame" x="198" y="239" width="122" height="42"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -272,7 +272,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Yearly insurance" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="QTb-Nm-rEx" userLabel="yearly insurance">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Yearly insurance" textAlignment="center" minimumFontSize="17" id="QTb-Nm-rEx" userLabel="yearly insurance">
                                 <rect key="frame" x="54" y="304" width="125" height="42"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -280,7 +280,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Monthly warranty" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="LMJ-Ck-GxK" userLabel="monthly warranty">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Monthly warranty" textAlignment="center" minimumFontSize="17" id="LMJ-Ck-GxK" userLabel="monthly warranty">
                                 <rect key="frame" x="197" y="304" width="125" height="42"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -330,7 +330,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Property id" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="aNJ-VR-CiY" userLabel="property id">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Property id" textAlignment="center" minimumFontSize="17" id="aNJ-VR-CiY" userLabel="property id">
                                 <rect key="frame" x="54" y="207" width="125" height="42"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -338,7 +338,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Owner id" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="7ay-aP-6ls" userLabel="owner id">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Owner id" textAlignment="center" minimumFontSize="17" id="7ay-aP-6ls" userLabel="owner id">
                                 <rect key="frame" x="198" y="207" width="122" height="42"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -346,7 +346,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mortgage lender" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="ez6-jv-Sf9" userLabel="mortgage lender">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mortgage lender" textAlignment="center" minimumFontSize="17" id="ez6-jv-Sf9" userLabel="mortgage lender">
                                 <rect key="frame" x="54" y="277" width="125" height="42"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -354,7 +354,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Monthly amount" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="8oM-fh-JFi" userLabel="monthly amt">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Monthly amount" textAlignment="center" minimumFontSize="17" id="8oM-fh-JFi" userLabel="monthly amt">
                                 <rect key="frame" x="197" y="277" width="122" height="42"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -411,7 +411,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tenant id" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="650-rv-h6N">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tenant id" textAlignment="center" minimumFontSize="17" id="650-rv-h6N">
                                 <rect key="frame" x="191" y="158" width="151" height="40"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -419,7 +419,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Owner id" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="cty-vB-4Rp">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Owner id" textAlignment="center" minimumFontSize="17" id="cty-vB-4Rp">
                                 <rect key="frame" x="32" y="206" width="151" height="40"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -427,7 +427,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First name" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="ahG-CP-flu">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First name" textAlignment="center" minimumFontSize="17" id="ahG-CP-flu">
                                 <rect key="frame" x="191" y="206" width="151" height="40"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -435,7 +435,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last name" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="oF5-yo-wKQ">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last name" textAlignment="center" minimumFontSize="17" id="oF5-yo-wKQ">
                                 <rect key="frame" x="32" y="254" width="151" height="40"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -443,7 +443,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Address line 1" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="IpW-32-F0y">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Address line 1" textAlignment="center" minimumFontSize="17" id="IpW-32-F0y">
                                 <rect key="frame" x="191" y="254" width="151" height="40"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -451,7 +451,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Address line 2" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="6WN-Sb-aba">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Address line 2" textAlignment="center" minimumFontSize="17" id="6WN-Sb-aba">
                                 <rect key="frame" x="32" y="302" width="151" height="40"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -459,7 +459,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="City" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="AV3-AS-1uE">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="City" textAlignment="center" minimumFontSize="17" id="AV3-AS-1uE">
                                 <rect key="frame" x="191" y="302" width="151" height="40"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -467,7 +467,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="State" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="CZB-dI-RcR">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="State" textAlignment="center" minimumFontSize="17" id="CZB-dI-RcR">
                                 <rect key="frame" x="32" y="350" width="151" height="40"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -475,7 +475,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Zip" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="sqr-BB-2Xb">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Zip" textAlignment="center" minimumFontSize="17" id="sqr-BB-2Xb">
                                 <rect key="frame" x="191" y="350" width="151" height="40"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -483,7 +483,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="County / district" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="shv-SS-DQK">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="County / district" textAlignment="center" minimumFontSize="17" id="shv-SS-DQK">
                                 <rect key="frame" x="32" y="398" width="151" height="40"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -491,7 +491,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Contact phone" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="Po5-gI-pv5">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Contact phone" textAlignment="center" minimumFontSize="17" id="Po5-gI-pv5">
                                 <rect key="frame" x="191" y="398" width="151" height="40"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -499,7 +499,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Contact email" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="JzX-c7-sl7">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Contact email" textAlignment="center" minimumFontSize="17" id="JzX-c7-sl7">
                                 <rect key="frame" x="32" y="446" width="151" height="40"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -507,7 +507,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Primary contact" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="gSV-15-y7l">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Primary contact" textAlignment="center" minimumFontSize="17" id="gSV-15-y7l">
                                 <rect key="frame" x="191" y="446" width="151" height="40"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -523,7 +523,7 @@
                                     <action selector="updateTenantRefBtnPress:" destination="2FN-7V-eVF" eventType="touchUpInside" id="Jjw-9R-QtG"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tenant reference id" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="jTX-Ll-ZLX">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tenant reference id" textAlignment="center" minimumFontSize="17" id="jTX-Ll-ZLX">
                                 <rect key="frame" x="32" y="158" width="151" height="40"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1080,7 +1080,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Property id" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="HR3-8P-5qp" userLabel="prop id">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Property id" textAlignment="center" minimumFontSize="17" id="HR3-8P-5qp" userLabel="prop id">
                                 <rect key="frame" x="68" y="191" width="114" height="42"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1088,7 +1088,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Expense id" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="hCo-QO-3QW" userLabel="exp id">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Expense id" textAlignment="center" minimumFontSize="17" id="hCo-QO-3QW" userLabel="exp id">
                                 <rect key="frame" x="68" y="252" width="114" height="42"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1096,7 +1096,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Owner id" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="x0L-Bo-ucF" userLabel="owner id">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Owner id" textAlignment="center" minimumFontSize="17" id="x0L-Bo-ucF" userLabel="owner id">
                                 <rect key="frame" x="192" y="191" width="114" height="42"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1104,7 +1104,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Expense amount" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="5q7-GG-XYr" userLabel="exp amt">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Expense amount" textAlignment="center" minimumFontSize="17" id="5q7-GG-XYr" userLabel="exp amt">
                                 <rect key="frame" x="192" y="252" width="114" height="42"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1177,7 +1177,7 @@
                                     <action selector="addPropTaxBtnPress:" destination="6Vp-3m-jho" eventType="touchUpInside" id="YyR-Gv-ntT"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Property id" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="Nfl-Lp-z7h" userLabel="prop id">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Property id" textAlignment="center" minimumFontSize="17" id="Nfl-Lp-z7h" userLabel="prop id">
                                 <rect key="frame" x="64" y="229" width="114" height="42"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1185,7 +1185,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Owner id" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="Dfi-ZH-IGH" userLabel="owner id">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Owner id" textAlignment="center" minimumFontSize="17" id="Dfi-ZH-IGH" userLabel="owner id">
                                 <rect key="frame" x="196" y="229" width="114" height="42"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1193,7 +1193,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Year" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="Kzd-QH-9Pt" userLabel="year owned">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Year" textAlignment="center" minimumFontSize="17" id="Kzd-QH-9Pt" userLabel="year owned">
                                 <rect key="frame" x="64" y="290" width="114" height="42"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1201,7 +1201,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Year paid" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="bAx-5x-BmZ" userLabel="year paid">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Year paid" textAlignment="center" minimumFontSize="17" id="bAx-5x-BmZ" userLabel="year paid">
                                 <rect key="frame" x="196" y="290" width="114" height="42"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1253,7 +1253,7 @@
                                     <action selector="addTenantBgCheckBtnPress:" destination="ooK-Fq-nik" eventType="touchUpInside" id="BQd-La-jsL"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tenant id" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="yTW-dY-H9B" userLabel="tenant id">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tenant id" textAlignment="center" minimumFontSize="17" id="yTW-dY-H9B" userLabel="tenant id">
                                 <rect key="frame" x="59" y="157" width="125" height="42"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1261,7 +1261,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Owner id" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="gp6-Vn-zV0" userLabel="owner id">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Owner id" textAlignment="center" minimumFontSize="17" id="gp6-Vn-zV0" userLabel="owner id">
                                 <rect key="frame" x="191" y="157" width="123" height="42"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1326,7 +1326,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tenant id" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="C8f-I5-HQd" userLabel="tenant id">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tenant id" textAlignment="center" minimumFontSize="17" id="C8f-I5-HQd" userLabel="tenant id">
                                 <rect key="frame" x="59" y="207" width="125" height="42"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1334,7 +1334,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Owner id" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="JUW-Oc-7aU" userLabel="owner id">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Owner id" textAlignment="center" minimumFontSize="17" id="JUW-Oc-7aU" userLabel="owner id">
                                 <rect key="frame" x="192" y="207" width="123" height="42"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2034,7 +2034,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="prop maint exp label"/>
                                 <connections>
-                                    <segue destination="IuG-FZ-5Fz" kind="push" id="XhM-36-Uug"/>
+                                    <segue destination="IuG-FZ-5Fz" kind="push" id="Yzi-l1-H2B"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="iZs-9b-NbT" userLabel="prop tax">
@@ -2621,7 +2621,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tenant id" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="LQu-Vd-22T" userLabel="tenant id">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tenant id" textAlignment="center" minimumFontSize="17" id="LQu-Vd-22T" userLabel="tenant id">
                                 <rect key="frame" x="54" y="214" width="125" height="42"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2629,7 +2629,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Owner id" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="oHS-Mj-44g" userLabel="owner id">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Owner id" textAlignment="center" minimumFontSize="17" id="oHS-Mj-44g" userLabel="owner id">
                                 <rect key="frame" x="198" y="213" width="122" height="42"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2704,7 +2704,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Owner id" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="ceV-3P-nQo" userLabel="owner id">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Owner id" textAlignment="center" minimumFontSize="17" id="ceV-3P-nQo" userLabel="owner id">
                                 <rect key="frame" x="53" y="250" width="125" height="42"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2712,7 +2712,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Monthly fee" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="ynW-c3-heh" userLabel="monthly fee">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Monthly fee" textAlignment="center" minimumFontSize="17" id="ynW-c3-heh" userLabel="monthly fee">
                                 <rect key="frame" x="197" y="250" width="122" height="42"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2720,7 +2720,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Yearly insurance" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="dhU-aa-Svk" userLabel="yearly insurance">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Yearly insurance" textAlignment="center" minimumFontSize="17" id="dhU-aa-Svk" userLabel="yearly insurance">
                                 <rect key="frame" x="53" y="315" width="125" height="42"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2728,7 +2728,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Monthly warranty" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="gAy-T0-g90" userLabel="monthly warranty">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Monthly warranty" textAlignment="center" minimumFontSize="17" id="gAy-T0-g90" userLabel="monthly warranty">
                                 <rect key="frame" x="196" y="315" width="125" height="42"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2773,7 +2773,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Property id" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="W0H-x0-QVq" userLabel="property id">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Property id" textAlignment="center" minimumFontSize="17" id="W0H-x0-QVq" userLabel="property id">
                                 <rect key="frame" x="55" y="224" width="125" height="42"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2781,7 +2781,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Owner id" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="CYk-h4-WTS" userLabel="owner id">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Owner id" textAlignment="center" minimumFontSize="17" id="CYk-h4-WTS" userLabel="owner id">
                                 <rect key="frame" x="199" y="224" width="122" height="42"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2789,7 +2789,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mortgage lender" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="0fR-7z-nFC" userLabel="mortgage lender">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mortgage lender" textAlignment="center" minimumFontSize="17" id="0fR-7z-nFC" userLabel="mortgage lender">
                                 <rect key="frame" x="55" y="294" width="125" height="42"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2797,7 +2797,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Monthly amount" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="Man-eD-wVb" userLabel="monthly amt">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Monthly amount" textAlignment="center" minimumFontSize="17" id="Man-eD-wVb" userLabel="monthly amt">
                                 <rect key="frame" x="198" y="294" width="122" height="42"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2849,7 +2849,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tenant id" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="CrY-Ki-Ebq">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tenant id" textAlignment="center" minimumFontSize="17" id="CrY-Ki-Ebq">
                                 <rect key="frame" x="32" y="157" width="310" height="40"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2857,7 +2857,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Owner id" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="VD6-rS-eji">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Owner id" textAlignment="center" minimumFontSize="17" id="VD6-rS-eji">
                                 <rect key="frame" x="32" y="205" width="151" height="40"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2865,7 +2865,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First name" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="0qe-kF-tCa">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First name" textAlignment="center" minimumFontSize="17" id="0qe-kF-tCa">
                                 <rect key="frame" x="191" y="205" width="151" height="40"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2873,7 +2873,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last name" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="YlC-Ad-wK0">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last name" textAlignment="center" minimumFontSize="17" id="YlC-Ad-wK0">
                                 <rect key="frame" x="32" y="253" width="151" height="40"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2881,7 +2881,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Address line 1" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="s2Y-U7-3FU">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Address line 1" textAlignment="center" minimumFontSize="17" id="s2Y-U7-3FU">
                                 <rect key="frame" x="191" y="253" width="151" height="40"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2889,7 +2889,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Address line 2" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="C33-0n-VDe">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Address line 2" textAlignment="center" minimumFontSize="17" id="C33-0n-VDe">
                                 <rect key="frame" x="32" y="301" width="151" height="40"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2897,7 +2897,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="City" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="qZK-Uy-Ux8">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="City" textAlignment="center" minimumFontSize="17" id="qZK-Uy-Ux8">
                                 <rect key="frame" x="191" y="301" width="151" height="40"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2905,7 +2905,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="State" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="a4e-Ju-YF9">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="State" textAlignment="center" minimumFontSize="17" id="a4e-Ju-YF9">
                                 <rect key="frame" x="32" y="349" width="151" height="40"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2913,7 +2913,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Zip" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="CMz-Lu-uJK">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Zip" textAlignment="center" minimumFontSize="17" id="CMz-Lu-uJK">
                                 <rect key="frame" x="191" y="349" width="151" height="40"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2921,7 +2921,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="County / district" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="LCh-MR-XuY">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="County / district" textAlignment="center" minimumFontSize="17" id="LCh-MR-XuY">
                                 <rect key="frame" x="32" y="397" width="151" height="40"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2929,7 +2929,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Contact phone" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="5vV-qO-WeK">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Contact phone" textAlignment="center" minimumFontSize="17" id="5vV-qO-WeK">
                                 <rect key="frame" x="191" y="397" width="151" height="40"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2937,7 +2937,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Contact email" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="Zyb-v6-YfM">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Contact email" textAlignment="center" minimumFontSize="17" id="Zyb-v6-YfM">
                                 <rect key="frame" x="32" y="445" width="151" height="40"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2945,7 +2945,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Primary contact" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="ygC-8z-39e">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Primary contact" textAlignment="center" minimumFontSize="17" id="ygC-8z-39e">
                                 <rect key="frame" x="191" y="445" width="151" height="40"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2957,6 +2957,9 @@
                                 <rect key="frame" x="70" y="510" width="236" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Add btn"/>
+                                <connections>
+                                    <action selector="addTenantRefBrnPress:" destination="zRE-GT-hMp" eventType="touchUpInside" id="DLa-Up-UG2"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="add tenant ref" id="GlL-eE-Opt">
                                 <rect key="frame" x="67" y="93" width="240" height="42"/>
@@ -2970,12 +2973,17 @@
                         <outlet property="addTenantRefAddr1" destination="s2Y-U7-3FU" id="WEb-Ra-sA2"/>
                         <outlet property="addTenantRefAddr2" destination="C33-0n-VDe" id="IFk-x1-FaC"/>
                         <outlet property="addTenantRefCity" destination="qZK-Uy-Ux8" id="pw0-P0-17d"/>
+                        <outlet property="addTenantRefCounty" destination="LCh-MR-XuY" id="hgt-Ao-fms"/>
+                        <outlet property="addTenantRefEmail" destination="Zyb-v6-YfM" id="Gi1-41-37W"/>
                         <outlet property="addTenantRefFirstN" destination="0qe-kF-tCa" id="Vk9-lZ-jcf"/>
                         <outlet property="addTenantRefLastN" destination="YlC-Ad-wK0" id="PdP-qw-bcJ"/>
                         <outlet property="addTenantRefOwner" destination="0qe-kF-tCa" id="NCc-Oq-o1r"/>
                         <outlet property="addTenantRefOwnerId" destination="VD6-rS-eji" id="x56-zC-QjK"/>
+                        <outlet property="addTenantRefPhone" destination="5vV-qO-WeK" id="0tk-JL-rvH"/>
+                        <outlet property="addTenantRefPrimary" destination="ygC-8z-39e" id="OML-3i-zpw"/>
                         <outlet property="addTenantRefState" destination="a4e-Ju-YF9" id="pbx-er-aIq"/>
                         <outlet property="addTenantRefTenantId" destination="CrY-Ki-Ebq" id="pfG-VX-Y03"/>
+                        <outlet property="addTenantRefZip" destination="CMz-Lu-uJK" id="Hd1-9w-cQh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cVa-yu-Enf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2990,7 +2998,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Property id" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="zrg-Ea-6YQ" userLabel="prop id">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Property id" textAlignment="center" minimumFontSize="17" id="zrg-Ea-6YQ" userLabel="prop id">
                                 <rect key="frame" x="68" y="171" width="114" height="42"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2998,7 +3006,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Expense id" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="52K-y6-6VQ" userLabel="exp id">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Expense id" textAlignment="center" minimumFontSize="17" id="52K-y6-6VQ" userLabel="exp id">
                                 <rect key="frame" x="68" y="232" width="114" height="42"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -3006,7 +3014,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Owner id" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="uzg-Q9-UOk" userLabel="owner id">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Owner id" textAlignment="center" minimumFontSize="17" id="uzg-Q9-UOk" userLabel="owner id">
                                 <rect key="frame" x="192" y="171" width="114" height="42"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -3014,7 +3022,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Expense amount" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="fvR-uk-5Xf" userLabel="exp amt">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Expense amount" textAlignment="center" minimumFontSize="17" id="fvR-uk-5Xf" userLabel="exp amt">
                                 <rect key="frame" x="192" y="232" width="114" height="42"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -3111,8 +3119,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="getPropMaintExpList" destination="drR-VD-izu" id="GXe-Ec-I5i"/>
-                        <outlet property="getPropMaintExplIST" destination="drR-VD-izu" id="2Iw-hT-idi"/>
+                        <outlet property="getPropMaintExpList" destination="drR-VD-izu" id="4Ap-4m-czb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v2s-u2-5KA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3135,7 +3142,7 @@
                                     <action selector="updatePropTaxBtnPress:" destination="mDn-06-xao" eventType="touchUpInside" id="khI-mr-3xF"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Property id" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="6aI-6T-jJt" userLabel="prop id">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Property id" textAlignment="center" minimumFontSize="17" id="6aI-6T-jJt" userLabel="prop id">
                                 <rect key="frame" x="64" y="275" width="114" height="42"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -3143,7 +3150,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Owner id" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="w2P-Dw-BZv" userLabel="owner id">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Owner id" textAlignment="center" minimumFontSize="17" id="w2P-Dw-BZv" userLabel="owner id">
                                 <rect key="frame" x="196" y="275" width="114" height="42"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -3151,7 +3158,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Year" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="D3s-UB-7NN" userLabel="year owned">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Year" textAlignment="center" minimumFontSize="17" id="D3s-UB-7NN" userLabel="year owned">
                                 <rect key="frame" x="64" y="336" width="114" height="42"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -3159,7 +3166,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Year paid" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="lAD-3b-3d9" userLabel="year paid">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Year paid" textAlignment="center" minimumFontSize="17" id="lAD-3b-3d9" userLabel="year paid">
                                 <rect key="frame" x="196" y="336" width="114" height="42"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -3216,7 +3223,7 @@
                                     <action selector="updateTenantBgCheckBtnPress:" destination="lwr-VX-oCY" eventType="touchUpInside" id="Saa-nO-CfP"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tenant id" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="jK0-dH-6N4" userLabel="tenant id">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tenant id" textAlignment="center" minimumFontSize="17" id="jK0-dH-6N4" userLabel="tenant id">
                                 <rect key="frame" x="59" y="182" width="125" height="42"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -3224,7 +3231,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Owner id" textAlignment="center" minimumFontSize="17" disabledBackground="Username" id="RPI-Oz-q6t" userLabel="owner id">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Owner id" textAlignment="center" minimumFontSize="17" id="RPI-Oz-q6t" userLabel="owner id">
                                 <rect key="frame" x="191" y="182" width="123" height="42"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84118181469999997" green="0.90102249379999999" blue="0.96766489739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
