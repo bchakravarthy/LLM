@@ -29,3 +29,12 @@ Originating as a web app, Landlord Mobile was designed as a concept of self-serv
 - cd app_LandlordMobile
 
 #### AWS Permissions
+   - ` AmazonDynamoDBFullAccess `
+   - ` AWSLambdaDynamoDBFullAccessWithDataPipeline`
+   - ` AmazonAPIGatewayAdminstrator`
+   - ` AWSLambdaBasicExecutionRole`
+   - ` AWSCloudFormationReadOnlyAccess`
+   - ` ResourceGroupsAndTagEditorReadOnlyAccess`
+   - ` ResourceGroupsAndTagEditorFullAccess`
+   - ` IAMReadOnlyAccess `
+   - ` IAMSelfManageServiceSpecificCredentials `
