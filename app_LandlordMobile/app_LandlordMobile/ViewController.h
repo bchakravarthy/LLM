@@ -55,6 +55,16 @@
 @property (weak, nonatomic) IBOutlet UITextField *addPropGenExpYearlyIns;
 @property (weak, nonatomic) IBOutlet UITextField *addPropGenExpWarranty;
 @property (weak, nonatomic) IBOutlet UITextField *addPropGenExpDescrip;
+// For GET
+@property (weak, nonatomic) IBOutlet UITextView *getPropGenExpList;
+// For update
+@property (weak, nonatomic) IBOutlet UITextField *updatePropGenExpId;
+@property (weak, nonatomic) IBOutlet UITextField *updatePropGenExpPropId;
+@property (weak, nonatomic) IBOutlet UITextField *updatePropGenExpOwnerId;
+@property (weak, nonatomic) IBOutlet UITextField *updatePropGenExpMonFee;
+@property (weak, nonatomic) IBOutlet UITextField *updatePropGenExpYearIns;
+@property (weak, nonatomic) IBOutlet UITextField *updatePropGenExpMonWarranty;
+@property (weak, nonatomic) IBOutlet UITextField *updatePropGenExpReceipyCp;
 
 
 // MARK: Property maintenance expense
@@ -132,22 +142,48 @@
 @property (weak, nonatomic) IBOutlet UITextField *addTenantOccupOwnerId;
 @property (weak, nonatomic) IBOutlet UITextField *addTenantEmployer;
 @property (weak, nonatomic) IBOutlet UITextField *addTenantOccupTitle;
+// For GET
+@property (weak, nonatomic) IBOutlet UITextView *getTenantOccupationList;
+// For update
+@property (weak, nonatomic) IBOutlet UITextField *updateTenantOccId;
+@property (weak, nonatomic) IBOutlet UITextField *updateTenantOccTenantId;
+@property (weak, nonatomic) IBOutlet UITextField *updateTenantOccOwnerId;
+@property (weak, nonatomic) IBOutlet UITextField *updateTenantOccEmployer;
+@property (weak, nonatomic) IBOutlet UITextField *updateTenantOccTitle;
 
 
 // MARK: Tenant reference
-@property (weak, nonatomic) IBOutlet UITextField *addTenantReferenceTenantId;
-@property (weak, nonatomic) IBOutlet UITextField *addTenantReferenceOwnerId;
-@property (weak, nonatomic) IBOutlet UITextField *addTenantReferenceFirstName;
-@property (weak, nonatomic) IBOutlet UITextField *addTenantReferenceLastName;
-@property (weak, nonatomic) IBOutlet UITextField *addTenantReferenceAddrLine1;
-@property (weak, nonatomic) IBOutlet UITextField *addTenantReferenceAddrLine2;
-@property (weak, nonatomic) IBOutlet UITextField *addTenantReferenceCity;
-@property (weak, nonatomic) IBOutlet UITextField *addTenantReferenceState;
-@property (weak, nonatomic) IBOutlet UITextField *addTenantReferenceZip;
-@property (weak, nonatomic) IBOutlet UITextField *addTenantReferenceCounty;
-@property (weak, nonatomic) IBOutlet UITextField *addTenantReferenceContactPhone;
-@property (weak, nonatomic) IBOutlet UITextField *addTenantReferenceContactEmail;
-@property (weak, nonatomic) IBOutlet UITextField *addTenantReferencePrimaryContact;
+@property (weak, nonatomic) IBOutlet UITextField *addTenantRefTenantId;
+@property (weak, nonatomic) IBOutlet UITextField *addTenantRefOwnerId;
+@property (weak, nonatomic) IBOutlet UITextField *addTenantRefFirstN;
+@property (weak, nonatomic) IBOutlet UITextField *addTenantRefLastN;
+@property (weak, nonatomic) IBOutlet UITextField *addTenantRefAddr1;
+@property (weak, nonatomic) IBOutlet UITextField *addTenantRefAddr2;
+@property (weak, nonatomic) IBOutlet UITextField *addTenantRefCity;
+@property (weak, nonatomic) IBOutlet UITextField *addTenantRefState;
+@property (weak, nonatomic) IBOutlet UITextField *addTenantRefZip;
+@property (weak, nonatomic) IBOutlet UITextField *addTenantRefCounty;
+@property (weak, nonatomic) IBOutlet UITextField *addTenantRefPhone;
+@property (weak, nonatomic) IBOutlet UITextField *addTenantRefEmail;
+@property (weak, nonatomic) IBOutlet UITextField *addTenantRefPrimary;
+
+// For GET
+@property (weak, nonatomic) IBOutlet UITextView *getTenantRefList;
+// For update
+@property (weak, nonatomic) IBOutlet UITextField *updateTenantRefId;
+@property (weak, nonatomic) IBOutlet UITextField *updateTenantRefTenantId;
+@property (weak, nonatomic) IBOutlet UITextField *updateTenantRefOwnerId;
+@property (weak, nonatomic) IBOutlet UITextField *updateTenantRefFirstN;
+@property (weak, nonatomic) IBOutlet UITextField *updateTenantRefLastN;
+@property (weak, nonatomic) IBOutlet UITextField *updateTenantRefAddr1;
+@property (weak, nonatomic) IBOutlet UITextField *updateTenantRefAddr2;
+@property (weak, nonatomic) IBOutlet UITextField *updateTenantRefCity;
+@property (weak, nonatomic) IBOutlet UITextField *updateTenantRefState;
+@property (weak, nonatomic) IBOutlet UITextField *updateTenantRefZip;
+@property (weak, nonatomic) IBOutlet UITextField *updateTenantRefCounty;
+@property (weak, nonatomic) IBOutlet UITextField *updateTenantRefPhone;
+@property (weak, nonatomic) IBOutlet UITextField *updateTenantRefEmail;
+@property (weak, nonatomic) IBOutlet UITextField *updateTenantRefPrimary;
 
 
 // MARK: Tenant Income Expense
@@ -156,6 +192,15 @@
 @property (weak, nonatomic) IBOutlet UITextField *addTenantIncomeExpMonthlyIncome;
 @property (weak, nonatomic) IBOutlet UITextField *addTenantIncomeExpMonthlyExp;
 @property (weak, nonatomic) IBOutlet UITextField *addTenantIncomeExpPropOwnerId;
+// For GET
+@property (weak, nonatomic) IBOutlet UITextView *getTenantIncomeExpList;
+// For update
+@property (weak, nonatomic) IBOutlet UITextField *updateTenantIncomeExpId;
+@property (weak, nonatomic) IBOutlet UITextField *updateTenantIncomeExpTenantId;
+@property (weak, nonatomic) IBOutlet UITextField *updateTenantIncomeExpOwnerId;
+@property (weak, nonatomic) IBOutlet UITextField *updateTenantIncomeExpMonthlyInc;
+@property (weak, nonatomic) IBOutlet UITextField *updateTenantIncomeExpMonExp;
+@property (weak, nonatomic) IBOutlet UITextField *updateTenantIncomeExpPropOwnId;
 
 
 // MARK: Rental agreement
@@ -169,6 +214,20 @@
 @property (weak, nonatomic) IBOutlet UITextField *addRentalAgreeNumOfOcc;
 @property (weak, nonatomic) IBOutlet UITextField *addRentalAgreeRenew;
 @property (weak, nonatomic) IBOutlet UITextField *addRentalAgreeCopy;
+// For GET
+@property (weak, nonatomic) IBOutlet UITextView *getRentalAgreeList;
+// For update
+@property (weak, nonatomic) IBOutlet UITextField *updateRentalAgreeId;
+@property (weak, nonatomic) IBOutlet UITextField *updateRentalAgreeTenantId;
+@property (weak, nonatomic) IBOutlet UITextField *updateRentalAgreeOwnerId;
+@property (weak, nonatomic) IBOutlet UITextField *updateRentalAgreeStartD;
+@property (weak, nonatomic) IBOutlet UITextField *updateRentalAgreeEndD;
+@property (weak, nonatomic) IBOutlet UITextField *updateRentalAgreeMonRent;
+@property (weak, nonatomic) IBOutlet UITextField *updateRentalAgreeRentDue;
+@property (weak, nonatomic) IBOutlet UITextField *updateRentalAgreeAdvance;
+@property (weak, nonatomic) IBOutlet UITextField *updateRentalAgreeNumOfOcc;
+@property (weak, nonatomic) IBOutlet UITextField *updateRentalAgreeRenew;
+@property (weak, nonatomic) IBOutlet UITextField *updateRentalAgreeCp;
 
 
 // MARK: Tenant Background Check
@@ -178,6 +237,16 @@
 @property (weak, nonatomic) IBOutlet UITextField *addTenantBgCheckCreditPass;
 @property (weak, nonatomic) IBOutlet UITextField *addTenantBgCheckEviction;
 @property (weak, nonatomic) IBOutlet UITextField *addTenantBgCheckRec;
+// For GET
+@property (weak, nonatomic) IBOutlet UITextView *getTenantBgCheckList;
+// For update
+@property (weak, nonatomic) IBOutlet UITextField *updateTenantBgCheckId;
+@property (weak, nonatomic) IBOutlet UITextField *updateTenantBgCheckTenantId;
+@property (weak, nonatomic) IBOutlet UITextField *updateTenantBgCheckOwnerId;
+@property (weak, nonatomic) IBOutlet UITextField *updateTenantBgCheckCriminalPass;
+@property (weak, nonatomic) IBOutlet UITextField *updateTenantBgCheckCredit;
+@property (weak, nonatomic) IBOutlet UITextField *updateTenantBgCheckEviction;
+@property (weak, nonatomic) IBOutlet UITextField *updateTenantBgCheckRecommendation;
 
 
 // MARK: Property mortgage loan
@@ -186,6 +255,15 @@
 @property (weak, nonatomic) IBOutlet UITextField *addPropMortLoanLender;
 @property (weak, nonatomic) IBOutlet UITextField *addPropMortLoanMonthAmt;
 @property (weak, nonatomic) IBOutlet UITextField *addPropMortLoanBalance;
+// For GET
+@property (weak, nonatomic) IBOutlet UITextView *getPropMortLoanList;
+// For update
+@property (weak, nonatomic) IBOutlet UITextField *updatePropMortLoanId;
+@property (weak, nonatomic) IBOutlet UITextField *updatePropMortLoanPropId;
+@property (weak, nonatomic) IBOutlet UITextField *updatePropMortLoanOwnerId;
+@property (weak, nonatomic) IBOutlet UITextField *updatePropMortLoanLender;
+@property (weak, nonatomic) IBOutlet UITextField *updatePropMortLoanAmt;
+@property (weak, nonatomic) IBOutlet UITextField *updatePropMortLoanBalance;
 
 
 // MARK: PropertyTax

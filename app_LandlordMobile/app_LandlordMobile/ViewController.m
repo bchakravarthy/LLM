@@ -2178,6 +2178,64 @@
 
 // Not working, something is wrong with the test field AddrLine1
 - (IBAction)addTenantRefBrnPress:(id)sender {
+    
+    NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
+
+    NSString *TenantId = self.addTenantRefTenantId.text;
+    NSString *OwnerId = self.updateTenantRefOwnerId.text;
+    NSString *FirstN = self.updateTenantRefFirstN.text;
+    NSString *LastN = self.updateTenantRefLastN.text;
+    NSString *Addr1 = self.updateTenantRefAddr1.text;
+    NSString *Addr2 = self.updateTenantRefAddr2.text;
+    NSString *City = self.updateTenantRefCity.text;
+    NSString *State = self.updateTenantRefState.text;
+    NSString *Zip = self.updateTenantRefZip.text;
+    NSString *County = self.updateTenantRefZip.text;
+    NSString *Email = self.updateTenantRefEmail.text;
+    NSString *Phone = self.updateTenantRefPhone.text;
+    NSString *Primary = self.updateTenantRefPrimary.text;
+    
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Assign input values to be sent to Dynamo DB via API call
+    PROPERTYTenantRefInput *tenantRefInput = [[PROPERTYTenantRefInput alloc] init];
+    
+    tenantRefInput.tenantId=[f numberFromString:TenantId];
+    tenantRefInput.ownerId=[f numberFromString:OwnerId];
+    tenantRefInput.firstName = FirstN;
+    tenantRefInput.lastName = LastN;
+    tenantRefInput.addressLine1 = Addr1;
+    tenantRefInput.addressLine2 = Addr2;
+    tenantRefInput.city = City;
+    tenantRefInput.tenantState = State;
+    tenantRefInput.zip = Zip;
+    tenantRefInput.countyOrDistrict = County;
+    tenantRefInput.contactEmail = Email;
+    tenantRefInput.contactPhone = Phone;
+    tenantRefInput.primaryContact = Primary;
+    
+    
+    //Invoke POST on employee API
+    [[client tenantsReferencePost:tenantRefInput ] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+        
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        
+        if (task.result) {
+            
+            //You are here, so method invocation is a success
+            
+            printf("Success....\n");
+            
+            NSLog(@"Return from API call.Tenant reference information has been saved. Please check in the database...\n");
+            
+        }
+        
+        return nil;
+    }];
 
 }
 
@@ -2313,7 +2371,7 @@
         }
         if (task.result) {
             //You are here, so method invocation is a success
-            NSString *Info = [Display stringByAppendingString:@"Succecc...\n"];
+            NSString *Info = [Display stringByAppendingString:@"Success...\n"];
             
             //Convert result object to maint result
             PROPERTYMaintenanceExpTypeResult *result_var;
@@ -2323,17 +2381,21 @@
             NSArray *arrData = result_var.output.maintenanceExpenseTypes;
             long cnt;
             cnt = arrData.count;
+            
             //Print out count of maint exp
             NSString *Count = [NSString stringWithFormat:@"Number of maintenance expenses %lu\n",cnt];
             NSString *InfoWithCount = [Info stringByAppendingString:Count];
 
             //Print out each maint exp details to the console
             for (id element in arrData){
-                NSString *record = [NSString stringWithFormat:@"%@",element];
+                NSString *record = [NSString stringWithFormat:@"Maintenance Expense ID: %@\n", ((PROPERTYMaintenanceExpTypeOutput_maintenance_expense_types_item *)element).maintenanceExpenseId];
                 InfoWithCount = [InfoWithCount stringByAppendingString:record];
+                NSString *recordTwo = [NSString stringWithFormat:@"Owner ID: %@\n", ((PROPERTYMaintenanceExpTypeOutput_maintenance_expense_types_item *)element).ownerId];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordTwo];
+                NSString *recordThree = [NSString stringWithFormat:@"Description: %@\n", ((PROPERTYMaintenanceExpTypeOutput_maintenance_expense_types_item *)element)._description];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordThree];
             }
             
-            NSLog(Display);
             [self.getMaintExpTypeList setText:InfoWithCount];
             
         }
@@ -2343,7 +2405,10 @@
 }
 
 
+
 - (IBAction)getPropBtnPress:(id)sender {
+    
+    NSString *Display = @"";
     
     //Instantiate client object
     PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
@@ -2356,26 +2421,45 @@
         }
         if (task.result) {
             //You are here, so method invocation is a success
-            printf("Success....\n");
-            //Convert result object to maint result
+            NSString *Info = [Display stringByAppendingString:@"Success...\n"];
             
+            //Convert result object to maint result
             PROPERTYPropertyResult *result_var;
             result_var=task.result;
-            //Obtain array of properties
+            
+            //Obtain array of maint exp
             NSArray *arrData = result_var.output.ownerProperties;
             long cnt;
             cnt = arrData.count;
-            //Print out count of properties
-            NSLog(@"Number of properties %lu\n",cnt);
-            NSString *Records = [NSString stringWithFormat:@"Number of properties %lu\n",cnt];
             
-            //Print out each prop details to the console
+            //Print out count of maint exp
+            NSString *Count = [NSString stringWithFormat:@"Number of properties %lu\n",cnt];
+            NSString *InfoWithCount = [Info stringByAppendingString:Count];
+            
+            //Print out each maint exp details to the console
             for (id element in arrData){
-                NSLog(@"%@", element);
-                Records = [Records stringByAppendingString:element];
+                NSString *record = [NSString stringWithFormat:@"Property ID: %@\n", ((PROPERTYPropertyOutput_owner_properties_item *)element).propertyId];
+                InfoWithCount = [InfoWithCount stringByAppendingString:record];
+                NSString *recordTwo = [NSString stringWithFormat:@"Owner ID: %@\n", ((PROPERTYPropertyOutput_owner_properties_item *)element).ownerId];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordTwo];
+                NSString *recordThree = [NSString stringWithFormat:@"Description: %@\n", ((PROPERTYPropertyOutput_owner_properties_item *)element)._description];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordThree];
+                NSString *recordFour = [NSString stringWithFormat:@"Address Line 1: %@\n", ((PROPERTYPropertyOutput_owner_properties_item *)element).addressLine1];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordFour];
+                NSString *recordFive = [NSString stringWithFormat:@"Address Line 2: %@\n", ((PROPERTYPropertyOutput_owner_properties_item *)element).addressLine2];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordFive];
+                NSString *recordSix = [NSString stringWithFormat:@"City: %@\n", ((PROPERTYPropertyOutput_owner_properties_item *)element).city];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordSix];
+                NSString *recordSeven = [NSString stringWithFormat:@"State: %@\n", ((PROPERTYPropertyOutput_owner_properties_item *)element).propState];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordSeven];
+                NSString *recordEight = [NSString stringWithFormat:@"Zip: %@\n", ((PROPERTYPropertyOutput_owner_properties_item *)element).zip];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordEight];
+                NSString *recordNine = [NSString stringWithFormat:@"County: %@\n", ((PROPERTYPropertyOutput_owner_properties_item *)element).countyOrDistrict];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordNine];            
             }
             
-            [self.getPropList setText:[NSString stringWithFormat:@"%@",Records]];
+            [self.getPropList setText:InfoWithCount];
+            
         }
         return nil;
     }];
@@ -2383,6 +2467,593 @@
 }
 
 
+- (IBAction)getTenantBtnPress:(id)sender {
+    
+    NSString *Display = @"";
+    
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Invoke GET on API
+    [[client tenantsGet] continueWithBlock:^id(AWSTask *task){
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        if (task.result) {
+            //You are here, so method invocation is a success
+            NSString *Info = [Display stringByAppendingString:@"Success...\n"];
+            
+            //Convert result object to maint result
+            PROPERTYTenantResult *result_var;
+            result_var=task.result;
+            
+            //Obtain array of maint exp
+            NSArray *arrData = result_var.output.tenants;
+            long cnt;
+            cnt = arrData.count;
+            
+            //Print out count of maint exp
+            NSString *Count = [NSString stringWithFormat:@"Number of tenants %lu\n",cnt];
+            NSString *InfoWithCount = [Info stringByAppendingString:Count];
+            
+            //Print out each maint exp details to the console
+            for (id element in arrData){
+                NSString *record = [NSString stringWithFormat:@"Tenant ID: %@\n", ((PROPERTYTenantOutput_tenants_item *)element).tenantId];
+                InfoWithCount = [InfoWithCount stringByAppendingString:record];
+                NSString *recordTwo = [NSString stringWithFormat:@"Propperty ID: %@\n", ((PROPERTYTenantOutput_tenants_item *)element).propertyId];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordTwo];
+                NSString *recordThree = [NSString stringWithFormat:@"Owner ID: %@\n", ((PROPERTYTenantOutput_tenants_item *)element).ownerId];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordThree];
+                NSString *recordFour = [NSString stringWithFormat:@"First name: %@\n", ((PROPERTYTenantOutput_tenants_item *)element).firstName];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordFour];
+                NSString *recordFive = [NSString stringWithFormat:@"Middle name: %@\n", ((PROPERTYTenantOutput_tenants_item *)element).middleName];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordFive];
+                NSString *recordSix = [NSString stringWithFormat:@"Last name: %@\n", ((PROPERTYTenantOutput_tenants_item *)element).lastName];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordSix];
+                NSString *recordSeven = [NSString stringWithFormat:@"Age: %@\n", ((PROPERTYTenantOutput_tenants_item *)element).age];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordSeven];
+                NSString *recordEight = [NSString stringWithFormat:@"Contact email: %@\n", ((PROPERTYTenantOutput_tenants_item *)element).contactEmail];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordEight];
+                NSString *recordNine = [NSString stringWithFormat:@"Contact phone: %@\n", ((PROPERTYTenantOutput_tenants_item *)element).contactPhone];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordNine];
+                NSString *recordTen = [NSString stringWithFormat:@"Primary contact: %@\n", ((PROPERTYTenantOutput_tenants_item *)element).primaryContact];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordTen];
+            }
+            [self.getTenantList setText:InfoWithCount];
+        }
+        return nil;
+    }];
+}
+
+- (IBAction)getPurchaseDetailBtnPress:(id)sender {
+    
+    NSString *Display = @"";
+    
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Invoke GET on API
+    [[client purchaseDetailsGet] continueWithBlock:^id(AWSTask *task){
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        if (task.result) {
+            //You are here, so method invocation is a success
+            NSString *Info = [Display stringByAppendingString:@"Success...\n"];
+            
+            //Convert result object to maint result
+            PROPERTYPurchaseDetailsResult *result_var;
+            result_var=task.result;
+            
+            //Obtain array of maint exp
+            NSArray *arrData = result_var.output.purchaseDetails;
+            long cnt;
+            cnt = arrData.count;
+            
+            //Print out count of maint exp
+            NSString *Count = [NSString stringWithFormat:@"Number of purchase details %lu\n",cnt];
+            NSString *InfoWithCount = [Info stringByAppendingString:Count];
+            
+            //Print out each maint exp details to the console
+            for (id element in arrData){
+                NSString *record = [NSString stringWithFormat:@"Purchase ID: %@\n", ((PROPERTYPurchaseDetailsOutput_purchase_details_item *)element).purchaseId];
+                InfoWithCount = [InfoWithCount stringByAppendingString:record];
+                NSString *recordTwo = [NSString stringWithFormat:@"Owner ID: %@\n", ((PROPERTYPurchaseDetailsOutput_purchase_details_item *)element).ownerId];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordTwo];
+                NSString *recordThree = [NSString stringWithFormat:@"Property ID: %@\n", ((PROPERTYPurchaseDetailsOutput_purchase_details_item *)element).propertyId];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordThree];
+                NSString *recordFour = [NSString stringWithFormat:@"Year: %@\n", ((PROPERTYPurchaseDetailsOutput_purchase_details_item *)element).yearOfPurchase];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordFour];
+                NSString *recordFive = [NSString stringWithFormat:@"Price: %@\n", ((PROPERTYPurchaseDetailsOutput_purchase_details_item *)element).price];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordFive];
+            }
+            [self.getPurchaseDetailList setText:InfoWithCount];
+        }
+        return nil;
+    }];
+}
+
+- (IBAction)getPropMaintExpBtnPress:(id)sender {
+    NSString *Display = @"";
+    
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Invoke GET on API
+    [[client propMaintExpenseGet] continueWithBlock:^id(AWSTask *task){
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        if (task.result) {
+            //You are here, so method invocation is a success
+            NSString *Info = [Display stringByAppendingString:@"Success...\n"];
+            
+            //Convert result object to maint result
+            PROPERTYPropertyMaintExpResult *result_var;
+            result_var=task.result;
+            
+            //Obtain array of maint exp
+            NSArray *arrData = result_var.output.propertyMaintenanceExpenses;
+            long cnt;
+            cnt = arrData.count;
+            
+            //Print out count of maint exp
+            NSString *Count = [NSString stringWithFormat:@"Number of property maintenance expenses %lu\n",cnt];
+            NSString *InfoWithCount = [Info stringByAppendingString:Count];
+            
+            //Print out each maint exp details to the console
+            for (id element in arrData){
+                NSString *record = [NSString stringWithFormat:@"Property Maintenance Expense ID: %@\n", ((PROPERTYPropertyMaintExpOutput_property_maintenance_expenses_item *)element).propertyMaintanenceExpenseId];
+                InfoWithCount = [InfoWithCount stringByAppendingString:record];
+                NSString *recordTwo = [NSString stringWithFormat:@"Propperty ID: %@\n", ((PROPERTYPropertyMaintExpOutput_property_maintenance_expenses_item *)element).propertyId];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordTwo];
+                NSString *recordThree = [NSString stringWithFormat:@"Owner ID: %@\n", ((PROPERTYPropertyMaintExpOutput_property_maintenance_expenses_item *)element).ownerId];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordThree];
+                NSString *recordFour = [NSString stringWithFormat:@"Maintenance Expense ID: %@\n", ((PROPERTYPropertyMaintExpOutput_property_maintenance_expenses_item *)element).maintanenceExpenseId];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordFour];
+                NSString *recordFive = [NSString stringWithFormat:@"Expense amout: %@\n", ((PROPERTYPropertyMaintExpOutput_property_maintenance_expenses_item *)element).expenseAmount];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordFive];
+                NSString *recordSix = [NSString stringWithFormat:@"Receipt date: %@\n", ((PROPERTYPropertyMaintExpOutput_property_maintenance_expenses_item *)element).receiptDate];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordSix];
+                NSString *recordSeven = [NSString stringWithFormat:@"Receipt Copy: %@\n", ((PROPERTYPropertyMaintExpOutput_property_maintenance_expenses_item *)element).receiptCopy];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordSeven];
+            }
+            [self.getPropMaintExpList setText:InfoWithCount];
+        }
+        return nil;
+    }];
+}
+
+- (IBAction)getPropTaxBtnPress:(id)sender {
+    NSString *Display = @"";
+    
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Invoke GET on API
+    [[client propTaxGet] continueWithBlock:^id(AWSTask *task){
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        if (task.result) {
+            //You are here, so method invocation is a success
+            NSString *Info = [Display stringByAppendingString:@"Success...\n"];
+            
+            //Convert result object to maint result
+            PROPERTYPropertyTaxResult *result_var;
+            result_var=task.result;
+            
+            //Obtain array of maint exp
+            NSArray *arrData = result_var.output.propertyTax;
+            long cnt;
+            cnt = arrData.count;
+            
+            //Print out count of maint exp
+            NSString *Count = [NSString stringWithFormat:@"Number of property tax %lu\n",cnt];
+            NSString *InfoWithCount = [Info stringByAppendingString:Count];
+            
+            //Print out each maint exp details to the console
+            for (id element in arrData){
+                NSString *record = [NSString stringWithFormat:@"Property Tax ID: %@\n", ((PROPERTYPropertyTaxOutput_property_tax_item *)element).propertyTaxId];
+                InfoWithCount = [InfoWithCount stringByAppendingString:record];
+                NSString *recordTwo = [NSString stringWithFormat:@"Propperty ID: %@\n", ((PROPERTYPropertyTaxOutput_property_tax_item *)element).propertyId];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordTwo];
+                NSString *recordThree = [NSString stringWithFormat:@"Owner ID: %@\n", ((PROPERTYPropertyTaxOutput_property_tax_item *)element).ownerId];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordThree];
+                NSString *recordFour = [NSString stringWithFormat:@"Year: %@\n", ((PROPERTYPropertyTaxOutput_property_tax_item *)element).yearOwed];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordFour];
+                NSString *recordFive = [NSString stringWithFormat:@"Year paid: %@\n", ((PROPERTYPropertyTaxOutput_property_tax_item *)element).yearPaid];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordFive];
+                NSString *recordSix = [NSString stringWithFormat:@"Annual tax: %@\n", ((PROPERTYPropertyTaxOutput_property_tax_item *)element).annualTax];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordSix];
+            }
+            [self.getPropTaxList setText:InfoWithCount];
+        }
+        return nil;
+    }];
+}
+
+- (IBAction)getTenantBgCheckBtnPress:(id)sender {
+    NSString *Display = @"";
+    
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Invoke GET on API
+    [[client backgroundCheckGet] continueWithBlock:^id(AWSTask *task){
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        if (task.result) {
+            //You are here, so method invocation is a success
+            NSString *Info = [Display stringByAppendingString:@"Success...\n"];
+            
+            //Convert result object to maint result
+            PROPERTYTenantBackgroundResult *result_var;
+            result_var=task.result;
+            
+            //Obtain array of maint exp
+            NSArray *arrData = result_var.output.tenantBackgroundCheck;
+            long cnt;
+            cnt = arrData.count;
+            
+            //Print out count of maint exp
+            NSString *Count = [NSString stringWithFormat:@"Number of tenant background check %lu\n",cnt];
+            NSString *InfoWithCount = [Info stringByAppendingString:Count];
+            
+            //Print out each maint exp details to the console
+            for (id element in arrData){
+                NSString *record = [NSString stringWithFormat:@"Tenant background check ID: %@\n", ((PROPERTYTenantBackgroundOutput_tenant_background_check_item *)element).tenantBackgroundCheckId];
+                InfoWithCount = [InfoWithCount stringByAppendingString:record];
+                NSString *recordTwo = [NSString stringWithFormat:@"Tenant ID: %@\n", ((PROPERTYTenantBackgroundOutput_tenant_background_check_item *)element).tenantId];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordTwo];
+                NSString *recordThree = [NSString stringWithFormat:@"Owner ID: %@\n", ((PROPERTYTenantBackgroundOutput_tenant_background_check_item *)element).ownerId];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordThree];
+                NSString *recordFour = [NSString stringWithFormat:@"Criminal passed: %@\n", ((PROPERTYTenantBackgroundOutput_tenant_background_check_item *)element).criminalPassed];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordFour];
+                NSString *recordFive = [NSString stringWithFormat:@"Credit passed: %@\n", ((PROPERTYTenantBackgroundOutput_tenant_background_check_item *)element).creditPassedYN];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordFive];
+                NSString *recordSix = [NSString stringWithFormat:@"Eviction passed: %@\n", ((PROPERTYTenantBackgroundOutput_tenant_background_check_item *)element).evictionPassedYN];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordSix];
+                NSString *recordSeven = [NSString stringWithFormat:@"Recommendation: %@\n", ((PROPERTYTenantBackgroundOutput_tenant_background_check_item *)element).recommendation];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordSeven];
+            }
+            [self.getTenantBgCheckList setText:InfoWithCount];
+        }
+        return nil;
+    }];
+}
+
+- (IBAction)getTenantIncExpBtnPress:(id)sender {
+    NSString *Display = @"";
+    
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Invoke GET on API
+    [[client tenantsIncomeExpenseGet] continueWithBlock:^id(AWSTask *task){
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        if (task.result) {
+            //You are here, so method invocation is a success
+            NSString *Info = [Display stringByAppendingString:@"Success...\n"];
+            
+            //Convert result object to maint result
+            PROPERTYTenantIncomeResult *result_var;
+            result_var=task.result;
+            
+            //Obtain array of maint exp
+            NSArray *arrData = result_var.output.tenantIncomeExpense;
+            long cnt;
+            cnt = arrData.count;
+            
+            //Print out count of maint exp
+            NSString *Count = [NSString stringWithFormat:@"Number of tenant income expense %lu\n",cnt];
+            NSString *InfoWithCount = [Info stringByAppendingString:Count];
+            
+            //Print out each maint exp details to the console
+            for (id element in arrData){
+                NSString *record = [NSString stringWithFormat:@"Tenant income expense ID: %@\n", ((PROPERTYTenantIncomeOutput_tenant_income_expense_item *)element).tenantIncomeExpenseId];
+                InfoWithCount = [InfoWithCount stringByAppendingString:record];
+                NSString *recordTwo = [NSString stringWithFormat:@"Tenant ID: %@\n", ((PROPERTYTenantIncomeOutput_tenant_income_expense_item *)element).tenantId];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordTwo];
+                NSString *recordThree = [NSString stringWithFormat:@"Owner ID: %@\n", ((PROPERTYTenantIncomeOutput_tenant_income_expense_item *)element).ownerId];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordThree];
+                NSString *recordFour = [NSString stringWithFormat:@"Monthly income: %@\n", ((PROPERTYTenantIncomeOutput_tenant_income_expense_item *)element).monthlyIncome];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordFour];
+                NSString *recordFive = [NSString stringWithFormat:@"Monthly expense: %@\n", ((PROPERTYTenantIncomeOutput_tenant_income_expense_item *)element).monthlyExpenses];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordFive];
+                NSString *recordSix = [NSString stringWithFormat:@"Property owner owner ID: %@\n", ((PROPERTYTenantIncomeOutput_tenant_income_expense_item *)element).propertyOwnerId];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordSix];
+            }
+            [self.getTenantIncomeExpList setText:InfoWithCount];
+        }
+        return nil;
+    }];
+}
+
+- (IBAction)getTenantOccBtnPress:(id)sender {
+    NSString *Display = @"";
+    
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Invoke GET on API
+    [[client tenantsOccupationGet] continueWithBlock:^id(AWSTask *task){
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        if (task.result) {
+            //You are here, so method invocation is a success
+            NSString *Info = [Display stringByAppendingString:@"Success...\n"];
+            
+            //Convert result object to maint result
+            PROPERTYTenantOccupationResult *result_var;
+            result_var=task.result;
+            
+            //Obtain array of maint exp
+            NSArray *arrData = result_var.output.tenantOccupation;
+            long cnt;
+            cnt = arrData.count;
+            
+            //Print out count of maint exp
+            NSString *Count = [NSString stringWithFormat:@"Number of tenant occupation %lu\n",cnt];
+            NSString *InfoWithCount = [Info stringByAppendingString:Count];
+            
+            //Print out each maint exp details to the console
+            for (id element in arrData){
+                NSString *record = [NSString stringWithFormat:@"Tenant occupation ID: %@\n", ((PROPERTYTenantOccupationOutput_tenant_occupation_item *)element).tenantOccupationId];
+                InfoWithCount = [InfoWithCount stringByAppendingString:record];
+                NSString *recordTwo = [NSString stringWithFormat:@"Tenant ID: %@\n", ((PROPERTYTenantOccupationOutput_tenant_occupation_item *)element).tenantId];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordTwo];
+                NSString *recordThree = [NSString stringWithFormat:@"Owner ID: %@\n", ((PROPERTYTenantOccupationOutput_tenant_occupation_item *)element).ownerId];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordThree];
+                NSString *recordFour = [NSString stringWithFormat:@"Employer: %@\n", ((PROPERTYTenantOccupationOutput_tenant_occupation_item *)element).employer];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordFour];
+                NSString *recordFive = [NSString stringWithFormat:@"Title: %@\n", ((PROPERTYTenantOccupationOutput_tenant_occupation_item *)element).title];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordFive];
+            }
+            [self.getTenantOccupationList setText:InfoWithCount];
+        }
+        return nil;
+    }];
+}
+
+- (IBAction)getPropGenExpBtnPress:(id)sender {
+    NSString *Display = @"";
+    
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Invoke GET on API
+    [[client generalExpensesGet] continueWithBlock:^id(AWSTask *task){
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        if (task.result) {
+            //You are here, so method invocation is a success
+            NSString *Info = [Display stringByAppendingString:@"Success...\n"];
+            
+            //Convert result object to maint result
+            PROPERTYPropertyGeneralExpResult *result_var;
+            result_var=task.result;
+            
+            //Obtain array of maint exp
+            NSArray *arrData = result_var.output.propertyGeneralExpenses;
+            long cnt;
+            cnt = arrData.count;
+            
+            //Print out count of maint exp
+            NSString *Count = [NSString stringWithFormat:@"Number of property general expense %lu\n",cnt];
+            NSString *InfoWithCount = [Info stringByAppendingString:Count];
+            
+            //Print out each maint exp details to the console
+            for (id element in arrData){
+                NSString *record = [NSString stringWithFormat:@"Property general expense ID: %@\n", ((PROPERTYPropertyGeneralExpOutput_property_general_expenses_item *)element).propertyGeneralExpenseId];
+                InfoWithCount = [InfoWithCount stringByAppendingString:record];
+                NSString *recordTwo = [NSString stringWithFormat:@"Property ID: %@\n", ((PROPERTYPropertyGeneralExpOutput_property_general_expenses_item *)element).propertyId];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordTwo];
+                NSString *recordThree = [NSString stringWithFormat:@"Owner ID: %@\n", ((PROPERTYPropertyGeneralExpOutput_property_general_expenses_item *)element).ownerId];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordThree];
+                NSString *recordFour = [NSString stringWithFormat:@"Monthly condo fee: %@\n", ((PROPERTYPropertyGeneralExpOutput_property_general_expenses_item *)element).monthlyCondoFee];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordFour];
+                NSString *recordFive = [NSString stringWithFormat:@"Yearly property insurance: %@\n", ((PROPERTYPropertyGeneralExpOutput_property_general_expenses_item *)element).yearlyPropertyInsurance];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordFive];
+                NSString *recordSix = [NSString stringWithFormat:@"Monthly home warranty: %@\n", ((PROPERTYPropertyGeneralExpOutput_property_general_expenses_item *)element).monthlyHomeWarranty];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordSix];
+                NSString *recordSeven = [NSString stringWithFormat:@"Receipt copy: %@\n", ((PROPERTYPropertyGeneralExpOutput_property_general_expenses_item *)element).receiptCopy];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordSeven];
+            }
+            [self.getPropGenExpList setText:InfoWithCount];
+        }
+        return nil;
+    }];
+}
+
+- (IBAction)getPropMortLoanBtnPress:(id)sender {
+    NSString *Display = @"";
+    
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Invoke GET on API
+    [[client propMortgageLoanGet] continueWithBlock:^id(AWSTask *task){
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        if (task.result) {
+            //You are here, so method invocation is a success
+            NSString *Info = [Display stringByAppendingString:@"Success...\n"];
+            
+            //Convert result object to maint result
+            PROPERTYPropertyMortgageLoanResult *result_var;
+            result_var=task.result;
+            
+            //Obtain array of maint exp
+            NSArray *arrData = result_var.output.propertyMortgageLoan;
+            long cnt;
+            cnt = arrData.count;
+            
+            //Print out count of maint exp
+            NSString *Count = [NSString stringWithFormat:@"Number of property mortgage loan %lu\n",cnt];
+            NSString *InfoWithCount = [Info stringByAppendingString:Count];
+            
+            //Print out each maint exp details to the console
+            for (id element in arrData){
+                NSString *record = [NSString stringWithFormat:@"Property mortgage loan ID: %@\n", ((PROPERTYPropertyMortgageLoanOutput_property_mortgage_loan_item *)element).propertyMortgageLoanId];
+                InfoWithCount = [InfoWithCount stringByAppendingString:record];
+                NSString *recordTwo = [NSString stringWithFormat:@"Property ID: %@\n", ((PROPERTYPropertyMortgageLoanOutput_property_mortgage_loan_item *)element).propertyId];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordTwo];
+                NSString *recordThree = [NSString stringWithFormat:@"Owner ID: %@\n", ((PROPERTYPropertyMortgageLoanOutput_property_mortgage_loan_item *)element).ownerId];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordThree];
+                NSString *recordFour = [NSString stringWithFormat:@"Mortgage lender: %@\n", ((PROPERTYPropertyMortgageLoanOutput_property_mortgage_loan_item *)element).mortgageLender];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordFour];
+                NSString *recordFive = [NSString stringWithFormat:@"Monthly mortgage amount: %@\n", ((PROPERTYPropertyMortgageLoanOutput_property_mortgage_loan_item *)element).monthlyMortgageAmount];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordFive];
+                NSString *recordSix = [NSString stringWithFormat:@"Outstanding balance: %@\n", ((PROPERTYPropertyMortgageLoanOutput_property_mortgage_loan_item *)element).outstandingBalance];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordSix];
+            }
+            [self.getPropMortLoanList setText:InfoWithCount];
+        }
+        return nil;
+    }];
+}
+
+- (IBAction)getTenantRefBtnPress:(id)sender {
+    NSString *Display = @"";
+    
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Invoke GET on API
+    [[client tenantsReferenceGet] continueWithBlock:^id(AWSTask *task){
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        if (task.result) {
+            //You are here, so method invocation is a success
+            NSString *Info = [Display stringByAppendingString:@"Success...\n"];
+            
+            //Convert result object to maint result
+            PROPERTYTenantRefResult *result_var;
+            result_var=task.result;
+            
+            //Obtain array of maint exp
+            NSArray *arrData = result_var.output.tenantReferences;
+            long cnt;
+            cnt = arrData.count;
+            
+            //Print out count of maint exp
+            NSString *Count = [NSString stringWithFormat:@"Number of tenants %lu\n",cnt];
+            NSString *InfoWithCount = [Info stringByAppendingString:Count];
+            
+            //Print out each maint exp details to the console
+            for (id element in arrData){
+                NSString *record = [NSString stringWithFormat:@"Tenant reference ID: %@\n", ((PROPERTYTenantRefOutput_tenant_references_item *)element).tenantReferenceId];
+                InfoWithCount = [InfoWithCount stringByAppendingString:record];
+                NSString *recordTwo = [NSString stringWithFormat:@"Tenant ID: %@\n", ((PROPERTYTenantRefOutput_tenant_references_item *)element).tenantId];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordTwo];
+                NSString *recordThree = [NSString stringWithFormat:@"Owner ID: %@\n", ((PROPERTYTenantRefOutput_tenant_references_item *)element).ownerId];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordThree];
+                NSString *recordFour = [NSString stringWithFormat:@"First name: %@\n", ((PROPERTYTenantRefOutput_tenant_references_item *)element).firstName];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordFour];
+                NSString *recordFive = [NSString stringWithFormat:@"Last name: %@\n", ((PROPERTYTenantRefOutput_tenant_references_item *)element).lastName];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordFive];
+                NSString *recordSix = [NSString stringWithFormat:@"Address line 1: %@\n", ((PROPERTYTenantRefOutput_tenant_references_item *)element).addressLine1];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordSix];
+                NSString *recordSeven = [NSString stringWithFormat:@"Address line 2: %@\n", ((PROPERTYTenantRefOutput_tenant_references_item *)element).addressLine2];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordSeven];
+                NSString *recordEight = [NSString stringWithFormat:@"City: %@\n", ((PROPERTYTenantRefOutput_tenant_references_item *)element).city];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordEight];
+                NSString *recordNine = [NSString stringWithFormat:@"State: %@\n", ((PROPERTYTenantRefOutput_tenant_references_item *)element).tenantState];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordNine];
+                NSString *recordTen = [NSString stringWithFormat:@"Zip: %@\n", ((PROPERTYTenantRefOutput_tenant_references_item *)element).zip];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordTen];
+                NSString *recordEleven = [NSString stringWithFormat:@"County / District: %@\n", ((PROPERTYTenantRefOutput_tenant_references_item *)element).countyOrDistrict];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordEleven];
+                NSString *recordTwl = [NSString stringWithFormat:@"Contact phone: %@\n", ((PROPERTYTenantRefOutput_tenant_references_item *)element).contactPhone];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordTwl];
+                NSString *recordthirdt = [NSString stringWithFormat:@"Contact email: %@\n", ((PROPERTYTenantRefOutput_tenant_references_item *)element).contactEmail];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordthirdt];
+                NSString *recordfourt = [NSString stringWithFormat:@"Primary contact: %@\n", ((PROPERTYTenantRefOutput_tenant_references_item *)element).primaryContact];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordfourt];
+            }
+            [self.getTenantList setText:InfoWithCount];
+        }
+        return nil;
+    }];
+}
+
+- (IBAction)getRentalAgreeBtnPress:(id)sender {
+    NSString *Display = @"";
+    
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Invoke GET on API
+    [[client rentalAgreementGet] continueWithBlock:^id(AWSTask *task){
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        if (task.result) {
+            //You are here, so method invocation is a success
+            NSString *Info = [Display stringByAppendingString:@"Success...\n"];
+            
+            //Convert result object to maint result
+            PROPERTYRentalAgreementResult *result_var;
+            result_var=task.result;
+            
+            //Obtain array of maint exp
+            NSArray *arrData = result_var.output.rentalAgreement;
+            long cnt;
+            cnt = arrData.count;
+            
+            //Print out count of maint exp
+            NSString *Count = [NSString stringWithFormat:@"Number of rental agreement %lu\n",cnt];
+            NSString *InfoWithCount = [Info stringByAppendingString:Count];
+            
+            //Print out each maint exp details to the console
+            for (id element in arrData){
+                NSString *record = [NSString stringWithFormat:@"Rental agreement ID: %@\n", ((PROPERTYRentalAgreementOutput_rental_agreement_item *)element).rentalAgreementId];
+                InfoWithCount = [InfoWithCount stringByAppendingString:record];
+                NSString *recordTwo = [NSString stringWithFormat:@"Tenant ID: %@\n", ((PROPERTYRentalAgreementOutput_rental_agreement_item *)element).tenantId];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordTwo];
+                NSString *recordThree = [NSString stringWithFormat:@"Owner ID: %@\n", ((PROPERTYRentalAgreementOutput_rental_agreement_item *)element).ownerId];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordThree];
+                NSString *recordFour = [NSString stringWithFormat:@"Start date: %@\n", ((PROPERTYRentalAgreementOutput_rental_agreement_item *)element).startDate];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordFour];
+                NSString *recordFive = [NSString stringWithFormat:@"End date: %@\n", ((PROPERTYRentalAgreementOutput_rental_agreement_item *)element).endDate];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordFive];
+                NSString *recordSix = [NSString stringWithFormat:@"Monthly rent: %@\n", ((PROPERTYRentalAgreementOutput_rental_agreement_item *)element).monthlyRent];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordSix];
+                NSString *recordSeven = [NSString stringWithFormat:@"Monthly rent due: %@\n", ((PROPERTYRentalAgreementOutput_rental_agreement_item *)element).monthlyRentDue];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordSeven];
+                NSString *recordEight = [NSString stringWithFormat:@"Advance: %@\n", ((PROPERTYRentalAgreementOutput_rental_agreement_item *)element).advance];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordEight];
+                NSString *recordNine = [NSString stringWithFormat:@"Number of occupants: %@\n", ((PROPERTYRentalAgreementOutput_rental_agreement_item *)element).numberOfOccupants];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordNine];
+                NSString *recordTen = [NSString stringWithFormat:@"Renewal or first term: %@\n", ((PROPERTYRentalAgreementOutput_rental_agreement_item *)element).renewalOfFirstTerm];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordTen];
+                NSString *recordEleven = [NSString stringWithFormat:@"Rental agreement copy: %@\n", ((PROPERTYRentalAgreementOutput_rental_agreement_item *)element).rentalAgreementCopy];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordEleven];
+            }
+            [self.getRentalAgreeList setText:InfoWithCount];
+        }
+        return nil;
+    }];
+}
 
 // MARK: Actions for updating existing records
 - (IBAction)updateMaintExpTypeBtnPress:(id)sender {
@@ -2423,6 +3094,8 @@
         
         return nil;
     }];
+    
+    [self.updateMaintExpTypeDescription resignFirstResponder];
     
 }
 
@@ -2478,6 +3151,8 @@
         
         return nil;
     }];
+    
+    [self.updatePropertyDescription resignFirstResponder];
     
 }
 
@@ -2536,6 +3211,8 @@
         return nil;
     }];
     
+    [self.updateTenantPrimaryCon resignFirstResponder];
+    
 }
 
 
@@ -2581,6 +3258,8 @@
         
         return nil;
     }];
+    
+    [self.updatePurchaseDetailPrice resignFirstResponder];
     
 }
 
@@ -2633,10 +3312,442 @@
         return nil;
     }];
     
+    [self.updatePropMaintExpReceiptCopy resignFirstResponder];
+    
 }
 
 
 - (IBAction)updatePropTaxBtnPress:(id)sender {
+    
+    NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
+
+    NSString *PropTaxId = self.updatePropTaxId.text;
+    NSString *PropId = self.updatePropTaxPropId.text;
+    NSString *OwnerId = self.updatePropTaxOwnerId.text;
+    NSString *Year = self.updatePropTaxYear.text;
+    NSString *YearPaid = self.updatePropTaxYearPaid.text;
+    NSString *AnnualTax = self.updatePropTaxAnnualTax.text;
+    
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Assign input values to be sent to Dynamo DB via API call
+    PROPERTYPropertyTaxInput *propertyTaxInput = [[PROPERTYPropertyTaxInput alloc] init];
+    
+    propertyTaxInput.propertyTaxId = [f numberFromString:PropTaxId];
+    propertyTaxInput.propertyId = [f numberFromString:PropId];
+    propertyTaxInput.ownerId = [f numberFromString:OwnerId];
+    propertyTaxInput.yearOwed = [f numberFromString:Year];
+    propertyTaxInput.yearPaid = [f numberFromString:YearPaid];
+    propertyTaxInput.annualTax = [f numberFromString:AnnualTax];
+    
+    //Invoke PUT on employee API
+    [[client propTaxPut:propertyTaxInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+        
+        
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        
+        if (task.result) {
+            
+            //You are here, so method invocation is a success
+            
+            printf("Success....\n");
+            
+            NSLog(@"Return from API call. Your property tax has been updated. Please check in the database.\n");
+            
+        }
+        
+        return nil;
+    }];
+    
+    [self.updatePropTaxAnnualTax resignFirstResponder];
+    
+}
+
+
+- (IBAction)updateTenantBgCheckBtnPress:(id)sender {
+    
+    NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
+
+    NSString *TenantBgCheckId = self.updateTenantBgCheckId.text;
+    NSString *TenantId = self.updateTenantBgCheckTenantId.text;
+    NSString *OwnerId = self.updateTenantBgCheckOwnerId.text;
+    NSString *Credit = self.updateTenantBgCheckCredit.text;
+    NSString *Criminal = self.updateTenantBgCheckCriminalPass.text;
+    NSString *Eviction = self.updateTenantBgCheckEviction.text;
+    NSString *Recommendation = self.updateTenantBgCheckRecommendation.text;
+    
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Assign input values to be sent to Dynamo DB via API call
+    PROPERTYTenantBackgroundInput *backgroundCheckInput = [[PROPERTYTenantBackgroundInput alloc] init];
+    
+    backgroundCheckInput.tenantBackgroundCheckId=[f numberFromString:TenantBgCheckId];
+    backgroundCheckInput.tenantId=[f numberFromString:TenantId];
+    backgroundCheckInput.ownerId=[f numberFromString:OwnerId];
+    backgroundCheckInput.creditPassedYN=Credit;
+    backgroundCheckInput.criminalPassed=Criminal;
+    backgroundCheckInput.evictionPassedYN=Eviction;
+    backgroundCheckInput.recommendation=Recommendation;
+    
+    //Invoke PUT on employee API
+    [[client backgroundCheckPut:backgroundCheckInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+        
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        
+        if (task.result) {
+            
+            //You are here, so method invocation is a success
+            
+            printf("Success....\n");
+            
+            NSLog(@"Return from API call.Tenant background check information has been updated. Please check in the database...\n");
+            
+        }
+        
+        return nil;
+    }];
+    
+    [self.updateTenantBgCheckRecommendation resignFirstResponder];
+    
+}
+
+
+- (IBAction)updateTenantIncomeExpBtnPress:(id)sender {
+    
+    NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
+
+    NSString *TenantIncomeExpId = self.updateTenantIncomeExpId.text;
+    NSString *TenantId = self.updateTenantIncomeExpTenantId.text;
+    NSString *OwnerId = self.updateTenantIncomeExpOwnerId.text;
+    NSString *PropOwnId = self.updateTenantIncomeExpPropOwnId.text;
+    NSString *Income = self.updateTenantIncomeExpMonthlyInc.text;
+    NSString *Exp = self.updateTenantIncomeExpMonExp.text;
+    
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Assign input values to be sent to Dynamo DB via API call
+    PROPERTYTenantIncomeInput *tenantIncomeInput = [[PROPERTYTenantIncomeInput alloc] init];
+    
+    tenantIncomeInput.tenantIncomeExpenseId = [f numberFromString:TenantIncomeExpId];
+    tenantIncomeInput.tenantId=[f numberFromString:TenantId];
+    tenantIncomeInput.ownerId=[f numberFromString:OwnerId];
+    tenantIncomeInput.propertyOwnerId = [f numberFromString:PropOwnId];
+    tenantIncomeInput.monthlyIncome=[f numberFromString:Income];
+    tenantIncomeInput.monthlyExpenses=[f numberFromString:Exp];
+    
+    //Invoke PUT on employee API
+    [[client tenantsIncomeExpensePut:tenantIncomeInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+        
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        
+        if (task.result) {
+            
+            //You are here, so method invocation is a success
+            
+            printf("Success....\n");
+            
+            NSLog(@"Return from API call.Tenant income expenses information has been update. Please check in the database...\n");
+            
+        }
+        
+        return nil;
+    }];
+    
+    [self.updateTenantIncomeExpMonExp resignFirstResponder];
+    
+}
+
+
+- (IBAction)updateTenantOccBtnPress:(id)sender {
+    
+    NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
+
+    NSString *TenantOccId = self.updateTenantOccId.text;
+    NSString *TenantId = self.updateTenantOccTenantId.text;
+    NSString *OwnerId = self.updateTenantOccOwnerId.text;
+    NSString *Employer = self.updateTenantOccEmployer.text;
+    NSString *Title = self.updateTenantOccTitle.text;
+    
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Assign input values to be sent to Dynamo DB via API call
+    PROPERTYTenantOccupationInput *tenantOccupationInput = [[PROPERTYTenantOccupationInput alloc] init];
+    
+    tenantOccupationInput.tenantOccupationId=[f numberFromString:TenantOccId];
+    tenantOccupationInput.tenantId=[f numberFromString:TenantId];
+    tenantOccupationInput.ownerId=[f numberFromString:OwnerId];
+    tenantOccupationInput.employer = Employer;
+    tenantOccupationInput.title = Title;
+    
+    //Invoke PUT on employee API
+    [[client tenantsOccupationPut:tenantOccupationInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+        
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        
+        if (task.result) {
+            
+            //You are here, so method invocation is a success
+            
+            printf("Success....\n");
+            
+            NSLog(@"Return from API call.Tenant income occupation information has been updated. Please check in the database...\n");
+            
+        }
+        
+        return nil;
+    }];
+    
+    [self.updateTenantOccTitle resignFirstResponder];
+    
+}
+
+
+- (IBAction)updatePropGenExpBtnPress:(id)sender {
+    
+    NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
+
+    NSString *PropGenExpId = self.updatePropGenExpId.text;
+    NSString *PropId = self.updatePropGenExpPropId.text;
+    NSString *OwnerId = self.updatePropGenExpOwnerId.text;
+    NSString *MonFee = self.updatePropGenExpMonFee.text;
+    NSString *MonWarranty = self.updatePropGenExpMonWarranty.text;
+    NSString *YearIns = self.updatePropGenExpYearIns.text;
+    NSString *Cp = self.updatePropGenExpReceipyCp.text;
+    
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Assign input values to be sent to Dynamo DB via API call
+    PROPERTYPropertyGeneralExpInput *propertyGeneralInput = [[PROPERTYPropertyGeneralExpInput alloc] init];
+    
+    
+    propertyGeneralInput.propertyGeneralExpenseId = [f numberFromString:PropGenExpId];
+    propertyGeneralInput.propertyId = [f numberFromString:PropId];
+    propertyGeneralInput.ownerId = [f numberFromString:OwnerId];
+    propertyGeneralInput.monthlyCondoFee = [f numberFromString:MonFee];
+    propertyGeneralInput.monthlyHomeWarranty = [f numberFromString:MonWarranty];
+    propertyGeneralInput.yearlyPropertyInsurance = [f numberFromString:YearIns];
+    propertyGeneralInput.receiptCopy = Cp;
+    
+    
+    
+    //Invoke PUT on employee API
+    [[client generalExpensesPut:propertyGeneralInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+        
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        
+        if (task.result) {
+            
+            //You are here, so method invocation is a success
+            
+            printf("Success....\n");
+            
+            NSLog(@"Return from API call. Your property general expense has been updated. Please check in the database.\n");
+            
+        }
+        
+        return nil;
+    }];
+    
+    [self.updatePropGenExpReceipyCp resignFirstResponder];
+    
+}
+
+
+- (IBAction)updatePropMortLoanBtnPress:(id)sender {
+    
+    NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
+
+    NSString *PropMortLoanId = self.updatePropMortLoanId.text;
+    NSString *PropId = self.updatePropMortLoanPropId.text;
+    NSString *OwnerId = self.updatePropMortLoanOwnerId.text;
+    NSString *Lender = self.updatePropMortLoanLender.text;
+    NSString *Amt = self.updatePropMortLoanAmt.text;
+    NSString *Balance = self.updatePropMortLoanBalance.text;
+    
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Assign input values to be sent to Dynamo DB via API call
+    PROPERTYPropertyMortgageLoanInput *propertyMortgageInput = [[PROPERTYPropertyMortgageLoanInput alloc] init];
+    
+    propertyMortgageInput.propertyMortgageLoanId = [f numberFromString:PropMortLoanId];
+    propertyMortgageInput.propertyId = [f numberFromString:PropId];
+    propertyMortgageInput.ownerId = [f numberFromString:OwnerId];
+    propertyMortgageInput.mortgageLender = [f numberFromString:Lender];
+    propertyMortgageInput.monthlyMortgageAmount = [f numberFromString:Amt];
+    propertyMortgageInput.outstandingBalance = [f numberFromString:Balance];
+    
+    
+    //Invoke POST on employee API
+    [[client propMortgageLoanPut:propertyMortgageInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+        
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        
+        if (task.result) {
+            
+            //You are here, so method invocation is a success
+            
+            printf("Success....\n");
+            
+            NSLog(@"Return from API call. Your mortgage loan has been updated. Please check in the database.\n");
+            
+        }
+        
+        return nil;
+    }];
+    
+    [self.updatePropMortLoanBalance resignFirstResponder];
+    
+}
+
+
+- (IBAction)updateRentalAgreeBtnPress:(id)sender {
+    
+    NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
+
+    NSString *RentalAgreeId = self.updateRentalAgreeId.text;
+    NSString *OwnerId = self.updateRentalAgreeOwnerId.text;
+    NSString *TenantId = self.updateRentalAgreeTenantId.text;
+    NSString *Num = self.updateRentalAgreeNumOfOcc.text;
+    NSString *Rent = self.updateRentalAgreeMonRent.text;
+    NSString *RentDue = self.updateRentalAgreeRentDue.text;
+    NSString *StartD = self.updateRentalAgreeStartD.text;
+    NSString *EndD = self.updateRentalAgreeEndD.text;
+    NSString *Renew = self.updateRentalAgreeRenew.text;
+    NSString *Copy = self.updateRentalAgreeCp.text;
+    NSString *Advance = self.updateRentalAgreeAdvance.text;
+    
+    //Instantiate client object
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Assign input values to be sent to Dynamo DB via API call
+    PROPERTYRentalAgreementInput *rentalAgreementInput = [[PROPERTYRentalAgreementInput alloc] init];
+    
+    rentalAgreementInput.rentalAgreementId = [f numberFromString:RentalAgreeId];
+    rentalAgreementInput.ownerId=[f numberFromString:OwnerId];
+    rentalAgreementInput.tenantId=[f numberFromString:TenantId];
+    rentalAgreementInput.numberOfOccupants=[f numberFromString:Num];
+    rentalAgreementInput.monthlyRent=[f numberFromString:Rent];
+    rentalAgreementInput.monthlyRentDue = RentDue;
+    rentalAgreementInput.startDate = StartD;
+    rentalAgreementInput.endDate = EndD;
+    rentalAgreementInput.renewalOfFirstTerm = Renew;
+    rentalAgreementInput.rentalAgreementCopy = Copy;
+    rentalAgreementInput.advance=[f numberFromString:Advance];
+    
+    
+    //Invoke PUT on employee API
+    [[client rentalAgreementPut:rentalAgreementInput] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+        
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        
+        if (task.result) {
+            
+            //You are here, so method invocation is a success
+            
+            printf("Success....\n");
+            
+            NSLog(@"Return from API call. Your rental agreement has been updated... Please check in the database...\n");
+            
+        }
+        
+        return nil;
+    }];
+    
+    [self.updateRentalAgreeAdvance resignFirstResponder];
+    
+}
+
+
+- (IBAction)updateTenantRefBtnPress:(id)sender {
+    
+    NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
+
+    NSString *TenantRefId = self.updateTenantRefId.text;
+    NSString *TenantId = self.updateTenantRefTenantId.text;
+    NSString *OwnerId = self.updateTenantRefOwnerId.text;
+    NSString *FirstN = self.updateTenantRefFirstN.text;
+    NSString *LastN = self.updateTenantRefLastN.text;
+    NSString *Addr1 = self.updateTenantRefAddr1.text;
+    NSString *Addr2 = self.updateTenantRefAddr2.text;
+    NSString *City = self.updateTenantRefCity.text;
+    NSString *State = self.updateTenantRefState.text;
+    NSString *Zip = self.updateTenantRefZip.text;
+    NSString *County = self.updateTenantRefCounty.text;
+    NSString *Email = self.updateTenantRefEmail.text;
+    NSString *Phone = self.updateTenantRefPhone.text;
+    NSString *Contact = self.updateTenantRefPrimary.text;
+    
+    PROPERTYPropertyMangementClient *client = [PROPERTYPropertyMangementClient defaultClient];
+    
+    //Assign input values to be sent to Dynamo DB via API call
+    PROPERTYTenantRefInput *tenantRefInput = [[PROPERTYTenantRefInput alloc] init];
+    
+    tenantRefInput.tenantReferenceId = [f numberFromString:TenantRefId];
+    tenantRefInput.tenantId=[f numberFromString:TenantId];
+    tenantRefInput.ownerId=[f numberFromString:OwnerId];
+    tenantRefInput.firstName = FirstN;
+    tenantRefInput.lastName = LastN;
+    tenantRefInput.addressLine1 = Addr1;
+    tenantRefInput.addressLine2 = Addr2;
+    tenantRefInput.city = City;
+    tenantRefInput.tenantState = State;
+    tenantRefInput.zip = Zip;
+    tenantRefInput.countyOrDistrict = County;
+    tenantRefInput.contactEmail = Email;
+    tenantRefInput.contactPhone = Phone;
+    tenantRefInput.primaryContact = Contact;
+    
+    
+    //Invoke Put on employee API
+    [[client tenantsReferencePut:tenantRefInput ] continueWithBlock:^id _Nullable(AWSTask * _Nonnull task){
+        
+        if (task.error) {
+            NSLog(@"Error: %@", task.error);
+            return nil;
+        }
+        
+        if (task.result) {
+            
+            //You are here, so method invocation is a success
+            
+            printf("Success....\n");
+            
+            NSLog(@"Return from API call.Tenant reference information has been updated. Please check in the database...\n");
+            
+        }
+        
+        return nil;
+    }];
+    
+    [self.updateTenantRefPrimary resignFirstResponder];
+    
 }
 
 
