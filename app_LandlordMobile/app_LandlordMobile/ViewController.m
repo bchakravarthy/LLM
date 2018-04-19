@@ -2388,8 +2388,12 @@
 
             //Print out each maint exp details to the console
             for (id element in arrData){
-                NSString *record = [NSString stringWithFormat:@"%@",element];
+                NSString *record = [NSString stringWithFormat:@"Maintenance Expense ID: %@\n", ((PROPERTYMaintenanceExpTypeOutput_maintenance_expense_types_item *)element).maintenanceExpenseId];
                 InfoWithCount = [InfoWithCount stringByAppendingString:record];
+                NSString *recordTwo = [NSString stringWithFormat:@"Owner ID: %@\n", ((PROPERTYMaintenanceExpTypeOutput_maintenance_expense_types_item *)element).ownerId];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordTwo];
+                NSString *recordThree = [NSString stringWithFormat:@"Description: %@\n", ((PROPERTYMaintenanceExpTypeOutput_maintenance_expense_types_item *)element)._description];
+                InfoWithCount = [InfoWithCount stringByAppendingString:recordThree];
             }
             
             [self.getMaintExpTypeList setText:InfoWithCount];
@@ -2399,6 +2403,7 @@
     }];
 
 }
+
 
 
 - (IBAction)getPropBtnPress:(id)sender {
