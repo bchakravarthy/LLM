@@ -9,7 +9,7 @@ Originating as a web app, Landlord Mobile was designed as a concept of self-serv
 
 
 #### App version
-- 0.0.1
+- 1.0.0
 
 #### Requirements
 - Xcode 8 and later
@@ -38,3 +38,6 @@ Originating as a web app, Landlord Mobile was designed as a concept of self-serv
    - ` ResourceGroupsAndTagEditorFullAccess`
    - ` IAMReadOnlyAccess `
    - ` IAMSelfManageServiceSpecificCredentials `
+
+#### Software
+ - ` Sketch 49.2 `
