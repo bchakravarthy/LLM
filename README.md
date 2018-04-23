@@ -40,4 +40,7 @@ Originating as a web app, Landlord Mobile was designed as a concept of self-serv
    - ` IAMSelfManageServiceSpecificCredentials `
 
 #### Software
- - ` Sketch 49.2 `
+ - To design and generate the user interfaces, download ` Sketch 49.2 ` from the website:
+   - https://www.sketchapp.com/
+ - If the there's a more updated version can download the latest version. Installed it on the PC and open it up for UI design. All the previous resources are already imported into the project ` Assets ` folder. You can follow the tutorial online to design the UI for iOS app: 
+   - https://www.sketchapp.com/docs/
